@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Resolve, Router, ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';
 import { db, baqend } from 'baqend';
 
-db.connect('app-starter', true);
+db.connect('green-meadow-83', true);
 
 @Injectable()
 export class DBReady implements Resolve<baqend> {
