@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DB_PROVIDERS } from './db';
 import { MeComponent } from './me/me.component';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 import { ConfigComponent } from './config/config.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ConfigComponent } from './config/config.component';
     AppComponent,
     MeComponent,
     SignupComponent,
+    LoginComponent,
     ConfigComponent
   ],
   imports: [
