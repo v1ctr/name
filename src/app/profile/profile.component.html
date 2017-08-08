@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-offset-3 col-sm-6 col-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">Profile</div>
+            <div class="panel-body">
+                <form #form="ngForm">
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label>Straße</label>
+                            <input type="text" [(ngModel)]="user.street" class="form-control" name="street" required>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <button class="btn btn-info" type="button" (click)="saveProfile()" [disabled]="!form.valid">Speichern</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
+    </div>
+</div>

@@ -19,6 +19,7 @@ declare module 'baqend' {
     interface User extends binding.Entity {
       username: string;
       inactive: boolean;
+      street: string;
     }
 
     interface Message extends binding.Entity {
