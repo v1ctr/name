@@ -8,6 +8,7 @@ import { DB_PROVIDERS } from './db';
 import { MeComponent } from './me/me.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 import { ConfigComponent } from './config/config.component';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ConfigComponent } from './config/config.component';
     SignupComponent,
     ProfileComponent,
     ConfigComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
