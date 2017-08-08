@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-offset-3 col-sm-6 col-1">
     <div class="panel panel-default">
-      <div class="panel-heading">User registration</div>
+      <div class="panel-heading">User registration example</div>
       <div class="panel-body">
         <form #form="ngForm">
           <div class="row">
@@ -16,13 +16,11 @@
             <div class="form-group col-lg-12">
               <div class="radio">
                 <label>
-                  <input type="radio" name="type" (click)="user.type = 'bewerber'"
-                         [checked]="'bewerber' === user.type">
+                  <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
                   Bewerber
                 </label>
                 <label>
-                  <input type="radio" name="type" (click)="user.type = 'unternehmen'"
-                         [checked]="'unternehmen' === user.type">
+                  <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
                   Unternehmen
                 </label>
               </div>

@@ -12,7 +12,8 @@ export class SignupComponent {
 
   user = {
     username: '',
-    password: ''
+    password: '',
+    iscomp: false
   };
   error;
 
@@ -23,7 +24,11 @@ export class SignupComponent {
   }
 
   register() {
-    db.User.register(this.user.username, this.user.password).then(() => {
+    var user = new db.User({
+      username: this.user.username,
+      iscomp: this.user.iscomp
+    });
+    db.User.register(user, this.user.password).then(() => {
       this.router.navigate(['/config']);
     }, (error) => {
       this.error = error.message;
