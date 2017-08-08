@@ -1,17 +1,31 @@
 <div class="row">
   <div class="col-sm-offset-3 col-sm-6 col-1">
     <div class="panel panel-default">
-      <div class="panel-heading">User registration example</div>
+      <div class="panel-heading">User registration</div>
       <div class="panel-body">
         <form #form="ngForm">
           <div class="row">
             <div class="form-group col-lg-12">
-              <label>Username</label>
-              <input type="text" [(ngModel)]="user.name" class="form-control" name="name" required>
+              <label>E-Mail</label>
+              <input type="text" [(ngModel)]="user.email" class="form-control" name="email" required>
             </div>
             <div class="form-group col-lg-12">
               <label>Password</label>
               <input type="password" [(ngModel)]="user.password" class="form-control" name="password" required>
+            </div>
+            <div class="form-group col-lg-12">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="type" (click)="user.type = 'bewerber'"
+                         [checked]="'bewerber' === user.type">
+                  Bewerber
+                </label>
+                <label>
+                  <input type="radio" name="type" (click)="user.type = 'unternehmen'"
+                         [checked]="'unternehmen' === user.type">
+                  Unternehmen
+                </label>
+              </div>
             </div>
           </div>
           <div class="pull-right">

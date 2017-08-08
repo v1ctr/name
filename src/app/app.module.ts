@@ -8,13 +8,16 @@ import { DB_PROVIDERS } from './db';
 import { MeComponent } from './me/me.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ConfigComponent } from './config/config.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeComponent,
     SignupComponent,
-    ProfileComponent
+    ProfileComponent,
+    SignupComponent,
+    ConfigComponent,
   ],
   imports: [
     BrowserModule,
