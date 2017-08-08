@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { db } from 'baqend';
+import { User } from '../_models/user.model';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ import { db } from 'baqend';
 export class SignupComponent {
 
   user = {
-    name: '',
+    username: '',
     password: ''
   };
   error;
@@ -22,16 +23,16 @@ export class SignupComponent {
   }
 
   register() {
-    db.User.register(this.user.name, this.user.password).then(() => {
-      this.router.navigate(['/signup/me']);
+    db.User.register(this.user.username, this.user.password).then(() => {
+      this.router.navigate(['/config']);
     }, (error) => {
       this.error = error.message;
     });
   }
 
   logIn() {
-    db.User.login(this.user.name, this.user.password).then(() => {
-      this.router.navigate(['/signup/me']);
+    db.User.login(this.user.username, this.user.password).then(() => {
+      this.router.navigate(['/config']);
     }, (error) => {
       this.error = error.message;
     });
