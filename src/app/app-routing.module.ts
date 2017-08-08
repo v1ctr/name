@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
-import { DBLoggedIn, DBReady } from './db';
-import { MeComponent } from './me/me.component';
-import {ProfileComponent} from './profile/profile.component';
-import { ConfigComponent } from './config/config.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {SignupComponent} from './signup/signup.component';
+import {LoginComponent} from './login/login.component';
+import {DBLoggedIn, DBReady} from './db';
+import {MeComponent} from './me/me.component';
+import {ConfigComponent} from './config/config.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/signup', pathMatch: 'full', resolve: { db: DBReady }}, // redirect to signup page
@@ -13,11 +12,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'config', component: ConfigComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'signup/me', component: MeComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
-  { path: 'profile', component: ProfileComponent, resolve: { db: DBReady } },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    exports: [RouterModule],
 })
 export class AppRoutingModule { }
