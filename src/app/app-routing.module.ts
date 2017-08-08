@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'config', component: ConfigComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'signup/me', component: MeComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
   { path: 'chats', loadChildren: './chats/chats.module#ChatsModule'}, // Using loadChildren to async load the route
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent, resolve: { db: DBReady } },
 ];
 
 @NgModule({

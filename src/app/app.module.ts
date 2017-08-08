@@ -16,7 +16,6 @@ import { ConfigComponent } from './config/config.component';
     MeComponent,
     SignupComponent,
     ProfileComponent,
-    SignupComponent,
     ConfigComponent,
   ],
   imports: [

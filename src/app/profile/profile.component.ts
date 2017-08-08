@@ -13,16 +13,10 @@ export class ProfileComponent {
     error;
 
     constructor(private router: Router) {
-        if (db.Unternehmen.profile) {
-            this.router.navigate(['/profile']);
-        }
+        this.router.navigate(['/profile']);
     }
 
     saveProfile() {
-        db.User.register(this.user.street, this.user.id).then(() => {
-            this.router.navigate(['/profile']);
-        }, (error) => {
-            this.error = error.message;
-        });
+        this.user.insert();
     }
 }
