@@ -7,10 +7,7 @@
         <form #form="ngForm">
           <!--Wird nur bei iscomp == true angezeigt -->
           <div *ngIf="user.iscomp" class="row">
-            <div class="form-group col-lg-12">
-              <label>E-Mail</label>
-              <input type="text" [(ngModel)]="user.email" class="form-control" name="email" required>
-            </div>
+
             <div class="form-group col-lg-12">
               <label>Name</label>
               <input type="text" [(ngModel)]="user.name" class="form-control" name="name" required>
@@ -41,16 +38,12 @@
               <input type="number" [(ngModel)]="user.telefon" class="form-control" name="telefon" required>
             </div>
             <div class="form-group col-lg-12">
+              <label>E-Mail</label>
+              <input type="text" [(ngModel)]="user.email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group col-lg-12">
               <label>Gründung</label>
               <input type="date" [(ngModel)]="user.gruendung" class="form-control" name="gruedung" >
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Logo</label>
-              <input type="file" [(ngModel)]="user.logo" class="form-control" name="logo" >
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Bilder</label>
-              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
             </div>
             <div class="form-group col-lg-12">
               <label>Mitarbeiter</label>
@@ -68,6 +61,16 @@
               <label>Pitch</label>
               <input type="text" [(ngModel)]="user.pitch" class="form-control" name="pitch" required>
             </div>
+            <div class="form-group col-lg-12">
+              <label>Logo</label>
+              <input type="file" [(ngModel)]="user.logo" class="form-control" name="logo" >
+            </div>
+            <div class="form-group col-lg-12">
+              <label>Bilder</label>
+              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
+            </div>
+
+
           </div>
           <!--Wird nur bei iscomp == false angezeigt -->
           <div *ngIf="!user.iscomp" class="row">
