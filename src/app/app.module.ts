@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { SwipeCardsModule } from 'ng2-swipe-cards';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -23,7 +24,8 @@ import {SwipeComponent} from './swipe/swipe.component';
   imports: [
     BrowserModule,
     FormsModule,
-      AppRoutingModule,
+    AppRoutingModule,
+    SwipeCardsModule
   ],
   providers: [DB_PROVIDERS],
     bootstrap: [AppComponent],
