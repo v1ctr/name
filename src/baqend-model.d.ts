@@ -36,6 +36,14 @@ declare module 'baqend' {
         branche: string[];
         sprache: string[];
         pitch: string;
+        iscomp: boolean;
+        geburt: Date;
+        ausbildung: string[];
+        lebenslauf: string;
+        skill: string[];
+        schwerpunkt: string;
+        softskill: string[];
+        position: string;
     }
 
     interface Message extends binding.Entity {

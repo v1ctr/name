@@ -10,6 +10,7 @@ import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigComponent} from './config/config.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
+import {SwipeComponent} from './swipe/swipe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component
     SignupComponent,
     ConfigComponent,
     LoginComponent,
-      ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SwipeComponent,
   ],
   imports: [
     BrowserModule,
