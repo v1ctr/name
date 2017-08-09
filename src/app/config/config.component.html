@@ -151,12 +151,13 @@
               <label>Aktuell Position</label>
               <input type="text" [(ngModel)]="user.position" class="form-control" name="position" required>
             </div>
-          </div>
             <div class="form-group col-lg-12">
               <label>Pitch</label>
               <input type="text" [(ngModel)]="user.pitch" class="form-control" name="pitch" required>
             </div>
           </div>
+
+
           <div class="pull-right">
               <button class="btn btn-info" type="button" (click)="save()" [disabled]="!form.valid">Speichern</button>
           </div>

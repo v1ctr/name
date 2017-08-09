@@ -43,6 +43,7 @@ declare module 'baqend' {
         skill: string[];
         schwerpunkt: string;
         softskill: string[];
+        position: string;
     }
 
     interface Message extends binding.Entity {
