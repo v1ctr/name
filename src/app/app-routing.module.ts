@@ -5,6 +5,7 @@ import {LoginComponent} from './login/login.component';
 import {DBLoggedIn, DBReady} from './db';
 import {MeComponent} from './me/me.component';
 import {ConfigComponent} from './config/config.component';
+import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/signup', pathMatch: 'full', resolve: { db: DBReady }}, // redirect to signup page
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'config', component: ConfigComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'signup/me', component: MeComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
+    {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}},
 ];
 
 @NgModule({

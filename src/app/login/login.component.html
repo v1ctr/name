@@ -15,6 +15,8 @@
             </div>
           </div>
           <a [routerLink]=" ['../signup'] " routerLinkActive="active">Ich habe noch keinen Account</a>
+            <br>
+            <a [routerLink]=" ['../forgotPassword']" routerLinkActive="active">Passwort vergessen?</a>
           <div class="pull-right">
             <button class="btn btn-info" type="button" (click)="logIn()" [disabled]="!form.valid">Log In</button>
           </div>
