@@ -19,8 +19,11 @@ export class VacancyComponent implements OnInit {
     ngOnInit() {
         let id = '';
         this.route.params.subscribe(params => {
-            id = params['id'];
-        });
+                id = params['id'];
+            },
+            (error) => {
+                this.error = error.message;
+            });
         db.Stellenangebot.find().equal('uid', id).singleResult(
             (vacancy) => {
                 if (!vacancy) {
