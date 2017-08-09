@@ -1,4 +1,4 @@
-import {binding, GeoPoint} from 'baqend';
+import {binding} from 'baqend';
 
 declare module 'baqend' {
 
@@ -19,6 +19,23 @@ declare module 'baqend' {
     interface User extends binding.Entity {
       username: string;
       inactive: boolean;
+        email: string;
+        name: string;
+      strasse: string;
+        hausnr: string;
+        zusatz: string;
+        plz: number;
+        ort: string;
+        telefon: number;
+        gruendung: Date;
+        logo: string;
+        bilder: string[];
+        mitarbeitermin: number;
+        mitarbeitermax: number;
+        page: string;
+        branche: string[];
+        sprache: string[];
+        pitch: string;
     }
 
     interface Message extends binding.Entity {

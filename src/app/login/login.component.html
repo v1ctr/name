@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-offset-3 col-sm-6 col-1">
     <div class="panel panel-default">
-      <div class="panel-heading">Signup</div>
+      <div class="panel-heading">Login</div>
       <div class="panel-body">
         <form #form="ngForm">
           <div class="row">
@@ -13,21 +13,10 @@
               <label>Password</label>
               <input type="password" [(ngModel)]="user.password" class="form-control" name="password" required>
             </div>
-            <div class="form-group col-lg-12">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
-                  Bewerber
-                </label>
-                <label>
-                  <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
-                  Unternehmen
-                </label>
-              </div>
-            </div>
           </div>
+          <a [routerLink]=" ['../signup'] " routerLinkActive="active">Ich habe noch keinen Account</a>
           <div class="pull-right">
-            <button class="btn btn-info" type="button" (click)="register()" [disabled]="!form.valid">Registrieren</button>
+            <button class="btn btn-info" type="button" (click)="logIn()" [disabled]="!form.valid">Log In</button>
           </div>
         </form>
       </div>

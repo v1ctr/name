@@ -4,11 +4,11 @@ import { db } from 'baqend';
 import { User } from '../_models/user.model';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class SignupComponent {
+export class LoginComponent {
 
   user = {
     username: '',
@@ -23,12 +23,8 @@ export class SignupComponent {
     }
   }
 
-  register() {
-    var user = new db.User({
-      username: this.user.username,
-      iscomp: this.user.iscomp
-    });
-    db.User.register(user, this.user.password).then(() => {
+  logIn() {
+    db.User.login(this.user.username, this.user.password).then(() => {
       this.router.navigate(['/config']);
     }, (error) => {
       this.error = error.message;

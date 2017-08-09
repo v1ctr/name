@@ -1,46 +1,26 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { db } from 'baqend';
-import { User } from '../_models/user.model';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {db, model} from 'baqend';
 
 @Component({
   selector: 'app-config',
   templateUrl: './config.component.html',
   styleUrls: ['./config.component.scss']
 })
-export class ConfigComponent {
+export class ConfigComponent implements OnInit {
 
-
-  user = {
-    username: '',
-    password: '',
-    iscomp: false
-  };
+  user: model.User;
   error;
 
   constructor(private router: Router) {
-    if (db.User.me) {
-      this.router.navigate(['/signup/me']);
-    }
+
   }
 
-  register() {
-    var user = new db.User({
-      username: this.user.username,
-      iscomp: this.user.iscomp
-    });
-    db.User.register(user, this.user.password).then(() => {
-      this.router.navigate(['/config']);
-    }, (error) => {
-      this.error = error.message;
-    });
+  ngOnInit() {
+    this.user = db.User.me;
   }
 
-  logIn() {
-    db.User.login(this.user.username, this.user.password).then(() => {
-      this.router.navigate(['/config']);
-    }, (error) => {
-      this.error = error.message;
-    });
+  save() {
+    this.user.update();
   }
 }
