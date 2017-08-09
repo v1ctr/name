@@ -19,7 +19,6 @@ export class ConfigComponent implements OnInit {
 
   ngOnInit() {
     this.user = db.User.me;
-
   }
 
   save() {

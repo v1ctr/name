@@ -15,23 +15,24 @@ import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MeComponent,
-    SignupComponent,
-    ConfigComponent,
-    LoginComponent,
-    ForgotPasswordComponent,
-      NewPasswordComponent,
-    SwipeComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-      AppRoutingModule,
-      SwipeCardsModule
-  ],
-  providers: [DB_PROVIDERS],
+    declarations: [
+        AppComponent,
+        MeComponent,
+        SignupComponent,
+        ConfigComponent,
+        LoginComponent,
+        ForgotPasswordComponent,
+        NewPasswordComponent,
+        SwipeComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        SwipeCardsModule
+    ],
+    providers: [DB_PROVIDERS],
     bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
