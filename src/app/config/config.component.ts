@@ -11,8 +11,36 @@ import { User } from '../_models/user.model';
 export class ConfigComponent {
 
 
+  user = {
+    username: '',
+    password: '',
+    iscomp: false
+  };
+  error;
 
   constructor(private router: Router) {
+    if (db.User.me) {
+      this.router.navigate(['/signup/me']);
+    }
+  }
 
+  register() {
+    var user = new db.User({
+      username: this.user.username,
+      iscomp: this.user.iscomp
+    });
+    db.User.register(user, this.user.password).then(() => {
+      this.router.navigate(['/config']);
+    }, (error) => {
+      this.error = error.message;
+    });
+  }
+
+  logIn() {
+    db.User.login(this.user.username, this.user.password).then(() => {
+      this.router.navigate(['/config']);
+    }, (error) => {
+      this.error = error.message;
+    });
   }
 }
