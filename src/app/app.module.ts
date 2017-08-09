@@ -10,6 +10,7 @@ import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigComponent} from './config/config.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
+import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import {SwipeComponent} from './swipe/swipe.component';
     ConfigComponent,
     LoginComponent,
     ForgotPasswordComponent,
+      NewPasswordComponent,
     SwipeComponent,
   ],
   imports: [
