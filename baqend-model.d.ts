@@ -5,8 +5,8 @@ declare module "baqend" {
   interface baqend {
     Todo: binding.EntityFactory<model.Todo>;
     Match: binding.EntityFactory<model.Match>;
+    Stelleangebot: binding.EntityFactory<model.Stelleangebot>;
     Message: binding.EntityFactory<model.Message>;
-    Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
     Activity: binding.ManagedFactory<model.Activity>;
     Interger: binding.ManagedFactory<model.Interger>;
   }
@@ -22,9 +22,25 @@ declare module "baqend" {
     }
 
     interface Match extends binding.Entity {
+      sid: Stelleangebot;
       bid: User;
       userlike: boolean;
       complike: boolean;
+    }
+
+    interface Stelleangebot extends binding.Entity {
+      uid: string;
+      gehalt: string;
+      start: Date;
+      bezeichnung: string;
+      beschaeftigung: string;
+      befristet: string;
+      beschreibung: string;
+      partner: string;
+      anforderung: string;
+      sprache: Array<string>;
+      aktiv: boolean;
+      userid: User;
     }
 
     interface User extends binding.Entity {
@@ -52,7 +68,7 @@ declare module "baqend" {
       iscomp: boolean;
       schwerpunkt: string;
       softskill: string;
-      position: string;
+      postion: string;
     }
 
     interface Role extends binding.Entity {
@@ -68,21 +84,6 @@ declare module "baqend" {
       name: string;
       message: string;
       date: Date;
-    }
-
-    interface Stellenangebot extends binding.Entity {
-      gehalt: string;
-      start: Date;
-      bezeichnung: string;
-      beschaeftigung: string;
-      befristet: string;
-      beschreibung: string;
-      partner: string;
-      anforderung: string;
-      sprache: Array<string>;
-      aktiv: boolean;
-      userid: User;
-      uid: User;
     }
 
     interface Activity extends binding.Managed {
