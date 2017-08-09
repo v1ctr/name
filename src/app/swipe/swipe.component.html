@@ -1,1 +1,32 @@
-<h1>Swipe</h1>
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6 col-1">
+    <div class="card-container">
+      <sc-card
+        *ngFor="let card of cards;let i = index;"
+        [callDestroy]="card.destroyEvent"
+        [orientation]="orientation"
+        (onRelease)="onRelease($event)"
+        (onSwipe)="onSwipe($event)"
+        (onAbort)="onAbort($event)"
+        [tinder-card]="overlay"
+        [callLike]="card.likeEvent"
+        (onLike)="onCardLike($event)">
+        <div class="card-header">
+          <span>{{card.id}}</span>
+        </div>
+        <div class="card-content">
+          <div>{{card.pitch}}</div>
+        </div>
+      </sc-card>
+    </div>
+  </div>
+</div>
+<div class="row" style="margin-top:175px;">
+  <div class="col-sm-offset-3 col-sm-6 col-1">
+    <div class="text-center">
+      <button (click)="like(false)" type="button" class="btn btn-danger btn-circle btn-xl"><i class="glyphicon glyphicon-remove"></i></button>
+      <button (click)="like(true)" type="button" class="btn btn-success btn-circle btn-xl"><i class="glyphicon glyphicon-ok"></i></button>
+    </div>
+  </div>
+</div>
+
