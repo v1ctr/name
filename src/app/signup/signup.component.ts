@@ -1,37 +1,41 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { db } from 'baqend';
-import { User } from '../_models/user.model';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
+import {db} from 'baqend';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+    selector: 'app-signup',
+    templateUrl: './signup.component.html',
+    styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent {
 
-  user = {
-    username: '',
-    password: '',
-    iscomp: false
-  };
-  error;
+    user = {
+        username: '',
+        password: '',
+        iscomp: false
+    };
+    result = {
+        isError: false,
+        message: '',
+    };
 
-  constructor(private router: Router) {
-    if (db.User.me) {
-      this.router.navigate(['/signup/me']);
+    constructor(private router: Router) {
+        if (db.User.me) {
+            this.router.navigate(['/signup/me']);
+        }
     }
-  }
 
-  register() {
-    var user = new db.User({
-      username: this.user.username,
-      iscomp: this.user.iscomp
-    });
-    db.User.register(user, this.user.password).then(() => {
-      this.router.navigate(['/config']);
-    }, (error) => {
-      this.error = error.message;
-    });
-  }
+    register() {
+        const user = new db.User({
+            username: this.user.username,
+            iscomp: this.user.iscomp
+        });
+        db.User.register(user, this.user.password).then(() => {
+            this.result.isError = false;
+            this.result.message = 'Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.';
+        }, (error) => {
+            this.result.isError = true;
+            this.result.message = error.message;
+        });
+    }
 }
