@@ -63,6 +63,7 @@ export class SwipeComponent implements OnInit {
     }
   }
 
+
   onCardLike(event) {
     var item = this.cards[this.cardCursor++];
     // DO STUFF WITH YOUR CARD
