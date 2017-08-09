@@ -18,7 +18,7 @@ export class DBLoggedIn implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<boolean> {
     return db.ready().then(() => {
       if (!db.User.me) {
-        this.router.navigate(['/signup']);
+        this.router.navigate(['/login']);
         return false;
       }
       return true;

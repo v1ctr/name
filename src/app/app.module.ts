@@ -9,6 +9,7 @@ import {MeComponent} from './me/me.component';
 import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigComponent} from './config/config.component';
+import {SwipeComponent} from './swipe/swipe.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {ConfigComponent} from './config/config.component';
     SignupComponent,
     ConfigComponent,
     LoginComponent,
+    SwipeComponent
   ],
   imports: [
     BrowserModule,
