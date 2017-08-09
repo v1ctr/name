@@ -17,6 +17,7 @@ export class VacancyComponent implements OnInit {
     }
 
     ngOnInit() {
+      /*
         let id = '';
         this.route.params.subscribe(params => {
             id = params['id'];
@@ -30,6 +31,7 @@ export class VacancyComponent implements OnInit {
                 }
             }
         );
+        */
     }
 
     save() {

@@ -22,6 +22,10 @@ export class VacanciesComponent implements OnInit {
     db.Stellenangebot.find().resultList((result) => {
       this.vacancies = result;
     });
+
+      db.User.find().resultList((result) => {
+        console.log(result);
+      });
   }
 
 }
