@@ -21,7 +21,7 @@ declare module 'baqend' {
       inactive: boolean;
         email: string;
         name: string;
-      strasse: string;
+        strasse: string;
         hausnr: string;
         zusatz: string;
         plz: number;
@@ -50,6 +50,21 @@ declare module 'baqend' {
       name: string;
       text: string;
       face: string;
+    }
+
+    interface Stellenangebot extends binding.Entity {
+      uid: string;
+      gehalt: string;
+      start: string;
+      bezeichnung: string;
+      beschaeftigung: string;
+      befristet: string;
+      beschreibung: string;
+      partner: string;
+      anforderung: string;
+      sprache: string[];
+      aktiv: boolean;
+      userid: string;
     }
 
   }
