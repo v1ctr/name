@@ -78,10 +78,7 @@
           </div>
           <!--Wird nur bei iscomp == false angezeigt -->
           <div *ngIf="!user.iscomp" class="row">
-            <div class="form-group col-lg-12">
-              <label>E-Mail</label>
-              <input type="text" [(ngModel)]="user.email" class="form-control" name="email" required>
-            </div>
+
             <div class="form-group col-lg-12">
               <label>Name</label>
               <input type="text" [(ngModel)]="user.name" class="form-control" name="name" required>
@@ -111,42 +108,60 @@
               <label>Telefonnummer</label>
               <input type="number" [(ngModel)]="user.telefon" class="form-control" name="telefon" required>
             </div>
+
             <div class="form-group col-lg-12">
-              <label>Gründung</label>
-              <input type="date" [(ngModel)]="user.gruendung" class="form-control" name="gruedung" >
+              <label>E-Mail</label>
+              <input type="text" [(ngModel)]="user.email" class="form-control" name="email" required>
             </div>
             <div class="form-group col-lg-12">
-              <label>Logo</label>
-              <input type="file" [(ngModel)]="user.logo" class="form-control" name="logo" >
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Bilder</label>
-              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Mitarbeiter</label>
-              <label>From</label>
-              <input type="number" [(ngModel)]="user.mitarbeitermin" class="form-control" name="mitarbeitermin">
-              <label>to</label>
-              <input type="number" [(ngModel)]="user.mitarbeitermax" class="form-control" name="mitarbeitermax">
+              <label>Geburtsdatum</label>
+              <input type="date" [(ngModel)]="user.geburt" class="form-control" name="geburt" >
             </div>
             <div class="form-group col-lg-12">
               <label>Homepage</label>
               <input type="text" [(ngModel)]="user.page" class="form-control" name="page">
             </div>
             <div class="form-group col-lg-12">
-              <label>Branche</label>
-              <input type="text" [(ngModel)]="user.branche" class="form-control" name="branche" required>
+              <label>Sprachen</label>
+              <input type="text" [(ngModel)]="user.sprache" class="form-control" name="sprache" required>
             </div>
             <div class="form-group col-lg-12">
-              <label>Sprache</label>
-              <input type="text" [(ngModel)]="user.sprache" class="form-control" name="sprache" required>
+              <label>Aktuelle Position</label>
+              <input type="text" [(ngModel)]="user.position" class="form-control" name="position" required>
+            </div>
+
+            <div class="form-group col-lg-12">
+              <label>Ausbildung</label>
+              <input type="text" [(ngModel)]="user.ausbildung" class="form-control" name="ausbildung">
+            </div>
+
+            <div class="form-group col-lg-12">
+              <label>Kernkompetenzen</label>
+              <input type="text" [(ngModel)]="user.skill" class="form-control" name="skill" required>
+            </div>
+            <div class="form-group col-lg-12">
+              <label>Berufliche Schwerpunkte</label>
+              <input type="text" [(ngModel)]="user.schwerpunkt" class="form-control" name="schwerpunkt" required>
+            </div>
+            <div class="form-group col-lg-12">
+              <label>Softskills</label>
+              <input type="text" [(ngModel)]="user.softskill" class="form-control" name="softskill" required>
             </div>
             <div class="form-group col-lg-12">
               <label>Pitch</label>
               <input type="text" [(ngModel)]="user.pitch" class="form-control" name="pitch" required>
             </div>
+            <div class="form-group col-lg-12">
+              <label>Profilbild</label>
+              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
+            </div>
+            <div class="form-group col-lg-12">
+              <label>Lebenslauf</label>
+              <input type="file" [(ngModel)]="user.lebenslauf" class="form-control" name="lebenslauf" required>
+            </div>
           </div>
+
+
           <div class="pull-right">
               <button class="btn btn-info" type="button" (click)="save()" [disabled]="!form.valid">Speichern</button>
           </div>

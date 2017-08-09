@@ -10,6 +10,7 @@ import {db, model} from 'baqend';
 export class ConfigComponent implements OnInit {
 
   user: model.User;
+
   error;
 
   constructor(private router: Router) {
@@ -18,6 +19,7 @@ export class ConfigComponent implements OnInit {
 
   ngOnInit() {
     this.user = db.User.me;
+
   }
 
   save() {
