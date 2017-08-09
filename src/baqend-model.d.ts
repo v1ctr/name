@@ -41,6 +41,8 @@ declare module 'baqend' {
         ausbildung: string[];
         lebenslauf: string;
         skill: string[];
+        schwerpunkt: string;
+        softskill: string[];
     }
 
     interface Message extends binding.Entity {
