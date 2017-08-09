@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'swipe', component: SwipeComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
   { path: 'signup', component: SignupComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
   { path: 'login', component: LoginComponent, resolve: { db: DBReady } }, // will activate the route after the db is ready
-  { path: 'config', component: ConfigComponent,canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
+  { path: 'config', component: ConfigComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
   { path: 'signup/me', component: MeComponent, canActivate: [DBLoggedIn] }, // will prevent none logged in users from accessing it
 ];
 
