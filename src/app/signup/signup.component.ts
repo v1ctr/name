@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { db } from 'baqend';
-import { User } from '../_models/user.model';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
+import {db} from 'baqend';
 
 @Component({
   selector: 'app-signup',
