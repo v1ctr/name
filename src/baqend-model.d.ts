@@ -42,7 +42,7 @@ declare module 'baqend' {
         lebenslauf: string;
         skill: string[];
         schwerpunkt: string;
-        softskill: string[];
+        softskill: string;
         position: string;
     }
 
