@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { db, model } from 'baqend';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {db, model} from 'baqend';
 
 @Component({
   selector: 'app-vacancies',
@@ -12,13 +12,13 @@ export class VacanciesComponent implements OnInit {
   vacancies: model.Stellenangebot[];
 
   constructor(private router: Router) {
-    //Bewerber können keine Stellenausschreibungen sehen
+      // Bewerber können keine Stellenausschreibungen sehen
     if (!db.User.me.iscomp) {
       this.router.navigate(['/swipe']);
     }
   }
 
-  ngOnInit(){
+    ngOnInit() {
     db.Stellenangebot.find().resultList((result) => {
       this.vacancies = result;
     });
