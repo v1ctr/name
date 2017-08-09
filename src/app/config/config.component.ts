@@ -9,18 +9,18 @@ import {db, model} from 'baqend';
 })
 export class ConfigComponent implements OnInit {
 
-    user: model.User;
-    error;
+  user: model.User;
+  error;
 
   constructor(private router: Router) {
 
   }
 
-    ngOnInit() {
-        this.user = db.User.me;
-    }
+  ngOnInit() {
+    this.user = db.User.me;
+  }
 
-    save() {
-        this.user.update();
-    }
+  save() {
+    this.user.update();
+  }
 }
