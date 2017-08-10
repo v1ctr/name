@@ -13,6 +13,7 @@ import {ConfigComponent} from './config/config.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
+import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {SwipeComponent} from './swipe/swipe.component';
     ForgotPasswordComponent,
       NewPasswordComponent,
     SwipeComponent,
+    BewerberprofilComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,64 @@
+
+<h1>Config</h1>
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6 col-1">
+    <div class="panel panel-default">
+      <div class="panel-heading">Kurzprofil</div>
+      <div class="panel-body">
+        <form #form="ngForm">
+          <!--Wird nur bei iscomp == false angezeigt -->
+          <div *ngIf="!user.iscomp" class="row">
+          <div class="grid-layout">
+            <div class="box1">
+              <label>Profilbild</label>
+              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
+            </div>
+
+
+            <div class="box2">
+            <label>Name</label>
+             <h2>{{user.name}}</h2>
+            </div>
+
+            <div class="box2">
+              <label>Jobbezeichnung</label>
+              <h2>Fachinformatiker Systemintegration</h2>
+            </div>
+
+
+            <div class="pitch">
+              <label>Pitch</label>
+              <h1>Stiftungen verlangen es sowieso, aber auch manche Konzerne,
+                die an ihre Mitarbeiter Stipendien für ein berufsbegleitendes Studium vergeben:
+                das Motivationsschreiben. Es ist ein enger Verwandter des Bewerbungsanschreibens.</h1>
+            </div>
+
+
+            <div class="box3">
+              <label>Ausbildung</label>
+              <input type="text" [(ngModel)]="user.ausbildung" class="form-control" name="ausbildung">
+            </div>
+
+            <div class="box3">
+              <label>Kernkompetenzen</label>
+              <input type="text" [(ngModel)]="user.skill" class="form-control" name="skill" required>
+            </div>
+            <div class="box3">
+              <label>Sprachen</label>
+              <input type="text" [(ngModel)]="user.sprache" class="form-control" name="sprache" required>
+            </div>
+
+            <div class="box3">
+              <label>Softskills</label>
+              <input type="text" [(ngModel)]="user.softskill" class="form-control" name="softskill" required>
+            </div>
+
+
+
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
