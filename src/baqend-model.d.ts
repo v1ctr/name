@@ -61,7 +61,7 @@ declare module 'baqend' {
             anforderung: string;
             sprache: string[];
             aktiv: boolean;
-            userid: string;
+            userid: User;
         }
 
     }

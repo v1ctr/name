@@ -14,17 +14,18 @@ export class VacancyComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute) {
         this.vacancy = new db.Stellenangebot();
+        this.vacancy.userid = db.User.me;
+        console.log(this.vacancy);
     }
 
     ngOnInit() {
         this.route.params.subscribe(params => {
                 const key = params['key'];
-                const self = this;
-                db.Stellenangebot.load(key).then(function (vacancy) {
+                db.Stellenangebot.load(key).then((vacancy) => {
                     if (vacancy && key) {
-                        self.vacancy = vacancy;
+                        this.vacancy = vacancy;
                     } else if (key) {
-                        self.error = 'Could not load vacancy with key "' + key + '".';
+                        this.error = 'Could not load vacancy with key "' + key + '".';
                     }
                 });
             },
@@ -34,6 +35,7 @@ export class VacancyComponent implements OnInit {
     }
 
     save() {
+        console.log(this.vacancy);
         this.vacancy.save();
     }
 }
