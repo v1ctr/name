@@ -1,0 +1,61 @@
+<h1>Vacancy</h1>
+<div class="row">
+    <div class="col-sm-offset-3 col-sm-6 col-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">Vacancy</div>
+            <div class="panel-body">
+                <form #form="ngForm">
+                    <div class="form-group col-lg-12">
+                        <label>Gehalt</label>
+                        <input type="text" [(ngModel)]="vacancy.gehalt" class="form-control" name="gehalt" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Start</label>
+                        <input type="text" [(ngModel)]="vacancy.start" class="form-control" name="start" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Bezeichnung</label>
+                        <input type="text" [(ngModel)]="vacancy.bezeichnung" class="form-control" name="bezeichnung"
+                               required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Befristet</label>
+                        <input type="text" [(ngModel)]="vacancy.befristet" class="form-control" name="befristet"
+                               required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Beschreibung</label>
+                        <input type="text" [(ngModel)]="vacancy.beschreibung" class="form-control" name="beschreibung"
+                               required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Beschäftigung</label>
+                        <input type="text" [(ngModel)]="vacancy.beschaeftigung" class="form-control"
+                               name="beschaeftigung" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Sprachen</label>
+                        <input type="text" [(ngModel)]="vacancy.sprache" class="form-control" name="sprachen" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Partner</label>
+                        <input type="text" [(ngModel)]="vacancy.partner" class="form-control" name="partner" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Anforderung</label>
+                        <input type="text" [(ngModel)]="vacancy.anforderung" class="form-control" name="anforderung">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Aktiv</label>
+                        <input type="text" [(ngModel)]="vacancy.aktiv" class="form-control" name="aktiv">
+                    </div>
+
+                    <div class="pull-right">
+                        <button class="btn btn-info" type="button" (click)="save()">Speichern</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
+    </div>
+</div>

@@ -22,35 +22,33 @@
 
             <div class="box2">
               <label>Jobbezeichnung</label>
-              <h2>Fachinformatiker Systemintegration</h2>
+              <h2>{{user.jobBezeichnung}}</h2>
             </div>
 
 
             <div class="pitch">
               <label>Pitch</label>
-              <h1>Stiftungen verlangen es sowieso, aber auch manche Konzerne,
-                die an ihre Mitarbeiter Stipendien für ein berufsbegleitendes Studium vergeben:
-                das Motivationsschreiben. Es ist ein enger Verwandter des Bewerbungsanschreibens.</h1>
+              <h1>{{user.pitch}}</h1>
             </div>
 
 
             <div class="box3">
               <label>Ausbildung</label>
-              <input type="text" [(ngModel)]="user.ausbildung" class="form-control" name="ausbildung">
+              <h2>{{user.ausbildung}}</h2>
             </div>
 
             <div class="box3">
               <label>Kernkompetenzen</label>
-              <input type="text" [(ngModel)]="user.skill" class="form-control" name="skill" required>
+              <h2>{{user.skill}}</h2>
             </div>
             <div class="box3">
               <label>Sprachen</label>
-              <input type="text" [(ngModel)]="user.sprache" class="form-control" name="sprache" required>
+              <h2>{{user.sprache}}</h2>
             </div>
 
             <div class="box3">
               <label>Softskills</label>
-              <input type="text" [(ngModel)]="user.softskill" class="form-control" name="softskill" required>
+              <h2>{{user.softskill}}</h2>
             </div>
 
 

@@ -13,27 +13,32 @@ import {ConfigComponent} from './config/config.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
+import {VacanciesComponent} from './vacancies/vacancies.component';
+import {VacancyComponent} from './vacancy/vacancy.component';
 import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MeComponent,
-    SignupComponent,
-    ConfigComponent,
-    LoginComponent,
-    ForgotPasswordComponent,
-      NewPasswordComponent,
-    SwipeComponent,
-    BewerberprofilComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-      AppRoutingModule,
-      SwipeCardsModule
-  ],
-  providers: [DB_PROVIDERS],
+    declarations: [
+        AppComponent,
+        MeComponent,
+        SignupComponent,
+        ConfigComponent,
+        LoginComponent,
+        ForgotPasswordComponent,
+        NewPasswordComponent,
+        SwipeComponent,
+        VacanciesComponent,
+        VacancyComponent,
+        BewerberprofilComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        SwipeCardsModule
+    ],
+    providers: [DB_PROVIDERS],
     bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
