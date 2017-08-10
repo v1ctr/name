@@ -30,8 +30,7 @@ declare module 'baqend' {
             gruendung: Date;
             logo: string;
             bilder: string[];
-            mitarbeitermin: number;
-            mitarbeitermax: number;
+            mitarbeiterAnzahl: number;
             page: string;
             branche: string[];
             sprache: string[];
@@ -41,9 +40,8 @@ declare module 'baqend' {
             ausbildung: string[];
             lebenslauf: string;
             skill: string[];
-            schwerpunkt: string;
             softskill: string;
-            position: string;
+            jobBezeichnung: string;
         }
 
         interface Message extends binding.Entity {

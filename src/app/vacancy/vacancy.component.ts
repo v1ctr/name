@@ -14,7 +14,6 @@ export class VacancyComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute) {
         this.vacancy = new db.Stellenangebot();
-        this.vacancy.userid = db.User.me.id; // @todo funzt nicht
     }
 
     ngOnInit() {
