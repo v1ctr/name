@@ -22,8 +22,8 @@ export class VacanciesComponent implements OnInit {
     db.Stellenangebot.find().resultList((result) => {
       this.vacancies = result;
     });
-
-      db.User.find().resultList((result) => {
+    db.modules.get('permission_test')
+      .then((result) => {
         console.log(result);
       });
   }

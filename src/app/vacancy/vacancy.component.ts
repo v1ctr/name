@@ -17,9 +17,9 @@ export class VacancyComponent implements OnInit {
     }
 
     ngOnInit() {
-      /*
+
         let id = '';
-        this.route.params.subscribe(params => {
+        this.route.params.subscribe( (params) => {
             id = params['id'];
         });
         db.Stellenangebot.find().equal('uid', id).singleResult(
@@ -31,7 +31,7 @@ export class VacancyComponent implements OnInit {
                 }
             }
         );
-        */
+
     }
 
     save() {
