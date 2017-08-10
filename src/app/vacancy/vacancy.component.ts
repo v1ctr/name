@@ -17,22 +17,21 @@ export class VacancyComponent implements OnInit {
     }
 
     ngOnInit() {
-        let id = '';
-        this.route.params.subscribe((params) => {
-                id = params['id'];
+        this.route.params.subscribe(params => {
+                const id = params['id'];
+                db.Stellenangebot.find().equal('id', id).singleResult(
+                    (vacancy) => {
+                        if (vacancy) {
+                            this.vacancy = vacancy;
+                        } else {
+                            this.error = 'Could not load vacancy with id "' + id + '".';
+                        }
+                    }
+                )
             },
             (error) => {
                 this.error = error.message;
             });
-        db.Stellenangebot.find().equal('uid', id).singleResult(
-            (vacancy) => {
-                if (!vacancy) {
-                    this.error = 'Could not load vacancy with id "' + id + '".';
-                } else {
-                    this.vacancy = vacancy;
-                }
-            }
-        );
     }
 
     save() {
