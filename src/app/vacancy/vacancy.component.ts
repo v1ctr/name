@@ -18,6 +18,7 @@ export class VacancyComponent implements OnInit {
         } else {
             this.vacancy = new db.Stellenangebot();
             this.vacancy.userid = db.User.me;
+            this.vacancy.aktiv = true;
         }
     }
 

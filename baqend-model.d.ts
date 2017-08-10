@@ -38,7 +38,6 @@ declare module "baqend" {
             Bilder: Array<string>;
             mitarbeiterAnzahl: number;
             page: string;
-            branche: Array<string>;
             sprache: Array<string>;
             pitch: string;
             geburt: Date;
@@ -48,6 +47,7 @@ declare module "baqend" {
             iscomp: boolean;
             softskill: string;
             jobBezeichnung: string;
+            branche: Set<Berufsfeld>;
         }
 
         interface Berufsfeld extends binding.Entity {
@@ -58,14 +58,14 @@ declare module "baqend" {
             gehalt: string;
             start: Date;
             bezeichnung: string;
-            beschaeftigung: string;
-            befristet: string;
+            beschaeftigung: Set<Vertragsart>;
             beschreibung: string;
             partner: string;
             anforderung: string;
             sprache: Array<string>;
             aktiv: boolean;
             userid: User;
+            befristet: boolean;
         }
 
         interface Role extends binding.Entity {
