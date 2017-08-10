@@ -15,6 +15,7 @@ import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
+import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import {VacancyComponent} from './vacancy/vacancy.component';
         SwipeComponent,
         VacanciesComponent,
         VacancyComponent,
+        BewerberprofilComponent,
     ],
     imports: [
         BrowserModule,

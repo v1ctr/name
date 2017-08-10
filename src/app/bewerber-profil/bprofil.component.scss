@@ -1,0 +1,93 @@
+
+.grid-layout{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  padding: 1em;
+
+
+}
+
+.box1{
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  height: 200px;
+  text-transform: uppercase;
+  color: #929796;
+  background-color: dimgray;
+  border-radius: 2px;
+  grid-row: 1/3;
+
+}
+
+.box2 {
+
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #929796;
+
+  border-radius: 2px;
+  grid-column-end: 1 span;
+  }
+
+h1{
+  font-size: 20px;
+  text-align: center ;
+  text-decoration-style: wavy;
+  color: white;
+  font-weight: bolder;
+  display: block;
+  line-height:2.5 em ;
+  height: 2.5 em;
+  background: #404040; /* Fallback IE 6-8 */
+  background-color: rgba(40, 40, 40, 0.6);
+}
+
+h2{
+  font-size: 18px;
+  text-align: center ;
+  text-decoration-style: wavy;
+  color: black;
+  display: block;
+  font-weight: bolder;
+  line-height:2.5 em ;
+  height: 2.5 em;
+}
+
+h3{
+  font-size: 16px;
+  text-align: center ;
+  text-decoration-style: wavy;
+  color: black;
+  font-weight: bold;
+
+}
+.pitch {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #929796;
+  grid-column: 1/3 ;
+  height: 250px ;
+  background-image: url('hintergrund.jpg');
+  position: relative;
+
+
+}
+
+.box3 {
+  font-size: 16px;
+  text-align: center ;
+  text-decoration-style: wavy;
+  color: black;
+  font-weight: bolder;
+  display: block;
+  line-height:2.5 em ;
+  height: 2.5 em;
+
+}

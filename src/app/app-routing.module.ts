@@ -7,6 +7,7 @@ import {MeComponent} from './me/me.component';
 import {ConfigComponent} from './config/config.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
+import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
 import {SwipeComponent} from './swipe/swipe.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'forgotPassword/:email', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
+  { path: 'bewerberprofil', component: BewerberprofilComponent, canActivate: [DBLoggedIn] }, // will activate the route after the db is ready
 ];
 
 @NgModule({
