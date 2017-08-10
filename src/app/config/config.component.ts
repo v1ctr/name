@@ -24,4 +24,16 @@ export class ConfigComponent implements OnInit {
   save() {
     this.user.update();
   }
+  uploadFiles(files) {
+    const pendingUploads = [];
+    console.log(files);
+
+    for (let i = 0, numFiles = files.length; i < numFiles; i++) {
+      const file = new db.File({data: files[i]});
+      pendingUploads.push(file.upload());
+    }
+
+    Promise.all(pendingUploads).then(() => {
+    });
+  }
 }

@@ -18,7 +18,7 @@ export class VacancyComponent implements OnInit {
 
     ngOnInit() {
         let id = '';
-        this.route.params.subscribe(params => {
+        this.route.params.subscribe((params) => {
                 id = params['id'];
             },
             (error) => {
