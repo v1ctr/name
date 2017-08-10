@@ -4,27 +4,18 @@ declare module "baqend" {
 
     interface baqend {
         Vertragsart: binding.EntityFactory<model.Vertragsart>;
-        Todo: binding.EntityFactory<model.Todo>;
         Match: binding.EntityFactory<model.Match>;
         Berufsfeld: binding.EntityFactory<model.Berufsfeld>;
-        Message: binding.EntityFactory<model.Message>;
         Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
-        Activity: binding.ManagedFactory<model.Activity>;
-        Interger: binding.ManagedFactory<model.Interger>;
     }
 
     namespace model {
-        interface Vertragsart extends binding.Entity {
-            name: string;
+        interface Device extends binding.Entity {
+            deviceOs: string;
         }
 
-        interface Todo extends binding.Entity {
-            listId: string;
+        interface Vertragsart extends binding.Entity {
             name: string;
-            activities: Array<Activity>;
-            active: boolean;
-            done: boolean;
-            extra: string;
         }
 
         interface Match extends binding.Entity {
@@ -63,21 +54,6 @@ declare module "baqend" {
             name: string;
         }
 
-        interface Role extends binding.Entity {
-            name: string;
-            users: Set<User>;
-        }
-
-        interface Device extends binding.Entity {
-            deviceOs: string;
-        }
-
-        interface Message extends binding.Entity {
-            name: string;
-            message: string;
-            date: Date;
-        }
-
         interface Stellenangebot extends binding.Entity {
             gehalt: string;
             start: Date;
@@ -92,12 +68,9 @@ declare module "baqend" {
             userid: User;
         }
 
-        interface Activity extends binding.Managed {
-            start: Date;
-            end: Date;
-        }
-
-        interface Interger extends binding.Managed {
+        interface Role extends binding.Entity {
+            name: string;
+            users: Set<User>;
         }
 
     }

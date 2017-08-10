@@ -13,9 +13,12 @@ export class VacancyComponent implements OnInit {
     error;
 
     constructor(private router: Router, private route: ActivatedRoute) {
-        this.vacancy = new db.Stellenangebot();
-        this.vacancy.userid = db.User.me;
-        console.log(this.vacancy);
+        if (!db.User.me.iscomp) {
+            this.router.navigate(['/swipe']);
+        } else {
+            this.vacancy = new db.Stellenangebot();
+            this.vacancy.userid = db.User.me;
+        }
     }
 
     ngOnInit() {
@@ -35,7 +38,6 @@ export class VacancyComponent implements OnInit {
     }
 
     save() {
-        console.log(this.vacancy);
         this.vacancy.save();
     }
 }
