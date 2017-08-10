@@ -19,7 +19,7 @@ const routes: Routes = [
     {path: 'config', component: ConfigComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'vacancies', component: VacanciesComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'vacancy', component: VacancyComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
-    {path: 'vacancy/:id', component: VacancyComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
+    {path: 'vacancy/:key', component: VacancyComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'signup/me', component: MeComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'forgotPassword/:email', component: ForgotPasswordComponent, resolve: {db: DBReady}},
