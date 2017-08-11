@@ -1,62 +1,56 @@
-
-<h1>Config</h1>
-<div class="row">
-  <div class="col-sm-offset-3 col-sm-6 col-1">
-    <div class="panel panel-default">
-      <div class="panel-heading">Kurzprofil</div>
-      <div class="panel-body">
-        <form #form="ngForm">
-          <!--Wird nur bei iscomp == false angezeigt -->
-          <div *ngIf="!user.iscomp" class="row">
-          <div class="grid-layout">
-            <div class="box1">
-              <label>Profilbild</label>
-              <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
-            </div>
+<div class="panel panel-default">
+  <div class="panel-heading">Kurzprofil</div>
+  <div class="panel-body">
+    <form #form="ngForm">
+      <!--Wird nur bei iscomp == false angezeigt -->
+      <div *ngIf="!user.iscomp" class="row">
+        <div class="grid-layout">
+          <div class="box1">
+            <label>Profilbild</label>
+            <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
+          </div>
 
 
-            <div class="box2">
+          <div class="box2">
             <label>Name</label>
-             <h2>{{user.name}}</h2>
-            </div>
-
-            <div class="box2">
-              <label>Jobbezeichnung</label>
-              <h2>{{user.jobBezeichnung}}</h2>
-            </div>
-
-
-            <div class="pitch">
-              <label>Pitch</label>
-              <h1>{{user.pitch}}</h1>
-            </div>
-
-
-            <div class="box3">
-              <label>Ausbildung</label>
-              <h2>{{user.ausbildung}}</h2>
-            </div>
-
-            <div class="box3">
-              <label>Kernkompetenzen</label>
-              <h2>{{user.skill}}</h2>
-            </div>
-            <div class="box3">
-              <label>Sprachen</label>
-              <h2>{{user.sprache}}</h2>
-            </div>
-
-            <div class="box3">
-              <label>Softskills</label>
-              <h2>{{user.softskill}}</h2>
-            </div>
-
-
-
+            <h2>{{user.name}}</h2>
           </div>
+
+          <div class="box2">
+            <label>Jobbezeichnung</label>
+            <h2>{{user.jobBezeichnung}}</h2>
           </div>
-        </form>
+
+
+          <div class="pitch">
+            <label>Pitch</label>
+            <h1>{{user.pitch}}</h1>
+          </div>
+
+
+          <div class="box3">
+            <label>Ausbildung</label>
+            <h2>{{user.ausbildung}}</h2>
+          </div>
+
+          <div class="box3">
+            <label>Kernkompetenzen</label>
+            <h2>{{user.skill}}</h2>
+          </div>
+          <div class="box3">
+            <label>Sprachen</label>
+            <h2>{{user.sprache}}</h2>
+          </div>
+
+          <div class="box3">
+            <label>Softskills</label>
+            <h2>{{user.softskill}}</h2>
+          </div>
+
+
+
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
