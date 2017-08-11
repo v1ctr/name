@@ -38,8 +38,8 @@ h1{
   color: white;
   font-weight: bolder;
   display: block;
-  line-height:2.5 em ;
-  height: 2.5 em;
+  line-height:2.5em ;
+  height: 2.5em;
   background: #404040; /* Fallback IE 6-8 */
   background-color: rgba(40, 40, 40, 0.6);
 }
@@ -48,6 +48,9 @@ h2{
   font-size: 16px;
   text-align: center ;
   display: block;
+  font-weight: bolder;
+  line-height:2.5em ;
+  height: 2.5em;
 }
 
 
@@ -62,6 +65,16 @@ h2{
   background-image: url('hintergrund.jpg');
 }
 
+.box3 {
+  font-size: 16px;
+  text-align: center;
+  text-decoration-style: wavy;
+  color: black;
+  font-weight: bolder;
+  display: block;
+  line-height: 2.5em;
+  height: 2.5em;
+}
 
 
 label{
