@@ -24,7 +24,12 @@ export class LoginComponent {
 
   logIn() {
     db.User.login(this.user.username, this.user.password).then(() => {
-      this.router.navigate(['/config']);
+      if (db.User.me.iscomp) {
+        this.router.navigate(['/config/unternehmen']);
+      }
+      else {
+        this.router.navigate(['/config/bewerber']);
+      }
     }, (error) => {
       this.error = error.message;
     });
