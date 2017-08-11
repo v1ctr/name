@@ -7,44 +7,44 @@
         <div class="grid-layout">
           <div class="box1">
             <label>Profilbild</label>
-            <input type="file" [(ngModel)]="user.bilder" class="form-control" name="bilder" required>
+              <input type="file" [(ngModel)]="bewerber.profilbild" class="form-control" name="bilder" required>
           </div>
 
 
           <div class="box2">
             <label>Name</label>
-            <h2>{{user.name}}</h2>
+              <h2>{{bewerber.titel}} {{bewerber.vorname}} {{bewerber.nachname}}</h2>
           </div>
 
           <div class="box2">
             <label>Jobbezeichnung</label>
-            <h2>{{user.jobBezeichnung}}</h2>
+              <h2>{{bewerber.jobBezeichnung}}</h2>
           </div>
 
 
           <div class="pitch">
             <label>Pitch</label>
-            <h1>{{user.pitch}}</h1>
+              <h1>{{bewerber.pitch}}</h1>
           </div>
 
 
           <div class="box3">
             <label>Ausbildung</label>
-            <h2>{{user.ausbildung}}</h2>
+              <h2>{{bewerber.ausbildung}}</h2>
           </div>
 
           <div class="box3">
             <label>Kernkompetenzen</label>
-            <h2>{{user.skill}}</h2>
+              <h2>{{bewerber.fachkompetenzen}}</h2>
           </div>
           <div class="box3">
             <label>Sprachen</label>
-            <h2>{{user.sprache}}</h2>
+              <h2>{{bewerber.sprachen}}</h2>
           </div>
 
           <div class="box3">
             <label>Softskills</label>
-            <h2>{{user.softskill}}</h2>
+              <h2>{{bewerber.softskills}}</h2>
           </div>
 
 
