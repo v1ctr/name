@@ -1,28 +1,24 @@
-<div class="row">
-  <div class="col-sm-offset-3 col-sm-6 col-1">
-    <div class="panel panel-default">
-      <div class="panel-heading">Login</div>
-      <div class="panel-body">
-        <form #form="ngForm">
-          <div class="row">
-            <div class="form-group col-lg-12">
-              <label>E-Mail</label>
-              <input type="text" [(ngModel)]="user.username" class="form-control" name="username" required>
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Password</label>
-              <input type="password" [(ngModel)]="user.password" class="form-control" name="password" required>
-            </div>
-          </div>
-          <a [routerLink]=" ['../signup'] " routerLinkActive="active">Ich habe noch keinen Account</a>
-            <br>
-            <a [routerLink]=" ['../forgotPassword', user.username]" routerLinkActive="active">Passwort vergessen?</a>
-          <div class="pull-right">
-            <button class="btn btn-info" type="button" (click)="logIn()" [disabled]="!form.valid">Log In</button>
-          </div>
-        </form>
+<div class="panel panel-default">
+  <div class="panel-heading">Login</div>
+  <div class="panel-body">
+    <form #form="ngForm">
+      <div class="row">
+        <div class="form-group col-lg-12">
+          <label>E-Mail</label>
+          <input type="text" [(ngModel)]="user.username" class="form-control" name="username" required>
+        </div>
+        <div class="form-group col-lg-12">
+          <label>Password</label>
+          <input type="password" [(ngModel)]="user.password" class="form-control" name="password" required>
+        </div>
       </div>
-    </div>
-    <div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
+      <a [routerLink]=" ['../signup'] " routerLinkActive="active">Ich habe noch keinen Account</a>
+      <br>
+      <a [routerLink]=" ['../forgotPassword', user.username]" routerLinkActive="active">Passwort vergessen?</a>
+      <div class="pull-right">
+        <button class="btn btn-info" type="button" (click)="logIn()" [disabled]="!form.valid">Log In</button>
+      </div>
+    </form>
   </div>
 </div>
+<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
