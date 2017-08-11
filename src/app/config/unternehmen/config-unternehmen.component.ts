@@ -16,6 +16,7 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     constructor(private router: Router) {
         this.user = db.User.me;
+        this.unternehmen = new db.Unternehmen();
         db.Unternehmen.find().equal('userid', this.user).singleResult((unternehmen) => {
             if (unternehmen) {
                 this.unternehmen = unternehmen;

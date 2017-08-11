@@ -18,7 +18,7 @@ export class BewerberprofilComponent implements OnInit {
             if (bewerber) {
                 this.bewerber = bewerber;
             } else {
-                this.router.navigate(['/config/bewerber'])
+                this.router.navigate(['/bewerberprofil'])
             }
         });
     }
@@ -29,7 +29,7 @@ export class BewerberprofilComponent implements OnInit {
             if (bewerber) {
                 this.bewerber = bewerber;
             } else {
-                this.router.navigate(['/config/bewerber'])
+                this.router.navigate(['/bewerberprofil'])
             }
         });
     }
