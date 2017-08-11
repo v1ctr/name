@@ -72,4 +72,11 @@
             <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf" required>
         </md-input-container>
     </div>
+  <h2>Ich suche</h2>
+  <md-select [multiple]="true" placeholder="Vertragsart">
+    <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart.id">
+      {{ vertragsart.name }}
+    </md-option>
+  </md-select>
 </form>
+

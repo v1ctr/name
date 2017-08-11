@@ -1,9 +1,39 @@
 import {BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
-import {MdToolbarModule, MdMenuModule, MdButtonModule, MdIconModule, MdInputModule} from '@angular/material';
+import {CdkTableModule} from '@angular/cdk';
+import {
+  MdAutocompleteModule,
+  MdButtonModule,
+  MdCardModule,
+  MdChipsModule,
+  MdDatepickerModule,
+  MdDialogModule,
+  MdExpansionModule,
+  MdGridListModule,
+  MdIconModule,
+  MdInputModule,
+  MdListModule,
+  MdMenuModule,
+  MdNativeDateModule,
+  MdPaginatorModule,
+  MdProgressBarModule,
+  MdProgressSpinnerModule,
+  MdRadioModule,
+  MdRippleModule,
+  MdSelectModule,
+  MdSidenavModule,
+  MdSliderModule,
+  MdSlideToggleModule,
+  MdSnackBarModule,
+  MdSortModule,
+  MdTableModule,
+  MdTabsModule,
+  MdToolbarModule,
+  MdTooltipModule,
+} from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -38,17 +68,21 @@ import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
     imports: [
         BrowserModule,
         FormsModule,
+      ReactiveFormsModule,
         AppRoutingModule,
         SwipeCardsModule,
-        MdToolbarModule,
-        MdMenuModule,
-        MdButtonModule,
-        MdIconModule,
         BrowserAnimationsModule,
-        MdInputModule
+      MdToolbarModule,
+      MdButtonModule,
+      MdInputModule,
+      MdMenuModule,
+      MdIconModule,
+      MdSelectModule,
+      CdkTableModule
+
     ],
     providers: [DB_PROVIDERS],
-    bootstrap: [AppComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

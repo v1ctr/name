@@ -11,17 +11,23 @@ export class ConfigBewerberComponent implements OnInit {
 
     user: model.User;
     bewerber: model.Bewerber;
+    vertragsarten: model.Vertragsart[];
 
     error;
 
     constructor(private router: Router) {
         this.user = db.User.me;
+        this.bewerber = new db.Bewerber();
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
                 this.bewerber = bewerber;
             } else {
                 this.bewerber = new db.Bewerber();
             }
+        });
+        db.Vertragsart.find().resultList((vertragsarten) => {
+          this.vertragsarten = vertragsarten;
+          console.log(vertragsarten);
         });
     }
 
