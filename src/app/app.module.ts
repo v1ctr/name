@@ -1,7 +1,9 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
+import {MdToolbarModule, MdMenuModule, MdButtonModule, MdIconModule, MdInputModule} from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -10,6 +12,8 @@ import {MeComponent} from './me/me.component';
 import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigComponent} from './config/config.component';
+import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
+import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
@@ -23,19 +27,27 @@ import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
         MeComponent,
         SignupComponent,
         ConfigComponent,
+        ConfigUnternehmenComponent,
+        ConfigBewerberComponent,
         LoginComponent,
         ForgotPasswordComponent,
         NewPasswordComponent,
         SwipeComponent,
         VacanciesComponent,
         VacancyComponent,
-        BewerberprofilComponent,
+        BewerberprofilComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         AppRoutingModule,
-        SwipeCardsModule
+        SwipeCardsModule,
+        MdToolbarModule,
+        MdMenuModule,
+        MdButtonModule,
+        MdIconModule,
+        BrowserAnimationsModule,
+        MdInputModule
     ],
     providers: [DB_PROVIDERS],
     bootstrap: [AppComponent],
