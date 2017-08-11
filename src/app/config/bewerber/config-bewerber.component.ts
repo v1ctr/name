@@ -10,6 +10,7 @@ import {db, model} from 'baqend';
 export class ConfigBewerberComponent implements OnInit {
 
   user: model.User;
+    bewerber: model.Bewerber;
 
   error;
 
@@ -21,9 +22,16 @@ export class ConfigBewerberComponent implements OnInit {
 
   ngOnInit() {
     this.user = db.User.me;
+      db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
+          if (bewerber) {
+              this.bewerber = bewerber;
+          } else {
+              this.bewerber = new db.Bewerber();
+          }
+      });
   }
 
   save() {
-    this.user.update();
+      this.user.save();
   }
 }
