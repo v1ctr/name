@@ -15,6 +15,10 @@ export class BewerberprofilComponent implements OnInit {
 
   }
 
+  getImageUrl(user) {
+    return new db.File(user.bilder).url;
+  }
+
   ngOnInit() {
     this.user = db.User.me;
   }
