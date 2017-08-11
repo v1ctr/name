@@ -24,7 +24,7 @@ export class LoginComponent {
 
   logIn() {
     db.User.login(this.user.username, this.user.password).then(() => {
-      this.router.navigate(['/swipe']);
+        this.router.navigate(['/swipe']);
     }, (error) => {
       this.error = error.message;
     });
