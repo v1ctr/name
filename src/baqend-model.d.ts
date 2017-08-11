@@ -1,77 +1,108 @@
-import {binding} from "baqend";
+import {binding, GeoPoint} from "baqend";
 
 declare module "baqend" {
 
-    interface baqend {
-        Vertragsart: binding.EntityFactory<model.Vertragsart>;
-        Match: binding.EntityFactory<model.Match>;
-        Berufsfeld: binding.EntityFactory<model.Berufsfeld>;
-        Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
+  interface baqend {
+    Vertragsart: binding.EntityFactory<model.Vertragsart>;
+    Unternehmen: binding.EntityFactory<model.Unternehmen>;
+    Berufsfeld: binding.EntityFactory<model.Berufsfeld>;
+    Match: binding.EntityFactory<model.Match>;
+    Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
+    Bewerber: binding.EntityFactory<model.Bewerber>;
+  }
+
+  namespace model {
+    interface Vertragsart extends binding.Entity {
+      name: string;
     }
 
-    namespace model {
-        interface Device extends binding.Entity {
-            deviceOs: string;
-        }
-
-        interface Vertragsart extends binding.Entity {
-            name: string;
-        }
-
-        interface Match extends binding.Entity {
-            bid: User;
-            userlike: boolean;
-            complike: boolean;
-        }
-
-        interface User extends binding.Entity {
-            email: string;
-            name: string;
-            strasse: string;
-            hausnr: string;
-            zusatz: string;
-            plz: number;
-            ort: string;
-            telefon: number;
-            gruendung: Date;
-            Logo: string;
-            Bilder: Array<string>;
-            mitarbeiterAnzahl: number;
-            page: string;
-            sprache: Array<string>;
-            pitch: string;
-            geburt: Date;
-            ausbildung: string;
-            lebenslauf: string;
-            skill: Array<string>;
-            iscomp: boolean;
-            softskill: string;
-            jobBezeichnung: string;
-            branche: Set<Berufsfeld>;
-        }
-
-        interface Berufsfeld extends binding.Entity {
-            name: string;
-        }
-
-        interface Stellenangebot extends binding.Entity {
-            gehalt: string;
-            start: Date;
-            bezeichnung: string;
-            beschaeftigung: Set<Vertragsart>;
-            beschreibung: string;
-            partner: string;
-            anforderung: string;
-            sprache: Array<string>;
-            aktiv: boolean;
-            userid: User;
-            befristet: boolean;
-        }
-
-        interface Role extends binding.Entity {
-            name: string;
-            users: Set<User>;
-        }
-
+    interface Unternehmen extends binding.Entity {
+      userid: User;
+      name: string;
+      ort: string;
+      plz: number;
+      strasse: string;
+      hausnummer: string;
+      adresszusatz: string;
+      telefonnummer: string;
+      homepage: string;
+      ansprechpartner: string;
+      gruendung: Date;
+      logo: string;
+      mitarbeiterAnzahl: number;
+      branche: Berufsfeld;
+      pitch: string;
+      bilder: Set<string>;
     }
+
+    interface User extends binding.Entity {
+      name: string;
+      strasse: string;
+      hausnr: string;
+      plz: number;
+      ort: string;
+      mitarbeiterAnzahl: number;
+      page: string;
+      pitch: string;
+      iscomp: boolean;
+      jobBezeichnung: string;
+    }
+
+    interface Berufsfeld extends binding.Entity {
+      name: string;
+    }
+
+    interface Match extends binding.Entity {
+      bid: User;
+      userlike: boolean;
+      complike: boolean;
+    }
+
+    interface Role extends binding.Entity {
+      name: string;
+      users: Set<User>;
+    }
+
+    interface Device extends binding.Entity {
+      deviceOs: string;
+    }
+
+    interface Stellenangebot extends binding.Entity {
+      gehalt: string;
+      start: Date;
+      bezeichnung: string;
+      beschaeftigung: Set<Vertragsart>;
+      beschreibung: string;
+      partner: string;
+      anforderung: string;
+      sprache: Array<string>;
+      aktiv: boolean;
+      userid: User;
+      befristet: boolean;
+    }
+
+    interface Bewerber extends binding.Entity {
+      user: User;
+      titel: string;
+      vorname: string;
+      nachname: string;
+      geburtsdatum: Date;
+      plz: number;
+      wohnort: string;
+      strasse: string;
+      hausnummer: string;
+      adresszusatz: string;
+      telefonnummer: string;
+      homepage: string;
+      sprachen: Set<string>;
+      jobBezeichnung: string;
+      ausbildung: string;
+      fachkompetenzen: Set<string>;
+      softskills: Set<string>;
+      pitch: string;
+      profilbild: string;
+      lebenslauf: string;
+    }
+
+  }
 }
