@@ -1,3 +1,28 @@
+<md-toolbar color="primary">
+  <span>Strawberry Unicorn</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+    <md-icon>account_circle</md-icon>
+  </button>
+  <md-menu #menu="mdMenu">
+    <a *ngIf="loggedIn" md-menu-item [routerLink]=" ['./login'] ">
+      <md-icon>dialpad</md-icon>
+      <span>Abmelden</span>
+    </a>
+    <a *ngIf="!loggedIn" md-menu-item [routerLink]=" ['./login'] ">
+      <md-icon>voicemail</md-icon>
+      <span>Anmelden</span>
+    </a>
+    <a *ngIf="loggedIn" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+      <md-icon>settings</md-icon>
+      <span>Einstellungen</span>
+    </a>
+  </md-menu>
+</md-toolbar>
+
+
 <nav class="container">
   <ul class="nav nav-pills">
     <li>
@@ -24,7 +49,11 @@
   </ul>
 </nav>
 <main class="container">
-  <router-outlet></router-outlet>
+  <div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </main>
 
 <footer class="container">

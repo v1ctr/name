@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {db} from 'baqend';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public angularbaqendLogo = 'assets/Angular+Baqend.svg';
-  public baqend = 'https://www.baqend.com';
+  loggedIn: boolean;
+
+  constructor(){
+    this.loggedIn = false;
+    db.ready().then(() => {
+      if (db.User.me) {
+        this.loggedIn = true;
+      }else{
+        this.loggedIn = false;
+      }
+    });
+  }
 
 }
