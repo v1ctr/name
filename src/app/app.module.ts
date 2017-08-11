@@ -11,7 +11,6 @@ import {DB_PROVIDERS} from './db';
 import {MeComponent} from './me/me.component';
 import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
-import {ConfigComponent} from './config/config.component';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
@@ -26,7 +25,6 @@ import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
         AppComponent,
         MeComponent,
         SignupComponent,
-        ConfigComponent,
         ConfigUnternehmenComponent,
         ConfigBewerberComponent,
         LoginComponent,

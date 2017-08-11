@@ -4,7 +4,6 @@ import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {DBLoggedIn, DBReady} from './db';
 import {MeComponent} from './me/me.component';
-import {ConfigComponent} from './config/config.component';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
     {path: 'swipe', component: SwipeComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}}, // will activate the route after the db is ready
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}}, // will activate the route after the db is ready
-    {path: 'config', component: ConfigComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'vacancies', component: VacanciesComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
@@ -29,7 +27,7 @@ const routes: Routes = [
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'forgotPassword/:email', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
-  { path: 'bewerberprofil', component: BewerberprofilComponent, canActivate: [DBLoggedIn] }, // will activate the route after the db is ready
+    {path: 'bewerberprofil', component: BewerberprofilComponent, canActivate: [DBLoggedIn]}, // will activate the route after the db is ready
 ];
 
 @NgModule({
