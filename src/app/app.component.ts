@@ -16,11 +16,11 @@ export class AppComponent {
         db.ready().then(() => {
             if (db.User.me) {
                 this.loggedIn = true;
+                this.iscomp = db.User.me.iscomp;
             } else {
                 this.loggedIn = false;
             }
         });
-
     }
 
 }

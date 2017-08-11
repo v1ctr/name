@@ -15,9 +15,14 @@ export class ConfigUnternehmenComponent implements OnInit {
     error;
 
     constructor(private router: Router) {
-        if (!db.User.me.iscomp) {
-            this.router.navigate(['/config/bewerber']);
-        }
+        this.user = db.User.me;
+        db.Unternehmen.find().equal('userid', this.user).singleResult((unternehmen) => {
+            if (unternehmen) {
+                this.unternehmen = unternehmen;
+            } else {
+                this.unternehmen = new db.Unternehmen();
+            }
+        });
     }
 
     ngOnInit() {
@@ -28,7 +33,7 @@ export class ConfigUnternehmenComponent implements OnInit {
             } else {
                 this.unternehmen = new db.Unternehmen();
             }
-        })
+        });
     }
 
     save() {

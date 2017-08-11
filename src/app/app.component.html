@@ -15,7 +15,11 @@
       <md-icon>voicemail</md-icon>
       <span>Anmelden</span>
     </a>
-    <a *ngIf="loggedIn" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+    <a *ngIf="loggedIn&&iscomp" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+      <md-icon>settings</md-icon>
+      <span>Einstellungen</span>
+    </a>
+    <a *ngIf="loggedIn&&!iscomp" md-menu-item [routerLink]=" ['./config/bewerber'] ">
       <md-icon>settings</md-icon>
       <span>Einstellungen</span>
     </a>
@@ -26,25 +30,25 @@
 <nav class="container">
   <ul class="nav nav-pills">
     <li>
-      <a [routerLink]=" ['./login'] " routerLinkActive="active">Login</a>
+      <a *ngIf="!loggedIn" [routerLink]=" ['./login'] " routerLinkActive="active">Login</a>
     </li>
     <li>
-      <a [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
+      <a *ngIf="!loggedIn" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
     </li>
     <li>
-      <a [routerLink]=" ['./config'] " routerLinkActive="active">Config</a>
+      <a *ngIf="loggedIn" [routerLink]=" ['./config'] " routerLinkActive="active">Config</a>
     </li>
     <li>
-      <a [routerLink]=" ['/swipe'] " routerLinkActive="active">Let's swipe!</a>
+      <a *ngIf="loggedIn" [routerLink]=" ['/swipe'] " routerLinkActive="active">Let's swipe!</a>
     </li>
     <li>
-      <a [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
+      <a *ngIf="loggedIn&&!iscomp" [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
     </li>
     <li>
-      <a [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
+      <a *ngIf="loggedIn&&iscomp" [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
     </li>
     <li>
-      <a [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
+      <a *ngIf="loggedIn&&iscomp" [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
     </li>
   </ul>
 </nav>

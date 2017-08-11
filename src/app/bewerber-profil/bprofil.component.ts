@@ -3,20 +3,35 @@ import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 
 @Component({
-  selector: 'app-bewerberprofil',
-  templateUrl: './bprofil.component.html',
-  styleUrls: ['./bprofil.component.scss']
+    selector: 'app-bewerberprofil',
+    templateUrl: './bprofil.component.html',
+    styleUrls: ['./bprofil.component.scss']
 })
 export class BewerberprofilComponent implements OnInit {
 
-  user: model.User;
+    user: model.User;
+    bewerber: model.Bewerber;
 
-  constructor(private router: Router) {
+    constructor(private router: Router) {
+        this.user = db.User.me;
+        db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
+            if (bewerber) {
+                this.bewerber = bewerber;
+            } else {
+                this.router.navigate(['/config/bewerber'])
+            }
+        });
+    }
 
-  }
-
-  ngOnInit() {
-    this.user = db.User.me;
-  }
+    ngOnInit() {
+        this.user = db.User.me;
+        db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
+            if (bewerber) {
+                this.bewerber = bewerber;
+            } else {
+                this.router.navigate(['/config/bewerber'])
+            }
+        });
+    }
 
 }
