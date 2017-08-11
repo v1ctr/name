@@ -1,29 +1,61 @@
 <form class="full-width" #form="ngForm">
-  <!-- Unternehmeransicht -->
-  <h2>One-Sentence-Pitch</h2>
+    <!-- Unternehmeransicht -->
+    <h2>Unternehmensdaten</h2>
+    <div class="row">
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.name" placeholder="Unternehmensname" name="name" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.homepage" placeholder="Homepage" name="homepage" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.gruendung" placeholder="Gruendungsdatum" name="gruendung" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.branche" placeholder="Branche" name="branche" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.mitarbeiterAnzahl" placeholder="Anzahl der Mitarbeiter"
+                   name="mitarbeiter" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.logo" placeholder="Logo" name="logo" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.bilder" placeholder="Bilder" name="bilder" required>
+        </md-input-container>
+    </div>
+    <h2>One-Sentence-Pitch</h2>
     <div class="row">
         <md-input-container class="col-sm-12">
             <textarea mdInput [(ngModel)]="unternehmen.pitch" name="pitch" placeholder="Pitch" required></textarea>
-    </md-input-container>
-  </div>
-  <h2>Adresse</h2>
+        </md-input-container>
+    </div>
+    <h2>Adresse</h2>
     <div class="row">
         <md-input-container class="col-md-8">
             <input mdInput [(ngModel)]="unternehmen.strasse" name="strasse" placeholder="Strasse" required>
-    </md-input-container>
+        </md-input-container>
         <md-input-container class="col-md-2">
             <input mdInput [(ngModel)]="unternehmen.hausnummer" placeholder="Nummer" name="hausnr" required>
-    </md-input-container>
-    <md-input-container class="column">
-        <input mdInput [(ngModel)]="unternehmen.adresszusatz" placeholder="Zusatz" name="zusatz">
-    </md-input-container>
-  </div>
+        </md-input-container>
+        <md-input-container class="column">
+            <input mdInput [(ngModel)]="unternehmen.adresszusatz" placeholder="Zusatz" name="zusatz">
+        </md-input-container>
+    </div>
     <div class="row">
         <md-input-container class="col-sm-2">
             <input mdInput [(ngModel)]="unternehmen.plz" placeholder="PLZ" name="plz" required>
-    </md-input-container>
+        </md-input-container>
         <md-input-container class="col-sm-10">
             <input mdInput [(ngModel)]="unternehmen.ort" placeholder="Ort" name="ort" required>
-    </md-input-container>
-  </div>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.ansprechpartner" placeholder="Ansprechpartner"
+                   name="ansprechpartner" required>
+        </md-input-container>
+        <md-input-container class="col-sm-10">
+            <input mdInput [(ngModel)]="unternehmen.telefonnummer" placeholder="Telefon" name="telefon" required>
+        </md-input-container>
+    </div>
 </form>
