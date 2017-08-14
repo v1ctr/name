@@ -48,7 +48,7 @@ import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {SwipeComponent} from './swipe/swipe.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
-import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
+import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
 
 @NgModule({
     declarations: [
