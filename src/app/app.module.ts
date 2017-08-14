@@ -78,7 +78,7 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
       MdMenuModule,
       MdIconModule,
       MdSelectModule,
-      CdkTableModule
+      MdChipsModule
 
     ],
     providers: [DB_PROVIDERS],
