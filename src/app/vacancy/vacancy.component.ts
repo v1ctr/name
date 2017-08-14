@@ -17,7 +17,11 @@ export class VacancyComponent implements OnInit {
             this.router.navigate(['/swipe']);
         } else {
             this.vacancy = new db.Stellenangebot();
-            this.vacancy.userid = db.User.me;
+            db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
+                if (unternehmen) {
+                    this.vacancy.unternehmen = unternehmen;
+                }
+            });
             this.vacancy.aktiv = true;
         }
     }

@@ -9,6 +9,8 @@ declare module "baqend" {
         Match: binding.EntityFactory<model.Match>;
         Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
         Bewerber: binding.EntityFactory<model.Bewerber>;
+        UnternehmenLikes: binding.EntityFactory<model.UnternehmenLikes>;
+        BewerberLikes: binding.EntityFactory<model.BewerberLikes>;
     }
 
     namespace model {
@@ -28,24 +30,15 @@ declare module "baqend" {
             homepage: string;
             ansprechpartner: string;
             gruendung: Date;
-            logo: string;
             mitarbeiterAnzahl: number;
             branche: Berufsfeld;
             pitch: string;
-            bilder: Set<string>;
+            logo: undefined;
+            bilder: Array<undefined>;
         }
 
         interface User extends binding.Entity {
-            name: string;
-            strasse: string;
-            hausnr: string;
-            plz: number;
-            ort: string;
-            mitarbeiterAnzahl: number;
-            page: string;
-            pitch: string;
             iscomp: boolean;
-            jobBezeichnung: string;
         }
 
         interface Berufsfeld extends binding.Entity {
@@ -53,18 +46,8 @@ declare module "baqend" {
         }
 
         interface Match extends binding.Entity {
-            bid: User;
-            userlike: boolean;
-            complike: boolean;
-        }
-
-        interface Role extends binding.Entity {
-            name: string;
-            users: Set<User>;
-        }
-
-        interface Device extends binding.Entity {
-            deviceOs: string;
+            angebot: Stellenangebot;
+            bewerber: Bewerber;
         }
 
         interface Stellenangebot extends binding.Entity {
@@ -77,8 +60,8 @@ declare module "baqend" {
             anforderung: string;
             sprache: Array<string>;
             aktiv: boolean;
-            userid: User;
             befristet: boolean;
+            unternehmen: Unternehmen;
         }
 
         interface Bewerber extends binding.Entity {
@@ -100,8 +83,30 @@ declare module "baqend" {
             fachkompetenzen: Set<string>;
             softskills: Set<string>;
             pitch: string;
-            profilbild: string;
-            lebenslauf: string;
+            profilbild: undefined;
+            lebenslauf: undefined;
+            vertragsarten: Set<Vertragsart>;
+        }
+
+        interface Role extends binding.Entity {
+            name: string;
+            users: Set<User>;
+        }
+
+        interface UnternehmenLikes extends binding.Entity {
+            unternehmen: Unternehmen;
+            bewerber: Bewerber;
+            like: boolean;
+        }
+
+        interface Device extends binding.Entity {
+            deviceOs: string;
+        }
+
+        interface BewerberLikes extends binding.Entity {
+            bewerber: Bewerber;
+            angebot: Stellenangebot;
+            like: boolean;
         }
 
     }

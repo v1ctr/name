@@ -12,6 +12,8 @@ export class BewerberprofilComponent implements OnInit {
     user: model.User;
     bewerber: model.Bewerber;
 
+    error;
+
     constructor(private router: Router) {
         this.user = db.User.me;
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
@@ -23,13 +25,18 @@ export class BewerberprofilComponent implements OnInit {
         });
     }
 
+
+  getImageUrl(user) {
+    return new db.File(user.profilbild).url;
+  }
+
     ngOnInit() {
         this.user = db.User.me;
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
                 this.bewerber = bewerber;
             } else {
-                this.router.navigate(['/bewerberprofil'])
+                this.router.navigate(['/bewerberprofil']);
             }
         });
     }
