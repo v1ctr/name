@@ -81,4 +81,10 @@ export class SwipeComponent implements OnInit {
 
   }
 
+  getRandomBackground(){
+    //return "'-webkit-linear-gradient(to right, #73c8a9, #373b44);'"
+    //return {'background': '#E33E22'};
+    //return {'background-image': 'linear-gradient(to right, #73c8a9, #373b44)'};
+  }
+
 }

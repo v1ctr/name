@@ -16,6 +16,13 @@ export class ConfigBewerberComponent implements OnInit {
 
     error;
 
+  files: any;
+  disabled: boolean = false;
+
+  toggleDisabled(): void {
+    this.disabled = !this.disabled;
+  }
+
     constructor(private router: Router) {
         this.user = db.User.me;
         this.bewerber = new db.Bewerber();
