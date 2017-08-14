@@ -86,3 +86,30 @@
     </div>
 </form>
 
+<div layout="row">
+  <md-input-container tdFileDrop
+                      [disabled]="disabled"
+                      (fileDrop)="files = $event"
+                      (click)="fileInput.inputElement.click()"
+                      (keyup.enter)="fileInput.inputElement.click()"
+                      (keyup.delete)="fileInput.clear()"
+                      (keyup.backspace)="fileInput.clear()"
+                      flex>
+    <input mdInput
+           placeholder="select or drop files"
+           [value]="files?.length ? (files?.length + ' files') : files?.name"
+           [disabled]="disabled"
+           readonly/>
+  </md-input-container>
+  <button md-icon-button *ngIf="files" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
+    <md-icon>cancel</md-icon>
+  </button>
+  <td-file-input class="push-left-sm push-right-sm" #fileInput [(ngModel)]="files" multiple [disabled]="disabled">
+    <md-icon>folder</md-icon>
+    <span class="text-upper">Browse...</span>
+  </td-file-input>
+  <span>
+    <button md-raised-button color="accent" [disabled]="!files" class="text-upper">Submit</button>
+  </span>
+</div>
+

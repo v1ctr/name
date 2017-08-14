@@ -1,9 +1,12 @@
 import {BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
+import { HttpModule } from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
+import { CovalentFileModule } from '@covalent/core';
 import { AuthService } from './auth.service';
+import { RandomGradientDirective } from './random-gradient.directive';
 import {
   MdAutocompleteModule,
   MdButtonModule,
@@ -63,11 +66,13 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
         SwipeComponent,
         VacanciesComponent,
         VacancyComponent,
-        BewerberprofilComponent
+        BewerberprofilComponent,
+      RandomGradientDirective
     ],
     imports: [
         BrowserModule,
         FormsModule,
+      HttpModule,
       ReactiveFormsModule,
         AppRoutingModule,
         SwipeCardsModule,
@@ -79,7 +84,8 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
       MdIconModule,
       MdSelectModule,
       MdChipsModule,
-      MdListModule
+      MdListModule,
+      CovalentFileModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent]

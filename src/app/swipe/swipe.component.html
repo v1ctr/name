@@ -13,7 +13,7 @@
       <div class="card-header">
         <span>{{card.id}}</span>
       </div>
-      <div class="card-content">
+      <div [ngStyle]="getRandomBackground()" class="card-content">
         <div>{{card.pitch}}</div>
       </div>
     </sc-card>
