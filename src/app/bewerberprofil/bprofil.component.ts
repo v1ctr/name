@@ -12,8 +12,6 @@ export class BewerberprofilComponent implements OnInit {
     user: model.User;
     bewerber: model.Bewerber;
 
-    error;
-
     constructor(private router: Router) {
         this.user = db.User.me;
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
