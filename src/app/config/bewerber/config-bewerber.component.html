@@ -72,12 +72,14 @@
             <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf" required>
         </md-input-container>
     </div>
-    <h2>Ich suche</h2>
-    <md-select [multiple]="true" placeholder="Vertragsart">
-        <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart.id">
-            {{ vertragsart.name }}
-        </md-option>
+  <h2>Ich suche</h2>
+  <div class="row">
+    <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten" placeholder="Vertragsart">
+      <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
+        {{ vertragsart.name }}
+      </md-option>
     </md-select>
+  </div>
     <div class="pull-right">
         <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
     </div>

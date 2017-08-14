@@ -12,6 +12,7 @@ export class ConfigBewerberComponent implements OnInit {
     user: model.User;
     bewerber: model.Bewerber;
     vertragsarten: model.Vertragsart[];
+    selectedVertragsarten: string[];
 
     error;
 
