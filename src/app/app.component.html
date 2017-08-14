@@ -26,22 +26,22 @@
 <nav class="container">
   <ul class="nav nav-pills">
     <li>
-      <a *ngIf="!loggedIn" [routerLink]=" ['./login'] " routerLinkActive="active">Login</a>
+      <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./login'] " routerLinkActive="active">Login</a>
     </li>
     <li>
-      <a *ngIf="!loggedIn" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
+      <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
     </li>
     <li>
-      <a *ngIf="loggedIn" [routerLink]=" ['/swipe'] " routerLinkActive="active">Let's swipe!</a>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/swipe'] " routerLinkActive="active">Let's swipe!</a>
     </li>
     <li>
-      <a *ngIf="loggedIn&&!iscomp" [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
     </li>
     <li>
-      <a *ngIf="loggedIn&&iscomp" [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
     </li>
     <li>
-      <a *ngIf="loggedIn&&iscomp" [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
     </li>
   </ul>
 </nav>
