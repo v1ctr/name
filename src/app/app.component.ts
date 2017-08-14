@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {db} from 'baqend';
+import { Observable } from "rxjs";
+import { AuthService } from "./auth.service";
 
 @Component({
     selector: 'app-root',
@@ -8,19 +9,11 @@ import {db} from 'baqend';
 })
 export class AppComponent {
 
-    loggedIn: boolean;
+    isLoggedIn : Observable<boolean>;
     iscomp: boolean;
 
-    constructor() {
-        this.loggedIn = false;
-        db.ready().then(() => {
-            if (db.User.me) {
-                this.loggedIn = true;
-                this.iscomp = db.User.me.iscomp;
-            } else {
-                this.loggedIn = false;
-            }
-        });
+    constructor( public authService : AuthService ) {
+      this.isLoggedIn = authService.isLoggedIn();
     }
 
 }

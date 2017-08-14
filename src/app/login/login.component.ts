@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
+import { AuthService } from '../auth.service';
 import {db} from 'baqend';
 
 @Component({
@@ -16,7 +17,7 @@ export class LoginComponent {
   };
   error;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public authService : AuthService ) {
     if (db.User.me) {
       this.router.navigate(['/signup/me']);
     }
@@ -24,6 +25,8 @@ export class LoginComponent {
 
   logIn() {
     db.User.login(this.user.username, this.user.password).then(() => {
+      //Alle Komponenten über login informieren
+      this.authService.isLoginSubject.next(true);
       if (db.User.me.iscomp) {
         this.router.navigate(['/config/unternehmen']);
       }

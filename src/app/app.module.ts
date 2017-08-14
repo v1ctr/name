@@ -3,7 +3,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
-import {CdkTableModule} from '@angular/cdk';
+import { AuthService } from './auth.service';
 import {
   MdAutocompleteModule,
   MdButtonModule,
@@ -81,7 +81,7 @@ import {BewerberprofilComponent} from './bewerber-profil/bprofil.component';
       MdChipsModule
 
     ],
-    providers: [DB_PROVIDERS],
+    providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule {

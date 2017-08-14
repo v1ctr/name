@@ -7,19 +7,15 @@
     <md-icon>account_circle</md-icon>
   </button>
   <md-menu #menu="mdMenu">
-    <a *ngIf="loggedIn" md-menu-item [routerLink]=" ['./login'] ">
+    <a *ngIf="(isLoggedIn | async)" md-menu-item [routerLink]=" ['./login'] ">
       <md-icon>dialpad</md-icon>
       <span>Abmelden</span>
     </a>
-    <a *ngIf="!loggedIn" md-menu-item [routerLink]=" ['./login'] ">
+    <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]=" ['./login'] ">
       <md-icon>voicemail</md-icon>
       <span>Anmelden</span>
     </a>
-    <a *ngIf="loggedIn&&iscomp" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
-      <md-icon>settings</md-icon>
-      <span>Einstellungen</span>
-    </a>
-    <a *ngIf="loggedIn&&!iscomp" md-menu-item [routerLink]=" ['./config/bewerber'] ">
+    <a *ngIf="(isLoggedIn | async)" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
       <md-icon>settings</md-icon>
       <span>Einstellungen</span>
     </a>
