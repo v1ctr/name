@@ -4,6 +4,7 @@ declare module "baqend" {
 
     interface baqend {
         Vertragsart: binding.EntityFactory<model.Vertragsart>;
+        Sprache: binding.EntityFactory<model.Sprache>;
         Unternehmen: binding.EntityFactory<model.Unternehmen>;
         Berufsfeld: binding.EntityFactory<model.Berufsfeld>;
         Match: binding.EntityFactory<model.Match>;
@@ -15,6 +16,10 @@ declare module "baqend" {
 
     namespace model {
         interface Vertragsart extends binding.Entity {
+            name: string;
+        }
+
+        interface Sprache extends binding.Entity {
             name: string;
         }
 
@@ -39,6 +44,7 @@ declare module "baqend" {
 
         interface User extends binding.Entity {
             iscomp: boolean;
+            isConfigCompleted: boolean;
         }
 
         interface Berufsfeld extends binding.Entity {
@@ -58,10 +64,10 @@ declare module "baqend" {
             beschreibung: string;
             partner: string;
             anforderung: string;
-            sprache: Array<string>;
             aktiv: boolean;
             befristet: boolean;
             unternehmen: Unternehmen;
+            sprache: Set<Sprache>;
         }
 
         interface Bewerber extends binding.Entity {
@@ -77,15 +83,15 @@ declare module "baqend" {
             adresszusatz: string;
             telefonnummer: string;
             homepage: string;
-            sprachen: Set<string>;
             jobBezeichnung: string;
             ausbildung: string;
-            fachkompetenzen: Set<string>;
-            softskills: Set<string>;
             pitch: string;
             profilbild: undefined;
             lebenslauf: undefined;
             vertragsarten: Set<Vertragsart>;
+            sprachen: Set<Sprache>;
+            softskills: string;
+            fachkompetenzen: string;
         }
 
         interface Role extends binding.Entity {
