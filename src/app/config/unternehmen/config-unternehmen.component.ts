@@ -22,6 +22,7 @@ export class ConfigUnternehmenComponent implements OnInit {
                 this.unternehmen = unternehmen;
             } else {
                 this.unternehmen = new db.Unternehmen();
+                this.unternehmen.userid = this.user;
             }
         });
     }
@@ -33,11 +34,12 @@ export class ConfigUnternehmenComponent implements OnInit {
                 this.unternehmen = unternehmen;
             } else {
                 this.unternehmen = new db.Unternehmen();
+                this.unternehmen.userid = this.user;
             }
         });
     }
 
     save() {
-        this.user.save();
+        this.unternehmen.save();
     }
 }

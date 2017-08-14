@@ -24,11 +24,11 @@ export class ConfigBewerberComponent implements OnInit {
                 this.bewerber = bewerber;
             } else {
                 this.bewerber = new db.Bewerber();
+                this.bewerber.user = this.user;
             }
         });
         db.Vertragsart.find().resultList((vertragsarten) => {
           this.vertragsarten = vertragsarten;
-          console.log(vertragsarten);
         });
     }
 
@@ -39,11 +39,13 @@ export class ConfigBewerberComponent implements OnInit {
                 this.bewerber = bewerber;
             } else {
                 this.bewerber = new db.Bewerber();
+                this.bewerber.user = this.user;
             }
         });
     }
 
     save() {
-        this.user.save();
+        this.bewerber.vertragsarten = new db.Set(this.selectedVertragsarten);
+        this.bewerber.save();
     }
 }
