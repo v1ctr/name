@@ -78,8 +78,8 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
       MdMenuModule,
       MdIconModule,
       MdSelectModule,
-      MdChipsModule
-
+      MdChipsModule,
+      MdListModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent]

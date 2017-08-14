@@ -1,13 +1,9 @@
-<div *ngFor="let vacancy of vacancies">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{vacancy.bezeichnung}}</h3>
-    </div>
-    <div class="panel-body">
-      {{vacancy.beschreibung}}
-    </div>
-    <div class="panel-footer">
-      <a [routerLink]=" ['../vacancy', vacancy.key]" type="button" class="btn btn-default btn-block">Bearbeiten</a>
-    </div>
-  </div>
-</div>
+<md-nav-list>
+  <a md-list-item *ngFor="let vacancy of vacancies" [routerLink]=" ['../vacancy', vacancy.key]">
+    <h3 md-line> {{vacancy.bezeichnung}} </h3>
+    <p md-line>
+      <span> {{vacancy.beschreibung}} </span>
+    </p>
+    <md-icon>edit</md-icon>
+  </a>
+</md-nav-list>

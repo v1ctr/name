@@ -19,12 +19,13 @@ export class VacanciesComponent implements OnInit {
     }
 
     ngOnInit() {
+        /*
         db.Stellenangebot.find().equal('userid', db.User.me).resultList((result) => {
             this.vacancies = result;
         });
-        db.modules.get('permission_test')
-            .then((result) => {
-                console.log(result);
-            });
+        */
+      db.Stellenangebot.find().resultList((result) => {
+        this.vacancies = result;
+      });
     }
 }
