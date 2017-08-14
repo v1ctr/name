@@ -60,4 +60,7 @@
             <input mdInput [(ngModel)]="unternehmen.telefonnummer" placeholder="Telefon" name="telefon" required>
         </md-input-container>
     </div>
+    <div class="pull-right">
+        <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
+    </div>
 </form>
