@@ -13,8 +13,8 @@
         </md-input-container>
 
       <div class="col-sm-10">
-        <md-select class="col-sm-12" name="branche" [multiple]="true" [(ngModel)]="unternehmen.branche"
-                   placeholder="Branche">
+          <md-select class="col-sm-12" name="branche" [(ngModel)]="unternehmen.branche"
+                     placeholder="Branche">
           <md-option *ngFor="let branche of branchen" [value]="branche">
             {{ branche.name }}
           </md-option>

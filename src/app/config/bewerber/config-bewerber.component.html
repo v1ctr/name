@@ -142,8 +142,8 @@
 
 
     <div class="row">
-      <md-select class="col-sm-12" name="berufsfeld" [multiple]="true" [(ngModel)]="bewerber.berufsfeld"
-                 placeholder="Berufsfeld">
+        <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
+                   placeholder="Berufsfeld">
         <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
           {{ berufsfeld.name }}
         </md-option>
