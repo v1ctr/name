@@ -13,6 +13,9 @@ export class ConfigBewerberComponent implements OnInit {
     bewerber: model.Bewerber;
     vertragsarten: model.Vertragsart[];
     selectedVertragsarten: model.Vertragsart[] = [];
+    sprachen: model.Sprache[];
+    selectedSprachen: model.Sprache[] = [];
+    berufsfelder: model.Berufsfeld[];
 
     error;
 
@@ -29,6 +32,12 @@ export class ConfigBewerberComponent implements OnInit {
         db.Vertragsart.find().resultList((vertragsarten) => {
           this.vertragsarten = vertragsarten;
         });
+        db.Sprache.find().resultList((sprachen) => {
+          this.sprachen = sprachen;
+        });
+        db.Berufsfeld.find().resultList ((berufsfelder) => {
+          this.berufsfelder = berufsfelder;
+        });
     }
 
     ngOnInit() {
@@ -36,8 +45,11 @@ export class ConfigBewerberComponent implements OnInit {
             if (bewerber) {
                 this.bewerber = bewerber;
                 this.bewerber.vertragsarten.forEach((element) => {
-                    this.selectedVertragsarten.push(element);
-                });
+                this.selectedVertragsarten.push(element);
+              });
+              this.bewerber.sprachen.forEach((element) => {
+                this.selectedSprachen.push(element);
+              });
             } else {
                 this.bewerber = new db.Bewerber();
                 this.bewerber.user = this.user;
@@ -47,6 +59,7 @@ export class ConfigBewerberComponent implements OnInit {
 
     save() {
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
+        this.bewerber.sprachen = new Set (this.selectedSprachen);
         this.bewerber.save();
     }
 }

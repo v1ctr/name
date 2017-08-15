@@ -15,7 +15,7 @@
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum">
+            <input mdInput [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum" required>
         </md-input-container>
 
         <!-- <md-input-container class="column">
@@ -72,7 +72,7 @@
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.adresszusatz" placeholder="Zusatz" name="zusatz" required>
+            <input mdInput [(ngModel)]="bewerber.adresszusatz" placeholder="Zusatz" name="zusatz" >
         </md-input-container>
 
         <md-input-container class="column">
@@ -80,7 +80,7 @@
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.homepage" placeholder="Homepage" name="homepage" required>
+            <input mdInput [(ngModel)]="bewerber.homepage" placeholder="Homepage" name="homepage" >
         </md-input-container>
     </div>
     <div class="columns is-mobile">
@@ -107,23 +107,57 @@
             <input mdInput [(ngModel)]="bewerber.ausbildung" placeholder="Ausbildung" name="ausbildung" required>
         </md-input-container>
 
-        <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.sprachen" placeholder="Sprachen" name="sprachen">
-        </md-input-container>
+
 
         <md-input-container class="column">
             <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf">
         </md-input-container>
-    </div>
-    <h2>Ich suche</h2>
-    <div class="row">
-        <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
-                   placeholder="Vertragsart">
-            <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
-                {{ vertragsart.name }}
-            </md-option>
+
+      <div class="row">
+        <md-select class="col-sm-12" name="sprache" [multiple]="true" [(ngModel)]="selectedSprachen"
+                   placeholder="Sprachen">
+          <md-option *ngFor="let sprache of sprachen" [value]="sprache">
+            {{ sprache.name }}
+          </md-option>
         </md-select>
+      </div>
+
     </div>
+
+    <h2>Ich suche</h2>
+    <div class ="columns">
+    <div class="row">
+      <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
+                                placeholder="Vertragsart">
+        <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
+        {{ vertragsart.name }}
+        </md-option>
+    </md-select>
+    </div>
+
+
+    <div class="row">
+      <md-select class="col-sm-12" name="berufsfeld" [multiple]="true" [(ngModel)]="bewerber.berufsfeld"
+                 placeholder="Berufsfeld">
+        <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
+          {{ berufsfeld.name }}
+        </md-option>
+      </md-select>
+    </div>
+
+
+
+      <md-input-container class="column is-8">
+        <input mdInput [(ngModel)]="bewerber.arbeitsort" name="arbeitsort" placeholder="Arbeitsort" required>
+      </md-input-container>
+
+      <md-input-container class="column">
+        <input mdInput [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt" placeholder="Mindestmonatsgehalt"
+               required>
+      </md-input-container>
+
+</div>
+
     <div class="pull-right">
         <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
     </div>

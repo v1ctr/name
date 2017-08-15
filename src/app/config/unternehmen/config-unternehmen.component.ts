@@ -11,20 +11,16 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     user: model.User;
     unternehmen: model.Unternehmen;
+    branchen: model.Berufsfeld[];
 
     error;
 
     constructor(private router: Router) {
         this.user = db.User.me;
         this.unternehmen = new db.Unternehmen();
-        db.Unternehmen.find().equal('userid', this.user).singleResult((unternehmen) => {
-            if (unternehmen) {
-                this.unternehmen = unternehmen;
-            } else {
-                this.unternehmen = new db.Unternehmen();
-                this.unternehmen.userid = this.user;
-            }
-        });
+      db.Berufsfeld.find().resultList ((branchen) => {
+        this.branchen = branchen;
+      });
     }
 
     ngOnInit() {

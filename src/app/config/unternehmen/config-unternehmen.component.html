@@ -11,9 +11,16 @@
         <md-input-container class="col-sm-10">
             <input mdInput [(ngModel)]="unternehmen.gruendung" placeholder="Gruendungsdatum" name="gruendung" required>
         </md-input-container>
-        <md-input-container class="col-sm-10">
-            <input mdInput [(ngModel)]="unternehmen.branche" placeholder="Branche" name="branche" required>
-        </md-input-container>
+
+      <div class="col-sm-10">
+        <md-select class="col-sm-12" name="branche" [multiple]="true" [(ngModel)]="unternehmen.branche"
+                   placeholder="Branche">
+          <md-option *ngFor="let branche of branchen" [value]="branche">
+            {{ branche.name }}
+          </md-option>
+        </md-select>
+      </div>
+
         <md-input-container class="col-sm-10">
             <input mdInput [(ngModel)]="unternehmen.mitarbeiterAnzahl" placeholder="Anzahl der Mitarbeiter"
                    name="mitarbeiter" required>
