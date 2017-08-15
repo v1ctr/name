@@ -1,5 +1,7 @@
 import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {GRADIENTS} from '../gradients';
+import {db, model} from 'baqend';
 
 export enum KEY_CODE {
     RIGHT_ARROW = 39,
@@ -26,18 +28,12 @@ export class SwipeComponent implements OnInit {
     };
 
   constructor(private router: Router) {
-      for (var i = 0; i < 50; i++) {
-          this.cards.push({
-              id: i + 1,
-              likeEvent: new EventEmitter(),
-              destroyEvent: new EventEmitter(),
-              pitch: "pitch " + (i + 1)
-          });
-      }
-
   }
 
   ngOnInit() {
+
+
+    this.getStellenangebote();
 
   }
 
@@ -81,10 +77,40 @@ export class SwipeComponent implements OnInit {
 
   }
 
-  getRandomBackground(){
-    //return "'-webkit-linear-gradient(to right, #73c8a9, #373b44);'"
-    //return {'background': '#E33E22'};
-    //return {'background-image': 'linear-gradient(to right, #73c8a9, #373b44)'};
-  }
 
+  getStellenangebote(){
+    if(!db.User.me.iscomp){
+      db.Bewerber.find()
+        .equal('user', db.User.me)
+        .singleResult((bewerber) => {
+          if(bewerber){
+            var queryBuilder = db.Stellenangebot.find();
+
+            if(bewerber.arbeitsort){
+              queryBuilder.and(queryBuilder, queryBuilder.equal('arbeitsort', bewerber.arbeitsort));
+            }
+            if(bewerber.sprachen){
+
+            }
+            if(bewerber.berufsfeld){
+              queryBuilder.and(queryBuilder, queryBuilder.equal('berufsfeld', bewerber.berufsfeld));
+            }
+            db.Stellenangebot.find()
+              .equal('arbeitsort', bewerber.arbeitsort)
+              .equal('berufsfeld', bewerber.berufsfeld)
+              .resultList({depth: 1}, (angebote) => {
+                angebote.forEach((angebot) => {
+                  this.cards.push({
+                    id: angebot.id,
+                    likeEvent: new EventEmitter(),
+                    destroyEvent: new EventEmitter(),
+                    pitch: angebot.unternehmen.pitch,
+                    bezeichnung: angebot.bezeichnung
+                  });
+                });
+              });
+          }
+        });
+    }
+  }
 }
