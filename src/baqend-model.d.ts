@@ -57,10 +57,8 @@ declare module "baqend" {
         }
 
         interface Stellenangebot extends binding.Entity {
-            gehalt: string;
             start: Date;
             bezeichnung: string;
-            beschaeftigung: Set<Vertragsart>;
             beschreibung: string;
             partner: string;
             anforderung: string;
@@ -68,6 +66,10 @@ declare module "baqend" {
             befristet: boolean;
             unternehmen: Unternehmen;
             sprache: Set<Sprache>;
+            vertragsarten: Set<Vertragsart>;
+            berufsfeld: Berufsfeld;
+            arbeitsort: string;
+            monatsgehalt: number;
         }
 
         interface Bewerber extends binding.Entity {
@@ -92,6 +94,10 @@ declare module "baqend" {
             sprachen: Set<Sprache>;
             softskills: string;
             fachkompetenzen: string;
+            berufsfeld: Berufsfeld;
+            arbeitsort: string;
+            befristet: string;
+            mindestMonatsGehalt: number;
         }
 
         interface Role extends binding.Entity {

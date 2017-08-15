@@ -12,12 +12,12 @@ export class ConfigBewerberComponent implements OnInit {
     user: model.User;
     bewerber: model.Bewerber;
     vertragsarten: model.Vertragsart[];
-    selectedVertragsarten: string[];
+    selectedVertragsarten: model.Vertragsart[] = [];
 
     error;
 
   files: any;
-  disabled: boolean = false;
+    disabled = false;
 
   toggleDisabled(): void {
     this.disabled = !this.disabled;
@@ -26,24 +26,18 @@ export class ConfigBewerberComponent implements OnInit {
     constructor(private router: Router) {
         this.user = db.User.me;
         this.bewerber = new db.Bewerber();
-        db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
-            if (bewerber) {
-                this.bewerber = bewerber;
-            } else {
-                this.bewerber = new db.Bewerber();
-                this.bewerber.user = this.user;
-            }
-        });
         db.Vertragsart.find().resultList((vertragsarten) => {
           this.vertragsarten = vertragsarten;
         });
     }
 
     ngOnInit() {
-        this.user = db.User.me;
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
                 this.bewerber = bewerber;
+                this.bewerber.vertragsarten.forEach((element) => {
+                    this.selectedVertragsarten.push(element);
+                });
             } else {
                 this.bewerber = new db.Bewerber();
                 this.bewerber.user = this.user;
@@ -52,7 +46,7 @@ export class ConfigBewerberComponent implements OnInit {
     }
 
     save() {
-        this.bewerber.vertragsarten = new db.Set(this.selectedVertragsarten);
+        this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.save();
     }
 }

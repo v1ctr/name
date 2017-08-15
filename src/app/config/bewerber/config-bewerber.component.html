@@ -3,7 +3,7 @@
     <h2>Persönliche Angaben</h2>
     <div class="columns">
         <md-input-container class="column is-8">
-            <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel" required>
+            <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
         </md-input-container>
 
         <md-input-container class="column">
@@ -15,40 +15,41 @@
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum" required>
+            <input mdInput [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum">
         </md-input-container>
 
-       <!-- <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.profilbild" placeholder="Profilbild" name="profilbild" required>
-        </md-input-container> -->
+        <!-- <md-input-container class="column">
+             <input mdInput [(ngModel)]="bewerber.profilbild" placeholder="Profilbild" name="profilbild" required>
+         </md-input-container> -->
     </div>
 
-  <div layout="row">
-    <md-input-container tdFileDrop
-                        [disabled]="disabled"
-                        (fileDrop)="files = $event"
-                        (click)="fileInput.inputElement.click()"
-                        (keyup.enter)="fileInput.inputElement.click()"
-                        (keyup.delete)="fileInput.clear()"
-                        (keyup.backspace)="fileInput.clear()"
-                        flex>
-      <input mdInput
-             placeholder="Profilbild *"
-             [value]="files?.length ? (files?.length + ' files') : files?.name"
-             [disabled]="disabled"
-             readonly/>
-    </md-input-container>
-    <button md-icon-button *ngIf="files" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
-      <md-icon>cancel</md-icon>
-    </button>
-    <td-file-input class="push-left-sm push-right-sm" #fileInput [(ngModel)]="files" multiple [disabled]="disabled">
-     <!-- <md-icon>folder</md-icon> -->
-      <span class="text-upper">Browse...</span>
-    </td-file-input>
-    <span>
-    <button md-raised-button color="accent" [disabled]="!files" class="text-upper">Submit</button>
-  </span>
-  </div>
+    <div layout="row">
+        <md-input-container tdFileDrop
+                            [disabled]="disabled"
+                            (fileDrop)="files = $event"
+                            (click)="fileInput.inputElement.click()"
+                            (keyup.enter)="fileInput.inputElement.click()"
+                            (keyup.delete)="fileInput.clear()"
+                            (keyup.backspace)="fileInput.clear()"
+                            flex>
+            <input mdInput
+                   placeholder="Profilbild *"
+                   [value]="files?.name"
+                   [disabled]="disabled"
+                   readonly/>
+        </md-input-container>
+        <button md-icon-button *ngIf="files" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
+            <md-icon>cancel</md-icon>
+        </button>
+        <td-file-input class="push-left-sm push-right-sm" #fileInput name="files" [(ngModel)]="files"
+                       [disabled]="disabled">
+            <!-- <md-icon>folder</md-icon> -->
+            <span class="text-upper">Browse...</span>
+        </td-file-input>
+        <span>
+            <button md-raised-button color="accent" [disabled]="!files" class="text-upper">Submit</button>
+        </span>
+    </div>
 
     <h2>One-Sentence-Pitch</h2>
     <div class="columns">
@@ -107,11 +108,11 @@
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.sprachen" placeholder="Sprachen" name="sprachen" required>
+            <input mdInput [(ngModel)]="bewerber.sprachen" placeholder="Sprachen" name="sprachen">
         </md-input-container>
 
         <md-input-container class="column">
-            <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf" required>
+            <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf">
         </md-input-container>
     </div>
     <h2>Ich suche</h2>
