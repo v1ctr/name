@@ -63,7 +63,6 @@ declare module "baqend" {
             partner: string;
             anforderung: string;
             aktiv: boolean;
-            befristet: boolean;
             unternehmen: Unternehmen;
             sprache: Set<Sprache>;
             vertragsarten: Set<Vertragsart>;
@@ -96,7 +95,6 @@ declare module "baqend" {
             fachkompetenzen: string;
             berufsfeld: Berufsfeld;
             arbeitsort: string;
-            befristet: string;
             mindestMonatsGehalt: number;
         }
 
