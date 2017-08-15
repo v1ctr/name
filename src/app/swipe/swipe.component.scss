@@ -42,11 +42,46 @@ sc-card {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-height: 400px;
-  max-width: 400px;
 }
 
-.card-header span {
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FEFEFE;
+}
+
+.card-pitch {
+  font-family: 'Nixie One', cursive;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.card-bezeichnung {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.card-logo {
+  height: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-logo img{
+  height: 125px;
+  margin-top: -62.5px;
+}
+
+
+
+.card-header2 span {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -71,6 +106,6 @@ sc-card {
 }
 
 .card-heap {
-  min-height: 100px;
+  min-height: 500px;
 }
 

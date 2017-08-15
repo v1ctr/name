@@ -11,15 +11,16 @@
       [callLike]="card.likeEvent"
       (onLike)="onCardLike($event)">
       <div class="card-header">
-        <span>{{card.id}}</span>
+        <span class="card-bezeichnung">{{card.bezeichnung}}</span>
+        <span class="card-pitch">"{{card.pitch}}"</span>
       </div>
-      <div [ngStyle]="getRandomBackground()" class="card-content">
-        <div>{{card.pitch}}</div>
+      <div class="card-logo">
+        <img src="http://via.placeholder.com/300x300" alt="..." class="img-circle img-responsive">
       </div>
     </sc-card>
   </div>
 </div>
-<div class="row" style="margin-top:175px;">
+<div class="row" style="margin-top:550px;">
   <div class="text-center">
     <button (click)="like(false)" type="button" class="btn btn-danger btn-circle btn-xl"><i
       class="glyphicon glyphicon-remove"></i></button>
