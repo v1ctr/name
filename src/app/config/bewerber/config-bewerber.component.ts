@@ -43,6 +43,7 @@ export class ConfigBewerberComponent implements OnInit {
     ngOnInit() {
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
+              console.log(bewerber);
                 this.bewerber = bewerber;
                 this.bewerber.vertragsarten.forEach((element) => {
                 this.selectedVertragsarten.push(element);

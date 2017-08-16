@@ -13,3 +13,10 @@ html, body {
   background: #fafafa;
   font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
+
+.mat-input-container{
+  display: block !important;
+}
+.mat-select{
+  padding-bottom: 1.29688em;
+}

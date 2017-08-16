@@ -105,7 +105,8 @@ export class SwipeComponent implements OnInit {
                     likeEvent: new EventEmitter(),
                     destroyEvent: new EventEmitter(),
                     pitch: angebot.unternehmen.pitch,
-                    bezeichnung: angebot.bezeichnung
+                    bezeichnung: angebot.bezeichnung,
+                    beschreibung: angebot.beschreibung
                   });
                 });
               });
