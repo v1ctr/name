@@ -3,11 +3,11 @@ import {Router} from '@angular/router';
 import {db} from 'baqend';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+  selector: 'app-accloeschen',
+  templateUrl: './accloeschen.component.html',
+  styleUrls: ['./accloeschen.component.scss']
 })
-export class SignupComponent {
+export class AccloeschenComponent {
 
   user = {
     username: '',
@@ -21,21 +21,15 @@ export class SignupComponent {
 
   constructor(private router: Router) {
     if (db.User.me) {
-      this.router.navigate(['/signup/me']);
+      this.router.navigate(['/accloeschen']);
     }
   }
 
-  register() {
-    const user = new db.User({
-      username: this.user.username,
-      iscomp: this.user.iscomp
-    });
-    db.User.register(user, this.user.password).then(() => {
-      this.result.isError = false;
-      this.result.message = 'Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.';
+  logIn() {
+    db.User.delete(this.user.username, this.user.password).then(() => {
+      this.router.navigate(['/login']);
     }, (error) => {
-      this.result.isError = true;
-      this.result.message = error.message;
+      this.error = error.message;
     });
   }
 }

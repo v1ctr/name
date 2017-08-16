@@ -43,6 +43,9 @@
     <li>
       <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
     </li>
+    <li>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accloeschen'] " routerLinkActive="active">Kundenkonto löschen</a>
+    </li>
   </ul>
 </nav>
 <main class="container">
