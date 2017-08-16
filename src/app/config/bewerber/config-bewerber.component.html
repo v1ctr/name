@@ -136,6 +136,16 @@
       </md-select>
     </div>
   </div>
+
+  <div class="row">
+    <md-select class="col-md-12" name="arbeitsverhaeltnis"  [(ngModel)]="bewerber.arbeitsverhaeltnis"
+               placeholder="Arbeitsverhältnis">
+      <md-option *ngFor="let arbeitsverhaeltnis of arbeitsverhaeltnisse" [value]="arbeitsverhaeltnis">
+        {{ arbeitsverhaeltnis.name }}
+      </md-option>
+    </md-select>
+  </div>
+
   <div class="row">
     <md-input-container class="col-md-12">
       <input mdInput [(ngModel)]="bewerber.arbeitsort" name="arbeitsort" placeholder="Arbeitsort" required>
@@ -143,10 +153,17 @@
   </div>
   <div class="row">
     <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt" placeholder="Mindestmonatsgehalt"
-             required>
+      <input mdInput [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt" placeholder="Mindestmonatsgehalt">
     </md-input-container>
   </div>
+
+  <div class="row">
+    <md-input-container class="col-md-12">
+      <input mdInput [(ngModel)]="bewerber.startdatum" placeholder="Frühstmöglicher Eintrittstermin" name="startdatum">
+      <!-- <md-datepicker [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum"></md-datepicker> -->
+    </md-input-container>
+  </div>
+
   <div class="pull-right">
     <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
   </div>

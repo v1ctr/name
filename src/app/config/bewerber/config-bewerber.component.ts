@@ -16,6 +16,7 @@ export class ConfigBewerberComponent implements OnInit {
     sprachen: model.Sprache[];
     selectedSprachen: model.Sprache[] = [];
     berufsfelder: model.Berufsfeld[];
+    arbeitsverhaeltnisse: model.Arbeitsverhaeltnis[];
 
     error;
 
@@ -36,8 +37,11 @@ export class ConfigBewerberComponent implements OnInit {
           this.sprachen = sprachen;
         });
         db.Berufsfeld.find().resultList ((berufsfelder) => {
-          this.berufsfelder = berufsfelder;
-        });
+        this.berufsfelder = berufsfelder;
+      });
+        db.Arbeitsverhaeltnis.find().resultList((arbeitsverhaeltnisse) => {
+          this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+          });
     }
 
     ngOnInit() {

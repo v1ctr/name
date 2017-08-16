@@ -11,6 +11,7 @@ declare module "baqend" {
     Stellenangebot: binding.EntityFactory<model.Stellenangebot>;
     Bewerber: binding.EntityFactory<model.Bewerber>;
     UnternehmenLikes: binding.EntityFactory<model.UnternehmenLikes>;
+    Arbeitsverhaeltnis: binding.EntityFactory<model.Arbeitsverhaeltnis>;
     BewerberLikes: binding.EntityFactory<model.BewerberLikes>;
   }
 
@@ -69,6 +70,7 @@ declare module "baqend" {
       berufsfeld: Berufsfeld;
       arbeitsort: string;
       monatsgehalt: number;
+      befristetesArbeitsverhaeltnis: boolean;
     }
 
     interface Bewerber extends binding.Entity {
@@ -96,6 +98,8 @@ declare module "baqend" {
       berufsfeld: Berufsfeld;
       arbeitsort: string;
       mindestMonatsGehalt: number;
+      arbeitsverhaeltnis: Arbeitsverhaeltnis;
+      startdatum: Date;
     }
 
     interface Role extends binding.Entity {
@@ -107,6 +111,10 @@ declare module "baqend" {
       unternehmen: Unternehmen;
       bewerber: Bewerber;
       like: boolean;
+    }
+
+    interface Arbeitsverhaeltnis extends binding.Entity {
+      name: string;
     }
 
     interface Device extends binding.Entity {
