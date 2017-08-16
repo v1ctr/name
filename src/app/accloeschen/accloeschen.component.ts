@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db} from 'baqend';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-accloeschen',
@@ -19,17 +20,17 @@ export class AccloeschenComponent {
     message: '',
   };
 
-  constructor(private router: Router) {
+  constructor(private router: Router , public authService : AuthService) {
     if (db.User.me) {
       this.router.navigate(['/accloeschen']);
     }
   }
 
-  logIn() {
-    db.User.delete(this.user.username, this.user.password).then(() => {
-      this.router.navigate(['/login']);
-    }, (error) => {
-      this.error = error.message;
-    });
+  delete() {
+    db.User.me.delete();
+    db.User.logout().then(() => {
+      this.authService.isLoginSubject.next(false);
+      this.router.navigate(['/']);
+    })
   }
 }
