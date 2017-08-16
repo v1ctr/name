@@ -35,6 +35,7 @@
   height: 80%;
   width: 80%;
   margin: 10px auto;
+  width: 500px;
 }
 
 sc-card {
@@ -54,6 +55,14 @@ sc-card {
   background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FEFEFE;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
 }
 
 .card-pitch {
@@ -95,14 +104,6 @@ sc-card {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.card-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-
 }
 
 .card-heap {
