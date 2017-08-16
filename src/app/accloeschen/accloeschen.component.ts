@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {db} from 'baqend';
+import { model, db } from 'baqend';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -8,22 +8,18 @@ import { AuthService } from '../auth.service';
   templateUrl: './accloeschen.component.html',
   styleUrls: ['./accloeschen.component.scss']
 })
-export class AccloeschenComponent {
+export class AccloeschenComponent implements OnInit {
 
-  user = {
-    username: '',
-    password: '',
-    iscomp: false
-  };
-  result = {
-    isError: false,
-    message: '',
-  };
+  me: model.User;
 
-  constructor(private router: Router , public authService : AuthService) {
+  constructor(private router: Router, public authService : AuthService) {
     if (db.User.me) {
       this.router.navigate(['/accloeschen']);
     }
+  }
+
+  ngOnInit() {
+    this.me = db.User.me;
   }
 
   delete() {
