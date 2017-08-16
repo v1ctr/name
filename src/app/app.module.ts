@@ -52,6 +52,7 @@ import {SwipeComponent} from './swipe/swipe.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
+import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 
 @NgModule({
     declarations: [
@@ -67,6 +68,7 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
         VacanciesComponent,
         VacancyComponent,
         BewerberprofilComponent,
+        AccloeschenComponent,
       RandomGradientDirective
     ],
     imports: [
