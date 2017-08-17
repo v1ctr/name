@@ -41,7 +41,6 @@ import {
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {DB_PROVIDERS} from './db';
-import {MeComponent} from './me/me.component';
 import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
@@ -58,7 +57,6 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 @NgModule({
     declarations: [
         AppComponent,
-        MeComponent,
         SignupComponent,
         ConfigUnternehmenComponent,
         ConfigBewerberComponent,
@@ -89,7 +87,8 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
       MdSelectModule,
       MdChipsModule,
       MdListModule,
-      CovalentFileModule
+      CovalentFileModule,
+      MdSnackBarModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent]
