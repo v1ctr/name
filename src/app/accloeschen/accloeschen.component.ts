@@ -24,6 +24,16 @@ export class AccloeschenComponent {
             db.Unternehmen.find().equal('userid', this.me).singleResult((unternehmen) => {
                 db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((stellenangebote) => {
                     stellenangebote.forEach((angebot) => {
+                        db.Match.find().equal('angebot', angebot).resultList((matches) => {
+                            matches.forEach((match) => {
+                                deletePromises.push(match.delete());
+                            });
+                        });
+                        db.BewerberLikes.find().equal('angebot', angebot).resultList((likes) => {
+                            likes.forEach((like) => {
+                                deletePromises.push(like.delete());
+                            });
+                        });
                         deletePromises.push(angebot.delete());
                     })
                 });
@@ -31,29 +41,28 @@ export class AccloeschenComponent {
                 db.UnternehmenLikes.find().equal('unternehmen', unternehmen).resultList((likes) => {
                     likes.forEach((like) => {
                         deletePromises.push(like.delete());
-                    })
+                    });
                 });
 
-                db.Match.find().equal('unternehmen', unternehmen).resultList((matches) => {
-                    matches.forEach((match) => {
-                        deletePromises.push(match.delete());
-                    })
-                });
 
                 deletePromises.push(unternehmen.delete());
             });
         } else {
             db.Bewerber.find().equal('user', this.me).singleResult((bewerber) => {
-                db.BewerberLikes.find().equal('bewerbee', bewerber).resultList((likes) => {
-                    likes.forEach((like) => {
-                        deletePromises.push(like.delete());
-                    })
-                });
-
                 db.Match.find().equal('bewerber', bewerber).resultList((matchs) => {
                     matchs.forEach((match) => {
                         deletePromises.push(match.delete());
-                    })
+                    });
+                });
+                db.BewerberLikes.find().equal('bewerber', bewerber).resultList((likes) => {
+                    likes.forEach((like) => {
+                        deletePromises.push(like.delete());
+                    });
+                });
+                db.UnternehmenLikes.find().equal('bewerber', bewerber).resultList((likes) => {
+                    likes.forEach((like) => {
+                        deletePromises.push(like.delete());
+                    });
                 });
 
                 deletePromises.push(bewerber.delete());
