@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
+import {AuthService} from '../../auth.service';
 
 @Component({
     selector: 'app-config-bewerber',
@@ -27,7 +28,7 @@ export class ConfigBewerberComponent implements OnInit {
         this.disabled = !this.disabled;
     }
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
         if (this.user.iscomp) {
             this.router.navigate(['/config/unternehmen']);
@@ -67,6 +68,13 @@ export class ConfigBewerberComponent implements OnInit {
     save() {
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
-        this.bewerber.save();
+        this.bewerber.save().then(() => {
+            if (!this.user.isConfigCompleted) {
+                this.user.isConfigCompleted = true;
+                this.user.save().then(() => {
+                    this.authService.isConfigCompleteSubject.next(true);
+                });
+            }
+        });
     }
 }

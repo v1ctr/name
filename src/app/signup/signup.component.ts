@@ -12,7 +12,7 @@ export class SignupComponent {
     user = {
         username: '',
         password: '',
-        iscomp: false
+        iscomp: false,
     };
     result = {
         isError: false,
@@ -21,14 +21,19 @@ export class SignupComponent {
 
     constructor(private router: Router) {
         if (db.User.me) {
-            this.router.navigate(['/signup/me']);
+            if (db.User.me.iscomp) {
+                this.router.navigate(['/swipe/unternehmen']);
+            } else {
+                this.router.navigate(['/swipe/bewerber']);
+            }
         }
     }
 
     register() {
         const user = new db.User({
             username: this.user.username,
-            iscomp: this.user.iscomp
+            iscomp: this.user.iscomp,
+            isConfigCompleted: false,
         });
         db.User.register(user, this.user.password).then(() => {
             this.result.isError = false;
