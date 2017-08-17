@@ -2,35 +2,57 @@
   <div class="panel-heading">Vacancy</div>
   <div class="panel-body">
     <form #form="ngForm">
+
+      <div class="form-group col-lg-12">
+        <label>Stellen-Bezeichnung</label>
+        <input type="text" [(ngModel)]="vacancy.bezeichnung" class="form-control" name="bezeichnung"
+               required>
+      </div>
+      <div class="form-group col-lg-12">
+        <label>Stellenbeschreibung</label>
+        <input type="text" [(ngModel)]="vacancy.beschreibung" class="form-control" name="beschreibung"
+               required>
+      </div>
+
+
+  <div class="form-group col-lg-12">
+    <label>Berufsfeld</label>
+    <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="vacancy.berufsfeld"
+               placeholder="Berufsfeld">
+      <md-option *ngFor="let branche of branchen" [value]="branche">
+        {{ branche.name }}
+      </md-option>
+    </md-select>
+  </div>
+
+      <div class="form-group col-lg-12">
+        <label>Mögliche Beschäftigungsverhältnisse</label>
+        <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
+                   placeholder="Vertragsart">
+          <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
+            {{ vertragsart.name }}
+          </md-option>
+        </md-select>
+      </div>
+
+      <div class="form-group col-lg-12">
+        <label>Befristetes Arbeitsverhältnis</label>
+        <input type="checkbox" [(ngModel)]="vacancy.befristetesArbeitsverhaeltnis" class="form-control" name="befristetesArbeitsverhaeltnis" required>
+      </div>
+      
+
       <div class="form-group col-lg-12">
           <label>Monatsgehalt</label>
           <input type="text" [(ngModel)]="vacancy.monatsgehalt" class="form-control" name="gehalt" required>
       </div>
       <div class="form-group col-lg-12">
-          <label>Startdatum</label>
+          <label>Eintrittstermin</label>
         <input type="text" [(ngModel)]="vacancy.start" class="form-control" name="start" required>
       </div>
+
+
       <div class="form-group col-lg-12">
-          <label>Stellen-Bezeichnung</label>
-        <input type="text" [(ngModel)]="vacancy.bezeichnung" class="form-control" name="bezeichnung"
-               required>
-      </div>
-      <div class="form-group col-lg-12">
-          <label>Stellenbeschreibung</label>
-        <input type="text" [(ngModel)]="vacancy.beschreibung" class="form-control" name="beschreibung"
-               required>
-      </div>
-      <div class="form-group col-lg-12">
-          <label>Mögliche Beschäftigungsverhältnisse</label>
-          <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
-                     placeholder="Vertragsart">
-              <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
-                  {{ vertragsart.name }}
-              </md-option>
-          </md-select>
-      </div>
-      <div class="form-group col-lg-12">
-          <label>Geforderte Sprachen</label>
+          <label>Sprachkenntnisse</label>
           <md-select class="col-sm-12" name="sprachen" [multiple]="true" [(ngModel)]="selectedSprachen"
                      placeholder="Sprachen">
               <md-option *ngFor="let sprache of sprachen" [value]="sprache">
@@ -38,15 +60,9 @@
               </md-option>
           </md-select>
       </div>
-        <div class="form-group col-lg-12">
-            <label>Berufsfeld</label>
-            <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="vacancy.berufsfeld"
-                       placeholder="Berufsfeld">
-                <md-option *ngFor="let branche of branchen" [value]="branche">
-                    {{ branche.name }}
-                </md-option>
-            </md-select>
-        </div>
+
+
+
       <div class="form-group col-lg-12">
           <label>Ansprechpartner</label>
         <input type="text" [(ngModel)]="vacancy.partner" class="form-control" name="partner" required>
