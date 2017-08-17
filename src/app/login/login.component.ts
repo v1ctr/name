@@ -1,40 +1,42 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
-import { AuthService } from '../auth.service';
+import {AuthService} from '../auth.service';
 import {db} from 'baqend';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
+    selector: 'app-login',
+    templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
 
-  user = {
-    username: '',
-    password: '',
-    iscomp: false
-  };
-  error;
+    user = {
+        username: '',
+        password: '',
+    };
+    error;
 
-  constructor(private router: Router, public authService : AuthService ) {
-    if (db.User.me) {
-      this.router.navigate(['/signup/me']);
+    constructor(private router: Router, public authService: AuthService) {
+        if (db.User.me) {
+            this.redirect();
+        }
     }
-  }
 
-  logIn() {
-    db.User.login(this.user.username, this.user.password).then(() => {
-      //Alle Komponenten über login informieren
-      this.authService.isLoginSubject.next(true);
-      if (db.User.me.iscomp) {
-        this.router.navigate(['/config/unternehmen']);
-      }
-      else {
-        this.router.navigate(['/config/bewerber']);
-      }
-    }, (error) => {
-      this.error = error.message;
-    });
-  }
+    logIn() {
+        db.User.login(this.user.username, this.user.password).then(() => {
+            // Alle Komponenten über login informieren
+            this.authService.isLoginSubject.next(true);
+            this.authService.isCompSubject.next(db.User.me.iscomp);
+            this.authService.isConfigCompleteSubject.next(db.User.me.isConfigCompleted);
+            this.redirect();
+        }, (error) => {
+            this.error = error.message;
+        });
+    }
+
+    private redirect() {
+        const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
+        const userType = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
+        this.router.navigate([module + userType]);
+    }
 }

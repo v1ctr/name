@@ -1,6 +1,5 @@
 import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {GRADIENTS} from '../../gradients';
 import {db, model} from 'baqend';
 
 export enum KEY_CODE {

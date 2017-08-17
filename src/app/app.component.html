@@ -7,15 +7,19 @@
     <md-icon>account_circle</md-icon>
   </button>
   <md-menu #menu="mdMenu">
-    <a *ngIf="(isLoggedIn | async)" md-menu-item [routerLink]=" ['./login'] ">
+    <a *ngIf="(isLoggedIn | async)" md-menu-item (click)="logout()">
       <md-icon>dialpad</md-icon>
       <span>Abmelden</span>
     </a>
-    <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]=" ['./login'] ">
+    <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]="['./login']">
       <md-icon>voicemail</md-icon>
       <span>Anmelden</span>
     </a>
-    <a *ngIf="(isLoggedIn | async)" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+    <a *ngIf="((isLoggedIn | async) && (isCompany | async))" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+      <md-icon>settings</md-icon>
+      <span>Einstellungen</span>
+    </a>
+    <a *ngIf="((isLoggedIn | async) && !(isCompany | async))" md-menu-item [routerLink]=" ['./config/bewerber'] ">
       <md-icon>settings</md-icon>
       <span>Einstellungen</span>
     </a>
@@ -32,16 +36,20 @@
       <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
     </li>
     <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/swipe/bewerber'] " routerLinkActive="active">Let's swipe!</a>
+      <a *ngIf="((isLoggedIn | async) && !(isCompany | async) && (isConfigCompleted | async))"
+         [routerLink]=" ['/swipe/bewerber'] " routerLinkActive="active">Let's swipe!</a>
     </li>
     <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
+      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
+         [routerLink]=" ['/swipe/unternehmen'] " routerLinkActive="active">Let's swipe!</a>
     </li>
     <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
+      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
+         [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
     </li>
     <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
+      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
+         [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
     </li>
     <li>
       <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accloeschen'] " routerLinkActive="active">Kundenkonto löschen</a>

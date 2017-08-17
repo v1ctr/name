@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
+import {AuthService} from '../../auth.service';
 
 @Component({
     selector: 'app-config-bewerber',
@@ -20,41 +21,40 @@ export class ConfigBewerberComponent implements OnInit {
 
     error;
 
-  files: any;
+    files: any;
     disabled = false;
 
-  toggleDisabled(): void {
-    this.disabled = !this.disabled;
-  }
+    toggleDisabled(): void {
+        this.disabled = !this.disabled;
+    }
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
         this.bewerber = new db.Bewerber();
         db.Vertragsart.find().resultList((vertragsarten) => {
-          this.vertragsarten = vertragsarten;
+            this.vertragsarten = vertragsarten;
         });
         db.Sprache.find().resultList((sprachen) => {
-          this.sprachen = sprachen;
+            this.sprachen = sprachen;
         });
-        db.Berufsfeld.find().resultList ((berufsfelder) => {
-        this.berufsfelder = berufsfelder;
-      });
+        db.Berufsfeld.find().resultList((berufsfelder) => {
+            this.berufsfelder = berufsfelder;
+        });
         db.Arbeitsverhaeltnis.find().resultList((arbeitsverhaeltnisse) => {
-          this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
-          });
+            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+        });
     }
 
     ngOnInit() {
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
-              console.log(bewerber);
                 this.bewerber = bewerber;
                 this.bewerber.vertragsarten.forEach((element) => {
-                this.selectedVertragsarten.push(element);
-              });
-              this.bewerber.sprachen.forEach((element) => {
-                this.selectedSprachen.push(element);
-              });
+                    this.selectedVertragsarten.push(element);
+                });
+                this.bewerber.sprachen.forEach((element) => {
+                    this.selectedSprachen.push(element);
+                });
             } else {
                 this.bewerber = new db.Bewerber();
                 this.bewerber.user = this.user;
@@ -64,7 +64,14 @@ export class ConfigBewerberComponent implements OnInit {
 
     save() {
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
-        this.bewerber.sprachen = new Set (this.selectedSprachen);
-        this.bewerber.save();
+        this.bewerber.sprachen = new Set(this.selectedSprachen);
+        this.bewerber.save().then(() => {
+            if (!this.user.isConfigCompleted) {
+                this.user.isConfigCompleted = true;
+                this.user.save().then(() => {
+                    this.authService.isConfigCompleteSubject.next(true);
+                });
+            }
+        });
     }
 }

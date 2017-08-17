@@ -14,7 +14,7 @@ export class VacanciesComponent implements OnInit {
     constructor(private router: Router) {
         // Bewerber können keine Stellenausschreibungen sehen
         if (!db.User.me.iscomp) {
-            this.router.navigate(['/swipe']);
+            this.router.navigate(['/swipe/bewerber']);
         }
     }
 
