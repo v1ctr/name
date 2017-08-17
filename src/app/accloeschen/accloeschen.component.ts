@@ -72,7 +72,7 @@ export class AccloeschenComponent {
         Promise.all(deletePromises).then(() => {
             db.User.logout().then(() => {
                 this.authService.isLoginSubject.next(false);
-                this.router.navigate(['/']);
+                this.router.navigate(['/signup']);
             });
         }, (error) => {
             // @todo Fehler anzeigen

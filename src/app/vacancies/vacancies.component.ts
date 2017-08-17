@@ -12,10 +12,6 @@ export class VacanciesComponent implements OnInit {
     vacancies: model.Stellenangebot[];
 
     constructor(private router: Router) {
-        // Bewerber können keine Stellenausschreibungen sehen
-        if (!db.User.me.iscomp) {
-            this.router.navigate(['/swipe/bewerber']);
-        }
     }
 
     ngOnInit() {

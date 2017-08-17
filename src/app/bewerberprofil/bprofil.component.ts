@@ -1,12 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import {OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 
+/*
 @Component({
     selector: 'app-bewerberprofil',
     templateUrl: './bprofil.component.html',
     styleUrls: ['./bprofil.component.scss']
-})
+})*/
 export class BewerberprofilComponent implements OnInit {
 
     user: model.User;
@@ -17,8 +18,6 @@ export class BewerberprofilComponent implements OnInit {
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
                 this.bewerber = bewerber;
-            } else {
-                this.router.navigate(['/bewerberprofil'])
             }
         });
     }
@@ -33,8 +32,6 @@ export class BewerberprofilComponent implements OnInit {
         db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
             if (bewerber) {
                 this.bewerber = bewerber;
-            } else {
-                this.router.navigate(['/bewerberprofil']);
             }
         });
     }
