@@ -7,7 +7,6 @@ import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehme
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
-import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
@@ -28,7 +27,6 @@ const routes: Routes = [
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'forgotPassword/:email', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
-    {path: 'bewerberprofil', component: BewerberprofilComponent, canActivate: [DBLoggedIn]}, // will activate the route after the db is ready
     {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]}, // will activate the route after the db is ready
 ];
 

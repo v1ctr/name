@@ -31,7 +31,6 @@ import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component'
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
-import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 
 @NgModule({
@@ -47,30 +46,29 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
         SwipeUnternehmenComponent,
         VacanciesComponent,
         VacancyComponent,
-        BewerberprofilComponent,
         AccloeschenComponent,
-      RandomGradientDirective
+        RandomGradientDirective,
     ],
     imports: [
         BrowserModule,
         FormsModule,
-      HttpModule,
-      ReactiveFormsModule,
+        HttpModule,
+        ReactiveFormsModule,
         AppRoutingModule,
         SwipeCardsModule,
         BrowserAnimationsModule,
-      MdToolbarModule,
-      MdButtonModule,
-      MdInputModule,
-      MdMenuModule,
-      MdIconModule,
-      MdSelectModule,
-      MdChipsModule,
-      MdListModule,
-      CovalentFileModule
+        MdToolbarModule,
+        MdButtonModule,
+        MdInputModule,
+        MdMenuModule,
+        MdIconModule,
+        MdSelectModule,
+        MdChipsModule,
+        MdListModule,
+        CovalentFileModule,
     ],
     providers: [DB_PROVIDERS, AuthService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule {
 }
