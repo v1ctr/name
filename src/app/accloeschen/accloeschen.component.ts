@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { model, db } from 'baqend';
 import { AuthService } from '../auth.service';
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-accloeschen',
@@ -29,14 +30,41 @@ export class AccloeschenComponent implements OnInit {
   delete() {
     if (this.me.iscomp) {
       db.Unternehmen.find().equal('userid', db.User.me.id).singleResult((unternehmen) => {
-        db.Stellenangebot.find().equal('unternehmen', db.Unternehmen.id).resultList((stellenangebote) => {
+        db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((stellenangebote) => {
+          stellenangebote.forEach((angebot) => {
+            angebot.delete();
+          })
+        })
 
-        });
+        db.UnternehmenLikes.find().equal('unternehmen', unternehmen).resultList((likes) => {
+          likes.forEach((like) => {
+            like.delete();
+          })
+        })
+
+        db.Match.find().equal('unternehmen', unternehmen).resultList((matchs) => {
+          matchs.forEach((match) => {
+            match.delete();
+          })
+        })
+
         unternehmen.delete();
       });
     } else {
       db.Bewerber.find().equal('userid', db.User.me.id).singleResult((bewerber) => {
-          bewerber.delete();
+        db.BewerberLikes.find().equal('bewerbee', bewerber).resultList((likes) => {
+          likes.forEach((like) => {
+            like.delete();
+          })
+        })
+
+        db.Match.find().equal('bewerber', bewerber).resultList((matchs) => {
+          matchs.forEach((match) => {
+            match.delete();
+          })
+        })
+
+        bewerber.delete();
       });
     }
     db.User.me.delete();
