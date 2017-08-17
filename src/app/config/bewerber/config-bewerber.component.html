@@ -32,18 +32,18 @@
         <md-input-container class="col-sm-10"
                             tdFileDrop
                             (fileDrop)="profilbild = $event"
-                            (click)="fileInput.inputElement.click()"
-                            (keyup.enter)="fileInput.inputElement.click()"
-                            (keyup.delete)="fileInput.clear()"
-                            (keyup.backspace)="fileInput.clear()"
+                            (click)="imageInput.inputElement.click()"
+                            (keyup.enter)="imageInput.inputElement.click()"
+                            (keyup.delete)="imageInput.clear()"
+                            (keyup.backspace)="imageInput.clear()"
                             flex>
             <input mdInput placeholder="Profilbild" [value]="profilbild?.name" readonly required/>
         </md-input-container>
         <div class="col-sm-2">
-            <button md-icon-button *ngIf="profilbild" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
+            <button md-icon-button *ngIf="profilbild" (click)="imageInput.clear()" (keyup.enter)="imageInput.clear()">
                 <md-icon>cancel</md-icon>
             </button>
-            <td-file-input class="push-left-sm push-right-sm" #fileInput name="profilbild" [(ngModel)]="profilbild">
+            <td-file-input class="push-left-sm push-right-sm" #imageInput name="profilbild" [(ngModel)]="profilbild">
                 <!-- <md-icon>folder</md-icon> -->
                 <span class="text-upper">Browse...</span>
             </td-file-input>
@@ -116,18 +116,20 @@
         <md-input-container class="col-sm-10"
                             tdFileDrop
                             (fileDrop)="lebenslauf = $event"
-                            (click)="fileInput.inputElement.click()"
-                            (keyup.enter)="fileInput.inputElement.click()"
-                            (keyup.delete)="fileInput.clear()"
-                            (keyup.backspace)="fileInput.clear()"
+                            (click)="lebenslaufInput.inputElement.click()"
+                            (keyup.enter)="lebenslaufInput.inputElement.click()"
+                            (keyup.delete)="lebenslaufInput.clear()"
+                            (keyup.backspace)="lebenslaufInput.clear()"
                             flex>
             <input mdInput placeholder="Lebenslauf" [value]="lebenslauf?.name" readonly/>
         </md-input-container>
         <div class="col-sm-2">
-            <button md-icon-button *ngIf="lebenslauf" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
+            <button md-icon-button *ngIf="lebenslauf" (click)="lebenslaufInput.clear()"
+                    (keyup.enter)="lebenslaufInput.clear()">
                 <md-icon>cancel</md-icon>
             </button>
-            <td-file-input class="push-left-sm push-right-sm" #fileInput name="lebenslauf" [(ngModel)]="lebenslauf">
+            <td-file-input class="push-left-sm push-right-sm" #lebenslaufInput name="lebenslauf"
+                           [(ngModel)]="lebenslauf">
                 <!-- <md-icon>folder</md-icon> -->
                 <span class="text-upper">Browse...</span>
             </td-file-input>

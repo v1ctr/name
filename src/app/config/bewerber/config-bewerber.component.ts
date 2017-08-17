@@ -97,6 +97,7 @@ export class ConfigBewerberComponent implements OnInit {
             }));
         } else if (this.bewerber.lebenslauf) {
             const CV = new db.File(this.bewerber.lebenslauf);
+            // @todo delete funktioniert noch nicht
             pendingFileUploads.push(CV.delete({force: true}).then(() => {
                 this.bewerber.lebenslauf = null;
             }));
