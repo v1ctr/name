@@ -21,13 +21,6 @@ export class ConfigBewerberComponent implements OnInit {
 
     error;
 
-    files: any;
-    disabled = false;
-
-    toggleDisabled(): void {
-        this.disabled = !this.disabled;
-    }
-
     constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
         this.bewerber = new db.Bewerber();
@@ -65,6 +58,11 @@ export class ConfigBewerberComponent implements OnInit {
     save() {
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
+        const file = new db.File({name: this.bewerber.profilbild, data: this.bewerber.profilbild, type: 'blob'});
+        file.upload().then((uploadedFile) => {
+            console.log(uploadedFile.mimeType);
+            console.log(uploadedFile.path);
+        });
         this.bewerber.save().then(() => {
             if (!this.user.isConfigCompleted) {
                 this.user.isConfigCompleted = true;

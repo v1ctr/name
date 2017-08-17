@@ -31,25 +31,23 @@
   <div class="row">
     <md-input-container class="col-sm-10"
                         tdFileDrop
-                        [disabled]="disabled"
-                        (fileDrop)="files = $event"
+                        (fileDrop)="bewerber.profilbild = $event"
                         (click)="fileInput.inputElement.click()"
                         (keyup.enter)="fileInput.inputElement.click()"
                         (keyup.delete)="fileInput.clear()"
                         (keyup.backspace)="fileInput.clear()"
                         flex>
       <input mdInput
-             placeholder="Profilbild *"
-             [value]="files?.name"
-             [disabled]="disabled"
+             placeholder="Profilbild"
+             [value]="bewerber.profilbild"
              readonly/>
     </md-input-container>
     <div class="col-sm-2">
-      <button md-icon-button *ngIf="files" (click)="fileInput.clear()" (keyup.enter)="fileInput.clear()">
+        <button md-icon-button *ngIf="bewerber.profilbild" (click)="fileInput.clear()"
+                (keyup.enter)="fileInput.clear()">
         <md-icon>cancel</md-icon>
       </button>
-      <td-file-input class="push-left-sm push-right-sm" #fileInput name="files" [(ngModel)]="files"
-                     [disabled]="disabled">
+        <td-file-input class="push-left-sm push-right-sm" #fileInput name="files" [(ngModel)]="bewerber.profilbild">
         <!-- <md-icon>folder</md-icon> -->
         <span class="text-upper">Browse...</span>
       </td-file-input>
