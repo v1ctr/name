@@ -14,6 +14,7 @@ export class AppComponent {
 
     constructor( public authService : AuthService ) {
       this.isLoggedIn = authService.isLoggedIn();
+
     }
 
 }

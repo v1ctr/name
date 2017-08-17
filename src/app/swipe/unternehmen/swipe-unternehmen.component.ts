@@ -1,6 +1,6 @@
 import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {GRADIENTS} from '../../gradients';
+import {MdSnackBar} from '@angular/material';
 import {db, model} from 'baqend';
 
 export enum KEY_CODE {
@@ -28,7 +28,7 @@ export class SwipeUnternehmenComponent implements OnInit {
         }
     };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public snackBar: MdSnackBar) {
   }
 
   ngOnInit() {
@@ -92,6 +92,16 @@ export class SwipeUnternehmenComponent implements OnInit {
                 unternehmenLike.update()
                   .then(()=>{
                     console.log("Update: UnternehmenLike");
+                    if(event.like){
+                      db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
+                        .then((result)=>{
+                        if(result.match){
+                          this.snackBar.open("It's a Match!", '', {
+                            duration: 2000
+                          });
+                        }
+                        });
+                    }
                   });
               }else{
                 unternehmenLike = new db.UnternehmenLikes({
@@ -101,6 +111,16 @@ export class SwipeUnternehmenComponent implements OnInit {
                 });
                 unternehmenLike.insert().then(function() {
                   console.log("Eingefügt: UnternehmenLike");
+                  if(event.like){
+                    db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
+                      .then((result)=>{
+                        if(result.match){
+                          this.snackBar.open("It's a Match!", '', {
+                            duration: 2000
+                          });
+                        }
+                      });
+                  }
                 });
               }
             });

@@ -35,7 +35,7 @@ import {
   MdTableModule,
   MdTabsModule,
   MdToolbarModule,
-  MdTooltipModule,
+  MdTooltipModule
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -89,7 +89,8 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
       MdSelectModule,
       MdChipsModule,
       MdListModule,
-      CovalentFileModule
+      CovalentFileModule,
+      MdSnackBarModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent]
