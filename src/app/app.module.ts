@@ -48,7 +48,8 @@ import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehme
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
-import {SwipeComponent} from './swipe/swipe.component';
+import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
+import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
@@ -63,7 +64,8 @@ import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
         LoginComponent,
         ForgotPasswordComponent,
         NewPasswordComponent,
-        SwipeComponent,
+        SwipeBewerberComponent,
+        SwipeUnternehmenComponent,
         VacanciesComponent,
         VacancyComponent,
         BewerberprofilComponent,

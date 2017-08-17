@@ -9,13 +9,15 @@ import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.compone
 import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './newPassword/newPassword.component';
 import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
-import {SwipeComponent} from './swipe/swipe.component';
+import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
+import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 
 const routes: Routes = [
     {path: '', redirectTo: '/swipe', pathMatch: 'full', resolve: {db: DBReady}}, // redirect to signup page
-    {path: 'swipe', component: SwipeComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
+    {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
+    {path: 'swipe/unternehmen', component: SwipeUnternehmenComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}}, // will activate the route after the db is ready
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}}, // will activate the route after the db is ready
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
