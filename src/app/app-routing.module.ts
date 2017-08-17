@@ -13,6 +13,7 @@ import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component'
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
+import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 
 const routes: Routes = [
     {path: '', redirectTo: '/swipe', pathMatch: 'full', resolve: {db: DBReady}}, // redirect to signup page
@@ -30,6 +31,7 @@ const routes: Routes = [
     {path: 'forgotPassword/:email', component: ForgotPasswordComponent, resolve: {db: DBReady}},
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
     {path: 'bewerberprofil', component: BewerberprofilComponent, canActivate: [DBLoggedIn]}, // will activate the route after the db is ready
+    {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]}, // will activate the route after the db is ready
 ];
 
 @NgModule({
