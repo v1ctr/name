@@ -19,6 +19,16 @@
     </md-input-container>
   </div>
   <div class="row">
+    <md-input-container class="col-md-12">
+      <input mdInput [(ngModel)]="bewerber.telefonnummer" placeholder="Telefonnummer" name="telefon" required>
+    </md-input-container>
+  </div>
+  <div class="row">
+    <md-input-container class="col-md-12">
+      <input mdInput [(ngModel)]="bewerber.homepage" placeholder="Homepage" name="homepage" >
+    </md-input-container>
+  </div>
+  <div class="row">
     <md-input-container class="col-sm-10"
                         tdFileDrop
                         [disabled]="disabled"
@@ -45,17 +55,7 @@
       </td-file-input>
     </div>
   </div>
-  <h2>One-Sentence-Pitch</h2>
-  <div class="row">
-    <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.jobBezeichnung" placeholder="Job Bezeichnung" name="job" required>
-    </md-input-container>
-  </div>
-  <div class="row">
-    <md-input-container class="col-md-12">
-      <textarea mdInput [(ngModel)]="bewerber.pitch" name="pitch" placeholder="Pitch" required></textarea>
-    </md-input-container>
-  </div>
+
   <h2>Adresse</h2>
   <div class="row">
     <md-input-container class="col-md-8">
@@ -77,17 +77,21 @@
       <input mdInput [(ngModel)]="bewerber.wohnort" placeholder="Ort" name="ort" required>
     </md-input-container>
   </div>
+
+  <h2>One-Sentence-Pitch</h2>
   <div class="row">
     <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.telefonnummer" placeholder="Telefonnummer" name="telefon" required>
+      <input mdInput [(ngModel)]="bewerber.jobBezeichnung" placeholder="Job Bezeichnung" name="job" required>
     </md-input-container>
   </div>
   <div class="row">
     <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.homepage" placeholder="Homepage" name="homepage" >
+      <textarea mdInput [(ngModel)]="bewerber.pitch" name="pitch" placeholder="Pitch max 140 Zeichen" required></textarea>
     </md-input-container>
   </div>
-  <h2>Kompetenzen</h2>
+
+
+  <h2>Qualifikationen</h2>
   <div class="row">
     <md-input-container class="col-md-12">
       <input mdInput [(ngModel)]="bewerber.fachkompetenzen" name="fachkompetenzen" placeholder="Fachkompetenzen"
@@ -104,18 +108,19 @@
       <input mdInput [(ngModel)]="bewerber.ausbildung" placeholder="Ausbildung" name="ausbildung" required>
     </md-input-container>
   </div>
-  <div class="row">
-    <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf">
-    </md-input-container>
-  </div>
+
   <div class="row">
     <md-select class="col-md-12" name="sprache" [multiple]="true" [(ngModel)]="selectedSprachen"
-               placeholder="Sprachen">
+               placeholder="Sprachkenntnisse">
       <md-option *ngFor="let sprache of sprachen" [value]="sprache">
         {{ sprache.name }}
       </md-option>
     </md-select>
+  </div>
+  <div class="row">
+    <md-input-container class="col-md-12">
+      <input mdInput [(ngModel)]="bewerber.lebenslauf" placeholder="Lebenslauf" name="lebenslauf">
+    </md-input-container>
   </div>
   <h2>Ich suche</h2>
   <div class="row">
@@ -153,7 +158,7 @@
   </div>
   <div class="row">
     <md-input-container class="col-md-12">
-      <input mdInput [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt" placeholder="Mindestmonatsgehalt">
+      <input mdInput [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt" placeholder="Gehaltsvorstellungen">
     </md-input-container>
   </div>
 
