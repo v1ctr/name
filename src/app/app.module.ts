@@ -1,47 +1,26 @@
-import {BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import { HttpModule } from '@angular/http';
+import {HttpModule} from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
-import { CovalentFileModule } from '@covalent/core';
-import { AuthService } from './auth.service';
-import { RandomGradientDirective } from './random-gradient.directive';
+import {CovalentFileModule} from '@covalent/core';
+import {AuthService} from './auth.service';
+import {RandomGradientDirective} from './random-gradient.directive';
 import {
-  MdAutocompleteModule,
-  MdButtonModule,
-  MdCardModule,
-  MdChipsModule,
-  MdDatepickerModule,
-  MdDialogModule,
-  MdExpansionModule,
-  MdGridListModule,
-  MdIconModule,
-  MdInputModule,
-  MdListModule,
-  MdMenuModule,
-  MdNativeDateModule,
-  MdPaginatorModule,
-  MdProgressBarModule,
-  MdProgressSpinnerModule,
-  MdRadioModule,
-  MdRippleModule,
-  MdSelectModule,
-  MdSidenavModule,
-  MdSliderModule,
-  MdSlideToggleModule,
-  MdSnackBarModule,
-  MdSortModule,
-  MdTableModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdTooltipModule,
+    MdButtonModule,
+    MdChipsModule,
+    MdIconModule,
+    MdInputModule,
+    MdListModule,
+    MdMenuModule,
+    MdSelectModule,
+    MdToolbarModule,
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {DB_PROVIDERS} from './db';
-import {MeComponent} from './me/me.component';
 import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
@@ -58,7 +37,6 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 @NgModule({
     declarations: [
         AppComponent,
-        MeComponent,
         SignupComponent,
         ConfigUnternehmenComponent,
         ConfigBewerberComponent,
