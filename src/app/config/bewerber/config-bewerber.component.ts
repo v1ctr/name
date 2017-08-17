@@ -69,10 +69,12 @@ export class ConfigBewerberComponent implements OnInit {
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
         this.bewerber.save().then(() => {
-            this.user.isConfigCompleted = true;
-            this.user.save().then(() => {
-                this.authService.isConfigCompleteSubject.next(true);
-            });
+            if (!this.user.isConfigCompleted) {
+                this.user.isConfigCompleted = true;
+                this.user.save().then(() => {
+                    this.authService.isConfigCompleteSubject.next(true);
+                });
+            }
         });
     }
 }

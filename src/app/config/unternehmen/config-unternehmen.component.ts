@@ -41,10 +41,12 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     save() {
         this.unternehmen.save().then(() => {
-            this.user.isConfigCompleted = true;
-            this.user.save().then(() => {
-                this.authService.isConfigCompleteSubject.next(true);
-            });
+            if (!this.user.isConfigCompleted) {
+                this.user.isConfigCompleted = true;
+                this.user.save().then(() => {
+                    this.authService.isConfigCompleteSubject.next(true);
+                });
+            }
         });
     }
 }
