@@ -11,7 +11,7 @@
       <md-icon>dialpad</md-icon>
       <span>Abmelden</span>
     </a>
-    <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]=" ['./login'] ">
+    <a *ngIf="!(isLoggedIn | async)" md-menu-item (click)="logout()">
       <md-icon>voicemail</md-icon>
       <span>Anmelden</span>
     </a>
