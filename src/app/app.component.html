@@ -32,7 +32,7 @@
       <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
     </li>
     <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/swipe'] " routerLinkActive="active">Let's swipe!</a>
+      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/swipe/bewerber'] " routerLinkActive="active">Let's swipe!</a>
     </li>
     <li>
       <a *ngIf="(isLoggedIn | async)" [routerLink]="['/bewerberprofil']" routerLinkActive="active">Bewerberprofil</a>
