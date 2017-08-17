@@ -93,14 +93,7 @@ export class SwipeUnternehmenComponent implements OnInit {
                   .then(()=>{
                     console.log("Update: UnternehmenLike");
                     if(event.like){
-                      db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
-                        .then((result)=>{
-                        if(result.match){
-                          this.snackBar.open("It's a Match!", '', {
-                            duration: 2000
-                          });
-                        }
-                        });
+                      this.checkIfMatch(bewerber);
                     }
                   });
               }else{
@@ -112,14 +105,7 @@ export class SwipeUnternehmenComponent implements OnInit {
                 unternehmenLike.insert().then(function() {
                   console.log("Eingefügt: UnternehmenLike");
                   if(event.like){
-                    db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
-                      .then((result)=>{
-                        if(result.match){
-                          this.snackBar.open("It's a Match!", '', {
-                            duration: 2000
-                          });
-                        }
-                      });
+                    this.checkIfMatch(bewerber);
                   }
                 });
               }
@@ -167,5 +153,16 @@ export class SwipeUnternehmenComponent implements OnInit {
           }
         });
     }
+  }
+
+  checkIfMatch(bewerber){
+    db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
+      .then((result)=>{
+        if(result.match){
+          this.snackBar.open("It's a Match!", '', {
+            duration: 2000
+          });
+        }
+      });
   }
 }
