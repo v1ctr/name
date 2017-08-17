@@ -17,10 +17,13 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     constructor(private router: Router) {
         this.user = db.User.me;
+        if (!this.user.iscomp) {
+            this.router.navigate(['/config/bewerber']);
+        }
         this.unternehmen = new db.Unternehmen();
-      db.Berufsfeld.find().resultList ((branchen) => {
-        this.branchen = branchen;
-      });
+        db.Berufsfeld.find().resultList((branchen) => {
+            this.branchen = branchen;
+        });
     }
 
     ngOnInit() {

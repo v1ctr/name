@@ -19,7 +19,7 @@ export class VacancyComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute) {
         if (!db.User.me.iscomp) {
-            this.router.navigate(['/swipe']);
+            this.router.navigate(['/swipe/bewerber']);
         } else {
             this.vacancy = new db.Stellenangebot();
             db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
