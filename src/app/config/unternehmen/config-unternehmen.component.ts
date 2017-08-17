@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
+import {AuthService} from '../../auth.service';
 
 @Component({
     selector: 'app-config-unternehmen',
@@ -15,7 +16,7 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     error;
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
         if (!this.user.iscomp) {
             this.router.navigate(['/config/bewerber']);
@@ -39,6 +40,11 @@ export class ConfigUnternehmenComponent implements OnInit {
     }
 
     save() {
-        this.unternehmen.save();
+        this.unternehmen.save().then(() => {
+            this.user.isConfigCompleted = true;
+            this.user.save().then(() => {
+                this.authService.isConfigCompleteSubject.next(true);
+            });
+        });
     }
 }

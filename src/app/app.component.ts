@@ -12,15 +12,20 @@ import {Router} from '@angular/router';
 export class AppComponent {
 
     isLoggedIn: Observable<boolean>;
-    iscomp: boolean;
+    isCompany: Observable<boolean>;
+    isConfigCompleted: Observable<boolean>;
 
     constructor(private router: Router, public authService: AuthService) {
         this.isLoggedIn = authService.isLoggedIn();
+        this.isCompany = authService.isCompany();
+        this.isConfigCompleted = authService.isConfigComplete();
     }
 
     logout() {
         db.User.logout().then(() => {
             this.authService.isLoginSubject.next(false);
+            this.authService.isCompSubject.next(false);
+            this.authService.isConfigCompleteSubject.next(false);
             this.router.navigate(['/login']);
         })
     }
