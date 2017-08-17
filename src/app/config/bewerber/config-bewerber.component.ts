@@ -30,9 +30,6 @@ export class ConfigBewerberComponent implements OnInit {
 
     constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
-        if (this.user.iscomp) {
-            this.router.navigate(['/config/unternehmen']);
-        }
         this.bewerber = new db.Bewerber();
         db.Vertragsart.find().resultList((vertragsarten) => {
             this.vertragsarten = vertragsarten;

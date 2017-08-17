@@ -18,9 +18,6 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     constructor(private router: Router, private authService: AuthService) {
         this.user = db.User.me;
-        if (!this.user.iscomp) {
-            this.router.navigate(['/config/bewerber']);
-        }
         this.unternehmen = new db.Unternehmen();
         db.Berufsfeld.find().resultList((branchen) => {
             this.branchen = branchen;

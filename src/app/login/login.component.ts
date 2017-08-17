@@ -17,6 +17,9 @@ export class LoginComponent {
     error;
 
     constructor(private router: Router, public authService: AuthService) {
+        if (db.User.me) {
+            this.redirect();
+        }
     }
 
     logIn() {
@@ -25,11 +28,15 @@ export class LoginComponent {
             this.authService.isLoginSubject.next(true);
             this.authService.isCompSubject.next(db.User.me.iscomp);
             this.authService.isConfigCompleteSubject.next(db.User.me.isConfigCompleted);
-            const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
-            const type = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
-            this.router.navigate([module + type]);
+            this.redirect();
         }, (error) => {
             this.error = error.message;
         });
+    }
+
+    private redirect() {
+        const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
+        const userType = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
+        this.router.navigate([module + userType]);
     }
 }

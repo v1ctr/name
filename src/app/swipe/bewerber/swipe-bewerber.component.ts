@@ -28,9 +28,6 @@ export class SwipeBewerberComponent implements OnInit {
     };
 
   constructor(private router: Router) {
-      if (db.User.me.iscomp) {
-          this.router.navigate(['/swipe/unternehmen']);
-      }
   }
 
   ngOnInit() {

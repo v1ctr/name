@@ -21,11 +21,9 @@ export class SignupComponent {
 
     constructor(private router: Router) {
         if (db.User.me) {
-            if (db.User.me.iscomp) {
-                this.router.navigate(['/swipe/unternehmen']);
-            } else {
-                this.router.navigate(['/swipe/bewerber']);
-            }
+            const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
+            const userType = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
+            this.router.navigate([module + userType]);
         }
     }
 
