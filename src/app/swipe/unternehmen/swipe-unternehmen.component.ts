@@ -1,6 +1,5 @@
 import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {GRADIENTS} from '../../gradients';
 import {db, model} from 'baqend';
 
 export enum KEY_CODE {
@@ -29,6 +28,9 @@ export class SwipeUnternehmenComponent implements OnInit {
     };
 
   constructor(private router: Router) {
+      if (!db.User.me.iscomp) {
+          this.router.navigate(['/swipe/bewerber']);
+      }
   }
 
   ngOnInit() {

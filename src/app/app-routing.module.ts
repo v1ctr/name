@@ -16,7 +16,7 @@ import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: '/swipe', pathMatch: 'full', resolve: {db: DBReady}}, // redirect to signup page
+    {path: '', redirectTo: '/swipe/bewerber', pathMatch: 'full', resolve: {db: DBReady}}, // redirect to signup page
     {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'swipe/unternehmen', component: SwipeUnternehmenComponent, canActivate: [DBLoggedIn]}, // will prevent none logged in users from accessing it
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}}, // will activate the route after the db is ready
