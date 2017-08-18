@@ -14,10 +14,11 @@
     </div>
     <div class="row">
       <md-input-container class="col-md-12">
-        <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="picker" placeholder="Geburtsdatum" name="geburtsdatum" required>
-        <button mdSuffix [mdDatepickerToggle]="picker"></button>
+          <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="birthDatePicker" placeholder="Geburtsdatum"
+                 name="geburtsdatum" required>
+          <button mdSuffix [mdDatepickerToggle]="birthDatePicker"></button>
       </md-input-container>
-      <md-datepicker #picker [touchUi]="true"></md-datepicker>
+        <md-datepicker #birthDatePicker [touchUi]="true"></md-datepicker>
     </div>
     <div class="row">
         <md-input-container class="col-md-12">
@@ -176,13 +177,13 @@
                    placeholder="Gehaltsvorstellungen">
         </md-input-container>
     </div>
-
     <div class="row">
         <md-input-container class="col-md-12">
-            <input mdInput [(ngModel)]="bewerber.startdatum" placeholder="Frühstmöglicher Eintrittstermin"
-                   name="startdatum">
-            <!-- <md-datepicker [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum"></md-datepicker> -->
+            <input mdInput [(ngModel)]="bewerber.startdatum" [mdDatepicker]="startDatePicker"
+                   placeholder="Frühstmöglicher Eintrittstermin" name="startdatum">
+            <button mdSuffix [mdDatepickerToggle]="startDatePicker"></button>
         </md-input-container>
+        <md-datepicker #startDatePicker [touchUi]="true"></md-datepicker>
     </div>
 
     <div class="pull-right">

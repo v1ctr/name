@@ -35,7 +35,6 @@ import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.c
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
-import {GenerateUserDataComponent} from './generateUserData/generateUserData.component';
 
 @NgModule({
     declarations: [
@@ -52,7 +51,6 @@ import {GenerateUserDataComponent} from './generateUserData/generateUserData.com
         VacancyComponent,
         AccloeschenComponent,
         RandomGradientDirective,
-        GenerateUserDataComponent,
     ],
     imports: [
         BrowserModule,
