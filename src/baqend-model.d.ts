@@ -1,4 +1,4 @@
-import {binding, GeoPoint} from "baqend";
+import {binding} from "baqend";
 
 declare module "baqend" {
 
@@ -40,7 +40,7 @@ declare module "baqend" {
       branche: Berufsfeld;
       pitch: string;
       logo: undefined;
-      bilder: Array<undefined>;
+        bild: undefined;
     }
 
     interface User extends binding.Entity {

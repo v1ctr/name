@@ -26,9 +26,11 @@
         </md-input-container>
     </div>
     <div class="row">
-        <md-input-container class="col-xs-12">
-            <input mdInput [(ngModel)]="unternehmen.gruendung" placeholder="Gruendungsdatum" name="gruendung" required>
+        <md-input-container class="col-md-12">
+            <input mdInput [(ngModel)]="unternehmen.gruendung" [mdDatepicker]="picker" placeholder="Gruendungsdatum" name="gruendung" required>
+            <button mdSuffix [mdDatepickerToggle]="picker"></button>
         </md-input-container>
+        <md-datepicker #picker [touchUi]="true"></md-datepicker>
     </div>
     <div class="row">
         <md-input-container class="col-sm-10"
@@ -54,20 +56,19 @@
     <div class="row">
         <md-input-container class="col-sm-10"
                             tdFileDrop
-                            (fileDrop)="bilder = $event"
+                            (fileDrop)="bild = $event"
                             (click)="imageInput.inputElement.click()"
                             (keyup.enter)="imageInput.inputElement.click()"
                             (keyup.delete)="imageInput.clear()"
                             (keyup.backspace)="imageInput.clear()"
                             flex>
-            <input mdInput placeholder="Bilder" [value]="bildernamen?.join(',')" readonly/>
+            <input mdInput placeholder="Bild" [value]="bild?.name" readonly/>
         </md-input-container>
         <div class="col-sm-2">
-            <button md-icon-button *ngIf="bilder" (click)="imageInput.clear()" (keyup.enter)="imageInput.clear()">
+            <button md-icon-button *ngIf="bild" (click)="imageInput.clear()" (keyup.enter)="imageInput.clear()">
                 <md-icon>cancel</md-icon>
             </button>
-            <td-file-input class="push-left-sm push-right-sm" #imageInput onchange="updateBildernamen()" name="bilder"
-                           multiple [(ngModel)]="bilder">
+            <td-file-input class="push-left-sm push-right-sm" #imageInput name="bild" [(ngModel)]="bild">
                 <!-- <md-icon>folder</md-icon> -->
                 <span class="text-upper">Browse...</span>
             </td-file-input>

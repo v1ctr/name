@@ -13,10 +13,11 @@
         </md-input-container>
     </div>
     <div class="row">
-        <md-input-container class="col-md-12">
-            <input mdInput [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum" required>
-            <!-- <md-datepicker [(ngModel)]="bewerber.geburtsdatum" placeholder="Geburtsdatum" name="geburtsdatum"></md-datepicker> -->
-        </md-input-container>
+      <md-input-container class="col-md-12">
+        <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="picker" placeholder="Geburtsdatum" name="geburtsdatum" required>
+        <button mdSuffix [mdDatepickerToggle]="picker"></button>
+      </md-input-container>
+      <md-datepicker #picker [touchUi]="true"></md-datepicker>
     </div>
     <div class="row">
         <md-input-container class="col-md-12">

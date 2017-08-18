@@ -64,6 +64,7 @@ export class ConfigBewerberComponent implements OnInit {
     }
 
     save() {
+        console.log(this.bewerber);
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
         const pendingFileUploads = [];
