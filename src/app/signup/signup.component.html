@@ -26,7 +26,6 @@
     <button md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
   </div>
 </form>
-<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
 
 <div [hidden]="!result.message">
   <div *ngIf="result.isError">

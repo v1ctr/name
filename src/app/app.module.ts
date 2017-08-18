@@ -9,17 +9,17 @@ import {AuthService} from './auth.service';
 import {RandomGradientDirective} from './random-gradient.directive';
 import {
     MdButtonModule,
+    MdCardModule,
     MdChipsModule,
+    MdDatepickerModule,
     MdIconModule,
     MdInputModule,
     MdListModule,
     MdMenuModule,
+    MdNativeDateModule,
     MdSelectModule,
     MdSnackBarModule,
-    MdToolbarModule,
-    MdDatepickerModule,
-    MdNativeDateModule,
-    MdCardModule
+    MdToolbarModule
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -38,6 +38,7 @@ import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './match/match.component';
+import {GenerateUserDataComponent} from './generateUserData/generateUserData.component';
 
 @NgModule({
     declarations: [
@@ -55,7 +56,8 @@ import {MatchComponent} from './match/match.component';
         AccloeschenComponent,
         RandomGradientDirective,
         MatchesComponent,
-        MatchComponent
+        MatchComponent,
+        GenerateUserDataComponent,
     ],
     imports: [
         BrowserModule,
