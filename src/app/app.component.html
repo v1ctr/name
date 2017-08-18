@@ -1,72 +1,62 @@
 <md-toolbar class="drop-shadow" color="primary">
-  <span>Swijo</span>
+    <span>Swijo</span>
 
-  <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
-  <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['./matches'] " md-icon-button>
-      <md-icon>insert_link</md-icon>
-  </a>
-  <button md-icon-button [mdMenuTriggerFor]="menu">
-    <md-icon>account_circle</md-icon>
-  </button>
-  <md-menu #menu="mdMenu">
-    <a *ngIf="(isLoggedIn | async)" md-menu-item (click)="logout()">
-      <md-icon>dialpad</md-icon>
-      <span>Abmelden</span>
-    </a>
-    <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]="['./login']">
-      <md-icon>voicemail</md-icon>
-      <span>Anmelden</span>
-    </a>
-    <a *ngIf="((isLoggedIn | async) && (isCompany | async))" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
-      <md-icon>settings</md-icon>
-      <span>Einstellungen</span>
-    </a>
-    <a *ngIf="((isLoggedIn | async) && !(isCompany | async))" md-menu-item [routerLink]=" ['./config/bewerber'] ">
-      <md-icon>settings</md-icon>
-      <span>Einstellungen</span>
-    </a>
-  </md-menu>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>menu</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+        <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " md-menu-item>
+            <md-icon>settings</md-icon>
+            <span>Signup</span>
+        </a>
+        <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]="['./login']">
+            <md-icon>voicemail</md-icon>
+            <span>Anmelden</span>
+        </a>
+        <a *ngIf="(isLoggedIn | async)" md-menu-item (click)="logout()">
+            <md-icon>dialpad</md-icon>
+            <span>Abmelden</span>
+        </a>
+        <a *ngIf="((isLoggedIn | async) && (isCompany | async))" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
+            <md-icon>account_circle</md-icon>
+            <span>Profil bearbeiten</span>
+        </a>
+        <a *ngIf="((isLoggedIn | async) && !(isCompany | async))" md-menu-item [routerLink]=" ['./config/bewerber'] ">
+            <md-icon>account_circle</md-icon>
+            <span>Profil bearbeiten</span>
+        </a>
+        <a *ngIf="((isLoggedIn | async) && !(isCompany | async) && (isConfigCompleted | async))"
+           [routerLink]=" ['/swipe/bewerber'] " md-menu-item>
+            <md-icon>touch_app</md-icon>
+            <span>Let's swipe!</span>
+        </a>
+        <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
+           [routerLink]=" ['/swipe/unternehmen'] " md-menu-item>
+            <md-icon>touch_app</md-icon>
+            <span>Let's swipe!</span>
+        </a>
+        <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
+           [routerLink]=" ['/vacancies'] " md-menu-item>
+            <md-icon>work</md-icon>
+            <span>Stellenangebote</span>
+        </a>
+        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accloeschen'] " md-menu-item>
+            <md-icon>clear</md-icon>
+            <span>Account löschen</span>
+        </a>
+    </md-menu>
 </md-toolbar>
 
-
-<nav class="container">
-  <ul class="nav nav-pills">
-    <li>
-      <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./login'] " routerLinkActive="active">Login</a>
-    </li>
-    <li>
-      <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " routerLinkActive="active">Signup</a>
-    </li>
-    <li>
-      <a *ngIf="((isLoggedIn | async) && !(isCompany | async) && (isConfigCompleted | async))"
-         [routerLink]=" ['/swipe/bewerber'] " routerLinkActive="active">Let's swipe!</a>
-    </li>
-    <li>
-      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
-         [routerLink]=" ['/swipe/unternehmen'] " routerLinkActive="active">Let's swipe!</a>
-    </li>
-    <li>
-      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
-         [routerLink]=" ['/vacancies'] " routerLinkActive="active">Vacancies</a>
-    </li>
-    <li>
-      <a *ngIf="((isLoggedIn | async) && (isCompany | async) && (isConfigCompleted | async))"
-         [routerLink]=" ['/vacancy'] " routerLinkActive="active">Vacancy</a>
-    </li>
-    <li>
-      <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accloeschen'] " routerLinkActive="active">Kundenkonto löschen</a>
-    </li>
-  </ul>
-</nav>
 <main class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <router-outlet></router-outlet>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-  </div>
 </main>
 
 <footer class="container">
-  <span>Swijo by <a [href]="baqend">@StrawberryUnicorn</a></span>
+    <span>Swijo by <a [href]="baqend">@StrawberryUnicorn</a></span>
 </footer>
