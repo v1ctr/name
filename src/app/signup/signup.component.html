@@ -1,39 +1,33 @@
-<div class="panel panel-default">
-  <div class="panel-heading">Signup</div>
-  <div class="panel-body">
-    <form #form="ngForm">
-      <div class="row">
-        <div class="form-group col-lg-12">
-          <label>E-Mail</label>
-          <input type="text" [(ngModel)]="user.username" class="form-control" name="username"
-                 required>
-        </div>
-        <div class="form-group col-lg-12">
-          <label>Password</label>
-          <input type="password" [(ngModel)]="user.password" class="form-control" name="password"
-                 required>
-        </div>
-        <div class="form-group col-lg-12">
-          <div class="radio">
-            <label>
-              <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
-              Bewerber
-            </label>
-            <label>
-              <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
-              Unternehmen
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="pull-right">
-        <button class="btn btn-info" type="button" (click)="register()" [disabled]="!form.valid">
-          Registrieren
-        </button>
-      </div>
-    </form>
+<form class="full-width" #form="ngForm">
+  <h2>Registrieren</h2>
+  <div class="row">
+    <md-input-container class="col-sm-12">
+      <input mdInput [(ngModel)]="user.username" name="username" placeholder="E-Mail" required>
+    </md-input-container>
   </div>
-</div>
+  <div class="row">
+    <md-input-container class="col-sm-12">
+      <input type="password" mdInput [(ngModel)]="user.password" name="password" placeholder="Passwort" required>
+    </md-input-container>
+  </div>
+  <div class="form-group col-lg-12">
+    <div class="radio">
+      <label>
+        <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
+        Bewerber
+      </label>
+      <label>
+        <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
+        Unternehmen
+      </label>
+    </div>
+  </div>
+  <div class="pull-right">
+    <button md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
+  </div>
+</form>
+<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>
+
 <div [hidden]="!result.message">
   <div *ngIf="result.isError">
     <div class="alert alert-danger" role="alert">{{result.message}}</div>
