@@ -17,6 +17,8 @@ import {
     MdSelectModule,
     MdSnackBarModule,
     MdToolbarModule,
+    MdDatepickerModule,
+    MdNativeDateModule
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -68,6 +70,8 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
         MdListModule,
         CovalentFileModule,
         MdSnackBarModule,
+        MdDatepickerModule,
+        MdNativeDateModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent],
