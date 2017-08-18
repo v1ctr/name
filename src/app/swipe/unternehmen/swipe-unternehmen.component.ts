@@ -145,7 +145,8 @@ export class SwipeUnternehmenComponent implements OnInit {
                         destroyEvent: new EventEmitter(),
                         pitch: bew.pitch,
                         vorname: bew.vorname,
-                        nachname: bew.nachname
+                        nachname: bew.nachname,
+                        profilbild: bew.profilbild
                       });
                     });
                   });
