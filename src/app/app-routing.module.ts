@@ -12,6 +12,7 @@ import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.c
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
+import {GenerateUserDataComponent} from './generateUserData/generateUserData..component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -33,6 +34,7 @@ const routes: Routes = [
     },
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
     {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
+    {path: 'generateUserData', component: GenerateUserDataComponent, canActivate: [DBLoggedIn]},
 ];
 
 @NgModule({
