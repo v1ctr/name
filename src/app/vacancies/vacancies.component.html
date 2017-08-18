@@ -1,16 +1,17 @@
+<h2>Stellenangebote</h2>
 <md-nav-list>
-  <a md-list-item [routerLink]=" ['/vacancy']">
-    <h3 md-line>NEU</h3>
-    <p md-line>
-      <span>Neues Stellenangebot erstellen...</span>
-    </p>
-    <md-icon>add</md-icon>
-  </a>
-  <a md-list-item *ngFor="let vacancy of vacancies" [routerLink]=" ['../vacancy', vacancy.key]">
-    <h3 md-line> {{vacancy.bezeichnung}} </h3>
-    <p md-line>
-      <span> {{vacancy.beschreibung}} </span>
-    </p>
-    <md-icon>edit</md-icon>
-  </a>
+    <a md-list-item [routerLink]=" ['/vacancy']">
+        <h3 md-line>NEU</h3>
+        <p md-line>
+            <span>Neues Stellenangebot erstellen...</span>
+        </p>
+        <md-icon>add</md-icon>
+    </a>
+    <a md-list-item *ngFor="let vacancy of vacancies" [routerLink]=" ['../vacancy', vacancy.key]">
+        <h3 md-line> {{vacancy.bezeichnung}} </h3>
+        <p md-line>
+            <span> {{vacancy.beschreibung}} </span>
+        </p>
+        <md-icon>edit</md-icon>
+    </a>
 </md-nav-list>
