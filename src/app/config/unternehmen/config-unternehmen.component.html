@@ -26,9 +26,11 @@
         </md-input-container>
     </div>
     <div class="row">
-        <md-input-container class="col-xs-12">
-            <input mdInput [(ngModel)]="unternehmen.gruendung" placeholder="Gruendungsdatum" name="gruendung" required>
+        <md-input-container class="col-md-12">
+            <input mdInput [(ngModel)]="unternehmen.gruendung" [mdDatepicker]="picker" placeholder="Gruendungsdatum" name="gruendung" required>
+            <button mdSuffix [mdDatepickerToggle]="picker"></button>
         </md-input-container>
+        <md-datepicker #picker [touchUi]="true"></md-datepicker>
     </div>
     <div class="row">
         <md-input-container class="col-sm-10"

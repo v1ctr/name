@@ -1,5 +1,6 @@
 import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {MdSnackBar} from '@angular/material';
 import {db, model} from 'baqend';
 
 export enum KEY_CODE {
@@ -27,7 +28,7 @@ export class SwipeBewerberComponent implements OnInit {
         }
     };
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public snackBar: MdSnackBar) {
   }
 
   ngOnInit() {
@@ -94,6 +95,9 @@ export class SwipeBewerberComponent implements OnInit {
                 bewerberLike.update()
                   .then(()=>{
                     console.log("Update: BewerberLike");
+                    if(event.like){
+                      this.checkIfMatch(angebot);
+                    }
                   });
               }else{
                 bewerberLike = new db.BewerberLikes({
@@ -103,7 +107,9 @@ export class SwipeBewerberComponent implements OnInit {
                 });
                 bewerberLike.insert().then(function(res) {
                   console.log("Eingefügt: BewerberLike");
-                  console.log(res);
+                  if(event.like){
+                    this.checkIfMatch(angebot);
+                  }
                 });
               }
             });
@@ -141,12 +147,24 @@ export class SwipeBewerberComponent implements OnInit {
                     destroyEvent: new EventEmitter(),
                     pitch: angebot.unternehmen.pitch,
                     bezeichnung: angebot.bezeichnung,
-                    beschreibung: angebot.beschreibung
+                    beschreibung: angebot.beschreibung,
+                    logo: angebot.unternehmen.logo
                   });
                 });
               });
           }
         });
     }
+  }
+
+  checkIfMatch(angebot){
+    db.modules.get('checkMatch', {angebot: angebot, bewerber: this.bewerber})
+      .then((result)=>{
+        if(result.match){
+          this.snackBar.open("It's a Match!", '', {
+            duration: 2000
+          });
+        }
+      });
   }
 }

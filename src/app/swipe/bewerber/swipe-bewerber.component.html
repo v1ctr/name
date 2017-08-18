@@ -15,7 +15,7 @@
         <span class="card-pitch">"{{card.pitch}}"</span>
       </div>
       <div class="card-logo">
-        <img src="http://via.placeholder.com/300x300" alt="..." class="img-circle img-responsive">
+        <img [src]="(card && card.logo && card.logo.url) || 'http://via.placeholder.com/300x300'" alt="..." class="img-circle img-responsive">
       </div>
       <div class="card-content">
         <span>{{card.beschreibung}}</span>
