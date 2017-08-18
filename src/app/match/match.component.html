@@ -1,0 +1,42 @@
+<div *ngIf="match">
+    <md-card>
+        <md-card-title>
+            Unternehmen
+        </md-card-title>
+        <md-card-subtitle>
+            {{match.angebot.unternehmen.name}}
+        </md-card-subtitle>
+        <md-card-content>
+            Hallo
+        </md-card-content>
+    </md-card>
+    <div class="row">
+        <div class="connecting-line center-block"></div>
+    </div>
+    <md-card>
+        <md-card-title>
+            Stellenangebot
+        </md-card-title>
+        <md-card-subtitle>
+            {{match.angebot.bezeichnung}}
+        </md-card-subtitle>
+        <md-card-content>
+            {{match.angebot.beschreibung}}
+        </md-card-content>
+    </md-card>
+    <div class="row">
+        <div class="connecting-line center-block"></div>
+    </div>
+    <md-card>
+        <md-card-title>
+            Bewerber
+        </md-card-title>
+        <md-card-subtitle>
+            {{match.bewerber.vorname}} {{match.bewerber.nachname}}
+        </md-card-subtitle>
+        <md-card-content>
+            hhf
+        </md-card-content>
+    </md-card>
+</div>
+
