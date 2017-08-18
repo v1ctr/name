@@ -12,6 +12,8 @@ import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.c
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
+import {MatchesComponent} from './matches/matches.component';
+import {MatchComponent} from './match/match.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -24,6 +26,8 @@ const routes: Routes = [
     {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
     {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},
+    {path: 'matches', component: MatchesComponent, canActivate: [DBLoggedIn]},
+    {path: 'match/:key', component: MatchComponent, canActivate: [DBLoggedIn]},
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {
         path: 'forgotPassword/:email',

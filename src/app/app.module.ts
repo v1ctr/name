@@ -18,7 +18,8 @@ import {
     MdSnackBarModule,
     MdToolbarModule,
     MdDatepickerModule,
-    MdNativeDateModule
+    MdNativeDateModule,
+    MdCardModule
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -35,6 +36,8 @@ import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.c
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
+import {MatchesComponent} from './matches/matches.component';
+import {MatchComponent} from './match/match.component';
 
 @NgModule({
     declarations: [
@@ -51,6 +54,8 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
         VacancyComponent,
         AccloeschenComponent,
         RandomGradientDirective,
+        MatchesComponent,
+        MatchComponent
     ],
     imports: [
         BrowserModule,
@@ -71,7 +76,8 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
         CovalentFileModule,
         MdSnackBarModule,
         MdDatepickerModule,
-        MdNativeDateModule
+        MdNativeDateModule,
+        MdCardModule
     ],
     providers: [DB_PROVIDERS, AuthService],
     bootstrap: [AppComponent],

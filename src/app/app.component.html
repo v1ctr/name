@@ -3,6 +3,9 @@
 
   <!-- This fills the remaining space of the current row -->
   <span class="fill-remaining-space"></span>
+  <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['./matches'] " md-icon-button>
+      <md-icon>insert_link</md-icon>
+  </a>
   <button md-icon-button [mdMenuTriggerFor]="menu">
     <md-icon>account_circle</md-icon>
   </button>
