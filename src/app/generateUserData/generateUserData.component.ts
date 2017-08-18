@@ -7,12 +7,10 @@ import {db} from 'baqend';
 })
 export class GenerateUserDataComponent {
 
-    logs: string[] = [];
+    users: any[] = [];
 
     constructor() {
-        let promise1 = Promise.resolve(db.User.load(db.User.me.id));
-        let promise2 = Promise.resolve(db.User.load(db.User.me.id));
-        for (let i = 3; i <= 4; i++) {
+        for (let i = 1; i <= 4; i++) {
             const bewerber = new db.User({
                 username: 'bewerber' + i + '@swijo.com',
                 inactive: true,
@@ -25,20 +23,35 @@ export class GenerateUserDataComponent {
                 iscomp: true,
                 isConfigCompleted: false,
             });
-            promise1.then(() => {
-                this.logs.push('Registering bewerber ' + bewerber.username + '.');
-                promise2 = db.User.register(bewerber, 'passwort', -1);
-            }, (error) => {
-                this.logs.push(error.message);
-            });
-
-            promise2.then(() => {
-                this.logs.push('Registering unternehmen ' + unternehmen.username + '.');
-                promise1 = db.User.register(unternehmen, 'passwort', -1);
-            }, (error) => {
-                this.logs.push(error.message);
-            });
+            this.users.push(bewerber);
+            this.users.push(unternehmen);
         }
-        console.log(this.logs);
+        // this.registerUsers(this.users, this.register);
+        this.activateUsers();
+    }
+
+    private registerUsers(users, fn) {
+        let index = 0;
+
+        function next() {
+            if (index < users.length) {
+                fn(users[index++]).then(next);
+            }
+        }
+
+        next();
+    }
+
+    private activateUsers() {
+        db.User.find().matches('username', /^.*@swijo.com$/).resultList((userList) => {
+            userList.forEach((user) => {
+                user.inactive = false;
+                user.save();
+            });
+        });
+    }
+
+    private register(user) {
+        return db.User.register(user, 'passwort', -1);
     }
 }

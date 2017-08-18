@@ -14,6 +14,7 @@ import {VacancyComponent} from './vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './match/match.component';
+import {GenerateUserDataComponent} from './generateUserData/generateUserData.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -37,6 +38,8 @@ const routes: Routes = [
     },
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
     {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
+    {path: 'gud', component: GenerateUserDataComponent, canActivate: [DBLoggedIn]},
+    {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 
 @NgModule({
