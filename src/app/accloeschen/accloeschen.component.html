@@ -1,6 +1,9 @@
-<div class="panel panel-default">
-  <div class="panel-heading">Account von {{me.username}} wirklich löschen?</div>
-  <div class="panel-body">
-    <button class="btn btn-info pull-right" type="button" (click)="deleteUser()">Account löschen</button>
+<form class="full-width" #form="ngForm">
+    <h2>Account {{me.username}} wirklich löschen?</h2>
+    <div class="pull-right">
+        <button md-raised-button (click)="deleteUser()">
+            <md-icon>cancel</md-icon>
+            Account löschen
+        </button>
   </div>
-</div>
+</form>
