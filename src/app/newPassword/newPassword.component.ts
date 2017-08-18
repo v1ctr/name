@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db} from 'baqend';
+import {getRedirectPath} from "../db";
 
 @Component({
     selector: 'app-new-password',
@@ -21,9 +22,11 @@ export class NewPasswordComponent {
         const token = search.substring(search.indexOf(paramName) + paramName.length);
         db.User.newPassword(token, this.password).then(
             () => {
-                this.router.navigate(['/config'])
+                this.router.navigate([getRedirectPath()]);
             },
-            (error) => this.error = error.message
+            (error) => {
+                this.error = error.message;
+            }
         );
     }
 }

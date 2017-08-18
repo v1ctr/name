@@ -1,41 +1,22 @@
-import {BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import { HttpModule } from '@angular/http';
+import {HttpModule} from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
-import { CovalentFileModule } from '@covalent/core';
-import { AuthService } from './auth.service';
-import { RandomGradientDirective } from './random-gradient.directive';
+import {CovalentFileModule} from '@covalent/core';
+import {AuthService} from './auth.service';
+import {RandomGradientDirective} from './random-gradient.directive';
 import {
-  MdAutocompleteModule,
-  MdButtonModule,
-  MdCardModule,
-  MdChipsModule,
-  MdDatepickerModule,
-  MdDialogModule,
-  MdExpansionModule,
-  MdGridListModule,
-  MdIconModule,
-  MdInputModule,
-  MdListModule,
-  MdMenuModule,
-  MdNativeDateModule,
-  MdPaginatorModule,
-  MdProgressBarModule,
-  MdProgressSpinnerModule,
-  MdRadioModule,
-  MdRippleModule,
-  MdSelectModule,
-  MdSidenavModule,
-  MdSliderModule,
-  MdSlideToggleModule,
-  MdSnackBarModule,
-  MdSortModule,
-  MdTableModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdTooltipModule,
+    MdButtonModule,
+    MdChipsModule,
+    MdIconModule,
+    MdInputModule,
+    MdListModule,
+    MdMenuModule,
+    MdSelectModule,
+    MdSnackBarModule,
+    MdToolbarModule,
 } from '@angular/material';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -51,7 +32,6 @@ import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component'
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancy/vacancy.component';
-import {BewerberprofilComponent} from './bewerberprofil/bprofil.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 
 @NgModule({
@@ -67,31 +47,30 @@ import {AccloeschenComponent} from './accloeschen/accloeschen.component';
         SwipeUnternehmenComponent,
         VacanciesComponent,
         VacancyComponent,
-        BewerberprofilComponent,
         AccloeschenComponent,
-      RandomGradientDirective
+        RandomGradientDirective,
     ],
     imports: [
         BrowserModule,
         FormsModule,
-      HttpModule,
-      ReactiveFormsModule,
+        HttpModule,
+        ReactiveFormsModule,
         AppRoutingModule,
         SwipeCardsModule,
         BrowserAnimationsModule,
-      MdToolbarModule,
-      MdButtonModule,
-      MdInputModule,
-      MdMenuModule,
-      MdIconModule,
-      MdSelectModule,
-      MdChipsModule,
-      MdListModule,
-      CovalentFileModule,
-      MdSnackBarModule
+        MdToolbarModule,
+        MdButtonModule,
+        MdInputModule,
+        MdMenuModule,
+        MdIconModule,
+        MdSelectModule,
+        MdChipsModule,
+        MdListModule,
+        CovalentFileModule,
+        MdSnackBarModule,
     ],
     providers: [DB_PROVIDERS, AuthService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule {
 }

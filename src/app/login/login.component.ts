@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthService} from '../auth.service';
 import {db} from 'baqend';
+import {getRedirectPath} from "../db";
 
 @Component({
     selector: 'app-login',
@@ -17,9 +18,6 @@ export class LoginComponent {
     error;
 
     constructor(private router: Router, public authService: AuthService) {
-        if (db.User.me) {
-            this.redirect();
-        }
     }
 
     logIn() {
@@ -28,15 +26,9 @@ export class LoginComponent {
             this.authService.isLoginSubject.next(true);
             this.authService.isCompSubject.next(db.User.me.iscomp);
             this.authService.isConfigCompleteSubject.next(db.User.me.isConfigCompleted);
-            this.redirect();
+            this.router.navigate([getRedirectPath()]);
         }, (error) => {
             this.error = error.message;
         });
-    }
-
-    private redirect() {
-        const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
-        const userType = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
-        this.router.navigate([module + userType]);
     }
 }

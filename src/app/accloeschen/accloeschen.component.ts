@@ -1,76 +1,81 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from '@angular/router';
-import { model, db } from 'baqend';
-import { AuthService } from '../auth.service';
-import {forEach} from "@angular/router/src/utils/collection";
+import {db, model} from 'baqend';
+import {AuthService} from '../auth.service';
 
 @Component({
-  selector: 'app-accloeschen',
-  templateUrl: './accloeschen.component.html',
-  styleUrls: ['./accloeschen.component.scss']
+    selector: 'app-accloeschen',
+    templateUrl: './accloeschen.component.html',
+    styleUrls: ['./accloeschen.component.scss']
 })
-export class AccloeschenComponent implements OnInit {
+export class AccloeschenComponent {
 
-  me: model.User;
-  bewerber: model.Bewerber;
-  unternehmen: model.Unternehmen;
+    me: model.User;
 
-  constructor(private router: Router, public authService : AuthService) {
-    if (db.User.me) {
-      this.router.navigate(['/accloeschen']);
-      this.me = db.User.me;
-      this.bewerber = new db.Bewerber();
-      this.unternehmen = new db.Unternehmen();
+    constructor(private router: Router, public authService: AuthService) {
+        if (db.User.me) {
+            this.me = db.User.me;
+        }
     }
-  }
 
-  ngOnInit() {
-  }
+    deleteUser() {
+        const deletePromises = [];
+        if (this.me.iscomp) {
+            db.Unternehmen.find().equal('userid', this.me).singleResult((unternehmen) => {
+                db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((stellenangebote) => {
+                    stellenangebote.forEach((angebot) => {
+                        db.Match.find().equal('angebot', angebot).resultList((matches) => {
+                            matches.forEach((match) => {
+                                deletePromises.push(match.delete());
+                            });
+                        });
+                        db.BewerberLikes.find().equal('angebot', angebot).resultList((likes) => {
+                            likes.forEach((like) => {
+                                deletePromises.push(like.delete());
+                            });
+                        });
+                        deletePromises.push(angebot.delete());
+                    })
+                });
 
-  delete() {
-    if (this.me.iscomp) {
-      db.Unternehmen.find().equal('userid', db.User.me.id).singleResult((unternehmen) => {
-        db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((stellenangebote) => {
-          stellenangebote.forEach((angebot) => {
-            angebot.delete();
-          })
-        })
+                db.UnternehmenLikes.find().equal('unternehmen', unternehmen).resultList((likes) => {
+                    likes.forEach((like) => {
+                        deletePromises.push(like.delete());
+                    });
+                });
 
-        db.UnternehmenLikes.find().equal('unternehmen', unternehmen).resultList((likes) => {
-          likes.forEach((like) => {
-            like.delete();
-          })
-        })
 
-        db.Match.find().equal('unternehmen', unternehmen).resultList((matchs) => {
-          matchs.forEach((match) => {
-            match.delete();
-          })
-        })
+                deletePromises.push(unternehmen.delete());
+            });
+        } else {
+            db.Bewerber.find().equal('user', this.me).singleResult((bewerber) => {
+                db.Match.find().equal('bewerber', bewerber).resultList((matchs) => {
+                    matchs.forEach((match) => {
+                        deletePromises.push(match.delete());
+                    });
+                });
+                db.BewerberLikes.find().equal('bewerber', bewerber).resultList((likes) => {
+                    likes.forEach((like) => {
+                        deletePromises.push(like.delete());
+                    });
+                });
+                db.UnternehmenLikes.find().equal('bewerber', bewerber).resultList((likes) => {
+                    likes.forEach((like) => {
+                        deletePromises.push(like.delete());
+                    });
+                });
 
-        unternehmen.delete();
-      });
-    } else {
-      db.Bewerber.find().equal('userid', db.User.me.id).singleResult((bewerber) => {
-        db.BewerberLikes.find().equal('bewerbee', bewerber).resultList((likes) => {
-          likes.forEach((like) => {
-            like.delete();
-          })
-        })
-
-        db.Match.find().equal('bewerber', bewerber).resultList((matchs) => {
-          matchs.forEach((match) => {
-            match.delete();
-          })
-        })
-
-        bewerber.delete();
-      });
+                deletePromises.push(bewerber.delete());
+            });
+        }
+        deletePromises.push(this.me.delete());
+        Promise.all(deletePromises).then(() => {
+            db.User.logout().then(() => {
+                this.authService.isLoginSubject.next(false);
+                this.router.navigate(['/signup']);
+            });
+        }, (error) => {
+            // @todo Fehler anzeigen
+        });
     }
-    db.User.me.delete();
-    db.User.logout().then(() => {
-      this.authService.isLoginSubject.next(false);
-      this.router.navigate(['/']);
-    })
-  }
 }

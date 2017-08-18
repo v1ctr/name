@@ -18,26 +18,22 @@ export class VacancyComponent implements OnInit {
     error;
 
     constructor(private router: Router, private route: ActivatedRoute) {
-        if (!db.User.me.iscomp) {
-            this.router.navigate(['/swipe/bewerber']);
-        } else {
-            this.vacancy = new db.Stellenangebot();
-            db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
-                if (unternehmen) {
-                    this.vacancy.unternehmen = unternehmen;
-                }
-            });
-            this.vacancy.aktiv = true;
-            db.Vertragsart.find().resultList((vertragsarten) => {
-                this.vertragsarten = vertragsarten;
-            });
-            db.Sprache.find().resultList((sprachen) => {
-                this.sprachen = sprachen;
-            });
-            db.Berufsfeld.find().resultList((branchen) => {
-                this.branchen = branchen;
-            });
-        }
+        this.vacancy = new db.Stellenangebot();
+        db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
+            if (unternehmen) {
+                this.vacancy.unternehmen = unternehmen;
+            }
+        });
+        this.vacancy.aktiv = true;
+        db.Vertragsart.find().resultList((vertragsarten) => {
+            this.vertragsarten = vertragsarten;
+        });
+        db.Sprache.find().resultList((sprachen) => {
+            this.sprachen = sprachen;
+        });
+        db.Berufsfeld.find().resultList((branchen) => {
+            this.branchen = branchen;
+        });
     }
 
     ngOnInit() {

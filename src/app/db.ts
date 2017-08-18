@@ -4,6 +4,19 @@ import {baqend, db} from 'baqend';
 
 db.connect('green-meadow-83', true);
 
+export function getRedirectPath(userType: string = null, module: string = null): string {
+    if (!db.User.me) {
+        return '/login';
+    }
+    if (module === null) {
+        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
+    }
+    if (userType === null) {
+        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
+    }
+    return '/' + module + '/' + userType;
+}
+
 @Injectable()
 export class DBReady implements Resolve<baqend> {
   resolve(route: ActivatedRouteSnapshot): Promise<baqend> {
@@ -27,21 +40,17 @@ export class DBLoggedIn implements CanActivate {
 }
 
 @Injectable()
-export class ConfigCompleted implements CanActivate {
+export class DBNotLoggedIn implements CanActivate {
     constructor(private router: Router) {
     }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<boolean> {
         return db.ready().then(() => {
-            if (!db.User.me) {
-                this.router.navigate(['/login']);
+            if (db.User.me) {
+                this.router.navigate([getRedirectPath()]);
                 return false;
-            } else if (db.User.me.isConfigCompleted) {
-                return true;
             }
-            const userType = db.User.me.iscomp ? '/unternehmen' : '/bewerber';
-            this.router.navigate(['/config' + userType]);
-            return false;
+            return true;
         });
     }
 }
@@ -59,15 +68,14 @@ export class IsCompany implements CanActivate {
             } else if (db.User.me.iscomp) {
                 return true;
             }
-            const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
-            this.router.navigate([module + '/bewerber']);
+            this.router.navigate([getRedirectPath('bewerber')]);
             return false;
         });
     }
 }
 
 @Injectable()
-export class NotIsCompany implements CanActivate {
+export class IsBewerber implements CanActivate {
     constructor(private router: Router) {
     }
 
@@ -79,11 +87,10 @@ export class NotIsCompany implements CanActivate {
             } else if (!db.User.me.iscomp) {
                 return true;
             }
-            const module = db.User.me.isConfigCompleted ? '/swipe' : '/config';
-            this.router.navigate([module + '/unternehmen']);
+            this.router.navigate([getRedirectPath('unternehmen')]);
             return false;
         });
     }
 }
 
-export const DB_PROVIDERS = [DBReady, DBLoggedIn, IsCompany, NotIsCompany, ConfigCompleted];
+export const DB_PROVIDERS = [DBReady, DBLoggedIn, DBNotLoggedIn, IsCompany, IsBewerber];
