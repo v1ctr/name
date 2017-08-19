@@ -5,22 +5,22 @@ import {LoginComponent} from './login/login.component';
 import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany} from './db';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
-import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
-import {NewPasswordComponent} from './newPassword/newPassword.component';
+import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
+import {NewPasswordComponent} from './login/newPassword/newPassword.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
-import {VacancyComponent} from './vacancy/vacancy.component';
+import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 import {MatchesComponent} from './matches/matches.component';
-import {MatchComponent} from './match/match.component';
-import {GenerateUserDataComponent} from './generateUserData/generateUserData.component';
+import {MatchComponent} from './matches/match/match.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
     {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [IsBewerber]},
     {path: 'swipe/unternehmen', component: SwipeUnternehmenComponent, canActivate: [IsCompany]},
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
+    {path: 'signup/:email', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
     {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [IsBewerber]},
@@ -38,7 +38,6 @@ const routes: Routes = [
     },
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
     {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
-    {path: 'gud', component: GenerateUserDataComponent, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 

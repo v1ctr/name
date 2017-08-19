@@ -29,16 +29,15 @@ import {SignupComponent} from './signup/signup.component';
 import {LoginComponent} from './login/login.component';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
-import {ForgotPasswordComponent} from './forgotPassword/forgotPassword.component';
-import {NewPasswordComponent} from './newPassword/newPassword.component';
+import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
+import {NewPasswordComponent} from './login/newPassword/newPassword.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
-import {VacancyComponent} from './vacancy/vacancy.component';
+import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccloeschenComponent} from './accloeschen/accloeschen.component';
 import {MatchesComponent} from './matches/matches.component';
-import {MatchComponent} from './match/match.component';
-import {GenerateUserDataComponent} from './generateUserData/generateUserData.component';
+import {MatchComponent} from './matches/match/match.component';
 
 @NgModule({
     declarations: [
@@ -57,7 +56,6 @@ import {GenerateUserDataComponent} from './generateUserData/generateUserData.com
         RandomGradientDirective,
         MatchesComponent,
         MatchComponent,
-        GenerateUserDataComponent,
     ],
     imports: [
         BrowserModule,

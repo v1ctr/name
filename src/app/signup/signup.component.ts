@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {db} from 'baqend';
 
 @Component({
@@ -19,7 +19,10 @@ export class SignupComponent {
         message: '',
     };
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private route: ActivatedRoute) {
+        this.route.params.subscribe(params => {
+            this.user.username = params['email'];
+        });
     }
 
     register() {
