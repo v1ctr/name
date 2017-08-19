@@ -14,13 +14,9 @@ export class VacanciesComponent implements OnInit {
     }
 
     ngOnInit() {
-        /*
         db.Stellenangebot.find().equal('userid', db.User.me).resultList((result) => {
             this.vacancies = result;
         });
-        */
-      db.Stellenangebot.find().resultList((result) => {
-        this.vacancies = result;
-      });
+
     }
 }

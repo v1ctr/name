@@ -36,8 +36,6 @@ export class SwipeUnternehmenComponent implements OnInit {
 
     @HostListener('window:keyup', ['$event'])
     keyEvent(event: KeyboardEvent) {
-        console.log(event);
-
         if (event.keyCode === KEY_CODE.RIGHT_ARROW) {
             this.like(true);
         }
@@ -90,7 +88,6 @@ export class SwipeUnternehmenComponent implements OnInit {
                 unternehmenLike.like = event.like;
                 unternehmenLike.update()
                   .then(()=>{
-                    console.log("Update: UnternehmenLike");
                     if(event.like){
                       this.checkIfMatch(bewerber);
                     }
@@ -102,7 +99,6 @@ export class SwipeUnternehmenComponent implements OnInit {
                   like: event.like
                 });
                 unternehmenLike.insert().then(function() {
-                  console.log("Eingefügt: UnternehmenLike");
                   if(event.like){
                     this.checkIfMatch(bewerber);
                   }
