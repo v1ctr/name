@@ -10,6 +10,12 @@
       <input type="password" mdInput [(ngModel)]="user.password" name="password" placeholder="Passwort" required>
     </md-input-container>
   </div>
+  <div class="row">
+    <md-input-container class="col-sm-12">
+      <input type="password" mdInput [(ngModel)]="user.passwordRepeat" name="passwordRepeat"
+             placeholder="Passwort wiederholen" required>
+    </md-input-container>
+  </div>
   <div class="form-group col-lg-12">
     <div class="radio">
       <label>

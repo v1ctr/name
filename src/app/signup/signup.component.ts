@@ -12,6 +12,7 @@ export class SignupComponent {
     user = {
         username: '',
         password: '',
+        passwordRepeat: '',
         iscomp: false,
     };
     result = {
@@ -26,17 +27,22 @@ export class SignupComponent {
     }
 
     register() {
-        const user = new db.User({
-            username: this.user.username,
-            iscomp: this.user.iscomp,
-            isConfigCompleted: false,
-        });
-        db.User.register(user, this.user.password).then(() => {
-            this.result.isError = false;
-            this.result.message = 'Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.';
-        }, (error) => {
+        if (this.user.password === this.user.passwordRepeat) {
+            const user = new db.User({
+                username: this.user.username,
+                iscomp: this.user.iscomp,
+                isConfigCompleted: false,
+            });
+            db.User.register(user, this.user.password).then(() => {
+                this.result.isError = false;
+                this.result.message = 'Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.';
+            }, (error) => {
+                this.result.isError = true;
+                this.result.message = error.message;
+            });
+        } else {
             this.result.isError = true;
-            this.result.message = error.message;
-        });
+            this.result.message = 'Passwörter stimmen nicht überein!';
+        }
     }
 }
