@@ -8,7 +8,7 @@ import {db, model} from 'baqend';
 })
 export class MatchesComponent implements OnInit {
 
-    matches: model.Match[];
+    matches: model.Match[] = [];
 
     constructor(private router: Router) {
     }

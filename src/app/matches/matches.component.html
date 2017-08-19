@@ -1,4 +1,4 @@
-<md-nav-list>
+<md-nav-list *ngIf="matches.length > 0; else no_matches">
     <a md-list-item *ngFor="let match of matches" [routerLink]=" ['../match', match.key]">
         <h3 md-line>{{match.angebot.beschreibung}}</h3>
         <p md-line>
@@ -7,3 +7,9 @@
         <md-icon>remove_red_eye</md-icon>
     </a>
 </md-nav-list>
+<ng-template #no_matches>
+    <span>
+        Zur Zeit liegen leider keine Matches vor :-(<br>
+        Jetzt auf die <a [routerLink]="['/swipe/bewerber']">Suche</a> gehen!
+    </span>
+</ng-template>
