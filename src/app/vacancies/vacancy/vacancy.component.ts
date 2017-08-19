@@ -5,7 +5,6 @@ import {db, model} from 'baqend';
 @Component({
     selector: 'app-vacancy',
     templateUrl: './vacancy.component.html',
-    styleUrls: ['./vacancy.component.scss']
 })
 export class VacancyComponent implements OnInit {
 

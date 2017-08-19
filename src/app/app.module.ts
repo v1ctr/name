@@ -35,7 +35,7 @@ import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component'
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import {AccloeschenComponent} from './accloeschen/accloeschen.component';
+import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 

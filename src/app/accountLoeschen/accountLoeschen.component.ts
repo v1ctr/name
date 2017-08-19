@@ -5,8 +5,7 @@ import {AuthService} from '../auth.service';
 
 @Component({
     selector: 'app-accloeschen',
-    templateUrl: './accloeschen.component.html',
-    styleUrls: ['./accloeschen.component.scss']
+    templateUrl: './accountLoeschen.component.html',
 })
 export class AccloeschenComponent {
 

@@ -11,7 +11,7 @@ import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component'
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import {AccloeschenComponent} from './accloeschen/accloeschen.component';
+import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 
@@ -37,7 +37,7 @@ const routes: Routes = [
         canActivate: [DBNotLoggedIn]
     },
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
-    {path: 'accloeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
+    {path: 'accountLoeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 

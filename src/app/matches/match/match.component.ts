@@ -5,7 +5,6 @@ import {db, model} from 'baqend';
 @Component({
     selector: 'app-match',
     templateUrl: './match.component.html',
-    styleUrls: ['./match.component.scss']
 })
 export class MatchComponent implements OnInit {
 

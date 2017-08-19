@@ -11,7 +11,6 @@ export enum KEY_CODE {
 @Component({
   selector: 'app-swipe-bewerber',
   templateUrl: 'swipe-bewerber.component.html',
-  styleUrls: ['swipe-bewerber.component.scss']
 })
 export class SwipeBewerberComponent implements OnInit {
 

@@ -6,7 +6,6 @@ import {AuthService} from '../../auth.service';
 @Component({
     selector: 'app-config-unternehmen',
     templateUrl: './config-unternehmen.component.html',
-    styleUrls: ['./config-unternehmen.component.scss']
 })
 export class ConfigUnternehmenComponent implements OnInit {
 

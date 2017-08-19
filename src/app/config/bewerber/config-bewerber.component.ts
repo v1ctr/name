@@ -6,7 +6,6 @@ import {AuthService} from '../../auth.service';
 @Component({
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
-    styleUrls: ['./config-bewerber.component.scss']
 })
 export class ConfigBewerberComponent implements OnInit {
 
