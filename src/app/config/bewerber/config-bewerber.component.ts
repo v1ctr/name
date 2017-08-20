@@ -1,65 +1,52 @@
-import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {Component} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
-export class ConfigBewerberComponent implements OnInit {
+export class ConfigBewerberComponent {
 
     user: model.User;
     bewerber: model.Bewerber;
+
+    // Data for DropDowns
     vertragsarten: model.Vertragsart[];
-    selectedVertragsarten: model.Vertragsart[] = [];
     sprachen: model.Sprache[];
-    selectedSprachen: model.Sprache[] = [];
     berufsfelder: model.Berufsfeld[];
     arbeitsverhaeltnisse: model.Arbeitsverhaeltnis[];
+
+    selectedVertragsarten: model.Vertragsart[] = [];
+    selectedSprachen: model.Sprache[] = [];
+
     profilbild: any;
     lebenslauf: any;
 
     errors = [];
 
-    constructor(private router: Router, private authService: AuthService) {
-        this.user = db.User.me;
-        this.bewerber = new db.Bewerber();
-        db.Vertragsart.find().resultList((vertragsarten) => {
-            this.vertragsarten = vertragsarten;
-        });
-        db.Sprache.find().resultList((sprachen) => {
-            this.sprachen = sprachen;
-        });
-        db.Berufsfeld.find().resultList((berufsfelder) => {
-            this.berufsfelder = berufsfelder;
-        });
-        db.Arbeitsverhaeltnis.find().resultList((arbeitsverhaeltnisse) => {
-            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
-        });
-    }
 
-    ngOnInit() {
-        db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
-            if (bewerber) {
-                this.bewerber = bewerber;
-                this.bewerber.vertragsarten.forEach((element) => {
-                    this.selectedVertragsarten.push(element);
-                });
-                this.bewerber.sprachen.forEach((element) => {
-                    this.selectedSprachen.push(element);
-                });
-                if (this.bewerber.profilbild) {
-                    this.profilbild = this.bewerber.profilbild;
-                }
-                if (this.bewerber.lebenslauf) {
-                    this.lebenslauf = this.bewerber.lebenslauf;
-                }
-            } else {
-                this.bewerber = new db.Bewerber();
-                this.bewerber.user = this.user;
-            }
+    constructor(private authService: AuthService,
+                private route: ActivatedRoute,) {
+        this.user = db.User.me;
+        this.bewerber = this.route.snapshot.data['bewerber'];
+        this.vertragsarten = this.route.snapshot.data['vertragsarten'];
+        this.sprachen = this.route.snapshot.data['sprachen'];
+        this.berufsfelder = this.route.snapshot.data['berufsfelder'];
+        this.arbeitsverhaeltnisse = this.route.snapshot.data['arbeitsverhaeltnisse'];
+        this.bewerber.vertragsarten.forEach((element) => {
+            this.selectedVertragsarten.push(element);
         });
+        this.bewerber.sprachen.forEach((element) => {
+            this.selectedSprachen.push(element);
+        });
+        if (this.bewerber.profilbild) {
+            this.profilbild = this.bewerber.profilbild;
+        }
+        if (this.bewerber.lebenslauf) {
+            this.lebenslauf = this.bewerber.lebenslauf;
+        }
     }
 
     save() {

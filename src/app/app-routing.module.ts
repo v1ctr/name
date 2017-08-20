@@ -14,6 +14,11 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
+import {BewerberResolver} from './bewerberResolver';
+import {VertragsartResolver} from './vertragsartResolver';
+import {SprachenResolver} from './sprachenResolver';
+import {BerufsfeldResolver} from './berufsfeldResolver';
+import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -23,7 +28,18 @@ const routes: Routes = [
     {path: 'signup/:email', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
-    {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [IsBewerber]},
+    {
+        path: 'config/bewerber',
+        component: ConfigBewerberComponent,
+        resolve: {
+            bewerber: BewerberResolver,
+            vertragsarten: VertragsartResolver,
+            sprachen: SprachenResolver,
+            berufsfelder: BerufsfeldResolver,
+            arbeitsverhaeltnisse: ArbeitsverhaeltnisResolver,
+        },
+        canActivate: [IsBewerber]
+    },
     {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
     {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},

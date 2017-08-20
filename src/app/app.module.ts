@@ -38,6 +38,12 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
+import {BewerberResolver} from './bewerberResolver';
+import {BewerberService} from './bewerberService';
+import {VertragsartResolver} from './vertragsartResolver';
+import {SprachenResolver} from './sprachenResolver';
+import {BerufsfeldResolver} from './berufsfeldResolver';
+import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
 
 @NgModule({
     declarations: [
@@ -79,7 +85,16 @@ import {MatchComponent} from './matches/match/match.component';
         MdNativeDateModule,
         MdCardModule
     ],
-    providers: [DB_PROVIDERS, AuthService],
+    providers: [
+        DB_PROVIDERS,
+        AuthService,
+        BewerberService,
+        BewerberResolver,
+        VertragsartResolver,
+        SprachenResolver,
+        BerufsfeldResolver,
+        ArbeitsverhaeltnisResolver
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {
