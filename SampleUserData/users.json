@@ -1,0 +1,5252 @@
+[
+  {
+    "id": "/db/User/72",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/72": "allow"
+      },
+      "write": {
+        "/db/User/72": "allow"
+      }
+    },
+    "username": "1@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/73",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/73": "allow"
+      },
+      "write": {
+        "/db/User/73": "allow"
+      }
+    },
+    "username": "2@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/74",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/74": "allow"
+      },
+      "write": {
+        "/db/User/74": "allow"
+      }
+    },
+    "username": "3@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/75",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/75": "allow"
+      },
+      "write": {
+        "/db/User/75": "allow"
+      }
+    },
+    "username": "4@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/76",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/76": "allow"
+      },
+      "write": {
+        "/db/User/76": "allow"
+      }
+    },
+    "username": "5@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/77",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/77": "allow"
+      },
+      "write": {
+        "/db/User/77": "allow"
+      }
+    },
+    "username": "6@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/78",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/78": "allow"
+      },
+      "write": {
+        "/db/User/78": "allow"
+      }
+    },
+    "username": "7@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/79",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/79": "allow"
+      },
+      "write": {
+        "/db/User/79": "allow"
+      }
+    },
+    "username": "8@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/80",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/80": "allow"
+      },
+      "write": {
+        "/db/User/80": "allow"
+      }
+    },
+    "username": "9@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/81",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/81": "allow"
+      },
+      "write": {
+        "/db/User/81": "allow"
+      }
+    },
+    "username": "10@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/82",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/82": "allow"
+      },
+      "write": {
+        "/db/User/82": "allow"
+      }
+    },
+    "username": "11@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/83",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/83": "allow"
+      },
+      "write": {
+        "/db/User/83": "allow"
+      }
+    },
+    "username": "12@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/84",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/84": "allow"
+      },
+      "write": {
+        "/db/User/84": "allow"
+      }
+    },
+    "username": "13@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/85",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/85": "allow"
+      },
+      "write": {
+        "/db/User/85": "allow"
+      }
+    },
+    "username": "14@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/86",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/86": "allow"
+      },
+      "write": {
+        "/db/User/86": "allow"
+      }
+    },
+    "username": "15@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/87",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/87": "allow"
+      },
+      "write": {
+        "/db/User/87": "allow"
+      }
+    },
+    "username": "16@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/88",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/88": "allow"
+      },
+      "write": {
+        "/db/User/88": "allow"
+      }
+    },
+    "username": "17@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/89",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/89": "allow"
+      },
+      "write": {
+        "/db/User/89": "allow"
+      }
+    },
+    "username": "18@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/90",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/90": "allow"
+      },
+      "write": {
+        "/db/User/90": "allow"
+      }
+    },
+    "username": "19@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/91",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/91": "allow"
+      },
+      "write": {
+        "/db/User/91": "allow"
+      }
+    },
+    "username": "20@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/92",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/92": "allow"
+      },
+      "write": {
+        "/db/User/92": "allow"
+      }
+    },
+    "username": "21@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/93",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/93": "allow"
+      },
+      "write": {
+        "/db/User/93": "allow"
+      }
+    },
+    "username": "22@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/94",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/94": "allow"
+      },
+      "write": {
+        "/db/User/94": "allow"
+      }
+    },
+    "username": "23@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/95",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/95": "allow"
+      },
+      "write": {
+        "/db/User/95": "allow"
+      }
+    },
+    "username": "24@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/96",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/96": "allow"
+      },
+      "write": {
+        "/db/User/96": "allow"
+      }
+    },
+    "username": "25@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/97",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/97": "allow"
+      },
+      "write": {
+        "/db/User/97": "allow"
+      }
+    },
+    "username": "26@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/98",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/98": "allow"
+      },
+      "write": {
+        "/db/User/98": "allow"
+      }
+    },
+    "username": "27@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/99",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/99": "allow"
+      },
+      "write": {
+        "/db/User/99": "allow"
+      }
+    },
+    "username": "28@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/100",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/100": "allow"
+      },
+      "write": {
+        "/db/User/100": "allow"
+      }
+    },
+    "username": "29@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/101",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/101": "allow"
+      },
+      "write": {
+        "/db/User/101": "allow"
+      }
+    },
+    "username": "30@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/102",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/102": "allow"
+      },
+      "write": {
+        "/db/User/102": "allow"
+      }
+    },
+    "username": "31@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/103",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/103": "allow"
+      },
+      "write": {
+        "/db/User/103": "allow"
+      }
+    },
+    "username": "32@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/104",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/104": "allow"
+      },
+      "write": {
+        "/db/User/104": "allow"
+      }
+    },
+    "username": "33@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/105",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/105": "allow"
+      },
+      "write": {
+        "/db/User/105": "allow"
+      }
+    },
+    "username": "34@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/106",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/106": "allow"
+      },
+      "write": {
+        "/db/User/106": "allow"
+      }
+    },
+    "username": "35@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/107",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/107": "allow"
+      },
+      "write": {
+        "/db/User/107": "allow"
+      }
+    },
+    "username": "36@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/108",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/108": "allow"
+      },
+      "write": {
+        "/db/User/108": "allow"
+      }
+    },
+    "username": "37@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/109",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/109": "allow"
+      },
+      "write": {
+        "/db/User/109": "allow"
+      }
+    },
+    "username": "38@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/110",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/110": "allow"
+      },
+      "write": {
+        "/db/User/110": "allow"
+      }
+    },
+    "username": "39@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/111",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/111": "allow"
+      },
+      "write": {
+        "/db/User/111": "allow"
+      }
+    },
+    "username": "40@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/112",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/112": "allow"
+      },
+      "write": {
+        "/db/User/112": "allow"
+      }
+    },
+    "username": "41@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/113",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/113": "allow"
+      },
+      "write": {
+        "/db/User/113": "allow"
+      }
+    },
+    "username": "42@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/114",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/114": "allow"
+      },
+      "write": {
+        "/db/User/114": "allow"
+      }
+    },
+    "username": "43@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/115",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/115": "allow"
+      },
+      "write": {
+        "/db/User/115": "allow"
+      }
+    },
+    "username": "44@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/116",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/116": "allow"
+      },
+      "write": {
+        "/db/User/116": "allow"
+      }
+    },
+    "username": "45@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/117",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/117": "allow"
+      },
+      "write": {
+        "/db/User/117": "allow"
+      }
+    },
+    "username": "46@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/118",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/118": "allow"
+      },
+      "write": {
+        "/db/User/118": "allow"
+      }
+    },
+    "username": "47@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/119",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/119": "allow"
+      },
+      "write": {
+        "/db/User/119": "allow"
+      }
+    },
+    "username": "48@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/120",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/120": "allow"
+      },
+      "write": {
+        "/db/User/120": "allow"
+      }
+    },
+    "username": "49@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/121",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/121": "allow"
+      },
+      "write": {
+        "/db/User/121": "allow"
+      }
+    },
+    "username": "50@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/122",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/122": "allow"
+      },
+      "write": {
+        "/db/User/122": "allow"
+      }
+    },
+    "username": "51@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/123",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/123": "allow"
+      },
+      "write": {
+        "/db/User/123": "allow"
+      }
+    },
+    "username": "52@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/124",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/124": "allow"
+      },
+      "write": {
+        "/db/User/124": "allow"
+      }
+    },
+    "username": "53@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/125",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/125": "allow"
+      },
+      "write": {
+        "/db/User/125": "allow"
+      }
+    },
+    "username": "54@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/126",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/126": "allow"
+      },
+      "write": {
+        "/db/User/126": "allow"
+      }
+    },
+    "username": "55@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/127",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/127": "allow"
+      },
+      "write": {
+        "/db/User/127": "allow"
+      }
+    },
+    "username": "56@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/128",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/128": "allow"
+      },
+      "write": {
+        "/db/User/128": "allow"
+      }
+    },
+    "username": "57@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/129",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/129": "allow"
+      },
+      "write": {
+        "/db/User/129": "allow"
+      }
+    },
+    "username": "58@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/130",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/130": "allow"
+      },
+      "write": {
+        "/db/User/130": "allow"
+      }
+    },
+    "username": "59@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/131",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/131": "allow"
+      },
+      "write": {
+        "/db/User/131": "allow"
+      }
+    },
+    "username": "60@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/132",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/132": "allow"
+      },
+      "write": {
+        "/db/User/132": "allow"
+      }
+    },
+    "username": "61@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/133",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/133": "allow"
+      },
+      "write": {
+        "/db/User/133": "allow"
+      }
+    },
+    "username": "62@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/134",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/134": "allow"
+      },
+      "write": {
+        "/db/User/134": "allow"
+      }
+    },
+    "username": "63@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/135",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/135": "allow"
+      },
+      "write": {
+        "/db/User/135": "allow"
+      }
+    },
+    "username": "64@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/136",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/136": "allow"
+      },
+      "write": {
+        "/db/User/136": "allow"
+      }
+    },
+    "username": "65@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/137",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/137": "allow"
+      },
+      "write": {
+        "/db/User/137": "allow"
+      }
+    },
+    "username": "66@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/138",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/138": "allow"
+      },
+      "write": {
+        "/db/User/138": "allow"
+      }
+    },
+    "username": "67@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/139",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/139": "allow"
+      },
+      "write": {
+        "/db/User/139": "allow"
+      }
+    },
+    "username": "68@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/140",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/140": "allow"
+      },
+      "write": {
+        "/db/User/140": "allow"
+      }
+    },
+    "username": "69@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/141",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/141": "allow"
+      },
+      "write": {
+        "/db/User/141": "allow"
+      }
+    },
+    "username": "70@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/142",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/142": "allow"
+      },
+      "write": {
+        "/db/User/142": "allow"
+      }
+    },
+    "username": "71@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/143",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/143": "allow"
+      },
+      "write": {
+        "/db/User/143": "allow"
+      }
+    },
+    "username": "72@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/144",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/144": "allow"
+      },
+      "write": {
+        "/db/User/144": "allow"
+      }
+    },
+    "username": "73@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/145",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/145": "allow"
+      },
+      "write": {
+        "/db/User/145": "allow"
+      }
+    },
+    "username": "74@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/146",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/146": "allow"
+      },
+      "write": {
+        "/db/User/146": "allow"
+      }
+    },
+    "username": "75@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/147",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/147": "allow"
+      },
+      "write": {
+        "/db/User/147": "allow"
+      }
+    },
+    "username": "76@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/148",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/148": "allow"
+      },
+      "write": {
+        "/db/User/148": "allow"
+      }
+    },
+    "username": "77@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/149",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/149": "allow"
+      },
+      "write": {
+        "/db/User/149": "allow"
+      }
+    },
+    "username": "78@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/150",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/150": "allow"
+      },
+      "write": {
+        "/db/User/150": "allow"
+      }
+    },
+    "username": "79@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/151",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/151": "allow"
+      },
+      "write": {
+        "/db/User/151": "allow"
+      }
+    },
+    "username": "80@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/152",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/152": "allow"
+      },
+      "write": {
+        "/db/User/152": "allow"
+      }
+    },
+    "username": "81@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/153",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/153": "allow"
+      },
+      "write": {
+        "/db/User/153": "allow"
+      }
+    },
+    "username": "82@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/154",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/154": "allow"
+      },
+      "write": {
+        "/db/User/154": "allow"
+      }
+    },
+    "username": "83@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/155",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/155": "allow"
+      },
+      "write": {
+        "/db/User/155": "allow"
+      }
+    },
+    "username": "84@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/156",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/156": "allow"
+      },
+      "write": {
+        "/db/User/156": "allow"
+      }
+    },
+    "username": "85@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/157",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/157": "allow"
+      },
+      "write": {
+        "/db/User/157": "allow"
+      }
+    },
+    "username": "86@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/158",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/158": "allow"
+      },
+      "write": {
+        "/db/User/158": "allow"
+      }
+    },
+    "username": "87@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/159",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/159": "allow"
+      },
+      "write": {
+        "/db/User/159": "allow"
+      }
+    },
+    "username": "88@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/160",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/160": "allow"
+      },
+      "write": {
+        "/db/User/160": "allow"
+      }
+    },
+    "username": "89@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/161",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/161": "allow"
+      },
+      "write": {
+        "/db/User/161": "allow"
+      }
+    },
+    "username": "90@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/162",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/162": "allow"
+      },
+      "write": {
+        "/db/User/162": "allow"
+      }
+    },
+    "username": "91@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/163",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/163": "allow"
+      },
+      "write": {
+        "/db/User/163": "allow"
+      }
+    },
+    "username": "92@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/164",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/164": "allow"
+      },
+      "write": {
+        "/db/User/164": "allow"
+      }
+    },
+    "username": "93@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/165",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/165": "allow"
+      },
+      "write": {
+        "/db/User/165": "allow"
+      }
+    },
+    "username": "94@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/166",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/166": "allow"
+      },
+      "write": {
+        "/db/User/166": "allow"
+      }
+    },
+    "username": "95@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/167",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/167": "allow"
+      },
+      "write": {
+        "/db/User/167": "allow"
+      }
+    },
+    "username": "96@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/168",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/168": "allow"
+      },
+      "write": {
+        "/db/User/168": "allow"
+      }
+    },
+    "username": "97@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/169",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/169": "allow"
+      },
+      "write": {
+        "/db/User/169": "allow"
+      }
+    },
+    "username": "98@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/170",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/170": "allow"
+      },
+      "write": {
+        "/db/User/170": "allow"
+      }
+    },
+    "username": "99@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/171",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/171": "allow"
+      },
+      "write": {
+        "/db/User/171": "allow"
+      }
+    },
+    "username": "100@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/172",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/172": "allow"
+      },
+      "write": {
+        "/db/User/172": "allow"
+      }
+    },
+    "username": "101@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/173",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/173": "allow"
+      },
+      "write": {
+        "/db/User/173": "allow"
+      }
+    },
+    "username": "102@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/174",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/174": "allow"
+      },
+      "write": {
+        "/db/User/174": "allow"
+      }
+    },
+    "username": "103@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/175",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/175": "allow"
+      },
+      "write": {
+        "/db/User/175": "allow"
+      }
+    },
+    "username": "104@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/176",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/176": "allow"
+      },
+      "write": {
+        "/db/User/176": "allow"
+      }
+    },
+    "username": "105@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/177",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/177": "allow"
+      },
+      "write": {
+        "/db/User/177": "allow"
+      }
+    },
+    "username": "106@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/178",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/178": "allow"
+      },
+      "write": {
+        "/db/User/178": "allow"
+      }
+    },
+    "username": "107@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/179",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/179": "allow"
+      },
+      "write": {
+        "/db/User/179": "allow"
+      }
+    },
+    "username": "108@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/180",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/180": "allow"
+      },
+      "write": {
+        "/db/User/180": "allow"
+      }
+    },
+    "username": "109@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/181",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/181": "allow"
+      },
+      "write": {
+        "/db/User/181": "allow"
+      }
+    },
+    "username": "110@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/182",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/182": "allow"
+      },
+      "write": {
+        "/db/User/182": "allow"
+      }
+    },
+    "username": "111@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/183",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/183": "allow"
+      },
+      "write": {
+        "/db/User/183": "allow"
+      }
+    },
+    "username": "112@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/184",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/184": "allow"
+      },
+      "write": {
+        "/db/User/184": "allow"
+      }
+    },
+    "username": "113@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/185",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/185": "allow"
+      },
+      "write": {
+        "/db/User/185": "allow"
+      }
+    },
+    "username": "114@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/186",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/186": "allow"
+      },
+      "write": {
+        "/db/User/186": "allow"
+      }
+    },
+    "username": "115@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/187",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/187": "allow"
+      },
+      "write": {
+        "/db/User/187": "allow"
+      }
+    },
+    "username": "116@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/188",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/188": "allow"
+      },
+      "write": {
+        "/db/User/188": "allow"
+      }
+    },
+    "username": "117@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/189",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/189": "allow"
+      },
+      "write": {
+        "/db/User/189": "allow"
+      }
+    },
+    "username": "118@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/190",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/190": "allow"
+      },
+      "write": {
+        "/db/User/190": "allow"
+      }
+    },
+    "username": "119@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/191",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/191": "allow"
+      },
+      "write": {
+        "/db/User/191": "allow"
+      }
+    },
+    "username": "120@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/192",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/192": "allow"
+      },
+      "write": {
+        "/db/User/192": "allow"
+      }
+    },
+    "username": "121@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/193",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/193": "allow"
+      },
+      "write": {
+        "/db/User/193": "allow"
+      }
+    },
+    "username": "122@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/194",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/194": "allow"
+      },
+      "write": {
+        "/db/User/194": "allow"
+      }
+    },
+    "username": "123@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/195",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/195": "allow"
+      },
+      "write": {
+        "/db/User/195": "allow"
+      }
+    },
+    "username": "124@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/196",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/196": "allow"
+      },
+      "write": {
+        "/db/User/196": "allow"
+      }
+    },
+    "username": "125@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/197",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/197": "allow"
+      },
+      "write": {
+        "/db/User/197": "allow"
+      }
+    },
+    "username": "126@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/198",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/198": "allow"
+      },
+      "write": {
+        "/db/User/198": "allow"
+      }
+    },
+    "username": "127@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/199",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/199": "allow"
+      },
+      "write": {
+        "/db/User/199": "allow"
+      }
+    },
+    "username": "128@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/200",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/200": "allow"
+      },
+      "write": {
+        "/db/User/200": "allow"
+      }
+    },
+    "username": "129@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/201",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/201": "allow"
+      },
+      "write": {
+        "/db/User/201": "allow"
+      }
+    },
+    "username": "130@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/202",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/202": "allow"
+      },
+      "write": {
+        "/db/User/202": "allow"
+      }
+    },
+    "username": "131@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/203",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/203": "allow"
+      },
+      "write": {
+        "/db/User/203": "allow"
+      }
+    },
+    "username": "132@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/204",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/204": "allow"
+      },
+      "write": {
+        "/db/User/204": "allow"
+      }
+    },
+    "username": "133@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/205",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/205": "allow"
+      },
+      "write": {
+        "/db/User/205": "allow"
+      }
+    },
+    "username": "134@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/206",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/206": "allow"
+      },
+      "write": {
+        "/db/User/206": "allow"
+      }
+    },
+    "username": "135@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/207",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/207": "allow"
+      },
+      "write": {
+        "/db/User/207": "allow"
+      }
+    },
+    "username": "136@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/208",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/208": "allow"
+      },
+      "write": {
+        "/db/User/208": "allow"
+      }
+    },
+    "username": "137@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/209",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/209": "allow"
+      },
+      "write": {
+        "/db/User/209": "allow"
+      }
+    },
+    "username": "138@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/210",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/210": "allow"
+      },
+      "write": {
+        "/db/User/210": "allow"
+      }
+    },
+    "username": "139@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/211",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/211": "allow"
+      },
+      "write": {
+        "/db/User/211": "allow"
+      }
+    },
+    "username": "140@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/212",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/212": "allow"
+      },
+      "write": {
+        "/db/User/212": "allow"
+      }
+    },
+    "username": "141@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/213",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/213": "allow"
+      },
+      "write": {
+        "/db/User/213": "allow"
+      }
+    },
+    "username": "142@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/214",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/214": "allow"
+      },
+      "write": {
+        "/db/User/214": "allow"
+      }
+    },
+    "username": "143@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/215",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/215": "allow"
+      },
+      "write": {
+        "/db/User/215": "allow"
+      }
+    },
+    "username": "144@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/216",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/216": "allow"
+      },
+      "write": {
+        "/db/User/216": "allow"
+      }
+    },
+    "username": "145@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/217",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/217": "allow"
+      },
+      "write": {
+        "/db/User/217": "allow"
+      }
+    },
+    "username": "146@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/218",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/218": "allow"
+      },
+      "write": {
+        "/db/User/218": "allow"
+      }
+    },
+    "username": "147@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/219",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/219": "allow"
+      },
+      "write": {
+        "/db/User/219": "allow"
+      }
+    },
+    "username": "148@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/220",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/220": "allow"
+      },
+      "write": {
+        "/db/User/220": "allow"
+      }
+    },
+    "username": "149@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/221",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/221": "allow"
+      },
+      "write": {
+        "/db/User/221": "allow"
+      }
+    },
+    "username": "150@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/222",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/222": "allow"
+      },
+      "write": {
+        "/db/User/222": "allow"
+      }
+    },
+    "username": "151@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/223",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/223": "allow"
+      },
+      "write": {
+        "/db/User/223": "allow"
+      }
+    },
+    "username": "152@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/224",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/224": "allow"
+      },
+      "write": {
+        "/db/User/224": "allow"
+      }
+    },
+    "username": "153@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/225",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/225": "allow"
+      },
+      "write": {
+        "/db/User/225": "allow"
+      }
+    },
+    "username": "154@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/226",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/226": "allow"
+      },
+      "write": {
+        "/db/User/226": "allow"
+      }
+    },
+    "username": "155@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/227",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/227": "allow"
+      },
+      "write": {
+        "/db/User/227": "allow"
+      }
+    },
+    "username": "156@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/228",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/228": "allow"
+      },
+      "write": {
+        "/db/User/228": "allow"
+      }
+    },
+    "username": "157@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/229",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/229": "allow"
+      },
+      "write": {
+        "/db/User/229": "allow"
+      }
+    },
+    "username": "158@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/230",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/230": "allow"
+      },
+      "write": {
+        "/db/User/230": "allow"
+      }
+    },
+    "username": "159@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/231",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/231": "allow"
+      },
+      "write": {
+        "/db/User/231": "allow"
+      }
+    },
+    "username": "160@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/232",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/232": "allow"
+      },
+      "write": {
+        "/db/User/232": "allow"
+      }
+    },
+    "username": "161@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/233",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/233": "allow"
+      },
+      "write": {
+        "/db/User/233": "allow"
+      }
+    },
+    "username": "162@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/234",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/234": "allow"
+      },
+      "write": {
+        "/db/User/234": "allow"
+      }
+    },
+    "username": "163@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/235",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/235": "allow"
+      },
+      "write": {
+        "/db/User/235": "allow"
+      }
+    },
+    "username": "164@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/236",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/236": "allow"
+      },
+      "write": {
+        "/db/User/236": "allow"
+      }
+    },
+    "username": "165@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/237",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/237": "allow"
+      },
+      "write": {
+        "/db/User/237": "allow"
+      }
+    },
+    "username": "166@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/238",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/238": "allow"
+      },
+      "write": {
+        "/db/User/238": "allow"
+      }
+    },
+    "username": "167@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/239",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/239": "allow"
+      },
+      "write": {
+        "/db/User/239": "allow"
+      }
+    },
+    "username": "168@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/240",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/240": "allow"
+      },
+      "write": {
+        "/db/User/240": "allow"
+      }
+    },
+    "username": "169@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/241",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/241": "allow"
+      },
+      "write": {
+        "/db/User/241": "allow"
+      }
+    },
+    "username": "170@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/242",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/242": "allow"
+      },
+      "write": {
+        "/db/User/242": "allow"
+      }
+    },
+    "username": "171@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/243",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/243": "allow"
+      },
+      "write": {
+        "/db/User/243": "allow"
+      }
+    },
+    "username": "172@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/244",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/244": "allow"
+      },
+      "write": {
+        "/db/User/244": "allow"
+      }
+    },
+    "username": "173@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/245",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/245": "allow"
+      },
+      "write": {
+        "/db/User/245": "allow"
+      }
+    },
+    "username": "174@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/246",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/246": "allow"
+      },
+      "write": {
+        "/db/User/246": "allow"
+      }
+    },
+    "username": "175@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/247",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/247": "allow"
+      },
+      "write": {
+        "/db/User/247": "allow"
+      }
+    },
+    "username": "176@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/248",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/248": "allow"
+      },
+      "write": {
+        "/db/User/248": "allow"
+      }
+    },
+    "username": "177@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/249",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/249": "allow"
+      },
+      "write": {
+        "/db/User/249": "allow"
+      }
+    },
+    "username": "178@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/250",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/250": "allow"
+      },
+      "write": {
+        "/db/User/250": "allow"
+      }
+    },
+    "username": "179@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/251",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/251": "allow"
+      },
+      "write": {
+        "/db/User/251": "allow"
+      }
+    },
+    "username": "180@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/252",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/252": "allow"
+      },
+      "write": {
+        "/db/User/252": "allow"
+      }
+    },
+    "username": "181@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/253",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/253": "allow"
+      },
+      "write": {
+        "/db/User/253": "allow"
+      }
+    },
+    "username": "182@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/254",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/254": "allow"
+      },
+      "write": {
+        "/db/User/254": "allow"
+      }
+    },
+    "username": "183@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/255",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/255": "allow"
+      },
+      "write": {
+        "/db/User/255": "allow"
+      }
+    },
+    "username": "184@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/256",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/256": "allow"
+      },
+      "write": {
+        "/db/User/256": "allow"
+      }
+    },
+    "username": "185@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/257",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/257": "allow"
+      },
+      "write": {
+        "/db/User/257": "allow"
+      }
+    },
+    "username": "186@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/258",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/258": "allow"
+      },
+      "write": {
+        "/db/User/258": "allow"
+      }
+    },
+    "username": "187@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/259",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/259": "allow"
+      },
+      "write": {
+        "/db/User/259": "allow"
+      }
+    },
+    "username": "188@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/260",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/260": "allow"
+      },
+      "write": {
+        "/db/User/260": "allow"
+      }
+    },
+    "username": "189@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/261",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/261": "allow"
+      },
+      "write": {
+        "/db/User/261": "allow"
+      }
+    },
+    "username": "190@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/262",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/262": "allow"
+      },
+      "write": {
+        "/db/User/262": "allow"
+      }
+    },
+    "username": "191@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/263",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/263": "allow"
+      },
+      "write": {
+        "/db/User/263": "allow"
+      }
+    },
+    "username": "192@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/264",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/264": "allow"
+      },
+      "write": {
+        "/db/User/264": "allow"
+      }
+    },
+    "username": "193@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/265",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/265": "allow"
+      },
+      "write": {
+        "/db/User/265": "allow"
+      }
+    },
+    "username": "194@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/266",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/266": "allow"
+      },
+      "write": {
+        "/db/User/266": "allow"
+      }
+    },
+    "username": "195@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/267",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/267": "allow"
+      },
+      "write": {
+        "/db/User/267": "allow"
+      }
+    },
+    "username": "196@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/268",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/268": "allow"
+      },
+      "write": {
+        "/db/User/268": "allow"
+      }
+    },
+    "username": "197@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/269",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/269": "allow"
+      },
+      "write": {
+        "/db/User/269": "allow"
+      }
+    },
+    "username": "198@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/270",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/270": "allow"
+      },
+      "write": {
+        "/db/User/270": "allow"
+      }
+    },
+    "username": "199@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/271",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/271": "allow"
+      },
+      "write": {
+        "/db/User/271": "allow"
+      }
+    },
+    "username": "200@bewerber.com",
+    "inactive": false,
+    "iscomp": false,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/272",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/272": "allow"
+      },
+      "write": {
+        "/db/User/272": "allow"
+      }
+    },
+    "username": "1@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/273",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/273": "allow"
+      },
+      "write": {
+        "/db/User/273": "allow"
+      }
+    },
+    "username": "2@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/274",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/274": "allow"
+      },
+      "write": {
+        "/db/User/274": "allow"
+      }
+    },
+    "username": "3@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/275",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/275": "allow"
+      },
+      "write": {
+        "/db/User/275": "allow"
+      }
+    },
+    "username": "4@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/276",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/276": "allow"
+      },
+      "write": {
+        "/db/User/276": "allow"
+      }
+    },
+    "username": "5@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/277",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/277": "allow"
+      },
+      "write": {
+        "/db/User/277": "allow"
+      }
+    },
+    "username": "6@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/278",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/278": "allow"
+      },
+      "write": {
+        "/db/User/278": "allow"
+      }
+    },
+    "username": "7@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/279",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/279": "allow"
+      },
+      "write": {
+        "/db/User/279": "allow"
+      }
+    },
+    "username": "8@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/280",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/280": "allow"
+      },
+      "write": {
+        "/db/User/280": "allow"
+      }
+    },
+    "username": "9@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/281",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/281": "allow"
+      },
+      "write": {
+        "/db/User/281": "allow"
+      }
+    },
+    "username": "10@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/282",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/282": "allow"
+      },
+      "write": {
+        "/db/User/282": "allow"
+      }
+    },
+    "username": "11@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/283",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/283": "allow"
+      },
+      "write": {
+        "/db/User/283": "allow"
+      }
+    },
+    "username": "12@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/284",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/284": "allow"
+      },
+      "write": {
+        "/db/User/284": "allow"
+      }
+    },
+    "username": "13@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/285",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/285": "allow"
+      },
+      "write": {
+        "/db/User/285": "allow"
+      }
+    },
+    "username": "14@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/286",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/286": "allow"
+      },
+      "write": {
+        "/db/User/286": "allow"
+      }
+    },
+    "username": "15@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/287",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/287": "allow"
+      },
+      "write": {
+        "/db/User/287": "allow"
+      }
+    },
+    "username": "16@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/288",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/288": "allow"
+      },
+      "write": {
+        "/db/User/288": "allow"
+      }
+    },
+    "username": "17@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/289",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/289": "allow"
+      },
+      "write": {
+        "/db/User/289": "allow"
+      }
+    },
+    "username": "18@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/290",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/290": "allow"
+      },
+      "write": {
+        "/db/User/290": "allow"
+      }
+    },
+    "username": "19@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/291",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/291": "allow"
+      },
+      "write": {
+        "/db/User/291": "allow"
+      }
+    },
+    "username": "20@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/292",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/292": "allow"
+      },
+      "write": {
+        "/db/User/292": "allow"
+      }
+    },
+    "username": "21@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/293",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/293": "allow"
+      },
+      "write": {
+        "/db/User/293": "allow"
+      }
+    },
+    "username": "22@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/294",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/294": "allow"
+      },
+      "write": {
+        "/db/User/294": "allow"
+      }
+    },
+    "username": "23@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/295",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/295": "allow"
+      },
+      "write": {
+        "/db/User/295": "allow"
+      }
+    },
+    "username": "24@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/296",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/296": "allow"
+      },
+      "write": {
+        "/db/User/296": "allow"
+      }
+    },
+    "username": "25@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/297",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/297": "allow"
+      },
+      "write": {
+        "/db/User/297": "allow"
+      }
+    },
+    "username": "26@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/298",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/298": "allow"
+      },
+      "write": {
+        "/db/User/298": "allow"
+      }
+    },
+    "username": "27@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/299",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/299": "allow"
+      },
+      "write": {
+        "/db/User/299": "allow"
+      }
+    },
+    "username": "28@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/300",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/300": "allow"
+      },
+      "write": {
+        "/db/User/300": "allow"
+      }
+    },
+    "username": "29@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/301",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/301": "allow"
+      },
+      "write": {
+        "/db/User/301": "allow"
+      }
+    },
+    "username": "30@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/302",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/302": "allow"
+      },
+      "write": {
+        "/db/User/302": "allow"
+      }
+    },
+    "username": "31@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/303",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/303": "allow"
+      },
+      "write": {
+        "/db/User/303": "allow"
+      }
+    },
+    "username": "32@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/304",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/304": "allow"
+      },
+      "write": {
+        "/db/User/304": "allow"
+      }
+    },
+    "username": "33@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/305",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/305": "allow"
+      },
+      "write": {
+        "/db/User/305": "allow"
+      }
+    },
+    "username": "34@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/306",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/306": "allow"
+      },
+      "write": {
+        "/db/User/306": "allow"
+      }
+    },
+    "username": "35@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/307",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/307": "allow"
+      },
+      "write": {
+        "/db/User/307": "allow"
+      }
+    },
+    "username": "36@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/308",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/308": "allow"
+      },
+      "write": {
+        "/db/User/308": "allow"
+      }
+    },
+    "username": "37@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/309",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/309": "allow"
+      },
+      "write": {
+        "/db/User/309": "allow"
+      }
+    },
+    "username": "38@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/310",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/310": "allow"
+      },
+      "write": {
+        "/db/User/310": "allow"
+      }
+    },
+    "username": "39@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/311",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/311": "allow"
+      },
+      "write": {
+        "/db/User/311": "allow"
+      }
+    },
+    "username": "40@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/312",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/312": "allow"
+      },
+      "write": {
+        "/db/User/312": "allow"
+      }
+    },
+    "username": "41@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/313",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/313": "allow"
+      },
+      "write": {
+        "/db/User/313": "allow"
+      }
+    },
+    "username": "42@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/314",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/314": "allow"
+      },
+      "write": {
+        "/db/User/314": "allow"
+      }
+    },
+    "username": "43@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/315",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/315": "allow"
+      },
+      "write": {
+        "/db/User/315": "allow"
+      }
+    },
+    "username": "44@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/316",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/316": "allow"
+      },
+      "write": {
+        "/db/User/316": "allow"
+      }
+    },
+    "username": "45@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/317",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/317": "allow"
+      },
+      "write": {
+        "/db/User/317": "allow"
+      }
+    },
+    "username": "46@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/318",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/318": "allow"
+      },
+      "write": {
+        "/db/User/318": "allow"
+      }
+    },
+    "username": "47@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/319",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/319": "allow"
+      },
+      "write": {
+        "/db/User/319": "allow"
+      }
+    },
+    "username": "48@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/320",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/320": "allow"
+      },
+      "write": {
+        "/db/User/320": "allow"
+      }
+    },
+    "username": "49@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  },
+  {
+    "id": "/db/User/321",
+    "version": 1,
+    "acl": {
+      "read": {
+        "/db/User/321": "allow"
+      },
+      "write": {
+        "/db/User/321": "allow"
+      }
+    },
+    "username": "50@unternehmen.com",
+    "inactive": false,
+    "iscomp": true,
+    "isConfigCompleted": true,
+    "_password": "pjfV0PRCatq1prGu96oB5y1G0Ko+z7T01/99yNRyf6FJr4865+AnnLQUmdWx3+KvAyjGJxOeaivvjucEj0jquA==",
+    "_revokedAt": "2017-08-18T14:27:32Z",
+    "_salt": "n331b+4BJE1BZFXGCE5qnvp5QwIoU8ClKJPbgeR+9tqFsnYWu1fQAUiC2hCd0ZRhD7g5htxFQp5NQvF/NsCJ4w==",
+    "_oAuth": null,
+    "_verificationNonce": "4Mb2NNFg"
+  }
+]

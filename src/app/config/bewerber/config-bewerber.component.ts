@@ -28,19 +28,23 @@ export class ConfigBewerberComponent {
 
 
     constructor(private authService: AuthService,
-                private route: ActivatedRoute,) {
+                private route: ActivatedRoute) {
         this.user = db.User.me;
         this.bewerber = this.route.snapshot.data['bewerber'];
         this.vertragsarten = this.route.snapshot.data['vertragsarten'];
         this.sprachen = this.route.snapshot.data['sprachen'];
         this.berufsfelder = this.route.snapshot.data['berufsfelder'];
         this.arbeitsverhaeltnisse = this.route.snapshot.data['arbeitsverhaeltnisse'];
-        this.bewerber.vertragsarten.forEach((element) => {
-            this.selectedVertragsarten.push(element);
-        });
-        this.bewerber.sprachen.forEach((element) => {
-            this.selectedSprachen.push(element);
-        });
+        if (this.bewerber.vertragsarten) {
+            this.bewerber.vertragsarten.forEach((element) => {
+                this.selectedVertragsarten.push(element);
+            });
+        }
+        if (this.bewerber.sprachen) {
+            this.bewerber.sprachen.forEach((element) => {
+                this.selectedSprachen.push(element);
+            });
+        }
         if (this.bewerber.profilbild) {
             this.profilbild = this.bewerber.profilbild;
         }
