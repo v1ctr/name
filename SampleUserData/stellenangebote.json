@@ -1,0 +1,4184 @@
+[
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Der Chef",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9a12d71e-dfe9-4478-b8f9-84a6c218ce2d",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/4cbab526-0614-4c17-a224-37573b4505d4",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Der Chef",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Herr Möller",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9114eeea-1591-41a3-a141-92abf7f6dc00",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Dieter",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1b88a001-ae59-45d1-8b2f-c07b250ef94d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Claas Hansen",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ee1172f5-019d-47bc-8df8-b16f0ac7fcc0",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Dieter",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Der Chef",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2d415a54-d4db-4fff-bde7-12a23e6f21d4",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Fabian",
+    "anforderung": "Torten backen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/fbdefe94-254c-40a3-be21-2c7520dd8517",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Claas Hansen",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2577f3b5-9bd4-41a5-9863-5c6f2bec5a78",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2af46413-e828-4e6d-8c35-c9169e5078fe",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/75898bc3-81e7-4720-bd77-8c5ec22f6981",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Herr Möller",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e1b3db9a-eb0c-422c-97d5-3d32f210014f",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Grillen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Der Chef",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e6120757-e468-4589-925b-22caf924ce91",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Andreas Meier",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/faae08a5-763f-4a4a-ae9e-a0b3031a6d4b",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/91070c95-09e5-4212-a30c-d838e511da6d",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Der Chef",
+    "anforderung": "Servieren",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/5a1c9ec3-ad10-46d0-8f04-0ee1dea5370e",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Herr Möller",
+    "anforderung": "Grillen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/91070c95-09e5-4212-a30c-d838e511da6d",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/07bed6dd-a666-478f-87a8-1c7c25c7e452",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1b88a001-ae59-45d1-8b2f-c07b250ef94d",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/406ebb2f-44dc-4ebc-8a69-8ed3ff58c67c",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/d1423fa5-4863-4f6d-80f5-f748f5f66938",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Dieter",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/de9682a2-a623-41eb-807f-65faf47f2d70",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Claas Hansen",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9114eeea-1591-41a3-a141-92abf7f6dc00",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Claas Hansen",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Claas Hansen",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Andreas Meier",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Fabian",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/de9682a2-a623-41eb-807f-65faf47f2d70",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Herr Möller",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ac645731-f2b0-425f-8d6d-cccd1404248f",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/0054cb01-2b5b-447d-8daa-ecc0cc454f05",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Dieter",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/07bed6dd-a666-478f-87a8-1c7c25c7e452",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Dieter",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a4533d29-c8b7-4ca6-b033-c3b0772f6206",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Fabian",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/8bd2b66d-8ae1-4bb4-b483-79c33290d47f",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Herr Möller",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/91070c95-09e5-4212-a30c-d838e511da6d",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Fabian",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/5a1c9ec3-ad10-46d0-8f04-0ee1dea5370e",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Frau Müller",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Fabian",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1595744e-7da8-4ae4-b57e-e77fef1098cc",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Dieter",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e89abcd2-6a50-4656-a90b-b0940cbfd8b5",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Frau Müller",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1595744e-7da8-4ae4-b57e-e77fef1098cc",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e1b3db9a-eb0c-422c-97d5-3d32f210014f",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/f706ab98-b1d6-4c88-a8e6-d314cb372782",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/4cbab526-0614-4c17-a224-37573b4505d4",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Doris Schulz",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Frau Müller",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Claas Hansen",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/14b9cb96-7d7a-4ef2-a757-a0897bc729eb",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Fabian",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/296b92d2-6bbd-48b6-b170-d05eb4f14235",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Der Chef",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Dieter",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/fbdefe94-254c-40a3-be21-2c7520dd8517",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3cc44349-a87f-4fa5-82b0-6622a00eb679",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/5a1c9ec3-ad10-46d0-8f04-0ee1dea5370e",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Dieter",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3cc44349-a87f-4fa5-82b0-6622a00eb679",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Andreas Meier",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Servieren",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/14f097dc-6e72-4a76-956f-51dcd2ee7958",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Frau Müller",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Fabian",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/07bed6dd-a666-478f-87a8-1c7c25c7e452",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Andreas Meier",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Herr Möller",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/51dcf5a7-52e2-4224-87ee-920c1babc950",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Herr Möller",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Fabian",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Claas Hansen",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Fabian",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2d415a54-d4db-4fff-bde7-12a23e6f21d4",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Der Chef",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2d415a54-d4db-4fff-bde7-12a23e6f21d4",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Doris Schulz",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Herr Möller",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/c4cf185c-fa99-46eb-8da3-83c6c18ba78e",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kochen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Fabian",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e3730b9b-dfef-4d39-bcae-58d4065daa2b",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Dieter",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/4cbab526-0614-4c17-a224-37573b4505d4",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Dieter",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/81bb8a22-7490-48f6-a4d0-eed6c9d47f7a",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Andreas Meier",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/5a1c9ec3-ad10-46d0-8f04-0ee1dea5370e",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Andreas Meier",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/de9682a2-a623-41eb-807f-65faf47f2d70",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Claas Hansen",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Claas Hansen",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Claas Hansen",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Claas Hansen",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9a12d71e-dfe9-4478-b8f9-84a6c218ce2d",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Doris Schulz",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/70691813-1cf6-4cd2-bff0-a7c87a60b482",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/d1423fa5-4863-4f6d-80f5-f748f5f66938",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Doris Schulz",
+    "anforderung": "Torten backen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Andreas Meier",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/5a1c9ec3-ad10-46d0-8f04-0ee1dea5370e",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Der Chef",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/406ebb2f-44dc-4ebc-8a69-8ed3ff58c67c",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Fabian",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2d415a54-d4db-4fff-bde7-12a23e6f21d4",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Fabian",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/4dac0015-9e9d-4d58-8ce6-e3f5fcb7144f",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Frau Müller",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/296b92d2-6bbd-48b6-b170-d05eb4f14235",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/406ebb2f-44dc-4ebc-8a69-8ed3ff58c67c",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2577f3b5-9bd4-41a5-9863-5c6f2bec5a78",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Dieter",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Dieter",
+    "anforderung": "Servieren",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Claas Hansen",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/c4cf185c-fa99-46eb-8da3-83c6c18ba78e",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Fabian",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/afde087b-1a4c-4b65-add0-7f994fb91e92",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Dieter",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ac645731-f2b0-425f-8d6d-cccd1404248f",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Müller",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Müller",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Herr Möller",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Der Chef",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/7427fe7c-9837-4a39-a54a-eb123de55bf4",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Claas Hansen",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Herr Möller",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/f706ab98-b1d6-4c88-a8e6-d314cb372782",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Herr Möller",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ee1172f5-019d-47bc-8df8-b16f0ac7fcc0",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Dieter",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/296b92d2-6bbd-48b6-b170-d05eb4f14235",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Frau Müller",
+    "anforderung": "Servieren",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/473498b6-2dd7-43c3-a4ab-72f6c1891ab2",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kochen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/c4cf185c-fa99-46eb-8da3-83c6c18ba78e",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/75898bc3-81e7-4720-bd77-8c5ec22f6981",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2af46413-e828-4e6d-8c35-c9169e5078fe",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Der Chef",
+    "anforderung": "Angular",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/faae08a5-763f-4a4a-ae9e-a0b3031a6d4b",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Frau Müller",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1595744e-7da8-4ae4-b57e-e77fef1098cc",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a4533d29-c8b7-4ca6-b033-c3b0772f6206",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Der Chef",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9114eeea-1591-41a3-a141-92abf7f6dc00",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Müller",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Baqend",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ac645731-f2b0-425f-8d6d-cccd1404248f",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/afde087b-1a4c-4b65-add0-7f994fb91e92",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Der Chef",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1b88a001-ae59-45d1-8b2f-c07b250ef94d",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Herr Möller",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a3c7b209-a38f-45f1-a602-0bd2ff6faa6b",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Andreas Meier",
+    "anforderung": "Internet",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e6120757-e468-4589-925b-22caf924ce91",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Fabian",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/f706ab98-b1d6-4c88-a8e6-d314cb372782",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Doris Schulz",
+    "anforderung": "Torten backen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/91070c95-09e5-4212-a30c-d838e511da6d",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Frau Müller",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3cc44349-a87f-4fa5-82b0-6622a00eb679",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e6120757-e468-4589-925b-22caf924ce91",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Claas Hansen",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/296b92d2-6bbd-48b6-b170-d05eb4f14235",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Der Chef",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Der Chef",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/91070c95-09e5-4212-a30c-d838e511da6d",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Claas Hansen",
+    "anforderung": "Servieren",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3cc44349-a87f-4fa5-82b0-6622a00eb679",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4300,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Dieter",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e3730b9b-dfef-4d39-bcae-58d4065daa2b",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Doris Schulz",
+    "anforderung": "SQL",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9114eeea-1591-41a3-a141-92abf7f6dc00",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Claas Hansen",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a3c7b209-a38f-45f1-a602-0bd2ff6faa6b",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Claas Hansen",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a27d3105-1cae-4150-8b01-0b7da2ba61ae",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Andreas Meier",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/4cbab526-0614-4c17-a224-37573b4505d4",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Dieter",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Claas Hansen",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2af46413-e828-4e6d-8c35-c9169e5078fe",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "München",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/1595744e-7da8-4ae4-b57e-e77fef1098cc",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e1b3db9a-eb0c-422c-97d5-3d32f210014f",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Fabian",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/0054cb01-2b5b-447d-8daa-ecc0cc454f05",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Der Chef",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e3730b9b-dfef-4d39-bcae-58d4065daa2b",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Doris Schulz",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/8bd2b66d-8ae1-4bb4-b483-79c33290d47f",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Herr Möller",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/51dcf5a7-52e2-4224-87ee-920c1babc950",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Kellner",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Frau Müller",
+    "anforderung": "Teamfähigkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e1b3db9a-eb0c-422c-97d5-3d32f210014f",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Claas Hansen",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e630b7b9-701a-42ef-badc-4430114a823d",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Die Stelle verlangt einen professionellen Umgang mit Konflikten und Stress.",
+    "partner": "Dieter",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e52c23a4-f9f3-40ff-817b-15b877e8bda8",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Koch",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Doris Schulz",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a4533d29-c8b7-4ca6-b033-c3b0772f6206",
+    "sprache": [
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/406ebb2f-44dc-4ebc-8a69-8ed3ff58c67c",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/4c7ed177-f54f-46be-9bc1-7adde9f6be5e",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Der Chef",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e6120757-e468-4589-925b-22caf924ce91",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Claas Hansen",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e89abcd2-6a50-4656-a90b-b0940cbfd8b5",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "C/C++",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Bremen",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Risokobereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/afde087b-1a4c-4b65-add0-7f994fb91e92",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Hamburg",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Doris Schulz",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Die Stelle fordert Sie bis zum Äußersten heraus.",
+    "partner": "Frau Müller",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/f706ab98-b1d6-4c88-a8e6-d314cb372782",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 5500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Doris Schulz",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/477f399f-4cee-43ea-ae77-c653babc2e4e",
+    "sprache": [
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "CSS",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a4533d29-c8b7-4ca6-b033-c3b0772f6206",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Kowlaski",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/31d80287-42ce-43df-83d4-fdabe7d1d20a",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Frau Müller",
+    "anforderung": "Java",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/57d312cc-dc3c-433e-8d52-1c7b6844d1c8",
+    "sprache": [
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Fabian",
+    "anforderung": "Word",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/c4cf185c-fa99-46eb-8da3-83c6c18ba78e",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "München",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software Engineer",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Claas Hansen",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/296b92d2-6bbd-48b6-b170-d05eb4f14235",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Dieter",
+    "anforderung": "Leistungsbereitschaft",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2af46413-e828-4e6d-8c35-c9169e5078fe",
+    "sprache": [
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Administrator",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Fabian",
+    "anforderung": "Pünktlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/e89abcd2-6a50-4656-a90b-b0940cbfd8b5",
+    "sprache": [
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Dieter",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/8bd2b66d-8ae1-4bb4-b483-79c33290d47f",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Düsseldorf",
+    "monatsgehalt": 3000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Backend-Experte",
+    "beschreibung": "Der Job bedeutet für Sie viel Eigenverantwortung.",
+    "partner": "Andreas Meier",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/de9682a2-a623-41eb-807f-65faf47f2d70",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/75b54d7f-be51-4c27-98ac-dc5002e0b3af",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 6000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Doris Schulz",
+    "anforderung": "HTML",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/66b0ae43-9e61-4193-b65a-714d8609a24d",
+    "sprache": [
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4100,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "System-Admin",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Doris Schulz",
+    "anforderung": "Excel",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/2422c398-9a89-402d-93da-50168ee96306",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6",
+      "/db/Vertragsart/9f2c6457-da70-4dd9-9b67-4d18e62aaf2e",
+      "/db/Vertragsart/0a2e2da9-2dc7-47f6-8eb9-fe9d2dbcdb54"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Küchenhilfe",
+    "beschreibung": "Für den Kundenkontakt ist freundliches Auftreten ein Muss.",
+    "partner": "Herr Möller",
+    "anforderung": "Grillen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/ffab2bd0-49bd-48bd-93fe-0f6676aa56f7",
+    "sprache": [
+      "/db/Sprache/c3862a19-179b-40a6-a582-ed771c445eb0"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 4400,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Barkeeper",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Andreas Meier",
+    "anforderung": "Torten backen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/a3c7b209-a38f-45f1-a602-0bd2ff6faa6b",
+    "sprache": [
+      "/db/Sprache/c408d836-1862-4e76-aa3a-92663bec74cf",
+      "/db/Sprache/10907c96-f4e8-4fd7-abc6-745109c91eb0",
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 2000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Bäcker",
+    "beschreibung": "Sie bereiten erstklassige Gerichte für Gäste aus aller Welt zu.",
+    "partner": "Andreas Meier",
+    "anforderung": "Cocktails mixen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/9a12d71e-dfe9-4478-b8f9-84a6c218ce2d",
+    "sprache": [
+      "/db/Sprache/b02b01b1-cabb-453d-91ac-75f85018b193",
+      "/db/Sprache/bd8ceff5-daf7-4051-a33c-a1bb652f129b"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Stuttgart",
+    "monatsgehalt": 3500,
+    "befristetesArbeitsverhaeltnis": false,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Sommelier",
+    "beschreibung": "Die Arbeitszeiten können teils sehr flexibel gestaltet sein.",
+    "partner": "Doris Schulz",
+    "anforderung": "Geschirr spülen",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/de9682a2-a623-41eb-807f-65faf47f2d70",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/cd1882d0-5c73-41c0-b579-0acecf8643d0"
+    ],
+    "berufsfeld": "/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7",
+    "arbeitsort": "Frankfurt",
+    "monatsgehalt": 2500,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Frontend-Entwickler",
+    "beschreibung": "Die Stelle erfordert Eigenverantwortung und Kommunikationstalent.",
+    "partner": "Der Chef",
+    "anforderung": "Kommunikativität",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/3538c3e7-3105-44db-9c85-6bae37bbeeb5",
+    "sprache": [
+      "/db/Sprache/5dc28165-5960-44cb-98e8-174bf7a0b761",
+      "/db/Sprache/1c6fdc9e-84af-48eb-895a-37735d2aa8f3",
+      "/db/Sprache/65774ca9-d34e-4b6a-b2d5-02f006972870"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22",
+      "/db/Vertragsart/9c3d63b2-4f75-4223-b4b5-47c6c0b21bb6"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Köln",
+    "monatsgehalt": 4200,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  },
+  {
+    "bezeichnung": "Software-Architekt",
+    "beschreibung": "Sie arbeiten in einem dynamischen Umfeld mit einem motivierten Team zusammen.",
+    "partner": "Andreas Meier",
+    "anforderung": "Freundlichkeit",
+    "aktiv": true,
+    "unternehmen": "/db/Unternehmen/c4cf185c-fa99-46eb-8da3-83c6c18ba78e",
+    "sprache": [
+      "/db/Sprache/7f76e6cf-95fb-4962-b9eb-e14d74bfcefb",
+      "/db/Sprache/3dd8f67e-7318-4328-938b-3f3378a06765",
+      "/db/Sprache/aca1ac23-c473-4a46-ad85-591e2f3bff6d"
+    ],
+    "vertragsarten": [
+      "/db/Vertragsart/406f4f88-45a2-44b7-a683-85f6afbeaa22"
+    ],
+    "berufsfeld": "/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3",
+    "arbeitsort": "Berlin",
+    "monatsgehalt": 4000,
+    "befristetesArbeitsverhaeltnis": true,
+    "start": "2017-12-31T23:00:00.000Z"
+  }
+]

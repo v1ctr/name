@@ -8,15 +8,18 @@ import {db, model} from 'baqend';
 })
 export class VacanciesComponent implements OnInit {
 
-    vacancies: model.Stellenangebot[];
+    vacancies: model.Stellenangebot[] = [];
 
     constructor(private router: Router) {
     }
 
     ngOnInit() {
-        db.Stellenangebot.find().equal('userid', db.User.me).resultList((result) => {
-            this.vacancies = result;
+        db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
+            db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((result) => {
+                if (result && result.length > 0) {
+                    this.vacancies = result;
+                }
+            });
         });
-
     }
 }
