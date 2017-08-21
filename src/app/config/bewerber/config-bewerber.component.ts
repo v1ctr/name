@@ -1,13 +1,12 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
-import {ActivatedRoute} from '@angular/router';
 
 @Component({
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
-export class ConfigBewerberComponent {
+export class ConfigBewerberComponent implements OnInit {
 
     user: model.User;
     bewerber: model.Bewerber;
@@ -27,14 +26,35 @@ export class ConfigBewerberComponent {
     errors = [];
 
 
-    constructor(private authService: AuthService,
-                private route: ActivatedRoute) {
+    constructor(private authService: AuthService) {
         this.user = db.User.me;
-        this.bewerber = this.route.snapshot.data['bewerber'];
-        this.vertragsarten = this.route.snapshot.data['vertragsarten'];
-        this.sprachen = this.route.snapshot.data['sprachen'];
-        this.berufsfelder = this.route.snapshot.data['berufsfelder'];
-        this.arbeitsverhaeltnisse = this.route.snapshot.data['arbeitsverhaeltnisse'];
+        this.bewerber = new db.Bewerber();
+    }
+
+    ngOnInit() {
+        db.Bewerber.find().equal('user', this.user).singleResult((bewerber) => {
+            if (bewerber) {
+                this.bewerber = bewerber;
+            } else {
+                const newBewerber = new db.Bewerber();
+                newBewerber.user = this.user;
+                newBewerber.vertragsarten = [];
+                newBewerber.sprachen = [];
+                this.bewerber = newBewerber;
+            }
+        });
+        db.Vertragsart.find().resultList((vertragsarten) => {
+            this.vertragsarten = vertragsarten;
+        });
+        db.Vertragsart.find().resultList((berufsfelder) => {
+            this.berufsfelder = berufsfelder;
+        });
+        db.Vertragsart.find().resultList((sprachen) => {
+            this.sprachen = sprachen;
+        });
+        db.Vertragsart.find().resultList((arbeitsverhaeltnisse) => {
+            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+        });
         if (this.bewerber.vertragsarten) {
             this.bewerber.vertragsarten.forEach((element) => {
                 this.selectedVertragsarten.push(element);
