@@ -77,7 +77,14 @@
     <h2>One-Sentence-Pitch</h2>
     <div class="row">
         <md-input-container class="col-xs-12">
-            <textarea mdInput [(ngModel)]="unternehmen.pitch" name="pitch" placeholder="Pitch" required></textarea>
+            <textarea mdInput [(ngModel)]="unternehmen.pitch" maxlength="150" name="pitch" placeholder="Pitch" required [formControl]="pitchControl"></textarea>
+            <md-error *ngIf="pitchControl.hasError('maxLength')">
+                Der Pitch darf nicht länger als 150 Zeichen sein
+            </md-error>
+            <md-error *ngIf="pitchControl.hasError('required')">
+                Pitch is <strong>required</strong>
+            </md-error>
+            <md-hint *ngIf="unternehmen.pitch" align="end">{{unternehmen.pitch.length}} / 150</md-hint>
         </md-input-container>
     </div>
     <h2>Adresse</h2>
@@ -93,9 +100,25 @@
         </md-input-container>
     </div>
     <div class="row">
-        <md-input-container class="col-md-2">
+       <!-- <md-input-container class="col-md-2">
             <input mdInput [(ngModel)]="unternehmen.plz" placeholder="PLZ" name="plz" required>
-        </md-input-container>
+        </md-input-container>-->
+
+        <div class="row">
+            <md-input-container class="col-md-12">
+                <input mdInput [(ngModel)]="unternehmen.plz" type="text" pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
+                <md-error *ngIf="plzControl.hasError('pattern')">
+                    Keine gültige Postleitzahl
+                </md-error>
+                <md-error *ngIf="plzControl.hasError('required')">
+                    This is <strong>required</strong>
+                </md-error>
+
+                <!--<md-hint *ngIf="unternehmen.plz" align="end">{{unternehmen.pitch.length}} / 5</md-hint>-->
+            </md-input-container>
+        </div>
+
+
         <md-input-container class="col-md-10">
             <input mdInput [(ngModel)]="unternehmen.ort" placeholder="Ort" name="ort" required>
         </md-input-container>

@@ -1,12 +1,21 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {db, model} from 'baqend';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-vacancy',
     templateUrl: './vacancy.component.html',
 })
 export class VacancyComponent implements OnInit {
+
+    descriptionControl = new FormControl('', [
+        Validators.maxLength(100)
+    ]);
+
+    anforderungControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
 
     vacancy: model.Stellenangebot;
     vertragsarten: model.Vertragsart[];
