@@ -27,15 +27,17 @@ export class VacancyComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute) {
         this.vacancy = new db.Stellenangebot();
-        db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
-            if (unternehmen) {
-                this.vacancy.unternehmen = unternehmen;
-            }
-        });
-        this.vacancy.aktiv = true;
     }
 
     ngOnInit() {
+        db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
+            if (unternehmen) {
+                this.vacancy.unternehmen = unternehmen;
+            } else {
+                this.vacancy = new db.Stellenangebot();
+                this.vacancy.aktiv = true;
+            }
+        });
         const dropDownData = this.route.snapshot.data['dropDownData'];
         this.sprachen = dropDownData[0];
         this.branchen = dropDownData[1];
@@ -45,12 +47,8 @@ export class VacancyComponent implements OnInit {
                 db.Stellenangebot.load(key).then((vacancy) => {
                     if (vacancy && key) {
                         this.vacancy = vacancy;
-                        this.vacancy.vertragsarten.forEach((element) => {
-                            this.selectedVertragsarten.push(element);
-                        });
-                        this.vacancy.sprache.forEach((sprache) => {
-                            this.selectedSprachen.push(sprache);
-                        });
+                        this.selectedVertragsarten = Array.from(this.vacancy.vertragsarten);
+                        this.selectedSprachen = Array.from(this.vacancy.sprache);
                     } else if (key) {
                         this.error = 'Could not load vacancy with key "' + key + '".';
                     }

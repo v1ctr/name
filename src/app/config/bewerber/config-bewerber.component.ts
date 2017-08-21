@@ -41,14 +41,10 @@ export class ConfigBewerberComponent implements OnInit {
     ngOnInit() {
         // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
         if (this.bewerber.vertragsarten) {
-            this.bewerber.vertragsarten.forEach((element) => {
-                this.selectedVertragsarten.push(element);
-            });
+            this.selectedVertragsarten = Array.from(this.bewerber.vertragsarten);
         }
         if (this.bewerber.sprachen) {
-            this.bewerber.sprachen.forEach((element) => {
-                this.selectedSprachen.push(element);
-            });
+            this.selectedSprachen = Array.from(this.bewerber.sprachen);
         }
         if (this.bewerber.profilbild) {
             this.profilbild = this.bewerber.profilbild;
@@ -138,7 +134,7 @@ export class ConfigBewerberComponent implements OnInit {
     }
 
     private deleteFile(file) {
-        return (new db.File(file)).delete({force: true});
+        return file.delete({force: true});
     }
 
     private uploadFile(file) {
