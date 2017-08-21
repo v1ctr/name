@@ -8,11 +8,16 @@ export function getRedirectPath(userType: string = null, module: string = null):
     if (!db.User.me) {
         return '/login';
     }
-    if (module === null) {
-        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
+    if (db.User.me.iscomp) {
+        if (db.User.me.isConfigCompleted) {
+            return '/vacancies';
+        }
     }
     if (userType === null) {
         userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
+    }
+    if (module === null) {
+        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
     }
     return '/' + module + '/' + userType;
 }
