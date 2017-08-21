@@ -49,6 +49,10 @@
             <md-icon>clear</md-icon>
             <span>Account löschen</span>
         </a>
+        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/changePassword'] " md-menu-item>
+            <md-icon>vpn_key</md-icon>
+            <span>Passwort ändern</span>
+        </a>
     </md-menu>
 </md-toolbar>
 
