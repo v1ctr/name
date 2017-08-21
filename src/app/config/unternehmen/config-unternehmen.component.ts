@@ -2,12 +2,17 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-config-unternehmen',
     templateUrl: './config-unternehmen.component.html',
 })
 export class ConfigUnternehmenComponent implements OnInit {
+
+    pitchControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
 
     user: model.User;
     unternehmen: model.Unternehmen;
@@ -44,6 +49,8 @@ export class ConfigUnternehmenComponent implements OnInit {
     }
 
     save() {
+        var res = this.unternehmen.validate();
+        console.log(res);
         const pendingFileUploads = [];
         if (this.logo) {
             const image = new db.File({
