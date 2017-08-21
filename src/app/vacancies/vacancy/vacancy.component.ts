@@ -28,10 +28,10 @@ export class VacancyComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute, private dropDownDataService: DropDownDataService) {
         this.vacancy = new db.Stellenangebot();
+        this.vacancy.aktiv = true;
         db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
             if (unternehmen) {
                 this.vacancy.unternehmen = unternehmen;
-                this.vacancy.aktiv = true;
             }
         });
     }
@@ -40,7 +40,7 @@ export class VacancyComponent implements OnInit {
         this.sprachen = this.dropDownDataService.getSprachen();
         this.branchen = this.dropDownDataService.getBerufsfelder();
         this.vertragsarten = this.dropDownDataService.getVertragsarten();
-        const key = this.route.snapshot.data['key'];
+        const key = this.route.snapshot.params['key'];
         if (key) {
             db.Stellenangebot.load(key).then((vacancy) => {
                 if (vacancy) {

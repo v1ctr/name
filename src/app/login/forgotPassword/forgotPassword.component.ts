@@ -20,9 +20,7 @@ export class ForgotPasswordComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.route.params.subscribe(params => {
-            this.username = params['email'];
-        });
+        this.username = this.route.snapshot.params['email'];
     }
 
     resetPassword() {

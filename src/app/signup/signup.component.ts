@@ -21,9 +21,7 @@ export class SignupComponent {
     };
 
     constructor(private router: Router, private route: ActivatedRoute) {
-        this.route.params.subscribe(params => {
-            this.user.username = params['email'];
-        });
+        this.user.username = this.route.snapshot.params['email'];
     }
 
     register() {
