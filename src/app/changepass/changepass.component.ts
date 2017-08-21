@@ -1,40 +1,37 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 import {db} from 'baqend';
+import {getRedirectPath} from '../db';
 
 @Component({
     selector: 'app-change-password',
     templateUrl: './changepass.component.html',
-    styleUrls: ['./changepass.component.scss'],
 })
-export class ChangePasswordComponent implements OnInit {
+export class ChangePasswordComponent {
 
-    username;
-    result = {
-        isError: false,
-        message: '',
-    };
+    password;
+    passwordRepeat;
+    error;
 
-    constructor(private router: Router, private route: ActivatedRoute) {
+    constructor(private router: Router) {
 
     }
 
-    ngOnInit(): void {
-        this.route.params.subscribe(params => {
-            this.username = params['email'];
-        });
-    }
-
-    resetPassword() {
-        db.User.resetPassword(this.username).then(
-            () => {
-                this.result.isError = false;
-                this.result.message = 'Es wurde eine Nachricht an Ihre Mail-Adresse gesendet.';
-            },
-            (error) => {
-                this.result.isError = true;
-                this.result.message = 'Die Email konnte nicht gesendet werden.' + ' ' + error.message;
-            }
-        );
+    setNewPassword() {
+        if (this.passwordRepeat === this.password) {
+            const paramName = 'bq-token='; // Default token parameter
+            const search = location.search;
+            const token = search.substring(search.indexOf(paramName) + paramName.length);
+            db.User.newPassword(token, this.password).then(
+                () => {
+                    this.router.navigate([getRedirectPath()]);
+                },
+                (error) => {
+                    this.error = error.message;
+                }
+            );
+        } else {
+            this.error = 'Passwörter stimmen nicht überein!';
+        }
     }
 }
