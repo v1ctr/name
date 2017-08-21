@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
-import {BewerberService} from "../../bewerber.service";
-import {DropDownDataService} from "../../drop-down-data.service";
+import {BewerberService} from '../../bewerber.service';
+import {DropDownDataService} from '../../drop-down-data.service';
 import {FormControl, Validators} from '@angular/forms';
 
 @Component({
@@ -27,24 +27,14 @@ export class ConfigBewerberComponent implements OnInit {
         Validators.maxLength(50)
     ]);
 
-    plzControl = new FormControl('', [
+    plzControl = new FormControl('', []);
 
-    ]);
+    vornameControl = new FormControl('', []);
 
-    vornameControl = new FormControl('', [
+    wohnortControl = new FormControl('', []);
+    nachnameControl = new FormControl('', []);
 
-    ]);
-
-    wohnortControl = new FormControl('', [
-
-    ]);
-    nachnameControl = new FormControl('', [
-
-    ]);
-
-    arbeitsortControl = new FormControl('', [
-
-        ]);
+    arbeitsortControl = new FormControl('', []);
 
     user: model.User;
     bewerber: model.Bewerber;
@@ -70,6 +60,7 @@ export class ConfigBewerberComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.bewerber = this.bewerberService.getBewerber();
         this.sprachen = this.dropDownDataService.getSprachen();
         this.berufsfelder = this.dropDownDataService.getBerufsfelder();
         this.vertragsarten = this.dropDownDataService.getVertragsarten();
