@@ -143,9 +143,14 @@ export class SwipeUnternehmenComponent implements OnInit {
                         likeEvent: new EventEmitter(),
                         destroyEvent: new EventEmitter(),
                         pitch: bew.pitch,
+                        titel: bew.titel,
                         vorname: bew.vorname,
                         nachname: bew.nachname,
-                        profilbild: bew.profilbild
+                        profilbild: bew.profilbild,
+                        ausbildung: bew.ausbildung,
+                        softskills: bew.softskills,
+                        fachkompetenzen: bew.fachkompetenzen,
+                        geburtsdatum: bew.geburtsdatum
                       });
                     });
                   });

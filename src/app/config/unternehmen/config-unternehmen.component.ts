@@ -14,6 +14,7 @@ export class ConfigUnternehmenComponent implements OnInit {
         Validators.maxLength(150)
     ]);
 
+
     plzControl = new FormControl('', [
 
     ]);

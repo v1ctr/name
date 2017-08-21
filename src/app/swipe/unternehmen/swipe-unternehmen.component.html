@@ -1,4 +1,7 @@
-<div *ngIf="cards.length > 0; else no_swipe">
+<span *ngIf="cards && cards.length==0" class="noCards">
+            Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
+            Jetzt <a [routerLink]="['/vacancies']">Stellenangebote bearbeiten</a>!
+        </span>
   <div class="row">
     <div class="card-container">
       <sc-card
@@ -12,7 +15,8 @@
               [callLike]="card.likeEvent"
               (onLike)="onCardLike($event)">
         <div class="card-header">
-          <span class="card-bezeichnung">{{card.vorname}} {{card.nachname}}</span>
+            <span class="card-titel">{{card.titel}}</span>
+            <span class="card-bezeichnung">{{card.vorname}} {{card.nachname}}</span>
           <span class="card-pitch">"{{card.pitch}}"</span>
         </div>
         <div class="card-logo">
@@ -20,7 +24,26 @@
                alt="..." class="img-circle img-responsive">
         </div>
         <div class="card-content">
-          <span>{{card.beschreibung}}</span>
+            <div class="row">
+                <div class="col-sm-6 center-items">
+                    <h4><span class="label label-default">Ausbildung</span></h4>
+                    <p>{{card.ausbildung}}</p>
+                </div>
+                <div class="col-sm-6 center-items">
+                    <h4><span class="label label-default">Geburtsdatum</span></h4>
+                    <p>{{card.geburtsdatum | date}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 center-items">
+                    <h4><span class="label label-default">Softskills</span></h4>
+                    <p>{{card.softskills}}</p>
+                </div>
+                <div class="col-sm-6 center-items">
+                    <h4><span class="label label-default">Fachkompetenzen</span></h4>
+                    <p>{{card.fachkompetenzen}}</p>
+                </div>
+            </div>
         </div>
       </sc-card>
     </div>
@@ -33,10 +56,4 @@
               class="glyphicon glyphicon-ok"></i></button>
     </div>
   </div>
-</div>
-<ng-template #no_swipe>
-  <span class="noCards">
-    Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
-    Jetzt <a [routerLink]="['/vacancies']">Stellenangebote bearbeiten</a>!
-  </span>
-</ng-template>
+
