@@ -33,18 +33,13 @@ export class VacancyComponent implements OnInit {
             }
         });
         this.vacancy.aktiv = true;
-        db.Vertragsart.find().resultList((vertragsarten) => {
-            this.vertragsarten = vertragsarten;
-        });
-        db.Sprache.find().resultList((sprachen) => {
-            this.sprachen = sprachen;
-        });
-        db.Berufsfeld.find().resultList((branchen) => {
-            this.branchen = branchen;
-        });
     }
 
     ngOnInit() {
+        const dropDownData = this.route.snapshot.data['dropDownData'];
+        this.sprachen = dropDownData[0];
+        this.branchen = dropDownData[1];
+        this.vertragsarten = dropDownData[2];
         this.route.params.subscribe(params => {
                 const key = params['key'];
                 db.Stellenangebot.load(key).then((vacancy) => {

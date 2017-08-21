@@ -25,7 +25,12 @@ const routes: Routes = [
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'signup/:email', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
-    {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
+    {
+        path: 'config/unternehmen',
+        component: ConfigUnternehmenComponent,
+        resolve: {dropDownData: DropDownDataResolver},
+        canActivate: [IsCompany]
+    },
     {
         path: 'config/bewerber',
         component: ConfigBewerberComponent,
@@ -40,8 +45,18 @@ const routes: Routes = [
         canActivate: [IsBewerber]
     },
     {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
-    {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
-    {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},
+    {
+        path: 'vacancy',
+        component: VacancyComponent,
+        resolve: {dropDownData: DropDownDataResolver},
+        canActivate: [IsCompany]
+    },
+    {
+        path: 'vacancy/:key',
+        component: VacancyComponent,
+        resolve: {dropDownData: DropDownDataResolver},
+        canActivate: [IsCompany]
+    },
     {path: 'matches', component: MatchesComponent, canActivate: [DBLoggedIn]},
     {path: 'match/:key', component: MatchComponent, canActivate: [DBLoggedIn]},
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
 import {FormControl, Validators} from '@angular/forms';
@@ -27,12 +27,9 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     errors;
 
-    constructor(private router: Router, private authService: AuthService) {
+    constructor(private router: Router, private authService: AuthService, private route: ActivatedRoute) {
         this.user = db.User.me;
         this.unternehmen = new db.Unternehmen();
-        db.Berufsfeld.find().resultList((branchen) => {
-            this.branchen = branchen;
-        });
     }
 
     ngOnInit() {
@@ -51,6 +48,8 @@ export class ConfigUnternehmenComponent implements OnInit {
                 this.unternehmen.userid = this.user;
             }
         });
+        const dropDownData = this.route.snapshot.data['dropDownData'];
+        this.branchen = dropDownData[1];
     }
 
     save() {
