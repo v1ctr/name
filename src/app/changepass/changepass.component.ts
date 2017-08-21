@@ -9,20 +9,17 @@ import {getRedirectPath} from '../db';
 })
 export class ChangePasswordComponent {
 
-    password;
-    passwordRepeat;
+    oldPassword;
+    newPassword;
+    newPasswordRepeat;
     error;
 
     constructor(private router: Router) {
-
     }
 
     setNewPassword() {
-        if (this.passwordRepeat === this.password) {
-            const paramName = 'bq-token='; // Default token parameter
-            const search = location.search;
-            const token = search.substring(search.indexOf(paramName) + paramName.length);
-            db.User.newPassword(token, this.password).then(
+        if (this.newPasswordRepeat === this.newPassword) {
+            db.User.newPassword(db.User.me.username, this.oldPassword, this.newPassword).then(
                 () => {
                     this.router.navigate([getRedirectPath()]);
                 },
