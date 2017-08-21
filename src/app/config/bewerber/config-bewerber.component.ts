@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
 import {ActivatedRoute} from '@angular/router';
@@ -7,7 +7,7 @@ import {ActivatedRoute} from '@angular/router';
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
-export class ConfigBewerberComponent {
+export class ConfigBewerberComponent implements OnInit {
 
     user: model.User;
     bewerber: model.Bewerber;
@@ -36,6 +36,10 @@ export class ConfigBewerberComponent {
         this.berufsfelder = dropDownData[1]; // this.route.snapshot.data['berufsfelder'];
         this.vertragsarten = dropDownData[2]; // this.route.snapshot.data['vertragsarten'];
         this.arbeitsverhaeltnisse = dropDownData[3]; // this.route.snapshot.data['arbeitsverhaeltnisse'];
+    }
+
+    ngOnInit() {
+        // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
         if (this.bewerber.vertragsarten) {
             this.bewerber.vertragsarten.forEach((element) => {
                 this.selectedVertragsarten.push(element);
@@ -55,44 +59,11 @@ export class ConfigBewerberComponent {
     }
 
     save() {
+        // dropDown-Daten in Sets zurückwandeln
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
-        const pendingFileUploads = [];
-        if (this.profilbild) {
-            const image = new db.File({
-                name: this.getFilePath() + this.profilbild.name,
-                data: this.profilbild,
-                type: 'blob'
-            });
-            pendingFileUploads.push(image.upload({force: true}).then(() => {
-                this.bewerber.profilbild = image;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.profilbild) {
-            const image = new db.File(this.bewerber.profilbild);
-            pendingFileUploads.push(image.delete({force: true}).then(() => {
-                this.bewerber.profilbild = null;
-            }));
-        }
-        if (this.lebenslauf) {
-            const CV = new db.File({
-                name: this.getFilePath() + this.lebenslauf.name,
-                data: this.lebenslauf,
-                type: 'blob'
-            });
-            pendingFileUploads.push(CV.upload({force: true}).then(() => {
-                this.bewerber.lebenslauf = CV;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.lebenslauf) {
-            const CV = new db.File(this.bewerber.lebenslauf);
-            // @todo delete funktioniert noch nicht
-            pendingFileUploads.push(CV.delete({force: true}).then(() => {
-                this.bewerber.lebenslauf = null;
-            }));
-        }
+        // FileUploads
+        const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
             this.bewerber.save().then(() => {
                 if (!this.user.isConfigCompleted) {
@@ -107,7 +78,75 @@ export class ConfigBewerberComponent {
         });
     }
 
+    private updateFiles() {
+        const pendingFileUploads = [];
+        if (this.profilbild && this.bewerber.profilbild && this.profilbild !== this.bewerber.profilbild) {
+            // Bild hat sich geändert --> altes löschen, neues hinzufügen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
+                this.bewerber.profilbild = bild;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.bewerber.profilbild && !this.profilbild) {
+            // Datei ist enfernt worden --> löschen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+                this.bewerber.profilbild = null;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.profilbild && !this.bewerber.profilbild) {
+            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
+                this.bewerber.profilbild = bild;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        }
+        if (this.lebenslauf && this.bewerber.lebenslauf && this.lebenslauf !== this.bewerber.lebenslauf) {
+            // Datei hat sich geändert --> alte löschen, neue hinzufügen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
+                this.bewerber.lebenslauf = datei;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.bewerber.lebenslauf && !this.lebenslauf) {
+            // Datei ist enfernt worden --> löschen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+                this.bewerber.lebenslauf = null;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.lebenslauf && !this.bewerber.lebenslauf) {
+            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
+                this.bewerber.lebenslauf = datei;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        }
+        return pendingFileUploads;
+    }
+
     private getFilePath(): string {
         return 'users/' + this.user.key + '/';
+    }
+
+    private deleteFile(file) {
+        return (new db.File(file)).delete({force: true});
+    }
+
+    private uploadFile(file) {
+        const image = new db.File({
+            name: this.getFilePath() + file.name,
+            data: file,
+            type: 'blob'
+        });
+        return image.upload({force: true});
     }
 }
