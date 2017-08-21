@@ -45,9 +45,13 @@
             <md-icon>work</md-icon>
             <span>Stellenangebote</span>
         </a>
+        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/changePassword'] " md-menu-item>
+            <md-icon>vpn_key</md-icon>
+            <span>Passwort ändern</span>
+        </a>
         <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accountLoeschen'] " md-menu-item>
             <md-icon>clear</md-icon>
-            <span>Account löschen</span>
+            <span>Konto löschen</span>
         </a>
     </md-menu>
 </md-toolbar>
