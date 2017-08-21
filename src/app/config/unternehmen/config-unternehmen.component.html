@@ -100,9 +100,25 @@
         </md-input-container>
     </div>
     <div class="row">
-        <md-input-container class="col-md-2">
+       <!-- <md-input-container class="col-md-2">
             <input mdInput [(ngModel)]="unternehmen.plz" placeholder="PLZ" name="plz" required>
-        </md-input-container>
+        </md-input-container>-->
+
+        <div class="row">
+            <md-input-container class="col-md-12">
+                <input mdInput [(ngModel)]="unternehmen.plz" type="text" pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
+                <md-error *ngIf="plzControl.hasError('pattern')">
+                    Keine gültige Postleitzahl
+                </md-error>
+                <md-error *ngIf="plzControl.hasError('required')">
+                    This is <strong>required</strong>
+                </md-error>
+
+                <!--<md-hint *ngIf="unternehmen.plz" align="end">{{unternehmen.pitch.length}} / 5</md-hint>-->
+            </md-input-container>
+        </div>
+
+
         <md-input-container class="col-md-10">
             <input mdInput [(ngModel)]="unternehmen.ort" placeholder="Ort" name="ort" required>
         </md-input-container>

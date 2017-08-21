@@ -5,11 +5,22 @@
             <input mdInput [(ngModel)]="vacancy.bezeichnung" placeholder="Stellen-Bezeichnung" name="bezeichnung" required>
         </md-input-container>
     </div>
+
+
     <div class="row">
         <md-input-container class="col-xs-12">
-            <input mdInput [(ngModel)]="vacancy.beschreibung" placeholder="Stellenbeschreibung" name="beschreibung" required>
+            <textarea mdInput [(ngModel)]="vacancy.beschreibung" maxlength="100" name="beschreibung" placeholder="Stellenbeschreibung" required [formControl]="descriptionControl"></textarea>
+            <md-error *ngIf="descriptionControl.hasError('maxLength')">
+                Die Beschreibung darf nicht länger als 100 Zeichen sein
+            </md-error>
+            <md-error *ngIf="descriptionControl.hasError('required')">
+                Description is <strong>required</strong>
+            </md-error>
+            <md-hint *ngIf="vacancy.beschreibung" align="end">{{vacancy.beschreibung.length}} / 100</md-hint>
         </md-input-container>
     </div>
+
+
     <div class="row">
         <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="vacancy.berufsfeld"
                    placeholder="Berufsfeld">
@@ -60,9 +71,22 @@
             <input mdInput [(ngModel)]="vacancy.partner" name="partner" placeholder="Ansprechpartner" required>
         </md-input-container>
     </div>
-    <div class="row">
+   <!-- <div class="row">
         <md-input-container class="col-xs-12">
             <input mdInput [(ngModel)]="vacancy.anforderung" placeholder="Anforderung" name="anforderung" required>
+        </md-input-container>
+    </div>-->
+
+    <div class="row">
+        <md-input-container class="col-xs-12">
+            <textarea mdInput [(ngModel)]="vacancy.anforderung" maxlength="150" name="anforderung" placeholder="Stellenanforderungen" required [formControl]="anforderungControl"></textarea>
+            <md-error *ngIf="anforderungControl.hasError('maxLength')">
+                Die Anfoderungsbeschreibung darf nicht länger als 150 Zeichen sein
+            </md-error>
+            <md-error *ngIf="anforderungControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
+            <md-hint *ngIf="vacancy.anforderung" align="end">{{vacancy.anforderung.length}} / 150</md-hint>
         </md-input-container>
     </div>
 
