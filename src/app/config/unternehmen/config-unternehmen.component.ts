@@ -20,6 +20,10 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     ]);
 
+    homepageControl = new FormControl('', [
+
+    ]);
+
     user: model.User;
     unternehmen: model.Unternehmen;
     branchen: model.Berufsfeld[];
