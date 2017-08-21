@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
 import {FormControl, Validators} from '@angular/forms';
 import {DropDownDataService} from '../../drop-down-data.service';
+import {UnternehmenService} from '../../unternehmen.service';
 
 @Component({
     selector: 'app-config-unternehmen',
@@ -16,13 +16,9 @@ export class ConfigUnternehmenComponent implements OnInit {
     ]);
 
 
-    plzControl = new FormControl('', [
+    plzControl = new FormControl('', []);
 
-    ]);
-
-    homepageControl = new FormControl('', [
-
-    ]);
+    homepageControl = new FormControl('', []);
 
     user: model.User;
     unternehmen: model.Unternehmen;
@@ -32,31 +28,25 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     errors;
 
-    constructor(private router: Router, private authService: AuthService, private dropDownDataService: DropDownDataService) {
+    constructor(private authService: AuthService,
+                private dropDownDataService: DropDownDataService,
+                private unternehmenService: UnternehmenService) {
         this.user = db.User.me;
-        this.unternehmen = new db.Unternehmen();
+        this.unternehmen = this.unternehmenService.getUnternehmen();
     }
 
     ngOnInit() {
-        this.user = db.User.me;
-        db.Unternehmen.find().equal('userid', this.user).singleResult((unternehmen) => {
-            if (unternehmen) {
-                this.unternehmen = unternehmen;
-                if (this.unternehmen.logo) {
-                    this.logo = this.unternehmen.logo;
-                }
-                if (this.unternehmen.bild) {
-                    this.bild = this.unternehmen.bild;
-                }
-            } else {
-                this.unternehmen.userid = this.user;
-            }
-        });
+        if (this.unternehmen.logo) {
+            this.logo = this.unternehmen.logo;
+        }
+        if (this.unternehmen.bild) {
+            this.bild = this.unternehmen.bild;
+        }
         this.branchen = this.dropDownDataService.getBerufsfelder();
     }
 
     save() {
-        var res = this.unternehmen.validate();
+        const res = this.unternehmen.validate();
         console.log(res);
         const pendingFileUploads = [];
         if (this.logo) {

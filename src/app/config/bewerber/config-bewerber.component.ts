@@ -54,9 +54,10 @@ export class ConfigBewerberComponent implements OnInit {
     errors = [];
 
 
-    constructor(private authService: AuthService, private bewerberService: BewerberService, private dropDownDataService: DropDownDataService) {
+    constructor(private authService: AuthService,
+                private bewerberService: BewerberService,
+                private dropDownDataService: DropDownDataService) {
         this.user = db.User.me;
-        this.bewerber = new db.Bewerber();
     }
 
     ngOnInit() {

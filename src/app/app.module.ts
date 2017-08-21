@@ -41,6 +41,8 @@ import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 import {BewerberService} from './bewerber.service';
 import {DropDownDataService} from './drop-down-data.service';
+import {VacancyService} from './vacancy.service';
+import {UnternehmenService} from './unternehmen.service';
 
 @NgModule({
     declarations: [
@@ -88,6 +90,8 @@ import {DropDownDataService} from './drop-down-data.service';
         AuthService,
         BewerberService,
         DropDownDataService,
+        VacancyService,
+        UnternehmenService,
     ],
     bootstrap: [AppComponent],
 })

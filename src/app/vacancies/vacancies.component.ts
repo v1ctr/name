@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
-import {db, model} from 'baqend';
+import {model} from 'baqend';
+import {VacancyService} from '../vacancy.service';
 
 @Component({
     selector: 'app-vacancies',
@@ -10,16 +10,10 @@ export class VacanciesComponent implements OnInit {
 
     vacancies: model.Stellenangebot[] = [];
 
-    constructor(private router: Router) {
+    constructor(private vacancyService: VacancyService) {
     }
 
     ngOnInit() {
-        db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
-            db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList((result) => {
-                if (result && result.length > 0) {
-                    this.vacancies = result;
-                }
-            });
-        });
+        this.vacancies = this.vacancyService.getVacancies();
     }
 }
