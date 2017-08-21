@@ -15,10 +15,7 @@ import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component'
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 import {BewerberResolver} from './bewerberResolver';
-import {VertragsartResolver} from './vertragsartResolver';
-import {SprachenResolver} from './sprachenResolver';
-import {BerufsfeldResolver} from './berufsfeldResolver';
-import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
+import {DropDownDataResolver} from './dropDownDataResolver';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -33,10 +30,11 @@ const routes: Routes = [
         component: ConfigBewerberComponent,
         resolve: {
             bewerber: BewerberResolver,
-            vertragsarten: VertragsartResolver,
-            sprachen: SprachenResolver,
-            berufsfelder: BerufsfeldResolver,
-            arbeitsverhaeltnisse: ArbeitsverhaeltnisResolver,
+            dropDownData: DropDownDataResolver,
+            // vertragsarten: VertragsartResolver,
+            // sprachen: SprachenResolver,
+            // berufsfelder: BerufsfeldResolver,
+            // arbeitsverhaeltnisse: ArbeitsverhaeltnisResolver,
         },
         canActivate: [IsBewerber]
     },

@@ -44,6 +44,8 @@ import {VertragsartResolver} from './vertragsartResolver';
 import {SprachenResolver} from './sprachenResolver';
 import {BerufsfeldResolver} from './berufsfeldResolver';
 import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
+import {DropDownDataResolver} from './dropDownDataResolver';
+import {DropDownDataService} from './drop-down-data.service';
 
 @NgModule({
     declarations: [
@@ -93,7 +95,9 @@ import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
         VertragsartResolver,
         SprachenResolver,
         BerufsfeldResolver,
-        ArbeitsverhaeltnisResolver
+        ArbeitsverhaeltnisResolver,
+        DropDownDataResolver,
+        DropDownDataService,
     ],
     bootstrap: [AppComponent],
 })

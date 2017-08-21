@@ -31,10 +31,11 @@ export class ConfigBewerberComponent {
                 private route: ActivatedRoute) {
         this.user = db.User.me;
         this.bewerber = this.route.snapshot.data['bewerber'];
-        this.vertragsarten = this.route.snapshot.data['vertragsarten'];
-        this.sprachen = this.route.snapshot.data['sprachen'];
-        this.berufsfelder = this.route.snapshot.data['berufsfelder'];
-        this.arbeitsverhaeltnisse = this.route.snapshot.data['arbeitsverhaeltnisse'];
+        const dropDownData = this.route.snapshot.data['dropDownData'];
+        this.sprachen = dropDownData[0]; // this.route.snapshot.data['sprachen'];
+        this.berufsfelder = dropDownData[1]; // this.route.snapshot.data['berufsfelder'];
+        this.vertragsarten = dropDownData[2]; // this.route.snapshot.data['vertragsarten'];
+        this.arbeitsverhaeltnisse = dropDownData[3]; // this.route.snapshot.data['arbeitsverhaeltnisse'];
         if (this.bewerber.vertragsarten) {
             this.bewerber.vertragsarten.forEach((element) => {
                 this.selectedVertragsarten.push(element);
