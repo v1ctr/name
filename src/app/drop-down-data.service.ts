@@ -4,31 +4,39 @@ import {db, model} from 'baqend';
 @Injectable()
 export class DropDownDataService {
 
-    private sprachen: Promise<model.Sprache[]>;
-    private vertragsarten: Promise<model.Vertragsart[]>;
-    private berufsfelder: Promise<model.Berufsfeld[]>;
-    private arbeitsverhaeltnisse: Promise<model.Arbeitsverhaeltnis[]>;
+    private sprachen: model.Sprache[];
+    private vertragsarten: model.Vertragsart[];
+    private berufsfelder: model.Berufsfeld[];
+    private arbeitsverhaeltnisse: model.Arbeitsverhaeltnis[];
 
     constructor() {
-        this.sprachen = db.Sprache.find().ascending('name').resultList();
-        this.vertragsarten = db.Vertragsart.find().ascending('name').resultList();
-        this.berufsfelder = db.Berufsfeld.find().ascending('name').resultList();
-        this.arbeitsverhaeltnisse = db.Arbeitsverhaeltnis.find().ascending('name').resultList();
+        db.Sprache.find().ascending('name').resultList((sprachen) => {
+            this.sprachen = sprachen;
+        });
+        db.Vertragsart.find().ascending('name').resultList((vertragsarten) => {
+            this.vertragsarten = vertragsarten;
+        });
+        db.Berufsfeld.find().ascending('name').resultList((berufsfelder) => {
+            this.berufsfelder = berufsfelder;
+        });
+        db.Arbeitsverhaeltnis.find().ascending('name').resultList((arbeitsverhaeltnisse) => {
+            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+        });
     }
 
-    public getSprachen(): Promise<model.Sprache[]> {
+    public getSprachen(): model.Sprache[] {
         return this.sprachen;
     }
 
-    public getBerufsfelder(): Promise<model.Berufsfeld[]> {
+    public getBerufsfelder(): model.Berufsfeld[] {
         return this.berufsfelder;
     }
 
-    public getVertragsarten(): Promise<model.Vertragsart[]> {
+    public getVertragsarten(): model.Vertragsart[] {
         return this.vertragsarten;
     }
 
-    public getArbeitsverhaeltnisse(): Promise<model.Arbeitsverhaeltnis[]> {
+    public getArbeitsverhaeltnisse(): model.Arbeitsverhaeltnis[] {
         return this.arbeitsverhaeltnisse;
     }
 }

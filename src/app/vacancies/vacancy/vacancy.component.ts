@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {FormControl, Validators} from '@angular/forms';
+import {DropDownDataService} from '../../drop-down-data.service';
 
 @Component({
     selector: 'app-vacancy',
@@ -25,38 +26,32 @@ export class VacancyComponent implements OnInit {
     branchen: model.Berufsfeld[];
     error;
 
-    constructor(private router: Router, private route: ActivatedRoute) {
+    constructor(private router: Router, private route: ActivatedRoute, private dropDownDataService: DropDownDataService) {
         this.vacancy = new db.Stellenangebot();
-    }
-
-    ngOnInit() {
         db.Unternehmen.find().equal('userid', db.User.me).singleResult((unternehmen) => {
             if (unternehmen) {
                 this.vacancy.unternehmen = unternehmen;
-            } else {
-                this.vacancy = new db.Stellenangebot();
                 this.vacancy.aktiv = true;
             }
         });
-        const dropDownData = this.route.snapshot.data['dropDownData'];
-        this.sprachen = dropDownData[0];
-        this.branchen = dropDownData[1];
-        this.vertragsarten = dropDownData[2];
-        this.route.params.subscribe(params => {
-                const key = params['key'];
-                db.Stellenangebot.load(key).then((vacancy) => {
-                    if (vacancy && key) {
-                        this.vacancy = vacancy;
-                        this.selectedVertragsarten = Array.from(this.vacancy.vertragsarten);
-                        this.selectedSprachen = Array.from(this.vacancy.sprache);
-                    } else if (key) {
-                        this.error = 'Could not load vacancy with key "' + key + '".';
-                    }
-                });
-            },
-            (error) => {
-                this.error = error.message;
+    }
+
+    ngOnInit() {
+        this.sprachen = this.dropDownDataService.getSprachen();
+        this.branchen = this.dropDownDataService.getBerufsfelder();
+        this.vertragsarten = this.dropDownDataService.getVertragsarten();
+        const key = this.route.snapshot.data['key'];
+        if (key) {
+            db.Stellenangebot.load(key).then((vacancy) => {
+                if (vacancy) {
+                    this.vacancy = vacancy;
+                    this.selectedVertragsarten = Array.from(this.vacancy.vertragsarten);
+                    this.selectedSprachen = Array.from(this.vacancy.sprache);
+                } else {
+                    this.error = 'Could not load vacancy with key "' + key + '".';
+                }
             });
+        }
     }
 
     save() {

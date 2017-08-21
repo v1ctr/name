@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
-import {ActivatedRoute} from '@angular/router';
+import {BewerberService} from "../../bewerber.service";
+import {DropDownDataService} from "../../drop-down-data.service";
 
 @Component({
     selector: 'app-config-bewerber',
@@ -27,18 +28,16 @@ export class ConfigBewerberComponent implements OnInit {
     errors = [];
 
 
-    constructor(private authService: AuthService,
-                private route: ActivatedRoute) {
+    constructor(private authService: AuthService, private bewerberService: BewerberService, private dropDownDataService: DropDownDataService) {
         this.user = db.User.me;
-        this.bewerber = this.route.snapshot.data['bewerber'];
-        const dropDownData = this.route.snapshot.data['dropDownData'];
-        this.sprachen = dropDownData[0]; // this.route.snapshot.data['sprachen'];
-        this.berufsfelder = dropDownData[1]; // this.route.snapshot.data['berufsfelder'];
-        this.vertragsarten = dropDownData[2]; // this.route.snapshot.data['vertragsarten'];
-        this.arbeitsverhaeltnisse = dropDownData[3]; // this.route.snapshot.data['arbeitsverhaeltnisse'];
+        this.bewerber = new db.Bewerber();
     }
 
     ngOnInit() {
+        this.sprachen = this.dropDownDataService.getSprachen();
+        this.berufsfelder = this.dropDownDataService.getBerufsfelder();
+        this.vertragsarten = this.dropDownDataService.getVertragsarten();
+        this.arbeitsverhaeltnisse = this.dropDownDataService.getArbeitsverhaeltnisse();
         // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
         if (this.bewerber.vertragsarten) {
             this.selectedVertragsarten = Array.from(this.bewerber.vertragsarten);

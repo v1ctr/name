@@ -39,13 +39,7 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
-import {BewerberResolver} from './bewerberResolver';
-import {BewerberService} from './bewerberService';
-import {VertragsartResolver} from './vertragsartResolver';
-import {SprachenResolver} from './sprachenResolver';
-import {BerufsfeldResolver} from './berufsfeldResolver';
-import {ArbeitsverhaeltnisResolver} from './arbeitsverhaeltnisResolver';
-import {DropDownDataResolver} from './dropDownDataResolver';
+import {BewerberService} from './bewerber.service';
 import {DropDownDataService} from './drop-down-data.service';
 
 @NgModule({
@@ -93,12 +87,6 @@ import {DropDownDataService} from './drop-down-data.service';
         DB_PROVIDERS,
         AuthService,
         BewerberService,
-        BewerberResolver,
-        VertragsartResolver,
-        SprachenResolver,
-        BerufsfeldResolver,
-        ArbeitsverhaeltnisResolver,
-        DropDownDataResolver,
         DropDownDataService,
     ],
     bootstrap: [AppComponent],

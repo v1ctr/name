@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
 import {FormControl, Validators} from '@angular/forms';
+import {DropDownDataService} from '../../drop-down-data.service';
 
 @Component({
     selector: 'app-config-unternehmen',
@@ -27,7 +28,7 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     errors;
 
-    constructor(private router: Router, private authService: AuthService, private route: ActivatedRoute) {
+    constructor(private router: Router, private authService: AuthService, private dropDownDataService: DropDownDataService) {
         this.user = db.User.me;
         this.unternehmen = new db.Unternehmen();
     }
@@ -44,12 +45,10 @@ export class ConfigUnternehmenComponent implements OnInit {
                     this.bild = this.unternehmen.bild;
                 }
             } else {
-                this.unternehmen = new db.Unternehmen();
                 this.unternehmen.userid = this.user;
             }
         });
-        const dropDownData = this.route.snapshot.data['dropDownData'];
-        this.branchen = dropDownData[1];
+        this.branchen = this.dropDownDataService.getBerufsfelder();
     }
 
     save() {
