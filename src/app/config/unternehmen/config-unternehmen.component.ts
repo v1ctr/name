@@ -14,6 +14,10 @@ export class ConfigUnternehmenComponent implements OnInit {
         Validators.maxLength(150)
     ]);
 
+    emailControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
+
     user: model.User;
     unternehmen: model.Unternehmen;
     branchen: model.Berufsfeld[];
