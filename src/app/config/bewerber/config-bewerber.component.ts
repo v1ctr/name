@@ -1,12 +1,48 @@
 import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
 export class ConfigBewerberComponent implements OnInit {
+
+    pitchControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
+
+    fachkompetenzenControl = new FormControl('', [
+        Validators.maxLength(100)
+    ]);
+
+    softskillsControl = new FormControl('', [
+        Validators.maxLength(100)
+    ]);
+
+    ausbildungControl = new FormControl('', [
+        Validators.maxLength(50)
+    ]);
+
+    plzControl = new FormControl('', [
+
+    ]);
+
+    vornameControl = new FormControl('', [
+
+    ]);
+
+    wohnortControl = new FormControl('', [
+
+    ]);
+    nachnameControl = new FormControl('', [
+
+    ]);
+
+    arbeitsortControl = new FormControl('', [
+
+        ]);
 
     user: model.User;
     bewerber: model.Bewerber;
