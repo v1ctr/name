@@ -1,7 +1,4 @@
-<span *ngIf="cards && cards.length==0" class="noCards">
-            Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
-            Jetzt <a [routerLink]="['/vacancies']">Stellenangebote bearbeiten</a>!
-        </span>
+<div *ngIf="cards && cards.length==0; else no_swipe">
   <div class="row">
     <div class="card-container">
       <sc-card
@@ -56,4 +53,12 @@
               class="glyphicon glyphicon-ok"></i></button>
     </div>
   </div>
-
+</div>
+<ng-template #no_swipe>
+    <div class="row swijoInfo">
+        <div class="well">
+            Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
+            Jetzt <a [routerLink]="['/vacancies']">Stellenangebote bearbeiten</a>!
+        </div>
+    </div>
+</ng-template>

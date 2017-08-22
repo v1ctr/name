@@ -1,269 +1,294 @@
 <form class="full-width" #form="ngForm">
-    <!-- Bewerberansicht -->
-    <h2>Persönliche Angaben</h2>
-    <div class="row">
-        <md-input-container class="col-md-2">
-            <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
-        </md-input-container>
+    <md-tab-group>
+        <!-- Bewerberansicht -->
+        <md-tab label="Persönliche Angaben">
+            <div class="row">
+                <md-input-container class="col-md-2">
+                    <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
+                </md-input-container>
 
-        <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.vorname"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="vorname" placeholder="Vorname" required [formControl]="vornameControl">
-            <md-error *ngIf="vornameControl.hasError('pattern')">
-                Bitte gib deinen Vornamen an
-            </md-error>
-            <md-error *ngIf="vornameControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
+                <md-input-container class="col-md-5">
+                    <input mdInput [(ngModel)]="bewerber.vorname" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="vorname"
+                           placeholder="Vorname" required [formControl]="vornameControl">
+                    <md-error *ngIf="vornameControl.hasError('pattern')">
+                        Bitte gib deinen Vornamen an
+                    </md-error>
+                    <md-error *ngIf="vornameControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
 
-        <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.nachname"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="nachname" placeholder="Nachname" required [formControl]="nachnameControl">
-            <md-error *ngIf="nachnameControl.hasError('pattern')">
-                Bitte gib deinen Nachnamen an
-            </md-error>
-            <md-error *ngIf="nachnameControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
+                <md-input-container class="col-md-5">
+                    <input mdInput [(ngModel)]="bewerber.nachname" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="nachname"
+                           placeholder="Nachname" required [formControl]="nachnameControl">
+                    <md-error *ngIf="nachnameControl.hasError('pattern')">
+                        Bitte gib deinen Nachnamen an
+                    </md-error>
+                    <md-error *ngIf="nachnameControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
 
-    </div>
-    <div class="row">
-      <md-input-container class="col-md-12">
-          <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="birthDatePicker" placeholder="Geburtsdatum"
-                 name="geburtsdatum" required>
-          <button mdSuffix [mdDatepickerToggle]="birthDatePicker"></button>
-      </md-input-container>
-        <md-datepicker #birthDatePicker [touchUi]="true"></md-datepicker>
-    </div>
-    <div class="row">
-        <md-input-container class="col-md-6">
-            <input  mdInput [(ngModel)]="bewerber.telefonnummer" placeholder="Telefonnummer" name="telefon" required>
-        </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-md-12">
+                    <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="birthDatePicker"
+                           placeholder="Geburtsdatum"
+                           name="geburtsdatum" required>
+                    <button mdSuffix [mdDatepickerToggle]="birthDatePicker"></button>
+                </md-input-container>
+                <md-datepicker #birthDatePicker [touchUi]="true"></md-datepicker>
+            </div>
+            <div class="row">
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.telefonnummer" placeholder="Telefonnummer" name="telefon"
+                           required>
+                </md-input-container>
 
-        <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="bewerber.homepage"  pattern="(http(s)?://)?([\w-]+\.)+[\w-]+(/[\w- ;,./?%&=]*)?" name="homepage" placeholder="Homepage" required [formControl]="homepageControl">
-            <md-error *ngIf="homepageControl.hasError('pattern')">
-                Keine gültige Homepage!
-            </md-error>
-            <md-error *ngIf="homepageControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
-    </div>
-    <div class="row">
-        <md-input-container class="col-sm-10"
-                            tdFileDrop
-                            (fileDrop)="profilbild = $event"
-                            (click)="imageInput.inputElement.click()"
-                            (keyup.enter)="imageInput.inputElement.click()"
-                            (keyup.delete)="imageInput.clear()"
-                            (keyup.backspace)="imageInput.clear()"
-                            flex>
-            <input mdInput placeholder="Profilbild" [value]="profilbild?.name" readonly required/>
-        </md-input-container>
-        <div class="col-sm-2">
-            <button md-icon-button *ngIf="profilbild" (click)="imageInput.clear()" (keyup.enter)="imageInput.clear()">
-                <md-icon>cancel</md-icon>
-            </button>
-            <td-file-input class="push-left-sm push-right-sm" #imageInput name="profilbild" [(ngModel)]="profilbild">
-                <!-- <md-icon>folder</md-icon> -->
-                <span class="text-upper">Browse...</span>
-            </td-file-input>
-        </div>
-    </div>
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.homepage"
+                           pattern="(http(s)?://)?([\w-]+\.)+[\w-]+(/[\w- ;,./?%&=]*)?" name="homepage"
+                           placeholder="Homepage" required [formControl]="homepageControl">
+                    <md-error *ngIf="homepageControl.hasError('pattern')">
+                        Keine gültige Homepage!
+                    </md-error>
+                    <md-error *ngIf="homepageControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-sm-10"
+                                    tdFileDrop
+                                    (fileDrop)="profilbild = $event"
+                                    (click)="imageInput.inputElement.click()"
+                                    (keyup.enter)="imageInput.inputElement.click()"
+                                    (keyup.delete)="imageInput.clear()"
+                                    (keyup.backspace)="imageInput.clear()"
+                                    flex>
+                    <input mdInput placeholder="Profilbild" [value]="profilbild?.name" readonly required/>
+                </md-input-container>
+                <div class="col-sm-2">
+                    <button md-icon-button *ngIf="profilbild" (click)="imageInput.clear()"
+                            (keyup.enter)="imageInput.clear()">
+                        <md-icon>cancel</md-icon>
+                    </button>
+                    <td-file-input class="push-left-sm push-right-sm" #imageInput name="profilbild"
+                                   [(ngModel)]="profilbild">
+                        <!-- <md-icon>folder</md-icon> -->
+                        <span class="text-upper">Browse...</span>
+                    </td-file-input>
+                </div>
+            </div>
+        </md-tab>
+        <md-tab label="Adresse">
+            <div class="row">
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.strasse" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse"
+                           placeholder="Strasse" required [formControl]="strasseControl">
+                    <md-error *ngIf="strasseControl.hasError('pattern')">
+                        Bitte gib deine Straße an
+                    </md-error>
+                    <md-error *ngIf="strasseControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
+                <md-input-container class="col-md-3">
+                    <input mdInput [(ngModel)]="bewerber.hausnummer" placeholder="Nummer" name="hausnr" required>
+                </md-input-container>
 
-    <h2>Adresse</h2>
-    <div class="row">
-        <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="bewerber.strasse"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
-            <md-error *ngIf="strasseControl.hasError('pattern')">
-                Bitte gib deine Straße an
-            </md-error>
-            <md-error *ngIf="strasseControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
-        <md-input-container class="col-md-3">
-            <input  mdInput [(ngModel)]="bewerber.hausnummer" placeholder="Nummer" name="hausnr" required>
-        </md-input-container>
+                <md-input-container class="col-md-3">
+                    <input mdInput [(ngModel)]="bewerber.adresszusatz" placeholder="Zusatz" name="zusatz">
+                </md-input-container>
+            </div>
+            <div class="row">
 
-        <md-input-container class="col-md-3">
-            <input mdInput [(ngModel)]="bewerber.adresszusatz" placeholder="Zusatz" name="zusatz">
-        </md-input-container>
-    </div>
-    <div class="row">
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.plz" type="text"
+                           pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl"
+                           required [formControl]="plzControl">
+                    <md-error *ngIf="plzControl.hasError('pattern')">
+                        Keine gültige Postleitzahl
+                    </md-error>
+                    <md-error *ngIf="plzControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
 
-            <md-input-container class="col-md-6">
-                <input mdInput [(ngModel)]="bewerber.plz" type="text" pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
-                <md-error *ngIf="plzControl.hasError('pattern')">
-                    Keine gültige Postleitzahl
-                </md-error>
-                <md-error *ngIf="plzControl.hasError('required')">
-                    This is <strong>required</strong>
-                </md-error>
+                </md-input-container>
 
-            </md-input-container>
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.wohnort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="wohnort"
+                           placeholder="Wohnort" required [formControl]="wohnortControl">
+                    <md-error *ngIf="wohnortControl.hasError('pattern')">
+                        Bitte gib deinen Wohnort an
+                    </md-error>
+                    <md-error *ngIf="wohnortControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
+            </div>
+        </md-tab>
+        <md-tab label="One-Sentence-Pitch">
+            <div class="row">
+                <md-input-container class="col-md-12">
+                    <input mdInput [(ngModel)]="bewerber.jobBezeichnung" placeholder="Job Bezeichnung" name="job"
+                           required>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-xs-12">
+                    <textarea mdInput [(ngModel)]="bewerber.pitch" maxlength="150" name="pitch" placeholder="Pitch"
+                              required [formControl]="pitchControl"></textarea>
+                    <md-error *ngIf="pitchControl.hasError('maxLength')">
+                        Der Pitch darf nicht länger als 150 Zeichen sein
+                    </md-error>
+                    <md-error *ngIf="pitchControl.hasError('required')">
+                        Pitch is <strong>required</strong>
+                    </md-error>
+                    <md-hint *ngIf="bewerber.pitch" align="end">{{bewerber.pitch.length}} / 150</md-hint>
+                </md-input-container>
+            </div>
+        </md-tab>
 
-        <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="bewerber.wohnort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="wohnort" placeholder="Wohnort" required [formControl]="wohnortControl">
-            <md-error *ngIf="wohnortControl.hasError('pattern')">
-                Bitte gib deinen Wohnort an
-            </md-error>
-            <md-error *ngIf="wohnortControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
-    </div>
+        <md-tab label="Qualifikationen">
+            <div class="row">
+                <md-input-container class="col-xs-12">
+                    <textarea mdInput [(ngModel)]="bewerber.fachkompetenzen" maxlength="100" name="fachkompetenzen"
+                              placeholder="Fachkompetenzen" required [formControl]="fachkompetenzenControl"></textarea>
+                    <md-error *ngIf="fachkompetenzenControl.hasError('maxLength')">
+                        Dieses Feld darf nicht länger als 100 Zeichen sein
+                    </md-error>
+                    <md-error *ngIf="fachkompetenzenControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                    <md-hint *ngIf="bewerber.fachkompetenzen" align="end">{{bewerber.fachkompetenzen.length}} / 100
+                    </md-hint>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-xs-12">
+                    <textarea mdInput [(ngModel)]="bewerber.softskills" maxlength="100" name="softskills"
+                              placeholder="Softskills" required [formControl]="softskillsControl"></textarea>
+                    <md-error *ngIf="softskillsControl.hasError('maxLength')">
+                        Dieses Feld darf nicht länger als 100 Zeichen sein
+                    </md-error>
+                    <md-error *ngIf="softskillsControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                    <md-hint *ngIf="bewerber.softskills" align="end">{{bewerber.softskills.length}} / 100</md-hint>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-xs-12">
+                    <textarea mdInput [(ngModel)]="bewerber.ausbildung" maxlength="50" name="ausbildung"
+                              placeholder="Ausbildung" required [formControl]="ausbildungControl"></textarea>
+                    <md-error *ngIf="ausbildungControl.hasError('maxLength')">
+                        Dieses Feld darf nicht länger als 50 Zeichen sein
+                    </md-error>
+                    <md-error *ngIf="ausbildungControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                    <md-hint *ngIf="bewerber.ausbildung" align="end">{{bewerber.ausbildung.length}} / 50</md-hint>
+                </md-input-container>
+            </div>
 
-    <h2>One-Sentence-Pitch</h2>
-    <div class="row">
-        <md-input-container class="col-md-12">
-            <input mdInput [(ngModel)]="bewerber.jobBezeichnung" placeholder="Job Bezeichnung" name="job" required>
-        </md-input-container>
-    </div>
-    <div class="row">
-        <md-input-container class="col-xs-12">
-            <textarea mdInput [(ngModel)]="bewerber.pitch" maxlength="150" name="pitch" placeholder="Pitch" required [formControl]="pitchControl"></textarea>
-            <md-error *ngIf="pitchControl.hasError('maxLength')">
-                Der Pitch darf nicht länger als 150 Zeichen sein
-            </md-error>
-            <md-error *ngIf="pitchControl.hasError('required')">
-                Pitch is <strong>required</strong>
-            </md-error>
-            <md-hint *ngIf="bewerber.pitch" align="end">{{bewerber.pitch.length}} / 150</md-hint>
-        </md-input-container>
-    </div>
+            <div class="row">
+                <md-select class="col-md-12" name="sprache" [multiple]="true" [(ngModel)]="selectedSprachen"
+                           placeholder="Sprachkenntnisse">
+                    <md-option *ngFor="let sprache of sprachen" [value]="sprache">
+                        {{ sprache.name }}
+                    </md-option>
+                </md-select>
+            </div>
+            <div class="row">
+                <md-input-container class="col-sm-10"
+                                    tdFileDrop
+                                    (fileDrop)="lebenslauf = $event"
+                                    (click)="lebenslaufInput.inputElement.click()"
+                                    (keyup.enter)="lebenslaufInput.inputElement.click()"
+                                    (keyup.delete)="lebenslaufInput.clear()"
+                                    (keyup.backspace)="lebenslaufInput.clear()"
+                                    flex>
+                    <input mdInput placeholder="Lebenslauf" [value]="lebenslauf?.name" readonly/>
+                </md-input-container>
+                <div class="col-sm-2">
+                    <button md-icon-button *ngIf="lebenslauf" (click)="lebenslaufInput.clear()"
+                            (keyup.enter)="lebenslaufInput.clear()">
+                        <md-icon>cancel</md-icon>
+                    </button>
+                    <td-file-input class="push-left-sm push-right-sm" #lebenslaufInput name="lebenslauf"
+                                   [(ngModel)]="lebenslauf">
+                        <!-- <md-icon>folder</md-icon> -->
+                        <span class="text-upper">Browse...</span>
+                    </td-file-input>
+                </div>
+            </div>
+        </md-tab>
+        <md-tab label="Ich suche">
+            <div class="row">
+                <md-select class="col-md-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
+                           placeholder="Vertragsart">
+                    <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
+                        {{ vertragsart.name }}
+                    </md-option>
+                </md-select>
+            </div>
+            <div class="row">
+                <div class="mat-input-container">
+                    <md-select class="col-md-12" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
+                               placeholder="Berufsfeld">
+                        <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
+                            {{ berufsfeld.name }}
+                        </md-option>
+                    </md-select>
+                </div>
+            </div>
 
+            <div class="row">
+                <md-select class="col-md-12" name="arbeitsverhaeltnis" [(ngModel)]="bewerber.arbeitsverhaeltnis"
+                           placeholder="Arbeitsverhältnis">
+                    <md-option *ngFor="let arbeitsverhaeltnis of arbeitsverhaeltnisse" [value]="arbeitsverhaeltnis">
+                        {{ arbeitsverhaeltnis.name }}
+                    </md-option>
+                </md-select>
+            </div>
 
-    <h2>Qualifikationen</h2>
-    <div class="row">
-        <md-input-container class="col-xs-12">
-        <textarea mdInput [(ngModel)]="bewerber.fachkompetenzen" maxlength="100" name="fachkompetenzen" placeholder="Fachkompetenzen" required [formControl]="fachkompetenzenControl"></textarea>
-        <md-error *ngIf="fachkompetenzenControl.hasError('maxLength')">
-            Dieses Feld darf nicht länger als 100 Zeichen sein
-        </md-error>
-        <md-error *ngIf="fachkompetenzenControl.hasError('required')">
-            This is <strong>required</strong>
-        </md-error>
-        <md-hint *ngIf="bewerber.fachkompetenzen" align="end">{{bewerber.fachkompetenzen.length}} / 100</md-hint>
-    </md-input-container>
-    </div>
-    <div class="row">
-        <md-input-container class="col-xs-12">
-            <textarea mdInput [(ngModel)]="bewerber.softskills" maxlength="100" name="softskills" placeholder="Softskills" required [formControl]="softskillsControl"></textarea>
-            <md-error *ngIf="softskillsControl.hasError('maxLength')">
-                Dieses Feld darf nicht länger als 100 Zeichen sein
-            </md-error>
-            <md-error *ngIf="softskillsControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-            <md-hint *ngIf="bewerber.softskills" align="end">{{bewerber.softskills.length}} / 100</md-hint>
-        </md-input-container>
-    </div>
-    <div class="row">
-        <md-input-container class="col-xs-12">
-            <textarea mdInput [(ngModel)]="bewerber.ausbildung" maxlength="50" name="ausbildung" placeholder="Ausbildung" required [formControl]="ausbildungControl"></textarea>
-            <md-error *ngIf="ausbildungControl.hasError('maxLength')">
-                Dieses Feld darf nicht länger als 50 Zeichen sein
-            </md-error>
-            <md-error *ngIf="ausbildungControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-            <md-hint *ngIf="bewerber.ausbildung" align="end">{{bewerber.ausbildung.length}} / 50</md-hint>
-        </md-input-container>
-    </div>
+            <div class="row">
 
-    <div class="row">
-        <md-select class="col-md-12" name="sprache" [multiple]="true" [(ngModel)]="selectedSprachen"
-                   placeholder="Sprachkenntnisse">
-            <md-option *ngFor="let sprache of sprachen" [value]="sprache">
-                {{ sprache.name }}
-            </md-option>
-        </md-select>
-    </div>
-    <div class="row">
-        <md-input-container class="col-sm-10"
-                            tdFileDrop
-                            (fileDrop)="lebenslauf = $event"
-                            (click)="lebenslaufInput.inputElement.click()"
-                            (keyup.enter)="lebenslaufInput.inputElement.click()"
-                            (keyup.delete)="lebenslaufInput.clear()"
-                            (keyup.backspace)="lebenslaufInput.clear()"
-                            flex>
-            <input mdInput placeholder="Lebenslauf" [value]="lebenslauf?.name" readonly/>
-        </md-input-container>
-        <div class="col-sm-2">
-            <button md-icon-button *ngIf="lebenslauf" (click)="lebenslaufInput.clear()"
-                    (keyup.enter)="lebenslaufInput.clear()">
-                <md-icon>cancel</md-icon>
-            </button>
-            <td-file-input class="push-left-sm push-right-sm" #lebenslaufInput name="lebenslauf"
-                           [(ngModel)]="lebenslauf">
-                <!-- <md-icon>folder</md-icon> -->
-                <span class="text-upper">Browse...</span>
-            </td-file-input>
-        </div>
-    </div>
-    <h2>Ich suche</h2>
-    <div class="row">
-        <md-select class="col-md-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
-                   placeholder="Vertragsart">
-            <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
-                {{ vertragsart.name }}
-            </md-option>
-        </md-select>
-    </div>
-    <div class="row">
-        <div class="mat-input-container">
-            <md-select class="col-md-12" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
-                       placeholder="Berufsfeld">
-                <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
-                    {{ berufsfeld.name }}
-                </md-option>
-            </md-select>
-        </div>
-    </div>
-
-    <div class="row">
-        <md-select class="col-md-12" name="arbeitsverhaeltnis" [(ngModel)]="bewerber.arbeitsverhaeltnis"
-                   placeholder="Arbeitsverhältnis">
-            <md-option *ngFor="let arbeitsverhaeltnis of arbeitsverhaeltnisse" [value]="arbeitsverhaeltnis">
-                {{ arbeitsverhaeltnis.name }}
-            </md-option>
-        </md-select>
-    </div>
-
-    <div class="row">
-
-        <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="bewerber.arbeitsort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort" placeholder="Gewünschter Arbeitsort" required [formControl]="arbeitsortControl">
-            <md-error *ngIf="arbeitsortControl.hasError('pattern')">
-                Bitte gib deinen gewünschten Arbeitsort an
-            </md-error>
-            <md-error *ngIf="arbeitsortControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
+                <md-input-container class="col-md-6">
+                    <input mdInput [(ngModel)]="bewerber.arbeitsort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort"
+                           placeholder="Gewünschter Arbeitsort" required [formControl]="arbeitsortControl">
+                    <md-error *ngIf="arbeitsortControl.hasError('pattern')">
+                        Bitte gib deinen gewünschten Arbeitsort an
+                    </md-error>
+                    <md-error *ngIf="arbeitsortControl.hasError('required')">
+                        This is <strong>required</strong>
+                    </md-error>
+                </md-input-container>
 
 
-        <md-input-container class="col-md-6">
-            <input mdInput type="number" [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt"
-                   placeholder="Gehaltsvorstellungen">
-        </md-input-container>
-    </div>
-    <div class="row">
-        <md-input-container class="col-md-12">
-            <input mdInput [(ngModel)]="bewerber.startdatum" [mdDatepicker]="startDatePicker"
-                   placeholder="Frühstmöglicher Eintrittstermin" name="startdatum">
-            <button mdSuffix [mdDatepickerToggle]="startDatePicker"></button>
-        </md-input-container>
-        <md-datepicker #startDatePicker [touchUi]="true"></md-datepicker>
-    </div>
+                <md-input-container class="col-md-6">
+                    <input mdInput type="number" [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt"
+                           placeholder="Gehaltsvorstellungen">
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-md-12">
+                    <input mdInput [(ngModel)]="bewerber.startdatum" [mdDatepicker]="startDatePicker"
+                           placeholder="Frühstmöglicher Eintrittstermin" name="startdatum">
+                    <button mdSuffix [mdDatepickerToggle]="startDatePicker"></button>
+                </md-input-container>
+                <md-datepicker #startDatePicker [touchUi]="true"></md-datepicker>
+            </div>
+        </md-tab>
+    </md-tab-group>
 
     <div class="pull-right">
         <button
-            md-raised-button
-            (click)="save()"
-            [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || strasseControl.status=='INVALID'||  vornameControl.status=='INVALID' || homepageControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
+                md-raised-button
+                (click)="save()"
+                [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || strasseControl.status=='INVALID'||  vornameControl.status=='INVALID' || homepageControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">
+            Speichern
+        </button>
     </div>
 </form>

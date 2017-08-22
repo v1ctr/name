@@ -1,39 +1,44 @@
 <form class="full-width" #form="ngForm">
-  <h2>Registrieren</h2>
-  <div class="row">
-    <md-input-container class="col-sm-12">
-      <input mdInput [(ngModel)]="user.username" name="username" placeholder="E-Mail" required>
-    </md-input-container>
-  </div>
-  <div class="row">
-    <md-input-container class="col-sm-12">
-      <input type="password" mdInput [(ngModel)]="user.password" name="password" placeholder="Passwort" required>
-    </md-input-container>
-  </div>
-  <div class="row">
-    <md-input-container class="col-sm-12">
-      <input type="password" mdInput [(ngModel)]="user.passwordRepeat" name="passwordRepeat"
-             placeholder="Passwort wiederholen" required>
-    </md-input-container>
-  </div>
+    <h2>Registrieren</h2>
+    <div class="row">
+        <md-input-container class="col-sm-12">
+            <input mdInput [(ngModel)]="user.username" name="username" placeholder="E-Mail" required>
+        </md-input-container>
+    </div>
+    <div class="row">
+        <md-input-container class="col-sm-12">
+            <input type="password" mdInput [(ngModel)]="user.password" name="password" placeholder="Passwort" required>
+        </md-input-container>
+    </div>
+    <div class="row">
+        <md-input-container class="col-sm-12">
+            <input type="password" mdInput [(ngModel)]="user.passwordRepeat" name="passwordRepeat"
+                   placeholder="Passwort wiederholen" required>
+        </md-input-container>
+    </div>
+    <div class="form-group col-lg-12">
+        <div class="radio">
+            <label>
+                <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
+                Bewerber
+            </label>
+            <label>
+                <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
+                Unternehmen
+            </label>
+        </div>
+    </div>
     <div class="row" [hidden]="!result.message">
-        <md-error *ngIf="result.isError">
+        <md-error *ngIf="result.isError; else hint">
             {{result.message}}
         </md-error>
+        <ng-template #hint>
+            <md-hint>
+                {{result.message}}
+            </md-hint>
+        </ng-template>
     </div>
-  <div class="form-group col-lg-12">
-    <div class="radio">
-      <label>
-        <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="false">
-        Bewerber
-      </label>
-      <label>
-        <input type="radio" name="iscomp" [(ngModel)]="user.iscomp" [value]="true">
-        Unternehmen
-      </label>
+    <div class="clearfix">
+        <button class="pull-right" md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
     </div>
-  </div>
-  <div class="clearfix">
-    <button class="pull-right" md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
-  </div>
 </form>

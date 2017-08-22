@@ -19,6 +19,7 @@ import {
     MdNativeDateModule,
     MdSelectModule,
     MdSnackBarModule,
+    MdTabsModule,
     MdToolbarModule
 } from '@angular/material';
 
@@ -83,7 +84,8 @@ import {UnternehmenService} from './unternehmen.service';
         MdDatepickerModule,
         MdNativeDateModule,
         MdCardModule,
-        MdCheckboxModule
+        MdCheckboxModule,
+        MdTabsModule
     ],
     providers: [
         DB_PROVIDERS,
