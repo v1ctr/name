@@ -253,9 +253,9 @@
     </div>
 
     <div class="pull-right">
-        <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
+        <button
+            md-raised-button
+            (click)="save()"
+            [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || vornameControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
     </div>
 </form>
-
-
-
