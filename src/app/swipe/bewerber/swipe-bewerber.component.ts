@@ -78,6 +78,7 @@ export class SwipeBewerberComponent implements OnInit {
   }
 
   notifyServer(event){
+      var self = this;
     var item = this.cards[this.cardCursor];
     db.Stellenangebot.load(item.id)
       .then((angebot)=>{
@@ -92,7 +93,7 @@ export class SwipeBewerberComponent implements OnInit {
                 bewerberLike.update()
                   .then(()=>{
                     if(event.like){
-                      this.checkIfMatch(angebot);
+                        self.checkIfMatch(angebot);
                     }
                   });
               }else{
@@ -103,7 +104,7 @@ export class SwipeBewerberComponent implements OnInit {
                 });
                 bewerberLike.insert().then(function(res) {
                   if(event.like){
-                    this.checkIfMatch(angebot);
+                      self.checkIfMatch(angebot);
                   }
                 });
               }
@@ -143,7 +144,10 @@ export class SwipeBewerberComponent implements OnInit {
                     pitch: angebot.unternehmen.pitch,
                     bezeichnung: angebot.bezeichnung,
                     beschreibung: angebot.beschreibung,
-                    logo: angebot.unternehmen.logo
+                    logo: angebot.unternehmen.logo,
+                    anforderung: angebot.anforderung,
+                    arbeitsort: angebot.arbeitsort,
+                    gehalt: angebot.monatsgehalt
                   });
                 });
               });

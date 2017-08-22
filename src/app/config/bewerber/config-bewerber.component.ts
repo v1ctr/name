@@ -27,14 +27,33 @@ export class ConfigBewerberComponent implements OnInit {
         Validators.maxLength(50)
     ]);
 
-    plzControl = new FormControl('', []);
+    plzControl = new FormControl('', [
 
-    vornameControl = new FormControl('', []);
+    ]);
 
-    wohnortControl = new FormControl('', []);
-    nachnameControl = new FormControl('', []);
+    strasseControl = new FormControl('', [
 
-    arbeitsortControl = new FormControl('', []);
+    ]);
+
+    wohnortControl = new FormControl('', [
+
+    ]);
+
+    homepageControl = new FormControl('', [
+
+    ]);
+
+    vornameControl = new FormControl('', [
+
+    ]);
+
+    nachnameControl = new FormControl('', [
+
+    ]);
+
+    arbeitsortControl = new FormControl('', [
+
+        ]);
 
     user: model.User;
     bewerber: model.Bewerber;

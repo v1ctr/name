@@ -16,9 +16,26 @@ export class ConfigUnternehmenComponent implements OnInit {
     ]);
 
 
-    plzControl = new FormControl('', []);
+    plzControl = new FormControl('', [
 
-    homepageControl = new FormControl('', []);
+    ]);
+
+    strasseControl = new FormControl('', [
+
+    ]);
+
+    homepageControl = new FormControl('', [
+
+    ]);
+
+    ortControl = new FormControl('', [
+
+    ]);
+
+    ansprechpartnerControl = new FormControl('', [
+
+    ]);
+
 
     user: model.User;
     unternehmen: model.Unternehmen;
