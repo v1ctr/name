@@ -4,20 +4,9 @@ import {db, model} from 'baqend';
 @Injectable()
 export class BewerberService {
 
-    private bewerber: model.Bewerber;
-
-    constructor() {
-        db.Bewerber.find().equal('user', db.User.me).singleResult((bewerber) => {
-            if (bewerber) {
-                this.bewerber = bewerber;
-            } else {
-                this.bewerber = this.getNewBewerber();
-            }
-        });
-    }
-
-    public getBewerber(): model.Bewerber {
-        return this.bewerber;
+    public getBewerber(): Promise<model.Bewerber> {
+        return db.Bewerber.find().equal('user', db.User.me).singleResult();
+        ;
     }
 
     public getNewBewerber(): model.Bewerber {

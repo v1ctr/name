@@ -32,17 +32,24 @@ export class ConfigUnternehmenComponent implements OnInit {
                 private dropDownDataService: DropDownDataService,
                 private unternehmenService: UnternehmenService) {
         this.user = db.User.me;
-        this.unternehmen = this.unternehmenService.getUnternehmen();
+        this.unternehmen = this.unternehmenService.getNewUnternehmen();
     }
 
     ngOnInit() {
-        if (this.unternehmen.logo) {
-            this.logo = this.unternehmen.logo;
-        }
-        if (this.unternehmen.bild) {
-            this.bild = this.unternehmen.bild;
-        }
-        this.branchen = this.dropDownDataService.getBerufsfelder();
+        this.unternehmenService.getUnternehmen().then((unternehmen) => {
+            if (unternehmen) {
+                this.unternehmen = unternehmen;
+                if (this.unternehmen.logo) {
+                    this.logo = this.unternehmen.logo;
+                }
+                if (this.unternehmen.bild) {
+                    this.bild = this.unternehmen.bild;
+                }
+            }
+        });
+        this.dropDownDataService.getBerufsfelder().then((branchen) => {
+            this.branchen = branchen;
+        });
     }
 
     save() {

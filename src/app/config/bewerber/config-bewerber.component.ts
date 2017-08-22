@@ -58,27 +58,40 @@ export class ConfigBewerberComponent implements OnInit {
                 private bewerberService: BewerberService,
                 private dropDownDataService: DropDownDataService) {
         this.user = db.User.me;
+        this.bewerber = bewerberService.getNewBewerber();
     }
 
     ngOnInit() {
-        this.bewerber = this.bewerberService.getBewerber();
-        this.sprachen = this.dropDownDataService.getSprachen();
-        this.berufsfelder = this.dropDownDataService.getBerufsfelder();
-        this.vertragsarten = this.dropDownDataService.getVertragsarten();
-        this.arbeitsverhaeltnisse = this.dropDownDataService.getArbeitsverhaeltnisse();
-        // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
-        if (this.bewerber.vertragsarten) {
-            this.selectedVertragsarten = Array.from(this.bewerber.vertragsarten);
-        }
-        if (this.bewerber.sprachen) {
-            this.selectedSprachen = Array.from(this.bewerber.sprachen);
-        }
-        if (this.bewerber.profilbild) {
-            this.profilbild = this.bewerber.profilbild;
-        }
-        if (this.bewerber.lebenslauf) {
-            this.lebenslauf = this.bewerber.lebenslauf;
-        }
+        this.bewerberService.getBewerber().then((bewerber) => {
+            if (bewerber) {
+                this.bewerber = bewerber;
+                // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
+                if (this.bewerber.vertragsarten) {
+                    this.selectedVertragsarten = Array.from(this.bewerber.vertragsarten);
+                }
+                if (this.bewerber.sprachen) {
+                    this.selectedSprachen = Array.from(this.bewerber.sprachen);
+                }
+                if (this.bewerber.profilbild) {
+                    this.profilbild = this.bewerber.profilbild;
+                }
+                if (this.bewerber.lebenslauf) {
+                    this.lebenslauf = this.bewerber.lebenslauf;
+                }
+            }
+        });
+        this.dropDownDataService.getSprachen().then((sprachen) => {
+            this.sprachen = sprachen;
+        });
+        this.dropDownDataService.getBerufsfelder().then((berufsfelder) => {
+            this.berufsfelder = berufsfelder;
+        });
+        this.dropDownDataService.getVertragsarten().then((vertragsarten) => {
+            this.vertragsarten = vertragsarten;
+        });
+        this.dropDownDataService.getArbeitsverhaeltnisse().then((arbeitsverhaeltnisse) => {
+            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+        });
     }
 
     save() {

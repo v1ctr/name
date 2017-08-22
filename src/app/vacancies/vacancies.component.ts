@@ -14,6 +14,10 @@ export class VacanciesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.vacancies = this.vacancyService.getVacancies();
+        this.vacancyService.getVacancies().then((vacancies) => {
+            if (vacancies) {
+                this.vacancies = vacancies;
+            }
+        });
     }
 }

@@ -5,34 +5,23 @@ import {UnternehmenService} from './unternehmen.service';
 @Injectable()
 export class VacancyService {
 
-    private vacancies: model.Stellenangebot[] = [];
-    private unternehmen: model.Unternehmen;
-
     constructor(private unternehmenService: UnternehmenService) {
-        this.unternehmen = this.unternehmenService.getUnternehmen();
-        db.Stellenangebot.find().equal('unternehmen', this.unternehmen).resultList((vacancies) => {
-            if (vacancies) {
-                this.vacancies = vacancies;
-            }
+    }
+
+    public getVacancies(): Promise<model.Stellenangebot[]> {
+        return this.unternehmenService.getUnternehmen().then((unternehmen) => {
+            return db.Stellenangebot.find().equal('unternehmen', unternehmen).resultList().then((vacancies) => {
+                return vacancies;
+            });
         });
     }
 
-    public getVacancies(): model.Stellenangebot[] {
-        return this.vacancies;
-    }
-
-    public getVacancyBykey(key: string): model.Stellenangebot {
-        const foundVacancy = this.vacancies.find(vacancy => vacancy.key === key);
-        if (foundVacancy) {
-            return foundVacancy;
-        } else {
-            return this.getNewVacancy();
-        }
+    public getVacancyByKey(key: string): Promise<model.Stellenangebot> {
+        return db.Stellenangebot.load(key);
     }
 
     public getNewVacancy(): model.Stellenangebot {
         const vacancy = new db.Stellenangebot();
-        vacancy.unternehmen = this.unternehmen;
         vacancy.aktiv = true;
         vacancy.sprachen = [];
         vacancy.vertragsarten = [];
