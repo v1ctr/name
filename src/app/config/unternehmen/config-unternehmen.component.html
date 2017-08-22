@@ -11,6 +11,7 @@
                     <input mdInput [(ngModel)]="unternehmen.name" placeholder="Unternehmensname" name="name" required>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-md-8">
                     <input mdInput [(ngModel)]="unternehmen.homepage"
@@ -30,6 +31,7 @@
                 </md-input-container>
                 <md-datepicker #picker [touchUi]="true"></md-datepicker>
             </div>
+
             <div class="row">
                 <md-select class="col-xs-8" name="branche" [(ngModel)]="unternehmen.branche"
                            placeholder="Branche">
@@ -43,6 +45,7 @@
                            name="mitarbeiter" required>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-sm-8"
                                     tdFileDrop
@@ -66,6 +69,7 @@
                     </td-file-input>
                 </div>
             </div>
+
             <div class="row">
                 <md-input-container class="col-sm-8"
                                     tdFileDrop
@@ -90,6 +94,8 @@
                 </div>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(PITCH_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===PITCH_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==PITCH_BLOCK">keyboard_arrow_right</md-icon>
@@ -110,6 +116,8 @@
                 </md-input-container>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(ADDRESS_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===ADDRESS_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==ADDRESS_BLOCK">keyboard_arrow_right</md-icon>
@@ -134,6 +142,7 @@
                     <input mdInput [(ngModel)]="unternehmen.adresszusatz" placeholder="Zusatz" name="zusatz">
                 </md-input-container>
             </div>
+
             <div class="row">
 
                 <md-input-container class="col-md-6">
@@ -145,9 +154,7 @@
                     <md-error *ngIf="plzControl.hasError('required')">
                         This is <strong>required</strong>
                     </md-error>
-
                 </md-input-container>
-
                 <md-input-container class="col-md-6">
                     <input mdInput [(ngModel)]="unternehmen.ort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort"
                            placeholder="Standort" required [formControl]="ortControl">
@@ -159,6 +166,7 @@
                     </md-error>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-md-6">
                     <input mdInput [(ngModel)]="unternehmen.ansprechpartner" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort"
@@ -177,6 +185,7 @@
             </div>
         </div>
     </md-nav-list>
+
     <div class="pull-right">
         <button
                 md-raised-button

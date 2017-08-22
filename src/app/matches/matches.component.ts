@@ -9,8 +9,14 @@ import {db, model} from 'baqend';
 export class MatchesComponent implements OnInit {
 
     matches: model.Match[] = [];
+    redirectLink;
 
     constructor(private router: Router) {
+        if (db.User.me.iscomp) {
+            this.redirectLink = '/swipe/unternehmen';
+        } else {
+            this.redirectLink = '/swipe/bewerber';
+        }
     }
 
     ngOnInit() {

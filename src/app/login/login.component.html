@@ -10,9 +10,9 @@
       <input type="password" mdInput [(ngModel)]="user.password" name="password" placeholder="Passwort" required>
     </md-input-container>
   </div>
-  <a [routerLink]=" ['../signup', user.username] " routerLinkActive="active">Ich habe noch keinen Account</a>
+  <a [routerLink]=" ['../signup', user.username] ">Ich habe noch keinen Account</a>
   <br>
-  <a [routerLink]=" ['../forgotPassword', user.username]" routerLinkActive="active">Passwort vergessen?</a>
+  <a [routerLink]=" ['../forgotPassword', user.username]">Passwort vergessen?</a>
   <div class="pull-right">
     <button md-raised-button (click)="logIn()" [disabled]="!form.valid">Log In</button>
   </div>

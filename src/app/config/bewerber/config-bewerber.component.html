@@ -10,7 +10,6 @@
                 <md-input-container class="col-md-2">
                     <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
                 </md-input-container>
-
                 <md-input-container class="col-md-5">
                     <input mdInput [(ngModel)]="bewerber.vorname" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="vorname"
                            placeholder="Vorname" required [formControl]="vornameControl">
@@ -21,7 +20,6 @@
                         This is <strong>required</strong>
                     </md-error>
                 </md-input-container>
-
                 <md-input-container class="col-md-5">
                     <input mdInput [(ngModel)]="bewerber.nachname" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="nachname"
                            placeholder="Nachname" required [formControl]="nachnameControl">
@@ -32,8 +30,8 @@
                         This is <strong>required</strong>
                     </md-error>
                 </md-input-container>
-
             </div>
+
             <div class="row">
                 <md-input-container class="col-md-4">
                     <input mdInput [(ngModel)]="bewerber.geburtsdatum" [mdDatepicker]="birthDatePicker"
@@ -54,6 +52,7 @@
                     </md-error>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-sm-8"
                                     tdFileDrop
@@ -79,6 +78,8 @@
                 </div>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(ADDRESS_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===ADDRESS_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==ADDRESS_BLOCK">keyboard_arrow_right</md-icon>
@@ -104,6 +105,7 @@
                     <input mdInput [(ngModel)]="bewerber.adresszusatz" placeholder="Zusatz" name="zusatz">
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-md-3">
                     <input mdInput [(ngModel)]="bewerber.plz" type="text"
@@ -132,6 +134,8 @@
                 </md-input-container>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(PITCH_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===PITCH_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==PITCH_BLOCK">keyboard_arrow_right</md-icon>
@@ -152,6 +156,8 @@
                 </md-input-container>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(QUALIFICATIONS_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===QUALIFICATIONS_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==QUALIFICATIONS_BLOCK">keyboard_arrow_right</md-icon>
@@ -172,6 +178,7 @@
                     </md-hint>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-xs-12">
                     <textarea mdInput [(ngModel)]="bewerber.softskills" maxlength="100" name="softskills"
@@ -185,6 +192,7 @@
                     <md-hint *ngIf="bewerber.softskills" align="end">{{bewerber.softskills.length}} / 100</md-hint>
                 </md-input-container>
             </div>
+
             <div class="row">
                 <md-input-container class="col-xs-12">
                     <input mdInput [(ngModel)]="bewerber.ausbildung" maxlength="50" name="ausbildung"
@@ -207,6 +215,7 @@
                     </md-option>
                 </md-select>
             </div>
+
             <div class="row">
                 <md-input-container class="col-sm-8"
                                     tdFileDrop
@@ -232,6 +241,8 @@
                 </div>
             </div>
         </div>
+
+
         <a md-list-item (click)="updateActiveBlock(JOB_BLOCK)" class="row">
             <md-icon *ngIf="activeBlock===JOB_BLOCK">keyboard_arrow_down</md-icon>
             <md-icon *ngIf="activeBlock!==JOB_BLOCK">keyboard_arrow_right</md-icon>
@@ -248,15 +259,14 @@
                            placeholder="Gehaltsvorstellungen">
                 </md-input-container>
             </div>
+
             <div class="row">
-                <div class="mat-input-container">
-                    <md-select class="col-md-8" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
-                               placeholder="Berufsfeld">
-                        <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
-                            {{ berufsfeld.name }}
-                        </md-option>
-                    </md-select>
-                </div>
+                <md-select class="col-md-8" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
+                           placeholder="Berufsfeld">
+                    <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
+                        {{ berufsfeld.name }}
+                    </md-option>
+                </md-select>
                 <md-select class="col-md-4" name="arbeitsverhaeltnis" [(ngModel)]="bewerber.arbeitsverhaeltnis"
                            placeholder="Arbeitsverhältnis">
                     <md-option *ngFor="let arbeitsverhaeltnis of arbeitsverhaeltnisse" [value]="arbeitsverhaeltnis">
@@ -264,6 +274,7 @@
                     </md-option>
                 </md-select>
             </div>
+
             <div class="row">
                 <md-select class="col-md-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
                            placeholder="Vertragsart">
@@ -272,6 +283,7 @@
                     </md-option>
                 </md-select>
             </div>
+
             <div class="row">
                 <md-input-container class="col-md-6">
                     <input mdInput [(ngModel)]="bewerber.arbeitsort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort"
@@ -292,6 +304,7 @@
             </div>
         </div>
     </md-nav-list>
+
     <div class="pull-right">
         <button
                 md-raised-button

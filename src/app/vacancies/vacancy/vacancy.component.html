@@ -1,11 +1,17 @@
 <form class="full-width" #form="ngForm">
-    <h2>Vacancy</h2>
+    <h2>Stellenangebot</h2>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <md-checkbox [(ngModel)]="vacancy.aktiv" name="aktiv" color="primary">Aktiv</md-checkbox>
+        </div>
+    </div>
+
     <div class="row">
         <md-input-container class="col-xs-12">
             <input mdInput [(ngModel)]="vacancy.bezeichnung" placeholder="Stellen-Bezeichnung" name="bezeichnung" required>
         </md-input-container>
     </div>
-
 
     <div class="row">
         <md-input-container class="col-xs-12">
@@ -20,21 +26,11 @@
         </md-input-container>
     </div>
 
-
     <div class="row">
         <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="vacancy.berufsfeld"
                    placeholder="Berufsfeld">
             <md-option *ngFor="let branche of branchen" [value]="branche">
                 {{ branche.name }}
-            </md-option>
-        </md-select>
-    </div>
-
-    <div class="row">
-        <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
-                   placeholder="Vertragsart">
-            <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
-                {{ vertragsart.name }}
             </md-option>
         </md-select>
     </div>
@@ -48,6 +44,14 @@
         </div>
     </div>
 
+    <div class="row">
+        <md-select class="col-sm-12" name="vertragsart" [multiple]="true" [(ngModel)]="selectedVertragsarten"
+                   placeholder="Vertragsart">
+            <md-option *ngFor="let vertragsart of vertragsarten" [value]="vertragsart">
+                {{ vertragsart.name }}
+            </md-option>
+        </md-select>
+    </div>
 
     <div class="row">
         <md-input-container class="col-xs-12">
@@ -61,6 +65,7 @@
             <md-hint *ngIf="vacancy.anforderung" align="end">{{vacancy.anforderung.length}} / 150</md-hint>
         </md-input-container>
     </div>
+
     <div class="row">
         <md-select class="col-sm-12" name="sprachen" [multiple]="true" [(ngModel)]="selectedSprachen"
                    placeholder="Sprachen">
@@ -69,34 +74,23 @@
             </md-option>
         </md-select>
     </div>
-    <div class="row">
-        <md-input-container class="col-md-6">
-            <input type="number" mdInput [(ngModel)]="vacancy.monatsgehalt" placeholder="Monatsgehalt"
-                   name="gehalt" required>
-        </md-input-container>
 
+    <div class="row">
         <md-input-container class="col-md-6">
             <input mdInput [(ngModel)]="vacancy.start" [mdDatepicker]="picker" placeholder="Eintrittstermin" name="start" required>
             <button mdSuffix [mdDatepickerToggle]="picker"></button>
         </md-input-container>
         <md-datepicker #picker [touchUi]="true"></md-datepicker>
-
+        <md-input-container class="col-md-6">
+            <input type="number" mdInput [(ngModel)]="vacancy.monatsgehalt" placeholder="Monatsgehalt"
+                   name="gehalt" required>
+        </md-input-container>
     </div>
-
 
     <div class="row">
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="vacancy.partner"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="partner" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
-            <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
-                Bitte geben Sie einen Ansprechpartner an
-            </md-error>
-            <md-error *ngIf="ansprechpartnerControl.hasError('required')">
-                This is <strong>required</strong>
-            </md-error>
-        </md-input-container>
-
-        <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="vacancy.arbeitsort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort" placeholder="Arbeitsort" required [formControl]="arbeitsortControl">
+            <input mdInput [(ngModel)]="vacancy.arbeitsort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort"
+                   placeholder="Arbeitsort" required [formControl]="arbeitsortControl">
             <md-error *ngIf="arbeitsortControl.hasError('pattern')">
                 Bitte geben Sie den Arbeitsort an
             </md-error>
@@ -104,13 +98,19 @@
                 This is <strong>required</strong>
             </md-error>
         </md-input-container>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <md-checkbox [(ngModel)]="vacancy.aktiv" name="aktiv" color="primary">Aktiv</md-checkbox>
-        </div>
+        <md-input-container class="col-md-6">
+            <input mdInput [(ngModel)]="vacancy.partner" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="partner"
+                   placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
+            <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
+                Bitte geben Sie einen Ansprechpartner an
+            </md-error>
+            <md-error *ngIf="ansprechpartnerControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
+        </md-input-container>
     </div>
 
+    <a [routerLink]="['/vacancies']">Zurück zur Stellenangebots-Übersicht</a>
     <div class="pull-right">
         <button md-raised-button (click)="save()"
                 [disabled]="!form.valid || ansprechpartnerControl.status=='INVALID' || anforderungControl.status=='INVALID' || descriptionControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
