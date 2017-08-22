@@ -95,7 +95,7 @@
     </div>
     <h2>Adresse</h2>
     <div class="row">
-        <md-input-container class="col-md-5">
+        <md-input-container class="col-md-6">
             <input mdInput [(ngModel)]="unternehmen.strasse"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
             <md-error *ngIf="strasseControl.hasError('pattern')">
                 Bitte geben Sie Ihre Straße an
@@ -104,10 +104,10 @@
                 This is <strong>required</strong>
             </md-error>
         </md-input-container>
-        <md-input-container class="col-md-2">
+        <md-input-container class="col-md-3">
             <input  mdInput [(ngModel)]="unternehmen.hausnummer" placeholder="Nummer" name="hausnr" required>
         </md-input-container>
-        <md-input-container class="col-md-2">
+        <md-input-container class="col-md-3">
             <input mdInput [(ngModel)]="unternehmen.adresszusatz" placeholder="Zusatz" name="zusatz">
         </md-input-container>
     </div>
