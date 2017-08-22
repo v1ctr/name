@@ -134,7 +134,7 @@ sc-card {
 }
 
 .card-heap {
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .connecting-line {
@@ -153,4 +153,17 @@ sc-card {
 .center-items{
     align-items: center;
     text-align: center;
+}
+
+.swipe-buttons{
+    margin-top: 625px;
+}
+
+@media only screen and (min-width: 700px) {
+    .card-heap {
+        min-height: 500px;
+    }
+    .swipe-buttons{
+        margin-top: 550px;
+    }
 }

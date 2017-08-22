@@ -113,16 +113,16 @@
     </div>
     <div class="row">
 
-            <md-input-container class="col-md-6">
-                <input mdInput [(ngModel)]="unternehmen.plz"  pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
-                <md-error *ngIf="plzControl.hasError('pattern')">
-                    Keine gültige Postleitzahl
-                </md-error>
-                <md-error *ngIf="plzControl.hasError('required')">
-                    This is <strong>required</strong>
-                </md-error>
+        <md-input-container class="col-md-6">
+            <input mdInput [(ngModel)]="unternehmen.plz"  pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
+            <md-error *ngIf="plzControl.hasError('pattern')">
+                Keine gültige Postleitzahl
+            </md-error>
+            <md-error *ngIf="plzControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
 
-            </md-input-container>
+        </md-input-container>
 
         <md-input-container class="col-md-6">
             <input mdInput [(ngModel)]="unternehmen.ort"  pattern="^[a-zA-Z/. -]+$" name="ort" placeholder="Standort" required [formControl]="ortControl">
@@ -149,6 +149,9 @@
         </md-input-container>
     </div>
     <div class="pull-right">
-        <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
+        <button
+            md-raised-button
+            (click)="save()"
+            [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID'">Speichern</button>
     </div>
 </form>
