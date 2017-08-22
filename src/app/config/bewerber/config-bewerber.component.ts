@@ -82,13 +82,13 @@ export class ConfigBewerberComponent implements OnInit {
         db.Vertragsart.find().resultList((vertragsarten) => {
             this.vertragsarten = vertragsarten;
         });
-        db.Vertragsart.find().resultList((berufsfelder) => {
+        db.Berufsfeld.find().resultList((berufsfelder) => {
             this.berufsfelder = berufsfelder;
         });
-        db.Vertragsart.find().resultList((sprachen) => {
+        db.Sprache.find().resultList((sprachen) => {
             this.sprachen = sprachen;
         });
-        db.Vertragsart.find().resultList((arbeitsverhaeltnisse) => {
+        db.Arbeitsverhaeltnis.find().resultList((arbeitsverhaeltnisse) => {
             this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
         });
         if (this.bewerber.vertragsarten) {
