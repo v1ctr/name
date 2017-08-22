@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <md-input-container class="col-md-12">
-            <input mdInput [(ngModel)]="unternehmen.homepage"  pattern="(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?" name="homepage" placeholder="Homepage (Beispiel-Format: https://www.google.de/)" required [formControl]="homepageControl">
+            <input mdInput [(ngModel)]="unternehmen.homepage"  pattern="(http(s)?://)?([\w-]+\.)+[\w-]+(/[\w- ;,./?%&=]*)?" name="homepage" placeholder="Homepage" required [formControl]="homepageControl">
             <md-error *ngIf="homepageControl.hasError('pattern')">
                 Keine gültige Homepage!
             </md-error>
@@ -95,11 +95,17 @@
     </div>
     <h2>Adresse</h2>
     <div class="row">
-        <md-input-container class="col-md-8">
-            <input mdInput [(ngModel)]="unternehmen.strasse" name="strasse" placeholder="Strasse" required>
+        <md-input-container class="col-md-5">
+            <input mdInput [(ngModel)]="unternehmen.strasse"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
+            <md-error *ngIf="strasseControl.hasError('pattern')">
+                Bitte geben Sie Ihre Straße an
+            </md-error>
+            <md-error *ngIf="strasseControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
         </md-input-container>
         <md-input-container class="col-md-2">
-            <input type="number" mdInput [(ngModel)]="unternehmen.hausnummer" placeholder="Nummer" name="hausnr" required>
+            <input  mdInput [(ngModel)]="unternehmen.hausnummer" placeholder="Nummer" name="hausnr" required>
         </md-input-container>
         <md-input-container class="col-md-2">
             <input mdInput [(ngModel)]="unternehmen.adresszusatz" placeholder="Zusatz" name="zusatz">
@@ -118,24 +124,34 @@
 
         </md-input-container>
 
-
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="unternehmen.ort" placeholder="Ort" name="ort" required>
+            <input mdInput [(ngModel)]="unternehmen.ort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort" placeholder="Standort" required [formControl]="ortControl">
+            <md-error *ngIf="ortControl.hasError('pattern')">
+                Bitte geben Sie Ihren Standort an
+            </md-error>
+            <md-error *ngIf="ortControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
         </md-input-container>
     </div>
     <div class="row">
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="unternehmen.ansprechpartner" placeholder="Ansprechpartner"
-                   name="ansprechpartner" required>
+            <input mdInput [(ngModel)]="unternehmen.ansprechpartner"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
+            <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
+                Bitte geben Sie einen Ansprechpartner an
+            </md-error>
+            <md-error *ngIf="ansprechpartnerControl.hasError('required')">
+                This is <strong>required</strong>
+            </md-error>
         </md-input-container>
         <md-input-container class="col-md-6">
-            <input type="number" mdInput [(ngModel)]="unternehmen.telefonnummer" placeholder="Telefon" name="telefon" required>
+            <input  mdInput [(ngModel)]="unternehmen.telefonnummer" placeholder="Telefon" name="telefon" required>
         </md-input-container>
     </div>
     <div class="pull-right">
         <button
             md-raised-button
             (click)="save()"
-            [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID'">Speichern</button>
+            [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID' || strasseControl.status=='INVALID' || ortControl.status=='INVALID' || ansprechpartnerControl.status=='INVALID' ">Speichern</button>
     </div>
 </form>

@@ -29,13 +29,22 @@ export class ConfigBewerberComponent implements OnInit {
 
     ]);
 
-    vornameControl = new FormControl('', [
+    strasseControl = new FormControl('', [
 
     ]);
 
     wohnortControl = new FormControl('', [
 
     ]);
+
+    homepageControl = new FormControl('', [
+
+    ]);
+
+    vornameControl = new FormControl('', [
+
+    ]);
+
     nachnameControl = new FormControl('', [
 
     ]);
