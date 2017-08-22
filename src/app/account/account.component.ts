@@ -2,18 +2,39 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../auth.service';
+import {getRedirectPath} from '../db';
 
 @Component({
-    selector: 'app-accloeschen',
-    templateUrl: './accountLoeschen.component.html',
+    templateUrl: './account.component.html',
 })
-export class AccloeschenComponent {
+export class AccountComponent {
 
     me: model.User;
+
+    oldPassword;
+    newPassword;
+    newPasswordRepeat;
+
+    error;
 
     constructor(private router: Router, public authService: AuthService) {
         if (db.User.me) {
             this.me = db.User.me;
+        }
+    }
+
+    setNewPassword() {
+        if (this.newPasswordRepeat === this.newPassword) {
+            db.User.newPassword(this.me.username, this.oldPassword, this.newPassword).then(
+                () => {
+                    this.router.navigate([getRedirectPath()]);
+                },
+                (error) => {
+                    this.error = error.message;
+                }
+            );
+        } else {
+            this.error = 'Passwörter stimmen nicht überein!';
         }
     }
 
@@ -74,7 +95,7 @@ export class AccloeschenComponent {
                 this.router.navigate(['/signup']);
             });
         }, (error) => {
-            // @todo Fehler anzeigen
+            this.error = error.message;
         });
     }
 }

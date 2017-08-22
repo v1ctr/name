@@ -7,12 +7,11 @@ import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehme
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
 import {NewPasswordComponent} from './login/newPassword/newPassword.component';
-import {ChangePasswordComponent} from './changepass/changepass.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
+import {AccountComponent} from './account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 
@@ -38,8 +37,7 @@ const routes: Routes = [
         canActivate: [DBNotLoggedIn]
     },
     {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
-    {path: 'changePassword', component: ChangePasswordComponent, canActivate: [DBLoggedIn]},
-    {path: 'accountLoeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
+    {path: 'account', component: AccountComponent, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 

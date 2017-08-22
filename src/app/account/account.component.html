@@ -1,0 +1,43 @@
+<md-tab-group>
+    <md-tab label="Passwort ändern">
+        <form class="full-width" #form="ngForm">
+            <h2>Passwort ändern</h2>
+            <div class="row">
+                <md-input-container class="col-sm-12">
+                    <input type="password" mdInput [(ngModel)]="oldPassword" name="oldPassword"
+                           placeholder="Aktuelles Passwort"
+                           required>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-sm-12">
+                    <input type="password" mdInput [(ngModel)]="newPassword" name="newPassword"
+                           placeholder="Neues Passwort"
+                           required>
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container class="col-sm-12">
+                    <input type="password" mdInput [(ngModel)]="newPasswordRepeat" name="newPasswordRepeat"
+                           placeholder="Neues Passwort wiederholen" required>
+                </md-input-container>
+            </div>
+            <div class="pull-right">
+                <button md-raised-button (click)="setNewPassword()" [disabled]="!form.valid">Passwort ändern</button>
+            </div>
+        </form>
+    </md-tab>
+    <md-tab label="Account löschen">
+        <form class="full-width" #form="ngForm">
+            <h2>Account löschen</h2>
+            <h3>{{me.username}} wirklich löschen?</h3>
+            <div class="pull-right">
+                <button md-raised-button (click)="deleteUser()">
+                    <md-icon>cancel</md-icon>
+                    Account löschen
+                </button>
+            </div>
+        </form>
+    </md-tab>
+</md-tab-group>
+<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>

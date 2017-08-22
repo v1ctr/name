@@ -11,15 +11,15 @@
     </button>
     <md-menu #menu="mdMenu">
         <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " md-menu-item>
-            <md-icon>settings</md-icon>
+            <md-icon>check_circle</md-icon>
             <span>Signup</span>
         </a>
         <a *ngIf="!(isLoggedIn | async)" md-menu-item [routerLink]="['./login']">
-            <md-icon>voicemail</md-icon>
+            <md-icon>exit_to_app</md-icon>
             <span>Anmelden</span>
         </a>
         <a *ngIf="(isLoggedIn | async)" md-menu-item (click)="logout()">
-            <md-icon>dialpad</md-icon>
+            <md-icon>power_settings_new</md-icon>
             <span>Abmelden</span>
         </a>
         <a *ngIf="((isLoggedIn | async) && (isCompany | async))" md-menu-item [routerLink]=" ['./config/unternehmen'] ">
@@ -45,13 +45,9 @@
             <md-icon>work</md-icon>
             <span>Stellenangebote</span>
         </a>
-        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/changePassword'] " md-menu-item>
-            <md-icon>vpn_key</md-icon>
-            <span>Passwort ändern</span>
-        </a>
-        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/accountLoeschen'] " md-menu-item>
-            <md-icon>clear</md-icon>
-            <span>Konto löschen</span>
+        <a *ngIf="(isLoggedIn | async)" [routerLink]=" ['/account'] " md-menu-item>
+            <md-icon>build</md-icon>
+            <span>Account</span>
         </a>
     </md-menu>
 </md-toolbar>

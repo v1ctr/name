@@ -5,7 +5,7 @@
         <p md-line>
             <span>Neues Stellenangebot erstellen...</span>
         </p>
-        <md-icon>add</md-icon>
+        <md-icon>add_circle</md-icon>
     </a>
     <a md-list-item *ngFor="let vacancy of vacancies" [routerLink]=" ['../vacancy', vacancy.key]">
         <h3 md-line> {{vacancy.bezeichnung}} </h3>

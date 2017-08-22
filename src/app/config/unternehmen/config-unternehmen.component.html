@@ -1,8 +1,8 @@
 <form class="full-width" #form="ngForm">
     <md-nav-list>
         <a md-list-item (click)="updateActiveBlock(COMPANY_BLOCK)" class="row">
-            <md-icon *ngIf="activeBlock===COMPANY_BLOCK">keyboard_arrow_down</md-icon>
-            <md-icon *ngIf="activeBlock!==COMPANY_BLOCK">keyboard_arrow_right</md-icon>
+            <md-icon *ngIf="activeBlock===COMPANY_BLOCK">expand_less</md-icon>
+            <md-icon *ngIf="activeBlock!==COMPANY_BLOCK">expand_more</md-icon>
             <h2 md-line>UNTERNEHMENSDATEN</h2>
         </a>
         <div [hidden]="activeBlock!==COMPANY_BLOCK">
@@ -97,8 +97,8 @@
 
 
         <a md-list-item (click)="updateActiveBlock(PITCH_BLOCK)" class="row">
-            <md-icon *ngIf="activeBlock===PITCH_BLOCK">keyboard_arrow_down</md-icon>
-            <md-icon *ngIf="activeBlock!==PITCH_BLOCK">keyboard_arrow_right</md-icon>
+            <md-icon *ngIf="activeBlock===PITCH_BLOCK">expand_less</md-icon>
+            <md-icon *ngIf="activeBlock!==PITCH_BLOCK">expand_more</md-icon>
             <h2 md-line>ONE-SENCTENCE-PITCH</h2>
         </a>
         <div [hidden]="activeBlock!==PITCH_BLOCK">
@@ -119,8 +119,8 @@
 
 
         <a md-list-item (click)="updateActiveBlock(ADDRESS_BLOCK)" class="row">
-            <md-icon *ngIf="activeBlock===ADDRESS_BLOCK">keyboard_arrow_down</md-icon>
-            <md-icon *ngIf="activeBlock!==ADDRESS_BLOCK">keyboard_arrow_right</md-icon>
+            <md-icon *ngIf="activeBlock===ADDRESS_BLOCK">expand_less</md-icon>
+            <md-icon *ngIf="activeBlock!==ADDRESS_BLOCK">expand_more</md-icon>
             <h2 md-line>ADRESSE UND KONTAKT</h2>
         </a>
         <div [hidden]="activeBlock!==ADDRESS_BLOCK">
