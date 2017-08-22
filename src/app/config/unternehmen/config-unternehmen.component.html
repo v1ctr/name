@@ -96,7 +96,7 @@
     <h2>Adresse</h2>
     <div class="row">
         <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="unternehmen.strasse"  pattern="^[a-zA-Z/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
+            <input mdInput [(ngModel)]="unternehmen.strasse"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
             <md-error *ngIf="strasseControl.hasError('pattern')">
                 Bitte geben Sie Ihre Straße an
             </md-error>
@@ -125,7 +125,7 @@
         </md-input-container>
 
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="unternehmen.ort"  pattern="^[a-zA-Z/. -]+$" name="ort" placeholder="Standort" required [formControl]="ortControl">
+            <input mdInput [(ngModel)]="unternehmen.ort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort" placeholder="Standort" required [formControl]="ortControl">
             <md-error *ngIf="ortControl.hasError('pattern')">
                 Bitte geben Sie Ihren Standort an
             </md-error>
@@ -136,7 +136,7 @@
     </div>
     <div class="row">
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="unternehmen.ansprechpartner"  pattern="^[a-zA-Z/. -]+$" name="ort" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
+            <input mdInput [(ngModel)]="unternehmen.ansprechpartner"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="ort" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
             <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
                 Bitte geben Sie einen Ansprechpartner an
             </md-error>
@@ -152,6 +152,6 @@
         <button
             md-raised-button
             (click)="save()"
-            [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID'">Speichern</button>
+            [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID' || strasseControl.status=='INVALID' || ortControl.status=='INVALID' || ansprechpartnerControl.status=='INVALID' ">Speichern</button>
     </div>
 </form>

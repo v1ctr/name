@@ -41,7 +41,7 @@
 
     <div class="form-group col-lg-12">
         <label>Befristetes Arbeitsverhältnis</label>
-        <input type="checkbox" [(ngModel)]="vacancy.befristetesArbeitsverhaeltnis" class="form-control" name="befristetesArbeitsverhaeltnis" required>
+        <input type="checkbox" [(ngModel)]="vacancy.befristetesArbeitsverhaeltnis" class="form-control" name="befristetesArbeitsverhaeltnis" >
     </div>
 
 
@@ -82,7 +82,7 @@
 
     <div class="row">
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="vacancy.partner"  pattern="^[a-zA-Z/. -]+$" name="partner" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
+            <input mdInput [(ngModel)]="vacancy.partner"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="partner" placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
             <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
                 Bitte geben Sie einen Ansprechpartner an
             </md-error>
@@ -92,7 +92,7 @@
         </md-input-container>
 
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="vacancy.arbeitsort"  pattern="^[a-zA-Z/. -]+$" name="arbeitsort" placeholder="Arbeitsort" required [formControl]="arbeitsortControl">
+            <input mdInput [(ngModel)]="vacancy.arbeitsort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort" placeholder="Arbeitsort" required [formControl]="arbeitsortControl">
             <md-error *ngIf="arbeitsortControl.hasError('pattern')">
                 Bitte geben Sie den Arbeitsort an
             </md-error>
@@ -107,7 +107,8 @@
     </div>
 
     <div class="pull-right">
-        <button md-raised-button (click)="save()" [disabled]="!form.valid">Speichern</button>
+        <button md-raised-button (click)="save()"
+                [disabled]="!form.valid || ansprechpartnerControl.status=='INVALID' || anforderungControl.status=='INVALID' || descriptionControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
     </div>
 </form>
 

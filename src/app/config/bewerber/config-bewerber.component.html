@@ -7,7 +7,7 @@
         </md-input-container>
 
         <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.vorname"  pattern="^[a-zA-Z/. -]+$" name="vorname" placeholder="Vorname" required [formControl]="vornameControl">
+            <input mdInput [(ngModel)]="bewerber.vorname"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="vorname" placeholder="Vorname" required [formControl]="vornameControl">
             <md-error *ngIf="vornameControl.hasError('pattern')">
                 Bitte gib deinen Vornamen an
             </md-error>
@@ -17,7 +17,7 @@
         </md-input-container>
 
         <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.nachname"  pattern="^[a-zA-Z/. -]+$" name="nachname" placeholder="Nachname" required [formControl]="nachnameControl">
+            <input mdInput [(ngModel)]="bewerber.nachname"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="nachname" placeholder="Nachname" required [formControl]="nachnameControl">
             <md-error *ngIf="nachnameControl.hasError('pattern')">
                 Bitte gib deinen Nachnamen an
             </md-error>
@@ -75,7 +75,7 @@
     <h2>Adresse</h2>
     <div class="row">
         <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.strasse"  pattern="^[a-zA-Z/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
+            <input mdInput [(ngModel)]="bewerber.strasse"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="strasse" placeholder="Strasse" required [formControl]="strasseControl">
             <md-error *ngIf="strasseControl.hasError('pattern')">
                 Bitte gib deine Straße an
             </md-error>
@@ -105,7 +105,7 @@
             </md-input-container>
 
         <md-input-container class="col-md-6">
-            <input mdInput [(ngModel)]="bewerber.wohnort"  pattern="^[a-zA-Z/. -]+$" name="wohnort" placeholder="Wohnort" required [formControl]="wohnortControl">
+            <input mdInput [(ngModel)]="bewerber.wohnort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="wohnort" placeholder="Wohnort" required [formControl]="wohnortControl">
             <md-error *ngIf="wohnortControl.hasError('pattern')">
                 Bitte gib deinen Wohnort an
             </md-error>
@@ -236,7 +236,7 @@
     <div class="row">
 
         <md-input-container class="col-md-5">
-            <input mdInput [(ngModel)]="bewerber.arbeitsort"  pattern="^[a-zA-Z/. -]+$" name="arbeitsort" placeholder="Gewünschter Arbeitsort" required [formControl]="arbeitsortControl">
+            <input mdInput [(ngModel)]="bewerber.arbeitsort"  pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort" placeholder="Gewünschter Arbeitsort" required [formControl]="arbeitsortControl">
             <md-error *ngIf="arbeitsortControl.hasError('pattern')">
                 Bitte gib deinen gewünschten Arbeitsort an
             </md-error>
@@ -264,6 +264,6 @@
         <button
             md-raised-button
             (click)="save()"
-            [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || vornameControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
+            [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || strasseControl.status=='INVALID'||  vornameControl.status=='INVALID' || homepageControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
     </div>
 </form>
