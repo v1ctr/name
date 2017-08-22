@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db} from 'baqend';
-import {getRedirectPath} from '../../db';
+import {getRedirectPath} from '../../app-routing.module';
 
 @Component({
     selector: 'app-new-password',

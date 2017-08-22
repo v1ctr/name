@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../auth.service';
-import {getRedirectPath} from '../db';
+import {getRedirectPath} from '../app-routing.module';
 
 @Component({
     templateUrl: './account.component.html',

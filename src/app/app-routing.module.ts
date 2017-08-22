@@ -14,6 +14,7 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccountComponent} from './account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
+import {db} from 'baqend';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -46,4 +47,17 @@ const routes: Routes = [
     exports: [RouterModule],
 })
 export class AppRoutingModule {
+}
+
+export function getRedirectPath(userType: string = null, module: string = null): string {
+    if (!db.User.me) {
+        return '/login';
+    }
+    if (userType === null) {
+        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
+    }
+    if (module === null) {
+        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
+    }
+    return '/' + module + '/' + userType;
 }
