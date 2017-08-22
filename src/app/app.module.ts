@@ -6,7 +6,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
 import {CovalentFileModule} from '@covalent/core';
 import {AuthService} from './auth.service';
-import {RandomGradientDirective} from './random-gradient.directive';
 import {
     MdButtonModule,
     MdCardModule,
@@ -60,7 +59,6 @@ import {UnternehmenService} from './unternehmen.service';
         VacanciesComponent,
         VacancyComponent,
         AccloeschenComponent,
-        RandomGradientDirective,
         MatchesComponent,
         MatchComponent,
     ],

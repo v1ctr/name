@@ -16,6 +16,11 @@
              placeholder="Passwort wiederholen" required>
     </md-input-container>
   </div>
+    <div class="row" [hidden]="!result.message">
+        <md-error *ngIf="result.isError">
+            {{result.message}}
+        </md-error>
+    </div>
   <div class="form-group col-lg-12">
     <div class="radio">
       <label>
@@ -28,16 +33,7 @@
       </label>
     </div>
   </div>
-  <div class="pull-right">
-    <button md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
+  <div class="clearfix">
+    <button class="pull-right" md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
   </div>
 </form>
-
-<div [hidden]="!result.message">
-  <div *ngIf="result.isError">
-    <div class="alert alert-danger" role="alert">{{result.message}}</div>
-  </div>
-  <div *ngIf="!result.isError">
-    <div class="alert alert-success" role="alert">{{result.message}}</div>
-  </div>
-</div>
