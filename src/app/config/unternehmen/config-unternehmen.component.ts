@@ -14,28 +14,16 @@ export class ConfigUnternehmenComponent implements OnInit {
     pitchControl = new FormControl('', [
         Validators.maxLength(150)
     ]);
+    plzControl = new FormControl('', []);
+    strasseControl = new FormControl('', []);
+    homepageControl = new FormControl('', []);
+    ortControl = new FormControl('', []);
+    ansprechpartnerControl = new FormControl('', []);
 
-
-    plzControl = new FormControl('', [
-
-    ]);
-
-    strasseControl = new FormControl('', [
-
-    ]);
-
-    homepageControl = new FormControl('', [
-
-    ]);
-
-    ortControl = new FormControl('', [
-
-    ]);
-
-    ansprechpartnerControl = new FormControl('', [
-
-    ]);
-
+    activeBlock;
+    COMPANY_BLOCK = 1;
+    PITCH_BLOCK = 2;
+    ADDRESS_BLOCK = 3;
 
     user: model.User;
     unternehmen: model.Unternehmen;
@@ -47,7 +35,8 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     constructor(private authService: AuthService,
                 private dropDownDataService: DropDownDataService,
-                private unternehmenService: UnternehmenService) {
+                private unternehmenService: UnternehmenService,) {
+        this.activeBlock = this.COMPANY_BLOCK;
         this.user = db.User.me;
         this.unternehmen = this.unternehmenService.getNewUnternehmen();
     }
@@ -123,5 +112,13 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     private getFilePath(): string {
         return 'users/' + this.user.key + '/';
+    }
+
+    private updateActiveBlock(newBlock) {
+        if (this.activeBlock === newBlock) {
+            this.activeBlock = null;
+        } else {
+            this.activeBlock = newBlock;
+        }
     }
 }

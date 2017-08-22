@@ -14,46 +14,29 @@ export class ConfigBewerberComponent implements OnInit {
     pitchControl = new FormControl('', [
         Validators.maxLength(150)
     ]);
-
     fachkompetenzenControl = new FormControl('', [
         Validators.maxLength(100)
     ]);
-
     softskillsControl = new FormControl('', [
         Validators.maxLength(100)
     ]);
-
     ausbildungControl = new FormControl('', [
         Validators.maxLength(50)
     ]);
+    plzControl = new FormControl('', []);
+    strasseControl = new FormControl('', []);
+    wohnortControl = new FormControl('', []);
+    homepageControl = new FormControl('', []);
+    vornameControl = new FormControl('', []);
+    nachnameControl = new FormControl('', []);
+    arbeitsortControl = new FormControl('', []);
 
-    plzControl = new FormControl('', [
-
-    ]);
-
-    strasseControl = new FormControl('', [
-
-    ]);
-
-    wohnortControl = new FormControl('', [
-
-    ]);
-
-    homepageControl = new FormControl('', [
-
-    ]);
-
-    vornameControl = new FormControl('', [
-
-    ]);
-
-    nachnameControl = new FormControl('', [
-
-    ]);
-
-    arbeitsortControl = new FormControl('', [
-
-        ]);
+    activeBlock;
+    PERSONAL_BLOCK = 1;
+    ADDRESS_BLOCK = 2;
+    PITCH_BLOCK = 3;
+    QUALIFICATIONS_BLOCK = 4;
+    JOB_BLOCK = 5;
 
     user: model.User;
     bewerber: model.Bewerber;
@@ -76,6 +59,7 @@ export class ConfigBewerberComponent implements OnInit {
     constructor(private authService: AuthService,
                 private bewerberService: BewerberService,
                 private dropDownDataService: DropDownDataService) {
+        this.activeBlock = this.PERSONAL_BLOCK;
         this.user = db.User.me;
         this.bewerber = bewerberService.getNewBewerber();
     }
@@ -203,5 +187,13 @@ export class ConfigBewerberComponent implements OnInit {
             type: 'blob'
         });
         return image.upload({force: true});
+    }
+
+    private updateActiveBlock(newBlock) {
+        if (this.activeBlock === newBlock) {
+            this.activeBlock = null;
+        } else {
+            this.activeBlock = newBlock;
+        }
     }
 }
