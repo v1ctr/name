@@ -39,9 +39,12 @@
         </md-select>
     </div>
 
-    <div class="form-group col-lg-12">
-        <label>Befristetes Arbeitsverhältnis</label>
-        <input type="checkbox" [(ngModel)]="vacancy.befristetesArbeitsverhaeltnis" class="form-control" name="befristetesArbeitsverhaeltnis" >
+    <div class="row">
+        <div class="col-xs-12">
+            <md-checkbox [(ngModel)]="vacancy.befristetesArbeitsverhaeltnis" name="befristetesArbeitsverhaeltnis">
+                Befristetes Arbeitsverhältnis
+            </md-checkbox>
+        </div>
     </div>
 
 
@@ -101,9 +104,10 @@
             </md-error>
         </md-input-container>
     </div>
-    <div class="form-group col-lg-12">
-        <label>Aktiv</label>
-        <input type="checkbox" [(ngModel)]="vacancy.aktiv" class="form-control" name="aktiv" required>
+    <div class="row">
+        <div class="col-xs-12">
+            <md-checkbox [(ngModel)]="vacancy.aktiv" name="aktiv">Aktiv</md-checkbox>
+        </div>
     </div>
 
     <div class="pull-right">

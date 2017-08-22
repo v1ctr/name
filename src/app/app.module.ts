@@ -10,6 +10,7 @@ import {RandomGradientDirective} from './random-gradient.directive';
 import {
     MdButtonModule,
     MdCardModule,
+    MdCheckboxModule,
     MdChipsModule,
     MdDatepickerModule,
     MdIconModule,
@@ -83,7 +84,8 @@ import {UnternehmenService} from './unternehmen.service';
         MdSnackBarModule,
         MdDatepickerModule,
         MdNativeDateModule,
-        MdCardModule
+        MdCardModule,
+        MdCheckboxModule
     ],
     providers: [
         DB_PROVIDERS,
