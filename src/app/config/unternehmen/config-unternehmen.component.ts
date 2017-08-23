@@ -35,7 +35,7 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     constructor(private authService: AuthService,
                 private dropDownDataService: DropDownDataService,
-                private unternehmenService: UnternehmenService,) {
+                private unternehmenService: UnternehmenService) {
         this.activeBlock = this.COMPANY_BLOCK;
         this.user = db.User.me;
         this.unternehmen = this.unternehmenService.getNewUnternehmen();
@@ -59,44 +59,10 @@ export class ConfigUnternehmenComponent implements OnInit {
     }
 
     save() {
-        const res = this.unternehmen.validate();
-        console.log(res);
-        const pendingFileUploads = [];
-        if (this.logo) {
-            const image = new db.File({
-                name: this.getFilePath() + this.logo.name,
-                data: this.logo,
-                type: 'blob',
-            });
-            pendingFileUploads.push(image.upload({force: true}).then(() => {
-                this.unternehmen.logo = image;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.unternehmen.logo) {
-            const image = new db.File(this.unternehmen.logo);
-            pendingFileUploads.push(image.delete({force: true}).then(() => {
-                this.unternehmen.logo = null;
-            }));
-        }
-        if (this.bild) {
-            const image = new db.File({
-                name: this.getFilePath() + this.bild.name,
-                data: this.bild,
-                type: 'blob',
-            });
-            pendingFileUploads.push(image.upload({force: true}).then(() => {
-                this.unternehmen.bild = image;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.unternehmen.bild) {
-            const image = new db.File(this.unternehmen.bild);
-            pendingFileUploads.push(image.delete({force: true}).then(() => {
-                this.unternehmen.bild = null;
-            }));
-        }
+        const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
+            this.unternehmen.logo = this.logo;
+            this.unternehmen.bild = this.bild;
             this.unternehmen.save().then(() => {
                 if (!this.user.isConfigCompleted) {
                     this.user.isConfigCompleted = true;
@@ -110,8 +76,54 @@ export class ConfigUnternehmenComponent implements OnInit {
         });
     }
 
+    private updateFiles() {
+        const pendingFileUploads = [];
+        if (this.logo !== this.unternehmen.logo) {
+            if (this.unternehmen.logo) {
+                pendingFileUploads.push(this.deleteFile(this.unternehmen.logo).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+            if (this.logo) {
+                pendingFileUploads.push(this.uploadFile(this.logo).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+        }
+        if (this.bild !== this.unternehmen.bild) {
+            if (this.unternehmen.bild) {
+                pendingFileUploads.push(this.deleteFile(this.unternehmen.bild).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+            if (this.bild) {
+                pendingFileUploads.push(this.uploadFile(this.bild).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+        }
+        return pendingFileUploads;
+    }
+    
     private getFilePath(): string {
         return 'users/' + this.user.key + '/';
+    }
+
+    private deleteFile(file) {
+        return file.delete({force: true});
+    }
+
+    private uploadFile(file) {
+        const image = new db.File({
+            name: this.getFilePath() + file.name,
+            data: file,
+            type: 'blob'
+        });
+        return image.upload({force: true});
     }
 
     private updateActiveBlock(newBlock) {
