@@ -1,13 +1,42 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
-import {ActivatedRoute} from '@angular/router';
+import {BewerberService} from '../../bewerber.service';
+import {DropDownDataService} from '../../drop-down-data.service';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
-export class ConfigBewerberComponent {
+export class ConfigBewerberComponent implements OnInit {
+
+    pitchControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
+    fachkompetenzenControl = new FormControl('', [
+        Validators.maxLength(100)
+    ]);
+    softskillsControl = new FormControl('', [
+        Validators.maxLength(100)
+    ]);
+    ausbildungControl = new FormControl('', [
+        Validators.maxLength(50)
+    ]);
+    plzControl = new FormControl('', []);
+    strasseControl = new FormControl('', []);
+    wohnortControl = new FormControl('', []);
+    homepageControl = new FormControl('', []);
+    vornameControl = new FormControl('', []);
+    nachnameControl = new FormControl('', []);
+    arbeitsortControl = new FormControl('', []);
+
+    activeBlock;
+    PERSONAL_BLOCK = 1;
+    ADDRESS_BLOCK = 2;
+    PITCH_BLOCK = 3;
+    QUALIFICATIONS_BLOCK = 4;
+    JOB_BLOCK = 5;
 
     user: model.User;
     bewerber: model.Bewerber;
@@ -28,70 +57,52 @@ export class ConfigBewerberComponent {
 
 
     constructor(private authService: AuthService,
-                private route: ActivatedRoute) {
+                private bewerberService: BewerberService,
+                private dropDownDataService: DropDownDataService) {
+        this.activeBlock = this.PERSONAL_BLOCK;
         this.user = db.User.me;
-        this.bewerber = this.route.snapshot.data['bewerber'];
-        this.vertragsarten = this.route.snapshot.data['vertragsarten'];
-        this.sprachen = this.route.snapshot.data['sprachen'];
-        this.berufsfelder = this.route.snapshot.data['berufsfelder'];
-        this.arbeitsverhaeltnisse = this.route.snapshot.data['arbeitsverhaeltnisse'];
-        if (this.bewerber.vertragsarten) {
-            this.bewerber.vertragsarten.forEach((element) => {
-                this.selectedVertragsarten.push(element);
-            });
-        }
-        if (this.bewerber.sprachen) {
-            this.bewerber.sprachen.forEach((element) => {
-                this.selectedSprachen.push(element);
-            });
-        }
-        if (this.bewerber.profilbild) {
-            this.profilbild = this.bewerber.profilbild;
-        }
-        if (this.bewerber.lebenslauf) {
-            this.lebenslauf = this.bewerber.lebenslauf;
-        }
+        this.bewerber = bewerberService.getNewBewerber();
+    }
+
+    ngOnInit() {
+        this.bewerberService.getBewerber().then((bewerber) => {
+            if (bewerber) {
+                this.bewerber = bewerber;
+                // DropDowns kommen nicht mit Sets klar, daher in Array transformieren
+                if (this.bewerber.vertragsarten) {
+                    this.selectedVertragsarten = Array.from(this.bewerber.vertragsarten);
+                }
+                if (this.bewerber.sprachen) {
+                    this.selectedSprachen = Array.from(this.bewerber.sprachen);
+                }
+                if (this.bewerber.profilbild) {
+                    this.profilbild = this.bewerber.profilbild;
+                }
+                if (this.bewerber.lebenslauf) {
+                    this.lebenslauf = this.bewerber.lebenslauf;
+                }
+            }
+        });
+        this.dropDownDataService.getSprachen().then((sprachen) => {
+            this.sprachen = sprachen;
+        });
+        this.dropDownDataService.getBerufsfelder().then((berufsfelder) => {
+            this.berufsfelder = berufsfelder;
+        });
+        this.dropDownDataService.getVertragsarten().then((vertragsarten) => {
+            this.vertragsarten = vertragsarten;
+        });
+        this.dropDownDataService.getArbeitsverhaeltnisse().then((arbeitsverhaeltnisse) => {
+            this.arbeitsverhaeltnisse = arbeitsverhaeltnisse;
+        });
     }
 
     save() {
+        // dropDown-Daten in Sets zurückwandeln
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
-        const pendingFileUploads = [];
-        if (this.profilbild) {
-            const image = new db.File({
-                name: this.getFilePath() + this.profilbild.name,
-                data: this.profilbild,
-                type: 'blob'
-            });
-            pendingFileUploads.push(image.upload({force: true}).then(() => {
-                this.bewerber.profilbild = image;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.profilbild) {
-            const image = new db.File(this.bewerber.profilbild);
-            pendingFileUploads.push(image.delete({force: true}).then(() => {
-                this.bewerber.profilbild = null;
-            }));
-        }
-        if (this.lebenslauf) {
-            const CV = new db.File({
-                name: this.getFilePath() + this.lebenslauf.name,
-                data: this.lebenslauf,
-                type: 'blob'
-            });
-            pendingFileUploads.push(CV.upload({force: true}).then(() => {
-                this.bewerber.lebenslauf = CV;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.lebenslauf) {
-            const CV = new db.File(this.bewerber.lebenslauf);
-            // @todo delete funktioniert noch nicht
-            pendingFileUploads.push(CV.delete({force: true}).then(() => {
-                this.bewerber.lebenslauf = null;
-            }));
-        }
+        // FileUploads
+        const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
             this.bewerber.save().then(() => {
                 if (!this.user.isConfigCompleted) {
@@ -106,7 +117,83 @@ export class ConfigBewerberComponent {
         });
     }
 
+    private updateFiles() {
+        const pendingFileUploads = [];
+        if (this.profilbild && this.bewerber.profilbild && this.profilbild !== this.bewerber.profilbild) {
+            // Bild hat sich geändert --> altes löschen, neues hinzufügen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
+                this.bewerber.profilbild = bild;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.bewerber.profilbild && !this.profilbild) {
+            // Datei ist enfernt worden --> löschen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+                this.bewerber.profilbild = null;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.profilbild && !this.bewerber.profilbild) {
+            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
+                this.bewerber.profilbild = bild;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        }
+        if (this.lebenslauf && this.bewerber.lebenslauf && this.lebenslauf !== this.bewerber.lebenslauf) {
+            // Datei hat sich geändert --> alte löschen, neue hinzufügen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
+                this.bewerber.lebenslauf = datei;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.bewerber.lebenslauf && !this.lebenslauf) {
+            // Datei ist enfernt worden --> löschen
+            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+                this.bewerber.lebenslauf = null;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        } else if (this.lebenslauf && !this.bewerber.lebenslauf) {
+            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
+                this.bewerber.lebenslauf = datei;
+            }, (error) => {
+                this.errors.push(error.message);
+            }));
+        }
+        return pendingFileUploads;
+    }
+
     private getFilePath(): string {
         return 'users/' + this.user.key + '/';
+    }
+
+    private deleteFile(file) {
+        return file.delete({force: true});
+    }
+
+    private uploadFile(file) {
+        const image = new db.File({
+            name: this.getFilePath() + file.name,
+            data: file,
+            type: 'blob'
+        });
+        return image.upload({force: true});
+    }
+
+    private updateActiveBlock(newBlock) {
+        if (this.activeBlock === newBlock) {
+            this.activeBlock = null;
+        } else {
+            this.activeBlock = newBlock;
+        }
     }
 }

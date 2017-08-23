@@ -6,12 +6,12 @@ import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany} from './db';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
-import {NewPasswordComponent} from './login/newPassword/newPassword.component';
+import {ResetPasswordComponent} from './login/resetPassword/resetPassword.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import {AccloeschenComponent} from './accountLoeschen/accountLoeschen.component';
+import {AccountComponent} from './account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 
@@ -24,7 +24,7 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
     {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [IsBewerber]},
-    {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
+    {path: 'angebote', component: VacanciesComponent, canActivate: [IsCompany]},
     {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'matches', component: MatchesComponent, canActivate: [DBLoggedIn]},
@@ -36,8 +36,8 @@ const routes: Routes = [
         resolve: {db: DBReady},
         canActivate: [DBNotLoggedIn]
     },
-    {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
-    {path: 'accountLoeschen', component: AccloeschenComponent, canActivate: [DBLoggedIn]},
+    {path: 'resetPassword', component: ResetPasswordComponent, resolve: {db: DBReady}},
+    {path: 'account', component: AccountComponent, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 
@@ -47,3 +47,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+

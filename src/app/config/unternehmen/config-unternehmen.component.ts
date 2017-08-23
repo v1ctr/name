@@ -1,13 +1,29 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../../auth.service';
+import {FormControl, Validators} from '@angular/forms';
+import {DropDownDataService} from '../../drop-down-data.service';
+import {UnternehmenService} from '../../unternehmen.service';
 
 @Component({
     selector: 'app-config-unternehmen',
     templateUrl: './config-unternehmen.component.html',
 })
 export class ConfigUnternehmenComponent implements OnInit {
+
+    pitchControl = new FormControl('', [
+        Validators.maxLength(150)
+    ]);
+    plzControl = new FormControl('', []);
+    strasseControl = new FormControl('', []);
+    homepageControl = new FormControl('', []);
+    ortControl = new FormControl('', []);
+    ansprechpartnerControl = new FormControl('', []);
+
+    activeBlock;
+    COMPANY_BLOCK = 1;
+    PITCH_BLOCK = 2;
+    ADDRESS_BLOCK = 3;
 
     user: model.User;
     unternehmen: model.Unternehmen;
@@ -17,17 +33,16 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     errors;
 
-    constructor(private router: Router, private authService: AuthService) {
+    constructor(private authService: AuthService,
+                private dropDownDataService: DropDownDataService,
+                private unternehmenService: UnternehmenService,) {
+        this.activeBlock = this.COMPANY_BLOCK;
         this.user = db.User.me;
-        this.unternehmen = new db.Unternehmen();
-        db.Berufsfeld.find().resultList((branchen) => {
-            this.branchen = branchen;
-        });
+        this.unternehmen = this.unternehmenService.getNewUnternehmen();
     }
 
     ngOnInit() {
-        this.user = db.User.me;
-        db.Unternehmen.find().equal('userid', this.user).singleResult((unternehmen) => {
+        this.unternehmenService.getUnternehmen().then((unternehmen) => {
             if (unternehmen) {
                 this.unternehmen = unternehmen;
                 if (this.unternehmen.logo) {
@@ -36,14 +51,16 @@ export class ConfigUnternehmenComponent implements OnInit {
                 if (this.unternehmen.bild) {
                     this.bild = this.unternehmen.bild;
                 }
-            } else {
-                this.unternehmen = new db.Unternehmen();
-                this.unternehmen.userid = this.user;
             }
+        });
+        this.dropDownDataService.getBerufsfelder().then((branchen) => {
+            this.branchen = branchen;
         });
     }
 
     save() {
+        const res = this.unternehmen.validate();
+        console.log(res);
         const pendingFileUploads = [];
         if (this.logo) {
             const image = new db.File({
@@ -95,5 +112,13 @@ export class ConfigUnternehmenComponent implements OnInit {
 
     private getFilePath(): string {
         return 'users/' + this.user.key + '/';
+    }
+
+    private updateActiveBlock(newBlock) {
+        if (this.activeBlock === newBlock) {
+            this.activeBlock = null;
+        } else {
+            this.activeBlock = newBlock;
+        }
     }
 }

@@ -1,4 +1,4 @@
-<div *ngIf="cards.length > 0;else no_swipe">
+<div *ngIf="cards && cards.length > 0;else no_swipe">
     <div class="row">
         <div class="card-container">
             <sc-card
@@ -20,12 +20,33 @@
                          class="img-circle img-responsive">
                 </div>
                 <div class="card-content">
-                    <span>{{card.beschreibung}}</span>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <h4><span class="label label-default">Beschreibung</span></h4>
+                                <p>{{card.beschreibung}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h4><span class="label label-default">Anforderung</span></h4>
+                                <p>{{card.anforderung}}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h4><span class="label label-default">Arbeitsort</span></h4>
+                                <p>{{card.arbeitsort}}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h4><span class="label label-default">Gehalt</span></h4>
+                                <p>{{card.gehalt}}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </sc-card>
         </div>
     </div>
-    <div class="row" style="margin-top:550px;">
+    <div class="row swipe-buttons">
         <div class="text-center">
             <button (click)="like(false)" type="button" class="btn btn-danger btn-circle btn-xl"><i
                     class="glyphicon glyphicon-remove"></i></button>
@@ -35,8 +56,10 @@
     </div>
 </div>
 <ng-template #no_swipe>
-  <span class="noCards">
-    Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
-    Jetzt <a [routerLink]="['/config/bewerber']">Such-Einstellungen ändern</a>, um neue Vorschläge zu erhalten!
-  </span>
+    <div class="row swijoInfo">
+        <div class="well">
+            Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
+            Jetzt <a [routerLink]="['/config/bewerber']">Such-Einstellungen ändern</a>, um neue Vorschläge zu erhalten!
+        </div>
+    </div>
 </ng-template>

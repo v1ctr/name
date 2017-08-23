@@ -4,19 +4,6 @@ import {baqend, db} from 'baqend';
 
 db.connect('green-meadow-83', true);
 
-export function getRedirectPath(userType: string = null, module: string = null): string {
-    if (!db.User.me) {
-        return '/login';
-    }
-    if (module === null) {
-        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
-    }
-    if (userType === null) {
-        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
-    }
-    return '/' + module + '/' + userType;
-}
-
 @Injectable()
 export class DBReady implements Resolve<baqend> {
   resolve(route: ActivatedRouteSnapshot): Promise<baqend> {
@@ -37,6 +24,19 @@ export class DBLoggedIn implements CanActivate {
       return true;
     });
   }
+}
+
+export function getRedirectPath(userType: string = null, module: string = null): string {
+    if (!db.User.me) {
+        return '/login';
+    }
+    if (userType === null) {
+        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
+    }
+    if (module === null) {
+        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
+    }
+    return '/' + module + '/' + userType;
 }
 
 @Injectable()

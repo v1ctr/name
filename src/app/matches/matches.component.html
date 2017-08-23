@@ -8,8 +8,10 @@
     </a>
 </md-nav-list>
 <ng-template #no_matches>
-    <span>
-        Zur Zeit liegen leider keine Matches vor :-(<br>
-        Jetzt auf die <a [routerLink]="['/swipe/bewerber']">Suche</a> gehen!
-    </span>
+    <div class="row swijoInfo">
+        <div class="well">
+            Zur Zeit liegen leider keine Matches vor :-(<br>
+            Jetzt auf die <a [routerLink]="[swipeLink]">Suche</a> gehen!
+        </div>
+    </div>
 </ng-template>

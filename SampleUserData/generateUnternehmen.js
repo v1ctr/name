@@ -1,4 +1,4 @@
-names = [
+const names = [
     'Software-Schmiede GmbH',
     'Schröder Software AG',
     'Restaurant Feinschmecker',
@@ -10,7 +10,7 @@ names = [
     'Internetz GmbH & Co. KG',
     'Weber WebDesign'
 ];
-pitches = [
+const pitches = [
     'Wir überzeugen durch unsere Leistung',
     'Wir stehen für Dynamik und Teamgeist',
     'Wir bieten ein junges, dynamisches Team und flache Hierarchien',
@@ -20,7 +20,7 @@ pitches = [
     'Wir bieten Positionen mit viel Eigenverantwortung',
     'Unser Team ist international und gut vernetzt'
 ];
-cities = [
+const cities = [
     'Hamburg',
     'Bremen',
     'Berlin',
@@ -30,7 +30,7 @@ cities = [
     'Frankfurt',
     'Düsseldorf'
 ];
-streets = [
+const streets = [
     'Haupstraße',
     'Dorfstraße',
     'Schlossallee',
@@ -41,7 +41,7 @@ streets = [
     'Turmstraße',
     'Elisenstraße'
 ];
-partner = [
+const partner = [
     'Frau Müller',
     'Herr Möller',
     'Doris Schulz',
@@ -52,39 +52,41 @@ partner = [
     'Fabian',
     'Frau Kowlaski'
 ];
-berufsfeld = [
+const berufsfeld = [
     '/db/Berufsfeld/8c93c740-2fa2-41b8-ad1d-60783e3f3ba3',
     '/db/Berufsfeld/1df0bdec-1642-4c9d-be08-4df5d39a09c7'
+];
+const bilder = [
+    '/file/www/Dateien/Logo/Karte0.png',
+    '/file/www/Dateien/Logo/Karte1.png',
+    '/file/www/Dateien/Logo/Karte2.png',
+    '/file/www/Dateien/Logo/Karte3.png',
+    '/file/www/Dateien/Logo/KarteR.png'
 ];
 
 function getRandomValue(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
-const branche = [0, 1, 0];
-
 const unternehmen = [];
 for (var i = 0; i < 50; i++) {
-    const type = getRandomValue(branche);
     unternehmen.push({
         'strasse': getRandomValue(streets),
-        'vorname': getRandomValue(firstNames),
-        'nachname': getRandomValue(lastNames),
-        'geburtsdatum': new Date('04/05/1987'),
-        'mindestMonatsGehalt': getRandomValue(salary),
-        'startdatum': new Date('01/01/2018'),
-        'pitch': getRandomValue(pitches[type]),
-        'wohnort': getRandomValue(cities),
+        'name': getRandomValue(names),
+        'gruendung': new Date('04/10/1963'),
+        'pitch': getRandomValue(pitches),
+        'ort': getRandomValue(cities),
         'plz': '12345',
         'hausnummer': '42',
-        'softskills': getRandomValue(softSkills),
-        'fachkompetenzen': getRandomValue(fachKompetenzen[type]),
-        'arbeitsort': getRandomValue(cities),
-        'jobBezeichnung': getRandomValue(jobName[type]),
-        'ausbildung': getRandomValue(education),
+        'adresszusatz': '12. Etage',
         'telefonnummer': '112',
-        'berufsfeld': berufsfeld[type],
-        'user': '/db/User/' + (272 + i)
+        'branche': getRandomValue(berufsfeld),
+        'userid': '/db/User/' + (272 + i),
+        'mitarbeiterAnzahl': '5000',
+        'homepage': 'www.website.com',
+        'ansprechpartner': getRandomValue(partner),
+        'logo': getRandomValue(bilder),
+        'bild': getRandomValue(bilder)
     });
 }
 console.log(JSON.stringify(unternehmen));

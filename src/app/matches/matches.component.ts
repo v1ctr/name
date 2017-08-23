@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
+import {BewerberService} from '../bewerber.service';
+import {VacancyService} from '../vacancy.service';
 
 @Component({
     selector: 'app-matches',
@@ -9,44 +11,33 @@ import {db, model} from 'baqend';
 export class MatchesComponent implements OnInit {
 
     matches: model.Match[] = [];
+    // in case no matches exist, user is suggested to go swipe
+    swipeLink;
 
-    constructor(private router: Router) {
+    constructor(private router: Router,
+                private bewerberService: BewerberService,
+                private vacancyService: VacancyService) {
+        if (db.User.me.iscomp) {
+            this.swipeLink = '/swipe/unternehmen';
+        } else {
+            this.swipeLink = '/swipe/bewerber';
+        }
     }
 
     ngOnInit() {
-        if(db.User.me.iscomp){
-            db.Unternehmen.find()
-                .equal('userid', db.User.me)
-                .singleResult((unternehmen)=>{
-                    if(unternehmen){
-                        db.Stellenangebot.find()
-                            .equal('unternehmen', unternehmen)
-                            .resultList((angebote)=>{
-                                db.Match.find()
-                                    .in('angebot', angebote)
-                                    .resultList({depth: 1}, (matches)=>{
-                                        this.matches = matches;
-                                    });
-                            });
-                    }
-                })
-        } else {
-            db.Bewerber.find()
-                .equal('user', db.User.me)
-                .singleResult((bewerber)=>{
-                    if(bewerber){
-                        db.Match.find()
-                            .equal('bewerber', bewerber)
-                            .resultList({depth: 1}, (matches)=>{
-                                this.matches = matches;
-                            });
-                    }
+        const matchBuilder = db.Match.find();
+        if (db.User.me.iscomp) {
+            this.vacancyService.getVacancies().then((vacancies) => {
+                matchBuilder.in('angebot', vacancies).resultList({depth: 1}, (matches) => {
+                    this.matches = matches;
                 });
+            });
+        } else {
+            this.bewerberService.getBewerber().then((bewerber) => {
+                matchBuilder.equal('bewerber', bewerber).resultList({depth: 1}, (matches) => {
+                    this.matches = matches;
+                });
+            });
         }
-        /*
-        db.Stellenangebot.find().resultList((result) => {
-            this.vacancies = result;
-        });
-        */
     }
 }
