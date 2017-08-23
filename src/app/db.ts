@@ -30,9 +30,6 @@ export function getRedirectPath(userType: string = null, module: string = null):
     if (!db.User.me) {
         return '/login';
     }
-    if (db.User.me.iscomp && db.User.me.isConfigCompleted) {
-        return '/vacancies';
-    }
     if (userType === null) {
         userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
     }
