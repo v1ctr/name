@@ -12,20 +12,15 @@ import {UnternehmenService} from '../../unternehmen.service';
 })
 export class VacancyComponent implements OnInit {
 
-
-
     descriptionControl = new FormControl('', [
         Validators.maxLength(100)
     ]);
-
     anforderungControl = new FormControl('', [
         Validators.maxLength(150)
     ]);
-
     ansprechpartnerControl = new FormControl('', [
         Validators.maxLength(150)
     ]);
-
     arbeitsortControl = new FormControl('', [
         Validators.maxLength(150)
     ]);

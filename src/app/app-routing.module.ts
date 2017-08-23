@@ -6,7 +6,7 @@ import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany} from './db';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
-import {NewPasswordComponent} from './login/newPassword/newPassword.component';
+import {ResetPasswordComponent} from './login/resetPassword/resetPassword.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
@@ -14,7 +14,6 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccountComponent} from './account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
-import {db} from 'baqend';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
@@ -37,7 +36,7 @@ const routes: Routes = [
         resolve: {db: DBReady},
         canActivate: [DBNotLoggedIn]
     },
-    {path: 'resetPassword', component: NewPasswordComponent, resolve: {db: DBReady}},
+    {path: 'resetPassword', component: ResetPasswordComponent, resolve: {db: DBReady}},
     {path: 'account', component: AccountComponent, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
@@ -49,15 +48,3 @@ const routes: Routes = [
 export class AppRoutingModule {
 }
 
-export function getRedirectPath(userType: string = null, module: string = null): string {
-    if (!db.User.me) {
-        return '/login';
-    }
-    if (userType === null) {
-        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
-    }
-    if (module === null) {
-        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
-    }
-    return '/' + module + '/' + userType;
-}

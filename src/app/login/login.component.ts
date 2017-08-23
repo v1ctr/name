@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthService} from '../auth.service';
 import {db} from 'baqend';
-import {getRedirectPath} from '../app-routing.module';
+import {getRedirectPath} from '../db';
 
 @Component({
     selector: 'app-login',

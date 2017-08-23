@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, Resolve, Router, RouterStateSnapshot} from '@angular/router';
 import {baqend, db} from 'baqend';
-import {getRedirectPath} from './app-routing.module';
 
 db.connect('green-meadow-83', true);
 
@@ -25,6 +24,19 @@ export class DBLoggedIn implements CanActivate {
       return true;
     });
   }
+}
+
+export function getRedirectPath(userType: string = null, module: string = null): string {
+    if (!db.User.me) {
+        return '/login';
+    }
+    if (userType === null) {
+        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
+    }
+    if (module === null) {
+        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
+    }
+    return '/' + module + '/' + userType;
 }
 
 @Injectable()

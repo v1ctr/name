@@ -14,16 +14,11 @@ export class MatchComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.route.params.subscribe(params => {
-                const key = params['key'];
-                db.Match.load(key, {depth:2}).then((match) => {
-                    if (match) {
-                        this.match = match;
-                    }
-                });
-            },
-            (error) => {
-                console.error(error.message);
-            });
+        const key = this.route.snapshot.params['key'];
+        db.Match.load(key, {depth: 2}).then((match) => {
+            if (match) {
+                this.match = match;
+            }
+        });
     }
 }

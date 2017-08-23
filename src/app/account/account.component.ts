@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../auth.service';
-import {getRedirectPath} from '../app-routing.module';
 
 @Component({
     templateUrl: './account.component.html',
@@ -27,7 +26,6 @@ export class AccountComponent {
         if (this.newPasswordRepeat === this.newPassword) {
             db.User.newPassword(this.me.username, this.oldPassword, this.newPassword).then(
                 () => {
-                    this.router.navigate([getRedirectPath()]);
                 },
                 (error) => {
                     this.error = error.message;
