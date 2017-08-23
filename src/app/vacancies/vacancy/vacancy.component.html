@@ -57,7 +57,7 @@
         <md-input-container class="col-xs-12">
             <textarea mdInput [(ngModel)]="vacancy.anforderung" maxlength="150" name="anforderung" placeholder="Stellenanforderungen" required [formControl]="anforderungControl"></textarea>
             <md-error *ngIf="anforderungControl.hasError('maxLength')">
-                Die Anfoderungsbeschreibung darf nicht länger als 150 Zeichen sein
+                Die Anforderungsbeschreibung darf nicht länger als 150 Zeichen sein
             </md-error>
             <md-error *ngIf="anforderungControl.hasError('required')">
                 This is <strong>required</strong>
