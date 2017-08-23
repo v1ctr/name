@@ -1,0 +1,20 @@
+Software-Architektur – Daten für das Matching
+Die für das Matching verwendeten Daten liegen überwiegend als Auswahllisten vor, sodass die Menge der unterschiedlichen Werte beschrönkt ist. Bei freien Benutzereingaben, hätte man das Problem, dass schon minimale Abweichungen wie zum Beispiel („Software-Entwickler“ vs. „Software Entwickler“) ein Match verhindern, bzw. eine komplizierte Suche erfordern.  Daher haben wir uns entschieden nur anhand von Feldern zu matchen, bei denen eine vorgegebene Wertemenge sinnvoll ist. Hierzu zählen die gesprochenen/geforderten Sprachen (Deutsch, Englisch, …), die verschiedenen Berufsfelder (IT, Gastronomie, Rechtswesen, …) und verschiedenen Vertragsarten (Teilzeit, Ausbildung, Minijob, …).
+Außerdem matchen wir anhand des Monatsgehalts, der Eigenschaft befristet/unbefristet und des Arbeitsortes (trotz des oben angesprochenen Problems aktuell exaktes Matching, Umkreissuche ist für eine spätere Version vorgesehen).
+Die Auswahllisten für die Sprachen, etc. haben wir als eigene Tabellen in der Datenbank hinterlegt, die dann referenziert werden, sodass auch wirklich nur die vorgegebenen Werte verwendet werden können.
+
+Software-Architektur – Services
+Die von den Komponenten benötigten Daten werden von Services zur Verfügung gestellt. So liefert zum Beispiel der Vacancy-Service die Stellenangebote des eingeloggten Unternehmens.
+Eine kleine Besonderheit stellt der DropDownDataService dar, der die Daten nur einmalig lädt und dann speichert. Dies ist möglich, da die DropDownDaten wie zum Beispiel die Sprachen nur angezeigt, aber nie verändert werden.
+
+
+
+Software-Architektur – Benutzer-Berechtigungen
+Um die Daten der Benutzer zu schützen, sind die Berechtigungen an den Datenbank-Tabellen so streng wie möglich.
+Für das Matching ist es nötig, dass Bewerber lesenden Zugriff auf die Unternehmensdaten haben und die Unternehmen entsprechnend auf die Bewerberdaten. Dafür haben wir die beiden Rollen Bewerber/Unternehmen definiert, von denen jeder User bei der Anmeldung der entsprechenden Rolle zugewiesen wird.
+Der Zugriff auf die Bewerber-Tabelle ist zum Beispiel so geregelt, dass die Unternehmen-Rolle lesenden Zugriff (Load und Query) hat und Bewerber vollen Zugriff. Die Berechtigung für Bewerber sind dann aber auf Objekt-Ebene auf den eigenen Datensatz beschränkt, da eine Interaktion zwischen Usern des gleichen Typs nicht vorgesehen ist.
+
+Software-Architektur – Schutz von Komponenten durch CanActivate-Guards
+Wird eine bestimmte URL aufgerufen, z.B. durch einen Link in der Anwendung oder durch direktes eingeben in den Browser, so leitet der Router zu der angeforderten URL weiter und lädt die entsprechende Komponente. Um zu vermeiden, dass jemand so auf eine Seite gelangt, die er nicht erreichen soll (z.B. ein Bewerber die Seite zum Anlegen von Stellenangeboten oder ein User, der sein Profil noch nicht vervollständigt hat, die Seite zum Swipen), haben wir CanActivate-Guards definiert.
+Neben dem vordefinierten Guard DBLoggedIn haben wir die beiden Guards IsBewerber und IsCompany hinzugefügt, die dafür sorgen, dass man nicht auf Seiten navigieren kann, die für den jeweils anderen Benutzertyp vorgesehen sind. Stattdessen wird man auf die entsprechende Seite für den eigenen Typ weitergeleitet. In der App sind stets nur die richtigen Links verfügbar, z.B. steuern wir im Hauptmenü die Anzeige der Menüpunkte über den Usertyp, den ConfigStatus und den LoggedIn-Status. Aber bei Kenntnis der Linkadressen könnte man die falschen URLs dennoch aufrufen.
+Außerdem haben wir noch einen DBNotLoggedIn-Guard eingefügt, der verhindert, dass ein eingeloggter User die Seiten für Login oder Signup erreichen kann, mit denen er eh nichts anfangen könnte.
