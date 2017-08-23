@@ -24,7 +24,7 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
     {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [IsBewerber]},
-    {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
+    {path: 'angebote', component: VacanciesComponent, canActivate: [IsCompany]},
     {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},
     {path: 'matches', component: MatchesComponent, canActivate: [DBLoggedIn]},

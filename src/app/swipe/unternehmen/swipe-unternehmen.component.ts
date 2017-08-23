@@ -2,6 +2,8 @@ import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {MdSnackBar} from '@angular/material';
 import {db, model} from 'baqend';
+import {UnternehmenService} from '../../unternehmen.service';
+import {VacancyService} from '../../vacancy.service';
 
 export enum KEY_CODE {
     RIGHT_ARROW = 39,
@@ -9,15 +11,16 @@ export enum KEY_CODE {
 }
 
 @Component({
-  selector: 'app-swipe-unternehmen',
-  templateUrl: 'swipe-unternehmen.component.html',
+    templateUrl: 'swipe-unternehmen.component.html',
 })
 export class SwipeUnternehmenComponent implements OnInit {
 
     unternehmen: model.Unternehmen;
+    angebote: model.Stellenangebot[];
+    matchingBewerber: model.Bewerber[];
     cards: any[] = [];
-    cardCursor: number = 0;
-    orientation: string = "x";
+    cardCursor = 0;
+    orientation = 'x';
     overlay: any = {
         like: {
             backgroundColor: '#28e93b'
@@ -27,12 +30,21 @@ export class SwipeUnternehmenComponent implements OnInit {
         }
     };
 
-  constructor(private router: Router, public snackBar: MdSnackBar) {
-  }
+    constructor(private router: Router,
+                public snackBar: MdSnackBar,
+                private unternehmenService: UnternehmenService,
+                private vacancyService: VacancyService) {
+    }
 
-  ngOnInit() {
-    this.getBewerber();
-  }
+    ngOnInit() {
+        this.unternehmenService.getUnternehmen().then((unternehmen) => {
+            this.unternehmen = unternehmen;
+            this.vacancyService.getVacancies().then((vacancies) => {
+                this.angebote = vacancies;
+                this.getBewerber();
+            });
+        });
+    }
 
     @HostListener('window:keyup', ['$event'])
     keyEvent(event: KeyboardEvent) {
@@ -46,124 +58,82 @@ export class SwipeUnternehmenComponent implements OnInit {
     }
 
     like(like: boolean) {
-        var self = this;
         if (this.cards.length > 0) {
-            self.cards[this.cardCursor].likeEvent.emit({like});
-            self.notifyServer({like: like});
-            this.cardCursor++;
+            this.cards[this.cardCursor].likeEvent.emit({like});
+            this.notifyServer({like: like});
         }
     }
-
 
     onCardLike(event) {
         this.notifyServer(event);
-        this.cardCursor++;
-
     }
 
     onRelease(event) {
-
-
     }
 
     onAbort(event) {
-
     }
 
     onSwipe(event) {
+    }
 
-  }
-
-  notifyServer(event){
-    var item = this.cards[this.cardCursor];
-    db.Bewerber.load(item.id)
-      .then((bewerber)=>{
-        if(bewerber){
-          db.UnternehmenLikes.find()
-            .equal('unternehmen', this.unternehmen)
-            .equal('bewerber', bewerber)
-            .singleResult((unternehmenLike)=>{
-              if(unternehmenLike){
-                //Like existiert bereits, deswegen update
-                unternehmenLike.like = event.like;
-                unternehmenLike.update()
-                  .then(()=>{
-                    if(event.like){
-                      this.checkIfMatch(bewerber);
-                    }
-                  });
-              }else{
-                unternehmenLike = new db.UnternehmenLikes({
-                  unternehmen: this.unternehmen,
-                  bewerber: bewerber,
-                  like: event.like
-                });
-                unternehmenLike.insert().then(function() {
-                  if(event.like){
-                    this.checkIfMatch(bewerber);
-                  }
-                });
-              }
-            });
+    notifyServer(event) {
+        const item = this.cards[this.cardCursor];
+        const currentBewerber = this.matchingBewerber.find((bewerber) => bewerber.id === item.id);
+        const unternehmenLike = new db.UnternehmenLikes({
+            unternehmen: this.unternehmen,
+            bewerber: currentBewerber,
+            like: event.like
+        });
+        unternehmenLike.insert().then(() => {
+            if (event.like) {
+                this.checkIfMatch(currentBewerber);
+            }
+        });
+        this.cardCursor++;
+        if (this.cardCursor === this.cards.length) {
+            this.cards = null;
         }
-      });
-  }
+    }
 
-  getBewerber(){
-    if(db.User.me.iscomp){
-      db.Unternehmen.find()
-        .equal('userid', db.User.me)
-        .singleResult((unternehmen)=>{
-          if(unternehmen){
-            this.unternehmen = unternehmen;
-            db.Stellenangebot.find()
-              .equal('unternehmen', unternehmen)
-              .resultList((angebote)=>{
-                var arbeitsorte = [];
-                var berufsfelder = [];
-                angebote.forEach((angebot)=>{
-                  if(angebot.arbeitsort){
-                    arbeitsorte.push(angebot.arbeitsort);
-                  }
-                  if(angebot.berufsfeld){
-                    berufsfelder.push(angebot.berufsfeld);
-                  }
+    getBewerber() {
+        const arbeitsorte = [];
+        const berufsfelder = [];
+        this.angebote.forEach((angebot) => {
+            if (angebot.arbeitsort) {
+                arbeitsorte.push(angebot.arbeitsort);
+            }
+            if (angebot.berufsfeld) {
+                berufsfelder.push(angebot.berufsfeld);
+            }
+        });
+        db.Bewerber.find().in('arbeitsort', arbeitsorte).in('berufsfeld', berufsfelder).resultList((bewerberListe) => {
+            this.matchingBewerber = bewerberListe;
+            bewerberListe.forEach((bewerber) => {
+                this.cards.push({
+                    id: bewerber.id,
+                    likeEvent: new EventEmitter(),
+                    destroyEvent: new EventEmitter(),
+                    pitch: bewerber.pitch,
+                    titel: bewerber.titel,
+                    vorname: bewerber.vorname,
+                    nachname: bewerber.nachname,
+                    profilbild: bewerber.profilbild,
+                    ausbildung: bewerber.ausbildung,
+                    softskills: bewerber.softskills,
+                    fachkompetenzen: bewerber.fachkompetenzen,
+                    geburtsdatum: bewerber.geburtsdatum
                 });
-                db.Bewerber.find()
-                  .in('arbeitsort', arbeitsorte)
-                  .in('berufsfeld', berufsfelder)
-                  .resultList((bewerber)=>{
-                    bewerber.forEach((bew) => {
-                      this.cards.push({
-                        id: bew.id,
-                        likeEvent: new EventEmitter(),
-                        destroyEvent: new EventEmitter(),
-                        pitch: bew.pitch,
-                        titel: bew.titel,
-                        vorname: bew.vorname,
-                        nachname: bew.nachname,
-                        profilbild: bew.profilbild,
-                        ausbildung: bew.ausbildung,
-                        softskills: bew.softskills,
-                        fachkompetenzen: bew.fachkompetenzen,
-                        geburtsdatum: bew.geburtsdatum
-                      });
-                    });
-                  });
-              });
-          }
+            });
         });
     }
-  }
 
-  checkIfMatch(bewerber){
-    db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber})
-      .then((result)=>{
-        if(result.match){
-          this.snackBar.open("It's a Match!", '', {
-            duration: 2000
-          });
-        }
-      });
-  }
+    checkIfMatch(bewerber) {
+        db.modules.get('checkMatch', {unternehmen: this.unternehmen, bewerber: bewerber}).then(
+            (result) => {
+                if (result.match) {
+                    this.snackBar.open('It\'s a Match!', '', {duration: 2000});
+                }
+            });
+    }
 }
