@@ -41,7 +41,7 @@ export class SwipeBewerberComponent implements OnInit {
         this.bewerberService.getBewerber().then((bewerber) => {
             this.bewerber = bewerber;
             this.cardService.getCardsForBewerber(this.bewerber)
-                .then((cards)=>{
+                .then((cards) => {
                     this.cards = cards;
                 });
         });
@@ -84,7 +84,7 @@ export class SwipeBewerberComponent implements OnInit {
         console.log(like);
         const item = this.cards[this.cardCursor];
         this.matchService.addBewerberInteraction(this.bewerber, item.angebot, like)
-            .then((res)=>{
+            .then((res) => {
                 if (res.match) {
                     this.snackBar.open('It\'s a Match!', '', {duration: 2000});
                 }
