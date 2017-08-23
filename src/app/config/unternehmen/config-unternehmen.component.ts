@@ -59,8 +59,6 @@ export class ConfigUnternehmenComponent implements OnInit {
     }
 
     save() {
-        const res = this.unternehmen.validate();
-        console.log(res);
         const pendingFileUploads = [];
         if (this.logo) {
             const image = new db.File({
