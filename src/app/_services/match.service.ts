@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
 import {db, model} from 'baqend';
+import {VacancyService} from "./vacancy.service";
 
 @Injectable()
 export class MatchService {
 
-    constructor(){}
+    constructor(private vacancyService: VacancyService){}
 
     addBewerberInteraction(bewerber: model.Bewerber, angebot: model.Bewerber, like: boolean): Promise<any>{
         let bewerberLike;
@@ -53,7 +54,7 @@ export class MatchService {
                 return unternehmenLike.save()
                     .then(()=>{
                         if(like){
-                            return this.checkIfUnternehmenMatch(unternehmen, bewerber);
+                            return this.checkIfUnternehmenMatch(bewerber);
                         }else{
                             return Promise.resolve({match: false});
                         }
@@ -61,11 +62,55 @@ export class MatchService {
             });
     }
 
+    getGeseheheneBewerber(unternehmen: model.Unternehmen){
+        return db.UnternehmenLikes.find()
+            .equal('unternehmen', unternehmen)
+            .resultList((unternehmenLikes)=>{
+                let bewerber = [];
+                unternehmenLikes.forEach((ul)=>{
+                    bewerber.push(ul.bewerber);
+                });
+                return bewerber;
+            });
+    }
+
+    getGeseheheneStellenangebote(bewerber: model.Bewerber){
+        return db.BewerberLikes.find()
+            .equal('bewerber', bewerber)
+            .resultList((bewerberLikes)=>{
+                let angebote = [];
+                bewerberLikes.forEach((bl)=>{
+                    angebote.push(bl.angebot);
+                });
+                return angebote;
+            });
+    }
+
     checkIfMatch(bewerber, angebot) {
         return db.modules.get('checkMatch', {angebot: angebot, bewerber: bewerber});
     }
 
-    checkIfUnternehmenMatch(unternehmen, bewerber){
-        return db.modules.get('checkMatch', {unternehmen: unternehmen, bewerber: bewerber});
+    checkIfUnternehmenMatch(bewerber){
+        return this.vacancyService.getVacancies()
+            .then((angebote)=>{
+                return db.BewerberLikes.find()
+                    .in('angebot', angebote)
+                    .equal('like', true)
+                    .equal('bewerber', bewerber)
+                    .singleResult((bewerberLike)=>{
+                        if(!bewerberLike){
+                            return Promise.resolve({match:false});
+                        }else{
+                            let match = new db.Match({
+                                angebot: angebote,
+                                bewerber: bewerber
+                            });
+                            return match.save()
+                                .then(()=>{
+                                    return Promise.resolve({match: true});
+                                });
+                        }
+                    });
+            });
     }
 }

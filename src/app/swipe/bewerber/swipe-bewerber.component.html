@@ -12,6 +12,7 @@
                     [callLike]="card.likeEvent"
                     (onLike)="onCardLike($event)">
                 <div class="card-header">
+                    <span>{{card.angebot.key}}</span>
                     <span class="card-bezeichnung">{{card.angebot.bezeichnung}}</span>
                     <span class="card-pitch">"{{card.angebot.unternehmen.pitch}}"</span>
                 </div>
