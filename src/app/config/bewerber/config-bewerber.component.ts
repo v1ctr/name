@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
-import {AuthService} from '../../auth.service';
-import {BewerberService} from '../../bewerber.service';
-import {DropDownDataService} from '../../drop-down-data.service';
+import {AuthService} from '../../_services/auth.service';
+import {BewerberService} from '../../_services/bewerber.service';
+import {DropDownDataService} from '../../_services/drop-down-data.service';
 import {FormControl, Validators} from '@angular/forms';
 
 @Component({

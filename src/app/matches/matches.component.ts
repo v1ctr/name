@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
-import {BewerberService} from '../bewerber.service';
-import {VacancyService} from '../vacancy.service';
+import {BewerberService} from '../_services/bewerber.service';
+import {VacancyService} from '../_services/vacancy.service';
 
 @Component({
     selector: 'app-matches',

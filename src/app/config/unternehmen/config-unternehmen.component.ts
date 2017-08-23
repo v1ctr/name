@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {db, model} from 'baqend';
-import {AuthService} from '../../auth.service';
+import {AuthService} from '../../_services/auth.service';
 import {FormControl, Validators} from '@angular/forms';
-import {DropDownDataService} from '../../drop-down-data.service';
-import {UnternehmenService} from '../../unternehmen.service';
+import {DropDownDataService} from '../../_services/drop-down-data.service';
+import {UnternehmenService} from '../../_services/unternehmen.service';
 
 @Component({
     selector: 'app-config-unternehmen',

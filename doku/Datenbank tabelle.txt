@@ -1,0 +1,6 @@
+* Tabelle Sprache
+	- Speichert vordefinierte Sprachen, aus denen Bewerbern ihre Sprachfähigkeit beschreiben oder Unternehmen ihre Stellenangebotsanforderung angeben können.
+	
+* Tabelle Arbeitsverhaeltnis
+	- Speichert vordefinierte Arbeitsverhaeältnis, aus denen Bewerbern ihre Wunschsarbeitsverhältnis eingeben oder Unternehmen ihre Stellenangebotsarbeitsverhältnis beschreiben können.
+	

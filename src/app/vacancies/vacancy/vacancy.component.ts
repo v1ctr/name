@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {model} from 'baqend';
 import {FormControl, Validators} from '@angular/forms';
-import {DropDownDataService} from '../../drop-down-data.service';
-import {VacancyService} from '../../vacancy.service';
-import {UnternehmenService} from '../../unternehmen.service';
+import {DropDownDataService} from '../../_services/drop-down-data.service';
+import {VacancyService} from '../../_services/vacancy.service';
+import {UnternehmenService} from '../../_services/unternehmen.service';
 
 @Component({
     selector: 'app-vacancy',
