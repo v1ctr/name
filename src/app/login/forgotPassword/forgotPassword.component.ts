@@ -1,22 +1,16 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {db} from 'baqend';
+import {LoggerService} from '../../logging/logger.service';
 
 @Component({
-    selector: 'app-forgot-password',
     templateUrl: './forgotPassword.component.html',
-    styleUrls: ['./forgotPassword.component.scss'],
 })
 export class ForgotPasswordComponent implements OnInit {
 
-    username;
-    result = {
-        isError: false,
-        message: '',
-    };
+    public username;
 
-    constructor(private router: Router, private route: ActivatedRoute) {
-
+    constructor(private route: ActivatedRoute, private logService: LoggerService) {
     }
 
     ngOnInit(): void {
@@ -26,12 +20,10 @@ export class ForgotPasswordComponent implements OnInit {
     resetPassword() {
         db.User.resetPassword(this.username).then(
             () => {
-                this.result.isError = false;
-                this.result.message = 'Es wurde eine Nachricht an Ihre Mail-Adresse gesendet.';
+                this.logService.logHint('Es wurde eine Nachricht an Ihre Mail-Adresse gesendet.');
             },
             (error) => {
-                this.result.isError = true;
-                this.result.message = 'Die Email konnte nicht gesendet werden.' + ' ' + error.message;
+                this.logService.logError('Die Email konnte nicht gesendet werden.' + ' ' + error.message);
             }
         );
     }

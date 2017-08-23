@@ -45,6 +45,9 @@ import {BewerberService} from './_services/bewerber.service';
 import {DropDownDataService} from './_services/drop-down-data.service';
 import {VacancyService} from './_services/vacancy.service';
 import {UnternehmenService} from './_services/unternehmen.service';
+import {LoggerComponent} from './logging/logger.component';
+import {LoggerService} from './logging/logger.service';
+import {FileService} from './_services/file.service';
 
 @NgModule({
     declarations: [
@@ -62,6 +65,7 @@ import {UnternehmenService} from './_services/unternehmen.service';
         AccountComponent,
         MatchesComponent,
         MatchComponent,
+        LoggerComponent
     ],
     imports: [
         BrowserModule,
@@ -95,7 +99,9 @@ import {UnternehmenService} from './_services/unternehmen.service';
         VacancyService,
         UnternehmenService,
         CardService,
-        MatchService
+        MatchService,
+        LoggerService,
+        FileService
     ],
     bootstrap: [AppComponent],
 })

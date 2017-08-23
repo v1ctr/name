@@ -1,10 +1,9 @@
-import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {MdSnackBar} from '@angular/material';
-import {db, model} from 'baqend';
-import { BewerberService } from '../../_services/bewerber.service';
-import { CardService } from '../../_services/card.service';
-import { MatchService } from '../../_services/match.service';
+import {model} from 'baqend';
+import {BewerberService} from '../../_services/bewerber.service';
+import {CardService} from '../../_services/card.service';
+import {MatchService} from '../../_services/match.service';
 
 export enum KEY_CODE {
     RIGHT_ARROW = 39,
@@ -17,7 +16,6 @@ export enum KEY_CODE {
 export class SwipeBewerberComponent implements OnInit {
 
     bewerber: model.Bewerber;
-    matchingAngebote: model.Stellenangebot[];
     cards: any[] = [];
     cardCursor = 0;
     orientation = 'x';
@@ -30,20 +28,18 @@ export class SwipeBewerberComponent implements OnInit {
         }
     };
 
-    constructor(
-        private router: Router,
-        public snackBar: MdSnackBar,
-        private bewerberService: BewerberService,
-        private cardService: CardService,
-        private matchService: MatchService) {}
+    constructor(public snackBar: MdSnackBar,
+                private bewerberService: BewerberService,
+                private cardService: CardService,
+                private matchService: MatchService) {
+    }
 
     ngOnInit() {
         this.bewerberService.getBewerber().then((bewerber) => {
             this.bewerber = bewerber;
-            this.cardService.getCardsForBewerber(this.bewerber)
-                .then((cards) => {
-                    this.cards = cards;
-                });
+            this.cardService.getCardsForBewerber(this.bewerber).then((cards) => {
+                this.cards = cards;
+            });
         });
     }
 

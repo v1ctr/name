@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs/Observable';
 import {AuthService} from './_services/auth.service';
 import {db} from 'baqend';
 import {Router} from '@angular/router';

@@ -1,26 +1,21 @@
 import {Component} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {db} from 'baqend';
+import {LoggerService} from '../logging/logger.service';
 
 @Component({
-    selector: 'app-signup',
     templateUrl: './signup.component.html',
-    styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent {
 
-    user = {
+    public user = {
         username: '',
         password: '',
         passwordRepeat: '',
         iscomp: false,
     };
-    result = {
-        isError: false,
-        message: '',
-    };
 
-    constructor(private router: Router, private route: ActivatedRoute) {
+    constructor(private route: ActivatedRoute, private logService: LoggerService) {
         this.user.username = this.route.snapshot.params['email'];
     }
 
@@ -32,15 +27,12 @@ export class SignupComponent {
                 isConfigCompleted: false,
             });
             db.User.register(user, this.user.password).then(() => {
-                this.result.isError = false;
-                this.result.message = 'Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.';
+                this.logService.logHint('Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.');
             }, (error) => {
-                this.result.isError = true;
-                this.result.message = error.message;
+                this.logService.logError(error.message);
             });
         } else {
-            this.result.isError = true;
-            this.result.message = 'Passwörter stimmen nicht überein!';
+            this.logService.logError('Passwörter stimmen nicht überein!');
         }
     }
 }

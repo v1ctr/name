@@ -2,18 +2,18 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db} from 'baqend';
 import {getRedirectPath} from '../../db';
+import {LoggerService} from '../../logging/logger.service';
+import {AuthService} from '../../_services/auth.service';
 
 @Component({
-    selector: 'app-new-password',
     templateUrl: './resetPassword.component.html',
 })
 export class ResetPasswordComponent {
 
-    password;
-    passwordRepeat;
-    error;
+    public password;
+    public passwordRepeat;
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private logService: LoggerService, private authService: AuthService) {
     }
 
     setNewPassword() {
@@ -23,14 +23,18 @@ export class ResetPasswordComponent {
             const token = search.substring(search.indexOf(paramName) + paramName.length);
             db.User.newPassword(token, this.password).then(
                 () => {
+                    // Alle Komponenten über login informieren
+                    this.authService.isLoginSubject.next(true);
+                    this.authService.isCompSubject.next(db.User.me.iscomp);
+                    this.authService.isConfigCompleteSubject.next(db.User.me.isConfigCompleted);
                     this.router.navigate([getRedirectPath()]);
                 },
                 (error) => {
-                    this.error = error.message;
+                    this.logService.logError(error.message);
                 }
             );
         } else {
-            this.error = 'Passwörter stimmen nicht überein!';
+            this.logService.logError('Passwörter stimmen nicht überein!');
         }
     }
 }

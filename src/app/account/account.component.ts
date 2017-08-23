@@ -2,21 +2,20 @@ import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {AuthService} from '../_services/auth.service';
+import {LoggerService} from '../logging/logger.service';
 
 @Component({
     templateUrl: './account.component.html',
 })
 export class AccountComponent {
 
-    me: model.User;
+    public me: model.User;
 
-    oldPassword;
-    newPassword;
-    newPasswordRepeat;
+    public oldPassword;
+    public newPassword;
+    public newPasswordRepeat;
 
-    error;
-
-    constructor(private router: Router, public authService: AuthService) {
+    constructor(private router: Router, private authService: AuthService, private logService: LoggerService) {
         if (db.User.me) {
             this.me = db.User.me;
         }
@@ -24,15 +23,15 @@ export class AccountComponent {
 
     setNewPassword() {
         if (this.newPasswordRepeat === this.newPassword) {
-            db.User.newPassword(this.me.username, this.oldPassword, this.newPassword).then(
-                () => {
+            db.User.newPassword(this.me.username, this.oldPassword, this.newPassword).then(() => {
+                    this.logService.logHint('Das Passwort wurde erfolgreich geändert.');
                 },
                 (error) => {
-                    this.error = error.message;
+                    this.logService.logError(error.message);
                 }
             );
         } else {
-            this.error = 'Passwörter stimmen nicht überein!';
+            this.logService.logError('Passwörter stimmen nicht überein!');
         }
     }
 
@@ -93,7 +92,7 @@ export class AccountComponent {
                 this.router.navigate(['/signup']);
             });
         }, (error) => {
-            this.error = error.message;
+            this.logService.logError(error.message);
         });
     }
 }

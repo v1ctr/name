@@ -1,16 +1,16 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {db, model} from 'baqend';
+import {LoggerService} from '../../logging/logger.service';
 
 @Component({
-    selector: 'app-match',
     templateUrl: './match.component.html',
 })
 export class MatchComponent implements OnInit {
 
-    match: model.Match;
+    public match: model.Match;
 
-    constructor(private router: Router, private route: ActivatedRoute) {
+    constructor(private route: ActivatedRoute, private logService: LoggerService) {
     }
 
     ngOnInit() {
@@ -19,6 +19,8 @@ export class MatchComponent implements OnInit {
             if (match) {
                 this.match = match;
             }
+        }, (error) => {
+            this.logService.logError(error.message);
         });
     }
 }

@@ -3,20 +3,19 @@ import {Router} from '@angular/router';
 import {AuthService} from '../_services/auth.service';
 import {db} from 'baqend';
 import {getRedirectPath} from '../db';
+import {LoggerService} from '../logging/logger.service';
 
 @Component({
-    selector: 'app-login',
     templateUrl: './login.component.html',
 })
 export class LoginComponent {
 
-    user = {
+    public user = {
         username: '',
         password: '',
     };
-    error;
 
-    constructor(private router: Router, public authService: AuthService) {
+    constructor(private router: Router, private authService: AuthService, private logService: LoggerService) {
     }
 
     logIn() {
@@ -27,7 +26,7 @@ export class LoginComponent {
             this.authService.isConfigCompleteSubject.next(db.User.me.isConfigCompleted);
             this.router.navigate([getRedirectPath()]);
         }, (error) => {
-            this.error = error.message;
+            this.logService.logError(error.message);
         });
     }
 }

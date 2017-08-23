@@ -1,0 +1,8 @@
+<div class="logger">
+    <div *ngFor="let error of errors | async" class="alert alert-danger" role="alert">
+        {{error}}
+    </div>
+    <div *ngFor="let hint of hints | async" class="alert alert-success" role="alert">
+        {{hint}}
+    </div>
+</div>

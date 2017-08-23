@@ -5,9 +5,9 @@ import {FormControl, Validators} from '@angular/forms';
 import {DropDownDataService} from '../../_services/drop-down-data.service';
 import {VacancyService} from '../../_services/vacancy.service';
 import {UnternehmenService} from '../../_services/unternehmen.service';
+import {LoggerService} from '../../logging/logger.service';
 
 @Component({
-    selector: 'app-vacancy',
     templateUrl: './vacancy.component.html',
 })
 export class VacancyComponent implements OnInit {
@@ -31,12 +31,12 @@ export class VacancyComponent implements OnInit {
     sprachen: model.Sprache[];
     selectedSprachen: model.Sprache[] = [];
     branchen: model.Berufsfeld[];
-    error;
 
     constructor(private route: ActivatedRoute,
                 private dropDownDataService: DropDownDataService,
                 private vacancyService: VacancyService,
-                private unternehmenService: UnternehmenService) {
+                private unternehmenService: UnternehmenService,
+                private logService: LoggerService) {
         this.vacancy = vacancyService.getNewVacancy();
     }
 
@@ -56,6 +56,8 @@ export class VacancyComponent implements OnInit {
                 this.vacancy = vacancy;
                 this.selectedVertragsarten = Array.from(this.vacancy.vertragsarten);
                 this.selectedSprachen = Array.from(this.vacancy.sprache);
+            }, (error) => {
+                this.logService.logError(error.message);
             });
         }
     }
@@ -69,10 +71,18 @@ export class VacancyComponent implements OnInit {
         if (this.vacancy.unternehmen === null) {
             this.unternehmenService.getUnternehmen().then((unternehmen) => {
                 this.vacancy.unternehmen = unternehmen;
-                this.vacancy.save();
+                this.vacancy.save().then(() => {
+                    this.logService.logHint('Stellenangebot erfolgreich gespeichert.');
+                }, (error) => {
+                    this.logService.logError('Fehler beim Speichern. ' + error.message);
+                });
             });
         } else {
-            this.vacancy.save();
+            this.vacancy.save().then(() => {
+                this.logService.logHint('Stellenangebot erfolgreich gespeichert.');
+            }, (error) => {
+                this.logService.logError('Fehler beim Speichern. ' + error.message);
+            });
         }
     }
 }
