@@ -2,7 +2,9 @@ import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {MdSnackBar} from '@angular/material';
 import {db, model} from 'baqend';
-import {BewerberService} from '../../bewerber.service';
+import { BewerberService } from '../../_services/bewerber.service';
+import { CardService } from '../../_services/card.service';
+import { MatchService } from '../../_services/match.service';
 
 export enum KEY_CODE {
     RIGHT_ARROW = 39,
@@ -28,13 +30,20 @@ export class SwipeBewerberComponent implements OnInit {
         }
     };
 
-    constructor(private router: Router, public snackBar: MdSnackBar, private bewerberService: BewerberService) {
-    }
+    constructor(
+        private router: Router,
+        public snackBar: MdSnackBar,
+        private bewerberService: BewerberService,
+        private cardService: CardService,
+        private matchService: MatchService) {}
 
     ngOnInit() {
         this.bewerberService.getBewerber().then((bewerber) => {
             this.bewerber = bewerber;
-            this.getStellenangebote();
+            this.cardService.getCardsForBewerber(this.bewerber)
+                .then((cards)=>{
+                    this.cards = cards;
+                });
         });
     }
 
@@ -49,14 +58,16 @@ export class SwipeBewerberComponent implements OnInit {
     }
 
     like(like: boolean) {
+        console.log('like');
         if (this.cards.length > 0) {
             this.cards[this.cardCursor].likeEvent.emit({like});
-            this.notifyServer({like: like});
+            this.notifyServer(like);
         }
     }
 
     onCardLike(event) {
-        this.notifyServer(event);
+        console.log('onCardLike');
+        this.notifyServer(event.like);
     }
 
     onRelease(event) {
@@ -68,76 +79,19 @@ export class SwipeBewerberComponent implements OnInit {
     onSwipe(event) {
     }
 
-    notifyServer(event) {
+
+    notifyServer(like) {
+        console.log(like);
         const item = this.cards[this.cardCursor];
-        const angebot = this.matchingAngebote.find((matchingAngebot) => matchingAngebot.id === item.id);
-        if (angebot) {
-            const bewerberLike = new db.BewerberLikes({
-                bewerber: this.bewerber,
-                angebot: angebot,
-                like: event.like
-            });
-            bewerberLike.save().then(() => {
-                if (event.like) {
-                    this.checkIfMatch(angebot);
+        this.matchService.addBewerberInteraction(this.bewerber, item.angebot, like)
+            .then((res)=>{
+                if (res.match) {
+                    this.snackBar.open('It\'s a Match!', '', {duration: 2000});
                 }
             });
-        }
         this.cardCursor++;
         if (this.cardCursor === this.cards.length) {
             this.cards = null;
         }
-    }
-
-
-    getStellenangebote() {
-        const alreadyLikedAngebote = [];
-        db.BewerberLikes.find().equal('bewerber', this.bewerber).resultList((likes) => {
-            likes.forEach((like) => {
-                alreadyLikedAngebote.push(like.angebot);
-            });
-        });
-        let filter = db.Stellenangebot.find().notIn('id', alreadyLikedAngebote); // @todo: funzt noch nicht
-        if (this.bewerber.arbeitsort) {
-            filter = filter.equal('arbeitsort', this.bewerber.arbeitsort);
-        }
-        if (this.bewerber.berufsfeld) {
-            filter = filter.equal('berufsfeld', this.bewerber.berufsfeld);
-        }
-        if (this.bewerber.sprachen) {
-            // @todo
-        }
-        filter.resultList((angebote) => {
-            this.matchingAngebote = angebote;
-            angebote.forEach((angebot) => {
-                const card = {
-                    id: angebot.id,
-                    likeEvent: new EventEmitter(),
-                    destroyEvent: new EventEmitter(),
-                    pitch: null,
-                    bezeichnung: angebot.bezeichnung,
-                    beschreibung: angebot.beschreibung,
-                    logo: null,
-                    anforderung: angebot.anforderung,
-                    arbeitsort: angebot.arbeitsort,
-                    gehalt: angebot.monatsgehalt
-                };
-                if (angebot.unternehmen) {
-                    db.Unternehmen.load(angebot.unternehmen.id).then((unternehmen) => {
-                        card.pitch = unternehmen.pitch;
-                        card.logo = unternehmen.logo;
-                    });
-                }
-                this.cards.push(card);
-            });
-        });
-    }
-
-    checkIfMatch(angebot) {
-        db.modules.get('checkMatch', {angebot: angebot, bewerber: this.bewerber}).then((result) => {
-            if (result.match) {
-                this.snackBar.open('It\'s a Match!', '', {duration: 2000});
-            }
-        });
     }
 }

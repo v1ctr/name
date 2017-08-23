@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {model} from 'baqend';
-import {VacancyService} from '../vacancy.service';
+import {VacancyService} from '../_services/vacancy.service';
 
 @Component({
     selector: 'app-vacancies',

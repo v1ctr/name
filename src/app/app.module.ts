@@ -5,7 +5,9 @@ import {HttpModule} from '@angular/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SwipeCardsModule} from 'ng2-swipe-cards';
 import {CovalentFileModule} from '@covalent/core';
-import {AuthService} from './auth.service';
+import {AuthService} from './_services/auth.service';
+import {CardService} from './_services/card.service';
+import {MatchService} from './_services/match.service';
 import {
     MdButtonModule,
     MdCardModule,
@@ -39,10 +41,10 @@ import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
 import {AccountComponent} from './account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
-import {BewerberService} from './bewerber.service';
-import {DropDownDataService} from './drop-down-data.service';
-import {VacancyService} from './vacancy.service';
-import {UnternehmenService} from './unternehmen.service';
+import {BewerberService} from './_services/bewerber.service';
+import {DropDownDataService} from './_services/drop-down-data.service';
+import {VacancyService} from './_services/vacancy.service';
+import {UnternehmenService} from './_services/unternehmen.service';
 
 @NgModule({
     declarations: [
@@ -92,6 +94,8 @@ import {UnternehmenService} from './unternehmen.service';
         DropDownDataService,
         VacancyService,
         UnternehmenService,
+        CardService,
+        MatchService
     ],
     bootstrap: [AppComponent],
 })

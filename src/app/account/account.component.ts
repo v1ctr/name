@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
-import {AuthService} from '../auth.service';
+import {AuthService} from '../_services/auth.service';
 
 @Component({
     templateUrl: './account.component.html',
