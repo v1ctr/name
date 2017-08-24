@@ -1,7 +1,7 @@
-import {Injectable, EventEmitter} from '@angular/core';
+import {EventEmitter, Injectable} from '@angular/core';
 import {db, model} from 'baqend';
-import {VacancyService} from "./vacancy.service";
-import {MatchService} from "./match.service";
+import {VacancyService} from './vacancy.service';
+import {MatchService} from './match.service';
 
 @Injectable()
 export class CardService {
@@ -9,10 +9,10 @@ export class CardService {
     constructor(private vacancyService: VacancyService, private matchService: MatchService) {
     }
 
-    getCardsForBewerber(bewerber: model.Bewerber){
-        let query = {};
-        let cards = [];
-        let filter = db.Stellenangebot.find();
+    getCardsForBewerber(bewerber: model.Bewerber) {
+        const query = {};
+        const cards = [];
+        const filter = db.Stellenangebot.find();
         if (bewerber.arbeitsort) {
             query['arbeitsort'] = bewerber.arbeitsort;
         }
@@ -23,11 +23,11 @@ export class CardService {
             // @todo
         }
         return this.matchService.getGeseheheneStellenangebote(bewerber)
-            .then((geseheneAngebote)=>{
+            .then((geseheneAngebote) => {
                 return db.Stellenangebot.find()
                     .where(query)
                     .notIn('id', geseheneAngebote)
-                    .resultList({depth: 1}, (angebote)=>{
+                    .resultList({depth: 1}, (angebote) => {
                         angebote.forEach((angebot) => {
                             cards.push({
                                 likeEvent: new EventEmitter(),
@@ -40,11 +40,11 @@ export class CardService {
             });
     }
 
-    getCardsForUnternehmen(unternehmen: model.Unternehmen){
+    getCardsForUnternehmen(unternehmen: model.Unternehmen) {
         const arbeitsorte = [];
         const berufsfelder = [];
-        let bereitsGeseheneBewerber = [];
-        let cards = [];
+        const bereitsGeseheneBewerber = [];
+        const cards = [];
         return this.vacancyService.getVacancies().then((angebote) => {
             angebote.forEach((angebot) => {
                 if (angebot.arbeitsort) {
@@ -55,8 +55,7 @@ export class CardService {
                 }
             });
             return this.matchService.getGeseheheneBewerber(unternehmen)
-                .then((geseheneBewerber)=>{
-                console.log(geseheneBewerber);
+                .then((geseheneBewerber) => {
                     return db.Bewerber.find()
                         .in('arbeitsort', arbeitsorte)
                         .in('berufsfeld', berufsfelder)
@@ -64,13 +63,13 @@ export class CardService {
                         .resultList((bewerberListe) => {
                             bewerberListe.forEach((bewerber) => {
                                 cards.push({
-                                   likeEvent: new EventEmitter(),
-                                   destroyEvent: new EventEmitter(),
-                                   bewerber: bewerber
+                                    likeEvent: new EventEmitter(),
+                                    destroyEvent: new EventEmitter(),
+                                    bewerber: bewerber
                                 });
                             });
-                        return cards;
-                    });
+                            return cards;
+                        });
                 });
         });
     }

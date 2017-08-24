@@ -54,7 +54,6 @@ export class SwipeBewerberComponent implements OnInit {
     }
 
     like(like: boolean) {
-        console.log('like');
         if (this.cards.length > 0) {
             this.cards[this.cardCursor].likeEvent.emit({like});
             this.notifyServer(like);
@@ -62,7 +61,6 @@ export class SwipeBewerberComponent implements OnInit {
     }
 
     onCardLike(event) {
-        console.log('onCardLike');
         this.notifyServer(event.like);
     }
 
@@ -77,7 +75,6 @@ export class SwipeBewerberComponent implements OnInit {
 
 
     notifyServer(like) {
-        console.log(like);
         const item = this.cards[this.cardCursor];
         this.matchService.addBewerberInteraction(this.bewerber, item.angebot, like)
             .then((res) => {

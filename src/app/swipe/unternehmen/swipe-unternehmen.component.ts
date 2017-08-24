@@ -74,7 +74,6 @@ export class SwipeUnternehmenComponent implements OnInit {
     }
 
     notifyServer(like) {
-        console.log(like);
         const item = this.cards[this.cardCursor];
         this.matchService.addUnternehmenInteraction(this.unternehmen, item.bewerber, like)
             .then((res) => {
