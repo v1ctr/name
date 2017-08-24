@@ -26,7 +26,7 @@
                 </md-input-container>
                 <md-input-container class="col-md-4">
                     <input mdInput [(ngModel)]="unternehmen.gruendung" [mdDatepicker]="picker"
-                           placeholder="Gruendungsdatum" name="gruendung" required>
+                           placeholder="Gruendungsdatum" name="gruendung">
                     <button mdSuffix [mdDatepickerToggle]="picker"></button>
                 </md-input-container>
                 <md-datepicker #picker [touchUi]="true"></md-datepicker>
@@ -34,15 +34,17 @@
 
             <div class="row">
                 <md-select class="col-xs-8" name="branche" [(ngModel)]="unternehmen.branche"
-                           placeholder="Branche">
+                           placeholder="Branche" required>
                     <md-option *ngFor="let branche of branchen" [value]="branche">
                         {{ branche.name }}
                     </md-option>
                 </md-select>
                 <md-input-container class="col-xs-4">
-                    <input type="number" mdInput [(ngModel)]="unternehmen.mitarbeiterAnzahl"
-                           placeholder="Anzahl der Mitarbeiter"
-                           name="mitarbeiter" required>
+                    <input type="number" mdInput [(ngModel)]="unternehmen.mitarbeiterAnzahl" name="mitarbeiter"
+                           placeholder="Mitarbeiter-Anzahl" [formControl]="mitarbeiterControl" required>
+                    <md-error *ngIf="mitarbeiterControl.hasError('min')">
+                        Bitte positive Zahl eingeben
+                    </md-error>
                 </md-input-container>
             </div>
 
@@ -144,7 +146,6 @@
             </div>
 
             <div class="row">
-
                 <md-input-container class="col-md-6">
                     <input mdInput [(ngModel)]="unternehmen.plz" pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$"
                            name="plz" placeholder="Postleitzahl" required [formControl]="plzControl">
@@ -183,6 +184,11 @@
                            required>
                 </md-input-container>
             </div>
+            <div class="row">
+                <md-input-container class="col-md-12">
+                    <input mdInput [(ngModel)]="unternehmen.email" name="email" placeholder="Email-Adresse" required>
+                </md-input-container>
+            </div>
         </div>
     </md-nav-list>
 
@@ -190,7 +196,7 @@
         <button
                 md-raised-button
                 (click)="save()"
-                [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID' || strasseControl.status=='INVALID' || ortControl.status=='INVALID' || ansprechpartnerControl.status=='INVALID' ">
+                [disabled]="!form.valid || plzControl.status=='INVALID' || pitchControl.status=='INVALID' || homepageControl.status=='INVALID' || strasseControl.status=='INVALID' || ortControl.status=='INVALID' || ansprechpartnerControl.status=='INVALID' || mitarbeiterControl.status=='INVALID'">
             Speichern
         </button>
     </div>

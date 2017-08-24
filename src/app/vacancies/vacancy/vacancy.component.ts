@@ -12,18 +12,11 @@ import {LoggerService} from '../../logging/logger.service';
 })
 export class VacancyComponent implements OnInit {
 
-    descriptionControl = new FormControl('', [
-        Validators.maxLength(100)
-    ]);
-    anforderungControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
-    ansprechpartnerControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
-    arbeitsortControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
+    descriptionControl = new FormControl('', [Validators.maxLength(100)]);
+    anforderungControl = new FormControl('', [Validators.maxLength(100)]);
+    ansprechpartnerControl = new FormControl('', []);
+    arbeitsortControl = new FormControl('', []);
+    gehaltControl = new FormControl('', [Validators.min(1)]);
 
     vacancy: model.Stellenangebot;
     vertragsarten: model.Vertragsart[];

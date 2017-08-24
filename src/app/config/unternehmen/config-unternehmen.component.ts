@@ -12,14 +12,13 @@ import {LoggerService} from '../../logging/logger.service';
 })
 export class ConfigUnternehmenComponent implements OnInit {
 
-    pitchControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
+    pitchControl = new FormControl('', [Validators.maxLength(150)]);
     plzControl = new FormControl('', []);
     strasseControl = new FormControl('', []);
     homepageControl = new FormControl('', []);
     ortControl = new FormControl('', []);
     ansprechpartnerControl = new FormControl('', []);
+    mitarbeiterControl = new FormControl('', [Validators.min(1)]);
 
     activeBlock;
     COMPANY_BLOCK = 1;

@@ -11,6 +11,7 @@ export class UnternehmenService {
     public getNewUnternehmen(): model.Unternehmen {
         const unternehmen = new db.Unternehmen();
         unternehmen.userid = db.User.me;
+        unternehmen.email = db.User.me.username;
         return unternehmen;
     }
 }

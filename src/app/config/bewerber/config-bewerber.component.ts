@@ -12,18 +12,11 @@ import {FileService} from '../../_services/file.service';
 })
 export class ConfigBewerberComponent implements OnInit {
 
-    pitchControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
-    fachkompetenzenControl = new FormControl('', [
-        Validators.maxLength(100)
-    ]);
-    softskillsControl = new FormControl('', [
-        Validators.maxLength(100)
-    ]);
-    ausbildungControl = new FormControl('', [
-        Validators.maxLength(50)
-    ]);
+    pitchControl = new FormControl('', [Validators.maxLength(150)]);
+    fachkompetenzenControl = new FormControl('', [Validators.maxLength(100)]);
+    softskillsControl = new FormControl('', [Validators.maxLength(100)]);
+    ausbildungControl = new FormControl('', [Validators.maxLength(50)]);
+    gehaltControl = new FormControl('', [Validators.min(1)]);
     plzControl = new FormControl('', []);
     strasseControl = new FormControl('', []);
     wohnortControl = new FormControl('', []);

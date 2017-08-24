@@ -14,6 +14,7 @@ export class BewerberService {
         bewerber.user = db.User.me;
         bewerber.sprachen = [];
         bewerber.vertragsarten = [];
+        bewerber.email = db.User.me.username;
         return bewerber;
     }
 }
