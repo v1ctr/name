@@ -28,7 +28,7 @@
 
     <div class="row">
         <md-select class="col-sm-12" name="berufsfeld" [(ngModel)]="vacancy.berufsfeld"
-                   placeholder="Berufsfeld">
+                   placeholder="Berufsfeld" required="">
             <md-option *ngFor="let branche of branchen" [value]="branche">
                 {{ branche.name }}
             </md-option>
@@ -55,14 +55,15 @@
 
     <div class="row">
         <md-input-container class="col-xs-12">
-            <textarea mdInput [(ngModel)]="vacancy.anforderung" maxlength="150" name="anforderung" placeholder="Stellenanforderungen" required [formControl]="anforderungControl"></textarea>
+            <textarea mdInput [(ngModel)]="vacancy.anforderung" maxlength="100" name="anforderung"
+                      placeholder="Stellenanforderungen" required [formControl]="anforderungControl"></textarea>
             <md-error *ngIf="anforderungControl.hasError('maxLength')">
-                Die Anforderungsbeschreibung darf nicht länger als 150 Zeichen sein
+                Die Anfoderungsbeschreibung darf nicht länger als 100 Zeichen sein
             </md-error>
             <md-error *ngIf="anforderungControl.hasError('required')">
                 This is <strong>required</strong>
             </md-error>
-            <md-hint *ngIf="vacancy.anforderung" align="end">{{vacancy.anforderung.length}} / 150</md-hint>
+            <md-hint *ngIf="vacancy.anforderung" align="end">{{vacancy.anforderung.length}} / 100</md-hint>
         </md-input-container>
     </div>
 
@@ -83,7 +84,10 @@
         <md-datepicker #picker [touchUi]="true"></md-datepicker>
         <md-input-container class="col-md-6">
             <input type="number" mdInput [(ngModel)]="vacancy.monatsgehalt" placeholder="Monatsgehalt"
-                   name="gehalt" required>
+                   name="gehalt" required [formControl]="gehaltControl">
+            <md-error *ngIf="gehaltControl.hasError('min')">
+                Das Gehalt muss positiv sein
+            </md-error>
         </md-input-container>
     </div>
 
@@ -92,7 +96,7 @@
             <input mdInput [(ngModel)]="vacancy.arbeitsort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="arbeitsort"
                    placeholder="Arbeitsort" required [formControl]="arbeitsortControl">
             <md-error *ngIf="arbeitsortControl.hasError('pattern')">
-                Bitte geben Sie den Arbeitsort an
+                Bitte geben Sie einen gültigen Arbeitsort an
             </md-error>
             <md-error *ngIf="arbeitsortControl.hasError('required')">
                 This is <strong>required</strong>
@@ -102,7 +106,7 @@
             <input mdInput [(ngModel)]="vacancy.partner" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="partner"
                    placeholder="Ansprechpartner" required [formControl]="ansprechpartnerControl">
             <md-error *ngIf="ansprechpartnerControl.hasError('pattern')">
-                Bitte geben Sie einen Ansprechpartner an
+                Bitte geben Sie einen gültigen Ansprechpartner an
             </md-error>
             <md-error *ngIf="ansprechpartnerControl.hasError('required')">
                 This is <strong>required</strong>
@@ -113,8 +117,8 @@
     <a [routerLink]="['/vacancies']">Zurück zur Stellenangebots-Übersicht</a>
     <div class="pull-right">
         <button md-raised-button (click)="save()"
-                [disabled]="!form.valid || ansprechpartnerControl.status=='INVALID' || anforderungControl.status=='INVALID' || descriptionControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">Speichern</button>
+                [disabled]="!form.valid || ansprechpartnerControl.status=='INVALID' || anforderungControl.status=='INVALID' || descriptionControl.status=='INVALID' || arbeitsortControl.status=='INVALID' || gehaltControl.status=='INVALID'">
+            Speichern
+        </button>
     </div>
 </form>
-
-<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>

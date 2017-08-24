@@ -1,38 +1,35 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {db, model} from 'baqend';
-import {AuthService} from '../_services/auth.service';
+import {AuthService} from '../../_services/auth.service';
+import {LoggerService} from '../../logging/logger.service';
 
 @Component({
     templateUrl: './account.component.html',
 })
 export class AccountComponent {
 
-    me: model.User;
+    private me: model.User;
 
-    oldPassword;
-    newPassword;
-    newPasswordRepeat;
+    public username: string;
 
-    error;
+    public oldPassword;
+    public newPassword;
+    public newPasswordRepeat;
 
-    constructor(private router: Router, public authService: AuthService) {
+
+    constructor(private router: Router, private authService: AuthService, private logService: LoggerService) {
         if (db.User.me) {
             this.me = db.User.me;
+            this.username = this.me.username;
         }
     }
 
     setNewPassword() {
         if (this.newPasswordRepeat === this.newPassword) {
-            db.User.newPassword(this.me.username, this.oldPassword, this.newPassword).then(
-                () => {
-                },
-                (error) => {
-                    this.error = error.message;
-                }
-            );
+            this.authService.newPassword(this.me, this.oldPassword, this.newPassword);
         } else {
-            this.error = 'Passwörter stimmen nicht überein!';
+            this.logService.logError('Passwörter stimmen nicht überein!');
         }
     }
 
@@ -88,12 +85,9 @@ export class AccountComponent {
         }
         deletePromises.push(this.me.delete());
         Promise.all(deletePromises).then(() => {
-            db.User.logout().then(() => {
-                this.authService.isLoginSubject.next(false);
-                this.router.navigate(['/signup']);
-            });
+            this.authService.signout();
         }, (error) => {
-            this.error = error.message;
+            this.logService.logError(error.message);
         });
     }
 }

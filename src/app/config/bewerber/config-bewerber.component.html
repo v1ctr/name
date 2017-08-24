@@ -47,7 +47,7 @@
                     <md-error *ngIf="homepageControl.hasError('pattern')">
                         Keine gültige Homepage!
                     </md-error>
-                    
+
                 </md-input-container>
             </div>
 
@@ -105,7 +105,7 @@
             </div>
 
             <div class="row">
-                <md-input-container class="col-md-3">
+                <md-input-container class="col-md-4">
                     <input mdInput [(ngModel)]="bewerber.plz" type="text"
                            pattern="^([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}$" name="plz" placeholder="Postleitzahl"
                            required [formControl]="plzControl">
@@ -116,7 +116,7 @@
                         This is <strong>required</strong>
                     </md-error>
                 </md-input-container>
-                <md-input-container class="col-md-6">
+                <md-input-container class="col-md-8">
                     <input mdInput [(ngModel)]="bewerber.wohnort" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="wohnort"
                            placeholder="Wohnort" required [formControl]="wohnortControl">
                     <md-error *ngIf="wohnortControl.hasError('pattern')">
@@ -126,7 +126,13 @@
                         This is <strong>required</strong>
                     </md-error>
                 </md-input-container>
-                <md-input-container class="col-md-3">
+            </div>
+            <div class="row">
+                <md-input-container class="col-md-8">
+                    <input mdInput [(ngModel)]="bewerber.email" placeholder="Email-Adresse" name="email"
+                           required>
+                </md-input-container>
+                <md-input-container class="col-md-4">
                     <input mdInput [(ngModel)]="bewerber.telefonnummer" placeholder="Telefon" name="telefon"
                            required>
                 </md-input-container>
@@ -254,19 +260,22 @@
                 </md-input-container>
                 <md-input-container class="col-md-4">
                     <input mdInput type="number" [(ngModel)]="bewerber.mindestMonatsGehalt" name="mindestMonatsGehalt"
-                           placeholder="Gehaltsvorstellungen">
+                           placeholder="Gehaltsvorstellungen" [formControl]="gehaltControl">
+                    <md-error *ngIf="gehaltControl.hasError('min')">
+                        Bitte geben Sie einen positiven Wert ein
+                    </md-error>
                 </md-input-container>
             </div>
 
             <div class="row">
                 <md-select class="col-md-8" name="berufsfeld" [(ngModel)]="bewerber.berufsfeld"
-                           placeholder="Berufsfeld">
+                           placeholder="Berufsfeld" required>
                     <md-option *ngFor="let berufsfeld of berufsfelder" [value]="berufsfeld">
                         {{ berufsfeld.name }}
                     </md-option>
                 </md-select>
                 <md-select class="col-md-4" name="arbeitsverhaeltnis" [(ngModel)]="bewerber.arbeitsverhaeltnis"
-                           placeholder="Arbeitsverhältnis">
+                           placeholder="Arbeitsverhältnis" required>
                     <md-option *ngFor="let arbeitsverhaeltnis of arbeitsverhaeltnisse" [value]="arbeitsverhaeltnis">
                         {{ arbeitsverhaeltnis.name }}
                     </md-option>
@@ -307,7 +316,7 @@
         <button
                 md-raised-button
                 (click)="save()"
-                [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || strasseControl.status=='INVALID'||  vornameControl.status=='INVALID' || homepageControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID'">
+                [disabled]="!form.valid || pitchControl.status == 'INVALID' || fachkompetenzenControl.status =='INVALID' || softskillsControl.status=='INVALID' || ausbildungControl.status == 'INVALID' || plzControl.status=='INVALID' || strasseControl.status=='INVALID'||  vornameControl.status=='INVALID' || homepageControl.status=='INVALID' || wohnortControl.status=='INVALID' || nachnameControl.status=='INVALID' || arbeitsortControl.status=='INVALID' || gehaltControl.status=='INVALID'">
             Speichern
         </button>
     </div>

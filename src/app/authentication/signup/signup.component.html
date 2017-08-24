@@ -28,17 +28,7 @@
             </label>
         </div>
     </div>
-    <div class="row" [hidden]="!result.message">
-        <md-error *ngIf="result.isError; else hint">
-            {{result.message}}
-        </md-error>
-        <ng-template #hint>
-            <md-hint>
-                {{result.message}}
-            </md-hint>
-        </ng-template>
-    </div>
-    <div class="clearfix">
+    <div>
         <button class="pull-right" md-raised-button (click)="register()" [disabled]="!form.valid">Registrieren</button>
     </div>
 </form>

@@ -1,22 +1,18 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {db, model} from 'baqend';
 import {BewerberService} from '../_services/bewerber.service';
 import {VacancyService} from '../_services/vacancy.service';
 
 @Component({
-    selector: 'app-matches',
     templateUrl: './matches.component.html',
 })
 export class MatchesComponent implements OnInit {
 
-    matches: model.Match[] = [];
+    public matches: model.Match[] = [];
     // in case no matches exist, user is suggested to go swipe
-    swipeLink;
+    public swipeLink;
 
-    constructor(private router: Router,
-                private bewerberService: BewerberService,
-                private vacancyService: VacancyService) {
+    constructor(private bewerberService: BewerberService, private vacancyService: VacancyService) {
         if (db.User.me.iscomp) {
             this.swipeLink = '/swipe/unternehmen';
         } else {

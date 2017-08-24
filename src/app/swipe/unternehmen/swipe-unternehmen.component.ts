@@ -1,10 +1,9 @@
-import {Component, EventEmitter, HostListener, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {MdSnackBar} from '@angular/material';
-import {db, model} from 'baqend';
+import {model} from 'baqend';
 import {UnternehmenService} from '../../_services/unternehmen.service';
-import {CardService} from "../../_services/card.service";
-import {MatchService} from "../../_services/match.service";
+import {CardService} from '../../_services/card.service';
+import {MatchService} from '../../_services/match.service';
 
 export enum KEY_CODE {
     RIGHT_ARROW = 39,
@@ -17,8 +16,6 @@ export enum KEY_CODE {
 export class SwipeUnternehmenComponent implements OnInit {
 
     unternehmen: model.Unternehmen;
-    angebote: model.Stellenangebot[];
-    matchingBewerber: model.Bewerber[];
     cards: any[] = [];
     cardCursor = 0;
     orientation = 'x';
@@ -31,8 +28,7 @@ export class SwipeUnternehmenComponent implements OnInit {
         }
     };
 
-    constructor(private router: Router,
-                public snackBar: MdSnackBar,
+    constructor(public snackBar: MdSnackBar,
                 private unternehmenService: UnternehmenService,
                 private cardService: CardService,
                 private matchService: MatchService) {
@@ -41,10 +37,9 @@ export class SwipeUnternehmenComponent implements OnInit {
     ngOnInit() {
         this.unternehmenService.getUnternehmen().then((unternehmen) => {
             this.unternehmen = unternehmen;
-            this.cardService.getCardsForUnternehmen(this.unternehmen)
-                .then((cards)=>{
-                    this.cards = cards;
-                });
+            this.cardService.getCardsForUnternehmen(this.unternehmen).then((cards) => {
+                this.cards = cards;
+            });
         });
     }
 
@@ -53,7 +48,6 @@ export class SwipeUnternehmenComponent implements OnInit {
         if (event.keyCode === KEY_CODE.RIGHT_ARROW) {
             this.like(true);
         }
-
         if (event.keyCode === KEY_CODE.LEFT_ARROW) {
             this.like(false);
         }
@@ -80,10 +74,9 @@ export class SwipeUnternehmenComponent implements OnInit {
     }
 
     notifyServer(like) {
-        console.log(like);
         const item = this.cards[this.cardCursor];
         this.matchService.addUnternehmenInteraction(this.unternehmen, item.bewerber, like)
-            .then((res)=>{
+            .then((res) => {
                 if (res.match) {
                     this.snackBar.open('It\'s a Match!', '', {duration: 2000});
                 }

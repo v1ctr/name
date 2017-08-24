@@ -1,16 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {model} from 'baqend';
 import {VacancyService} from '../_services/vacancy.service';
+import {LoggerService} from '../logging/logger.service';
 
 @Component({
-    selector: 'app-vacancies',
     templateUrl: './vacancies.component.html',
 })
 export class VacanciesComponent implements OnInit {
 
-    vacancies: model.Stellenangebot[] = [];
+    public vacancies: model.Stellenangebot[] = [];
 
-    constructor(private vacancyService: VacancyService) {
+    constructor(private vacancyService: VacancyService, private logService: LoggerService) {
     }
 
     ngOnInit() {
@@ -18,6 +18,8 @@ export class VacanciesComponent implements OnInit {
             if (vacancies) {
                 this.vacancies = vacancies;
             }
+        }, (error) => {
+            this.logService.logError(error.message);
         });
     }
 }

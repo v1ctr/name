@@ -1,17 +1,17 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {SignupComponent} from './signup/signup.component';
-import {LoginComponent} from './login/login.component';
+import {SignupComponent} from './authentication/signup/signup.component';
+import {LoginComponent} from './authentication/login/login.component';
 import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany} from './db';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
-import {ForgotPasswordComponent} from './login/forgotPassword/forgotPassword.component';
-import {ResetPasswordComponent} from './login/resetPassword/resetPassword.component';
+import {ForgotPasswordComponent} from './authentication/forgotPassword/forgotPassword.component';
+import {ResetPasswordComponent} from './authentication/resetPassword/resetPassword.component';
 import {SwipeBewerberComponent} from './swipe/bewerber/swipe-bewerber.component';
 import {SwipeUnternehmenComponent} from './swipe/unternehmen/swipe-unternehmen.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
 import {VacancyComponent} from './vacancies/vacancy/vacancy.component';
-import {AccountComponent} from './account/account.component';
+import {AccountComponent} from './authentication/account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 

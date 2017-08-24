@@ -30,7 +30,7 @@
     <md-tab label="Account löschen">
         <form class="full-width" #form="ngForm">
             <h2>Account löschen</h2>
-            <h3>{{me.username}} wirklich löschen?</h3>
+            <h3>{{username}} wirklich löschen?</h3>
             <div class="pull-right">
                 <button md-raised-button (click)="deleteUser()">
                     <md-icon>cancel</md-icon>
@@ -40,4 +40,3 @@
         </form>
     </md-tab>
 </md-tab-group>
-<div class="alert alert-danger" role="alert" [hidden]="!error">{{error}}</div>

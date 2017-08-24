@@ -1,6 +1,6 @@
-import {binding} from "baqend";
+import {binding} from 'baqend';
 
-declare module "baqend" {
+declare module 'baqend' {
 
     interface baqend {
         Vertragsart: binding.EntityFactory<model.Vertragsart>;
@@ -28,19 +28,20 @@ declare module "baqend" {
             userid: User;
             name: string;
             ort: string;
-            plz: string;
             strasse: string;
             hausnummer: string;
             adresszusatz: string;
             telefonnummer: string;
             homepage: string;
             ansprechpartner: string;
-            gruendung: Date;
             mitarbeiterAnzahl: number;
             branche: Berufsfeld;
             pitch: string;
             logo: undefined;
             bild: undefined;
+            gruendung: Date;
+            plz: string;
+            email: string;
         }
 
         interface User extends binding.Entity {
@@ -58,7 +59,6 @@ declare module "baqend" {
         }
 
         interface Stellenangebot extends binding.Entity {
-            start: Date;
             bezeichnung: string;
             beschreibung: string;
             partner: string;
@@ -71,6 +71,7 @@ declare module "baqend" {
             arbeitsort: string;
             monatsgehalt: number;
             befristetesArbeitsverhaeltnis: boolean;
+            start: Date;
         }
 
         interface Bewerber extends binding.Entity {
@@ -78,8 +79,6 @@ declare module "baqend" {
             titel: string;
             vorname: string;
             nachname: string;
-            geburtsdatum: Date;
-            plz: string;
             wohnort: string;
             strasse: string;
             hausnummer: string;
@@ -99,7 +98,10 @@ declare module "baqend" {
             arbeitsort: string;
             mindestMonatsGehalt: number;
             arbeitsverhaeltnis: Arbeitsverhaeltnis;
+            geburtsdatum: Date;
             startdatum: Date;
+            plz: string;
+            email: string;
         }
 
         interface Role extends binding.Entity {

@@ -4,25 +4,19 @@ import {AuthService} from '../../_services/auth.service';
 import {BewerberService} from '../../_services/bewerber.service';
 import {DropDownDataService} from '../../_services/drop-down-data.service';
 import {FormControl, Validators} from '@angular/forms';
+import {LoggerService} from '../../logging/logger.service';
+import {FileService} from '../../_services/file.service';
 
 @Component({
-    selector: 'app-config-bewerber',
     templateUrl: './config-bewerber.component.html',
 })
 export class ConfigBewerberComponent implements OnInit {
 
-    pitchControl = new FormControl('', [
-        Validators.maxLength(150)
-    ]);
-    fachkompetenzenControl = new FormControl('', [
-        Validators.maxLength(100)
-    ]);
-    softskillsControl = new FormControl('', [
-        Validators.maxLength(100)
-    ]);
-    ausbildungControl = new FormControl('', [
-        Validators.maxLength(50)
-    ]);
+    pitchControl = new FormControl('', [Validators.maxLength(150)]);
+    fachkompetenzenControl = new FormControl('', [Validators.maxLength(100)]);
+    softskillsControl = new FormControl('', [Validators.maxLength(100)]);
+    ausbildungControl = new FormControl('', [Validators.maxLength(50)]);
+    gehaltControl = new FormControl('', [Validators.min(1)]);
     plzControl = new FormControl('', []);
     strasseControl = new FormControl('', []);
     wohnortControl = new FormControl('', []);
@@ -53,12 +47,10 @@ export class ConfigBewerberComponent implements OnInit {
     profilbild: any;
     lebenslauf: any;
 
-    errors = [];
 
-
-    constructor(private authService: AuthService,
-                private bewerberService: BewerberService,
-                private dropDownDataService: DropDownDataService) {
+    constructor(private authService: AuthService, private bewerberService: BewerberService,
+                private dropDownDataService: DropDownDataService, private logService: LoggerService,
+                private fileService: FileService) {
         this.activeBlock = this.PERSONAL_BLOCK;
         this.user = db.User.me;
         this.bewerber = bewerberService.getNewBewerber();
@@ -101,20 +93,20 @@ export class ConfigBewerberComponent implements OnInit {
         // dropDown-Daten in Sets zurückwandeln
         this.bewerber.vertragsarten = new Set(this.selectedVertragsarten);
         this.bewerber.sprachen = new Set(this.selectedSprachen);
-        // FileUploads
+
         const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
             this.bewerber.profilbild = this.profilbild;
             this.bewerber.lebenslauf = this.lebenslauf;
+
             this.bewerber.save().then(() => {
+                this.logService.logHint('Daten erfolgreich gespeichert.');
+
                 if (!this.user.isConfigCompleted) {
-                    this.user.isConfigCompleted = true;
-                    this.user.save().then(() => {
-                        this.authService.isConfigCompleteSubject.next(true);
-                    });
+                    this.authService.setNextUserConfigStep();
                 }
             }, (error) => {
-                this.errors.push(error.message);
+                this.logService.logError('Fehler beim Speichern: ' + error.message);
             });
         });
     }
@@ -123,53 +115,36 @@ export class ConfigBewerberComponent implements OnInit {
         const pendingFileUploads = [];
         if (this.profilbild !== this.bewerber.profilbild) {
             if (this.bewerber.profilbild) {
-                pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+                pendingFileUploads.push(this.fileService.deleteFile(this.bewerber.profilbild).then(() => {
                 }, (error) => {
-                    this.errors.push(error.message);
+                    this.logService.logError(error.message);
                 }));
             }
             if (this.profilbild) {
-                pendingFileUploads.push(this.uploadFile(this.profilbild).then(() => {
+                pendingFileUploads.push(this.fileService.uploadFile(this.profilbild).then(() => {
                 }, (error) => {
-                    this.errors.push(error.message);
+                    this.logService.logError('Fehler beim Upload des Profilbilds: ' + error.message);
                 }));
             }
         }
         if (this.lebenslauf !== this.bewerber.lebenslauf) {
             if (this.bewerber.lebenslauf) {
-                pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+                pendingFileUploads.push(this.fileService.deleteFile(this.bewerber.lebenslauf).then(() => {
                 }, (error) => {
-                    this.errors.push(error.message);
+                    this.logService.logError(error.message);
                 }));
             }
             if (this.lebenslauf) {
-                pendingFileUploads.push(this.uploadFile(this.lebenslauf).then(() => {
+                pendingFileUploads.push(this.fileService.uploadFile(this.lebenslauf).then(() => {
                 }, (error) => {
-                    this.errors.push(error.message);
+                    this.logService.logError('Fehler beim Upload des Lebenslaufs: ' + error.message);
                 }));
             }
         }
         return pendingFileUploads;
     }
 
-    private getFilePath(): string {
-        return 'users/' + this.user.key + '/';
-    }
-
-    private deleteFile(file) {
-        return file.delete({force: true});
-    }
-
-    private uploadFile(file) {
-        const image = new db.File({
-            name: this.getFilePath() + file.name,
-            data: file,
-            type: 'blob'
-        });
-        return image.upload({force: true});
-    }
-
-    private updateActiveBlock(newBlock) {
+    public updateActiveBlock(newBlock) {
         if (this.activeBlock === newBlock) {
             this.activeBlock = null;
         } else {
