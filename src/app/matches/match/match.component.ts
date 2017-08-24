@@ -3,6 +3,10 @@ import {ActivatedRoute} from '@angular/router';
 import {db, model} from 'baqend';
 import {LoggerService} from '../../logging/logger.service';
 
+/**
+ * Diese Komponente zeigt einen bestimmten Match an und stellt den Benutzern,
+ * die Kontaktinformationen des Gegenübers zur Verfügung.
+ */
 @Component({
     templateUrl: './match.component.html',
 })

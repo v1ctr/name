@@ -7,6 +7,9 @@ import {VacancyService} from '../../_services/vacancy.service';
 import {UnternehmenService} from '../../_services/unternehmen.service';
 import {LoggerService} from '../../logging/logger.service';
 
+/**
+ * Diese Komponente stellt ein einzelnes Stellenangebot dar, um diese zu bearbeiten/anzulegen.
+ */
 @Component({
     templateUrl: './vacancy.component.html',
 })

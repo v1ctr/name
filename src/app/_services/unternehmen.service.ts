@@ -1,6 +1,9 @@
 import {Injectable} from '@angular/core';
 import {db, model} from 'baqend';
 
+/**
+ * Stellt das eingeloggte Unternehmen zur Verfügung.
+ */
 @Injectable()
 export class UnternehmenService {
 

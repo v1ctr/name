@@ -3,6 +3,9 @@ import {db, model} from 'baqend';
 import {VacancyService} from './vacancy.service';
 import {MatchService} from './match.service';
 
+/**
+ * Dieser Service stellt die Angebote/Bewerber für die Profilkarten in den Swipe-Komponenten bereit.
+ */
 @Injectable()
 export class CardService {
 

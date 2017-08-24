@@ -3,12 +3,22 @@ import {Observable} from 'rxjs/Observable';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import {NavigationEnd, Router} from '@angular/router';
 
+/**
+ * Dieser Service verwaltet global die Meldungen/Fehler, die dem Benutzer angezeigt werden.
+ * (Zum Beispiel erfolgreiches Speichern, falsche Passworteingabe, etc.)
+ */
 @Injectable()
 export class LoggerService {
 
     private errors: BehaviorSubject<string[]> = new BehaviorSubject([]);
     private hints: BehaviorSubject<string[]> = new BehaviorSubject([]);
 
+    /**
+     * Um angezeigte Fehler/Meldungen beim Laden einer neuen Seite wieder zu löschen,
+     * subscribed sich der Service auf das NavigationEnd-Event des Routers.
+     *
+     * @param {Router} router
+     */
     constructor(private router: Router) {
         router.events.subscribe((event) => {
             if (event instanceof NavigationEnd) {

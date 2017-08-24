@@ -5,6 +5,12 @@ import {db, model} from 'baqend';
 import {Router} from '@angular/router';
 import {LoggerService} from '../logging/logger.service';
 
+/**
+ * Dieser Service stellt Methoden für die Registrierung und den Login/Logout-Vorgang zur Verfügung.
+ * Außerdem werden Observables über den aktuellen Benutzerstatus (loggedIn?, bewerber/company, configStatus)
+ * bereitgestellt, die verwendet werden können, um den User von bestimmten Bereichen fernzuhalten
+ * (z.B. kein Swipe vor Ausfüllen der Profildaten)
+ */
 @Injectable()
 export class AuthService {
 
@@ -40,13 +46,17 @@ export class AuthService {
 
     public register(user, password) {
         db.User.register(user, password).then(() => {
-            // @todo: nach der Mail-Bestätigung muss der LoginStatus evtl geupdated werden
             this.logService.logHint('Eine Nachricht mit einem Bestätigungs-Link wurde an die angegebene Adresse gesendet.');
         }, (error) => {
             this.logService.logError(error.message);
         });
     }
 
+    /**
+     *
+     * @param username
+     * @param password
+     */
     public logIn(username, password) {
         db.User.login(username, password).then(() => {
             // Alle Komponenten über login informieren
@@ -63,6 +73,11 @@ export class AuthService {
         })
     }
 
+    /**
+     * Passwort zurücksetzen, falls es vergessen wurde
+     *
+     * @param username
+     */
     public resetPassword(username) {
         db.User.resetPassword(username).then(
             () => {
@@ -74,6 +89,12 @@ export class AuthService {
         );
     }
 
+    /**
+     * Neues Passwort mittels Token setzen (nach Password-Reset, wegen Vergessen)
+     *
+     * @param token
+     * @param password
+     */
     public setNewPassword(token, password) {
         db.User.newPassword(token, password).then(
             () => {
@@ -87,6 +108,13 @@ export class AuthService {
         );
     }
 
+    /**
+     * Passwort ändern (Account-Einstellungen)
+     *
+     * @param username
+     * @param oldPassword
+     * @param newPassword
+     */
     public newPassword(username, oldPassword, newPassword) {
         db.User.newPassword(username, oldPassword, newPassword).then(() => {
                 this.logService.logHint('Das Passwort wurde erfolgreich geändert.');
@@ -104,6 +132,12 @@ export class AuthService {
         });
     }
 
+    /**
+     * Ermittelt die jeweils andere Datenbank-Rolle (bewerber/company)
+     * Wird benötigt, um ACLs zu setzen (die entgegengesetzte Rolle bekommt jeweils Zugriff, um Matching zu ermöglichen)
+     *
+     * @returns {Promise<model.Role>}
+     */
     public getOppositeRole(): Promise<model.Role> {
         let oppositeRoleName: string;
         if (this.isCompany()) {
@@ -114,6 +148,9 @@ export class AuthService {
         return db.Role.find().equal('name', oppositeRoleName).singleResult();
     }
 
+    /**
+     * update configStatus nach Ausfüllen des Profils --> ermöglicht swipen
+     */
     public setNextUserConfigStep() {
         db.User.me.isConfigCompleted = true;
         db.User.me.save().then(() => {
@@ -125,6 +162,14 @@ export class AuthService {
         });
     }
 
+    /**
+     * aktualisiert den User-Status
+     * steuert z.B. die angezeigten Menüpunkte in der App-Komponente
+     *
+     * @param loggedIn
+     * @param isCompany
+     * @param isConfigCompleted
+     */
     private updateStatus(loggedIn, isCompany, isConfigCompleted) {
         this.isLoginSubject.next(loggedIn);
         this.isCompSubject.next(isCompany);

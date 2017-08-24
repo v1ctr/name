@@ -73,7 +73,6 @@ export class SwipeBewerberComponent implements OnInit {
     onSwipe(event) {
     }
 
-
     notifyServer(like) {
         const item = this.cards[this.cardCursor];
         this.matchService.addBewerberInteraction(this.bewerber, item.angebot, like)

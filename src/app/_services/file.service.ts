@@ -2,6 +2,9 @@ import {Injectable} from '@angular/core';
 import {db} from 'baqend';
 import {AuthService} from './auth.service';
 
+/**
+ * Der FileService löscht, ersetzt und uploaded Dateien (Profilbilder, etc)
+ */
 @Injectable()
 export class FileService {
 

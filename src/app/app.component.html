@@ -9,6 +9,7 @@
     <button md-icon-button [mdMenuTriggerFor]="menu">
         <md-icon>menu</md-icon>
     </button>
+    <!-- Hauptmenü, das jeweils die "korrekten" Menüpunkte anzeigt -->
     <md-menu #menu="mdMenu">
         <a *ngIf="!(isLoggedIn | async)" [routerLink]=" ['./signup'] " md-menu-item>
             <md-icon>check_circle</md-icon>
@@ -58,6 +59,7 @@
             <router-outlet></router-outlet>
         </div>
     </div>
+    <!-- Globales Display von Hinweisen/Fehlern -->
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <app-logger></app-logger>
@@ -68,7 +70,7 @@
 <footer class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            Swijo &ndash; developed by StrawberryUnicorn &ndash; powered by <a href="https://www.baqend.com">baqend</a>
+            Swijo by Viktor, Janine, Hung Quan, Philipp &ndash; powered by <a href="https://www.baqend.com">baqend</a>
         </div>
     </div>
 </footer>

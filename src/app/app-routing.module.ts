@@ -15,6 +15,9 @@ import {AccountComponent} from './authentication/account/account.component';
 import {MatchesComponent} from './matches/matches.component';
 import {MatchComponent} from './matches/match/match.component';
 
+/**
+ * Die vorhandenen Links, jeweils durch einen passenden Guard gegen missbräuchlichen Zugriff geschützt
+ */
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
     {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [IsBewerber]},

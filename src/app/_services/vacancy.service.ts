@@ -2,6 +2,9 @@ import {Injectable} from '@angular/core';
 import {db, model} from 'baqend';
 import {UnternehmenService} from './unternehmen.service';
 
+/**
+ * Stellt die Stellenangebote des eingeloggten Unternehmens bereit.
+ */
 @Injectable()
 export class VacancyService {
 

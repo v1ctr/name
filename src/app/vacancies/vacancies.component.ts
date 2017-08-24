@@ -3,6 +3,9 @@ import {model} from 'baqend';
 import {VacancyService} from '../_services/vacancy.service';
 import {LoggerService} from '../logging/logger.service';
 
+/**
+ * Diese Komponente stellt eine Übersicht der angelegten Stellenangebote des eingeloggten Unternehmens dar.
+ */
 @Component({
     templateUrl: './vacancies.component.html',
 })

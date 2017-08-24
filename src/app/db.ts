@@ -27,6 +27,9 @@ export class DBLoggedIn implements CanActivate {
   }
 }
 
+/**
+ * Guard, der es eingeloggten Benutzern verhindert, auf die Login/Signup-Seiten zu navigieren
+ */
 @Injectable()
 export class DBNotLoggedIn implements CanActivate {
     constructor(private router: Router) {
@@ -43,6 +46,9 @@ export class DBNotLoggedIn implements CanActivate {
     }
 }
 
+/**
+ * Dieser Guard verhindert es Bewerbern auf Unternehmensseiten zu navigieren
+ */
 @Injectable()
 export class IsCompany implements CanActivate {
     constructor(private router: Router) {
@@ -62,6 +68,9 @@ export class IsCompany implements CanActivate {
     }
 }
 
+/**
+ * Dieser Guard verhindert es Unternehmen, auf Bewerberseiten zu navigieren
+ */
 @Injectable()
 export class IsBewerber implements CanActivate {
     constructor(private router: Router) {

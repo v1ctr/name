@@ -2,12 +2,25 @@ import {Injectable} from '@angular/core';
 import {db, model} from 'baqend';
 import {VacancyService} from './vacancy.service';
 
+/**
+ * Der MatchService speichert die Likes der Bewerber und Unternehmen
+ * und prüft, ob es zu einem Match kommt.
+ * Falls ja, wird dieses gespeichert.
+ */
 @Injectable()
 export class MatchService {
 
     constructor(private vacancyService: VacancyService) {
     }
 
+    /**
+     * speichert BewerberLikes
+     *
+     * @param {"baqend".model.Bewerber} bewerber
+     * @param {"baqend".model.Bewerber} angebot
+     * @param {boolean} like
+     * @returns {Promise<any>}
+     */
     addBewerberInteraction(bewerber: model.Bewerber, angebot: model.Bewerber, like: boolean): Promise<any> {
         let bewerberLike;
         return db.BewerberLikes.find()
@@ -36,6 +49,14 @@ export class MatchService {
 
     }
 
+    /**
+     * Speichert UnternehmenLikes
+     *
+     * @param {"baqend".model.Unternehmen} unternehmen
+     * @param {"baqend".model.Bewerber} bewerber
+     * @param {boolean} like
+     * @returns {Promise<any>}
+     */
     addUnternehmenInteraction(unternehmen: model.Unternehmen, bewerber: model.Bewerber, like: boolean): Promise<any> {
         let unternehmenLike;
         return db.UnternehmenLikes.find()
@@ -63,6 +84,12 @@ export class MatchService {
             });
     }
 
+    /**
+     * Ermittelt Bewerber, die bereits geliked/disliked wurden, damit diese nicht erneut angezeigt werden.
+     *
+     * @param {"baqend".model.Unternehmen} unternehmen
+     * @returns {Promise<Array<T>>}
+     */
     getGeseheheneBewerber(unternehmen: model.Unternehmen) {
         return db.UnternehmenLikes.find()
             .equal('unternehmen', unternehmen)
@@ -75,6 +102,12 @@ export class MatchService {
             });
     }
 
+    /**
+     * Ermittelt Angebote, die bereits geliked/disliked wurden, damit diese nicht erneut angezeigt werden.
+     *
+     * @param {"baqend".model.Bewerber} bewerber
+     * @returns {Promise<Array<T>>}
+     */
     getGeseheheneStellenangebote(bewerber: model.Bewerber) {
         return db.BewerberLikes.find()
             .equal('bewerber', bewerber)
@@ -87,15 +120,22 @@ export class MatchService {
             });
     }
 
+    /**
+     * Prüft nach Like durch Bewerber, ob es bereits einen entsprechenden Like des Unternehmens gibt.
+     *
+     * @param bewerber
+     * @param angebot
+     * @returns {Promise<T>}
+     */
     checkIfBewerberMatch(bewerber, angebot) {
         return db.UnternehmenLikes.find()
             .equal('like', true)
             .equal('bewerber', bewerber)
             .equal('unternehmen', angebot.unternehmen)
-            .singleResult((unternehmenLike)=>{
-                if(!unternehmenLike){
+            .singleResult((unternehmenLike) => {
+                if (!unternehmenLike) {
                     return Promise.resolve({match: false});
-                }else{
+                } else {
                     let match = new db.Match({
                         angebot: angebot,
                         bewerber: bewerber
@@ -108,6 +148,12 @@ export class MatchService {
             })
     }
 
+    /**
+     * Prüft nach Like durch Unternehmen, ob es bereits einen entsprechenden Like des Bewerbers gibt.
+     *
+     * @param bewerber
+     * @returns {Promise<"baqend".model.Stellenangebot[]>}
+     */
     checkIfUnternehmenMatch(bewerber) {
         return this.vacancyService.getVacancies()
             .then((angebote) => {

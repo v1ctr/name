@@ -3,6 +3,9 @@ import {db, model} from 'baqend';
 import {BewerberService} from '../_services/bewerber.service';
 import {VacancyService} from '../_services/vacancy.service';
 
+/**
+ * Zeigt dem Benutzer die bisherigen Matches an, oder eine Nachricht, das noch keine Matches vorliegen.
+ */
 @Component({
     templateUrl: './matches.component.html',
 })

@@ -1,6 +1,10 @@
 import {Injectable} from '@angular/core';
 import {db, model} from 'baqend';
 
+/**
+ * Stellt die Daten für die DropDowns zur Verfügung.
+ * Diese sind in der Datenbank als eigene Tabellen hinterlegt, um nur feste Werte zu erlauben.
+ */
 @Injectable()
 export class DropDownDataService {
 

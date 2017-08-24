@@ -9,6 +9,9 @@ import {AuthService} from './_services/auth.service';
 })
 export class AppComponent {
 
+    /**
+     * Diese Observables steuern die Anzeige der verfügbaren Links im Menü
+     */
     public isLoggedIn: Observable<boolean>;
     public isCompany: Observable<boolean>;
     public isConfigCompleted: Observable<boolean>;
