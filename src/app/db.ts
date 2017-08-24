@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, Resolve, Router, RouterStateSnapshot} from '@angular/router';
 import {baqend, db} from 'baqend';
+import {getRedirectPath} from './_services/auth.service';
 
 db.connect('green-meadow-83', true);
 
@@ -24,29 +25,6 @@ export class DBLoggedIn implements CanActivate {
       return true;
     });
   }
-}
-
-/**
- * This method returns the correct redirect path based on the state of the current user's config and type.
- * Users who haven't finished filling out their profile for example can't swipe yet.
- * This method is used for example after the login when the user is redirected to the correct site,
- * but also when a user tries to open a link which he is not allowed to follow and a guard has to redirect the user.
- *
- * @param {string} userType
- * @param {string} module
- * @returns {string}
- */
-export function getRedirectPath(userType: string = null, module: string = null): string {
-    if (!db.User.me) {
-        return '/login';
-    }
-    if (userType === null) {
-        userType = db.User.me.iscomp ? 'unternehmen' : 'bewerber';
-    }
-    if (module === null) {
-        module = db.User.me.isConfigCompleted ? 'swipe' : 'config';
-    }
-    return '/' + module + '/' + userType;
 }
 
 @Injectable()

@@ -1,8 +1,6 @@
 import {Component} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {AuthService} from './_services/auth.service';
-import {db} from 'baqend';
-import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -11,23 +9,18 @@ import {Router} from '@angular/router';
 })
 export class AppComponent {
 
-    isLoggedIn: Observable<boolean>;
-    isCompany: Observable<boolean>;
-    isConfigCompleted: Observable<boolean>;
+    public isLoggedIn: Observable<boolean>;
+    public isCompany: Observable<boolean>;
+    public isConfigCompleted: Observable<boolean>;
 
-    constructor(private router: Router, public authService: AuthService) {
+    constructor(private authService: AuthService) {
         this.isLoggedIn = authService.isLoggedIn();
         this.isCompany = authService.isCompany();
         this.isConfigCompleted = authService.isConfigComplete();
     }
 
     logout() {
-        db.User.logout().then(() => {
-            this.authService.isLoginSubject.next(false);
-            this.authService.isCompSubject.next(false);
-            this.authService.isConfigCompleteSubject.next(false);
-            this.router.navigate(['/login']);
-        })
+        this.authService.logout();
     }
 
 }

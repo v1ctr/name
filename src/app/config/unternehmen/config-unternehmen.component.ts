@@ -67,13 +67,7 @@ export class ConfigUnternehmenComponent implements OnInit {
                 this.logService.logHint('Daten erfolgreich gespeichert.');
                 
                 if (!this.user.isConfigCompleted) {
-                    this.user.isConfigCompleted = true;
-                    this.user.save().then(() => {
-                        this.logService.logHint('Sie können nun Stellenangebote anlegen!');
-                        this.authService.isConfigCompleteSubject.next(true);
-                    }, (error) => {
-                        this.logService.logError('Fehler beim Speichern: ' + error.message);
-                    });
+                    this.authService.setNextUserConfigStep();
                 }
             });
         }, (error) => {
