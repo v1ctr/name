@@ -96,9 +96,6 @@ export class ConfigBewerberComponent implements OnInit {
 
         const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
-            this.bewerber.profilbild = this.profilbild;
-            this.bewerber.lebenslauf = this.lebenslauf;
-
             this.bewerber.save().then(() => {
                 this.logService.logHint('Daten erfolgreich gespeichert.');
 
@@ -113,33 +110,20 @@ export class ConfigBewerberComponent implements OnInit {
 
     private updateFiles() {
         const pendingFileUploads = [];
-        if (this.profilbild !== this.bewerber.profilbild) {
-            if (this.bewerber.profilbild) {
-                pendingFileUploads.push(this.fileService.deleteFile(this.bewerber.profilbild).then(() => {
-                }, (error) => {
-                    this.logService.logError(error.message);
-                }));
-            }
-            if (this.profilbild) {
-                pendingFileUploads.push(this.fileService.uploadFile(this.profilbild).then(() => {
-                }, (error) => {
-                    this.logService.logError('Fehler beim Upload des Profilbilds: ' + error.message);
-                }));
-            }
+        if (this.bewerber.profilbild !== this.profilbild) {
+            // profilbild wurde geändert --> altes löschen, neues hinzufügen
+            pendingFileUploads.push(this.fileService.updateFile(this.bewerber.profilbild, this.profilbild).then((bild) => {
+                this.bewerber.profilbild = bild;
+            }, (error) => {
+                this.logService.logError(error.message);
+            }));
         }
         if (this.lebenslauf !== this.bewerber.lebenslauf) {
-            if (this.bewerber.lebenslauf) {
-                pendingFileUploads.push(this.fileService.deleteFile(this.bewerber.lebenslauf).then(() => {
-                }, (error) => {
-                    this.logService.logError(error.message);
-                }));
-            }
-            if (this.lebenslauf) {
-                pendingFileUploads.push(this.fileService.uploadFile(this.lebenslauf).then(() => {
-                }, (error) => {
-                    this.logService.logError('Fehler beim Upload des Lebenslaufs: ' + error.message);
-                }));
-            }
+            pendingFileUploads.push(this.fileService.updateFile(this.bewerber.lebenslauf, this.lebenslauf).then((file) => {
+                this.bewerber.lebenslauf = file;
+            }, (error) => {
+                this.logService.logError(error.message);
+            }));
         }
         return pendingFileUploads;
     }

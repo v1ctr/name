@@ -8,15 +8,25 @@ export class FileService {
     constructor(private authService: AuthService) {
     }
 
-    public getFilePath(): string {
-        return 'users/' + db.User.me.key + '/';
+    public updateFile(oldFile, newFile) {
+        if (oldFile && !newFile) {
+            return this.deleteFile(oldFile);
+        } else if (newFile && !oldFile) {
+            return this.addFile(newFile);
+        } else if (oldFile && newFile) {
+            return this.deleteFile(oldFile).then(() => {
+                return this.addFile(newFile);
+            });
+        } else {
+            return Promise.resolve(null);
+        }
     }
 
     public deleteFile(file) {
         return file.delete({force: true});
     }
 
-    public uploadFile(file) {
+    public addFile(file) {
         return this.authService.getOppositeRole().then((role) => {
             const image = new db.File({
                 name: this.getFilePath() + file.name,
@@ -31,5 +41,9 @@ export class FileService {
             });
             return image.upload({force: true});
         });
+    }
+
+    private getFilePath(): string {
+        return 'users/' + db.User.me.key + '/';
     }
 }

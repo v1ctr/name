@@ -60,8 +60,6 @@ export class ConfigUnternehmenComponent implements OnInit {
     save() {
         const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
-            this.unternehmen.logo = this.logo;
-            this.unternehmen.bild = this.bild;
             this.unternehmen.save().then(() => {
                 this.logService.logHint('Daten erfolgreich gespeichert.');
                 
@@ -77,32 +75,18 @@ export class ConfigUnternehmenComponent implements OnInit {
     private updateFiles() {
         const pendingFileUploads = [];
         if (this.logo !== this.unternehmen.logo) {
-            if (this.unternehmen.logo) {
-                pendingFileUploads.push(this.fileService.deleteFile(this.unternehmen.logo).then(() => {
-                }, (error) => {
-                    this.logService.logError(error.message);
-                }));
-            }
-            if (this.logo) {
-                pendingFileUploads.push(this.fileService.uploadFile(this.logo).then(() => {
-                }, (error) => {
-                    this.logService.logError('Fehler beim Upload des Logos: ' + error.message);
-                }));
-            }
+            pendingFileUploads.push(this.fileService.updateFile(this.unternehmen.logo, this.logo).then((logo) => {
+                this.unternehmen.logo = logo;
+            }, (error) => {
+                this.logService.logError(error.message);
+            }));
         }
         if (this.bild !== this.unternehmen.bild) {
-            if (this.unternehmen.bild) {
-                pendingFileUploads.push(this.fileService.deleteFile(this.unternehmen.bild).then(() => {
-                }, (error) => {
-                    this.logService.logError(error.message);
-                }));
-            }
-            if (this.bild) {
-                pendingFileUploads.push(this.fileService.uploadFile(this.bild).then(() => {
-                }, (error) => {
-                    this.logService.logError('Fehler beim Upload des Bilds: ' + error.message);
-                }));
-            }
+            pendingFileUploads.push(this.fileService.updateFile(this.unternehmen.bild, this.bild).then((bild) => {
+                this.unternehmen.bild = bild;
+            }, (error) => {
+                this.logService.logError(error.message);
+            }));
         }
         return pendingFileUploads;
     }
