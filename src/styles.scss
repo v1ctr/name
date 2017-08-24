@@ -168,3 +168,7 @@ md-select {
 .logger {
   margin-top: 25px;
 }
+
+.mat-input-container, .mat-select {
+    display: block !important;
+}

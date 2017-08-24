@@ -7,9 +7,12 @@
         </a>
         <div [hidden]="activeBlock!==PERSONAL_BLOCK">
             <div class="row">
-                <md-input-container class="col-md-2">
-                    <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
-                </md-input-container>
+                <div class="col-md-2">
+                    <md-input-container>
+                        <input mdInput [(ngModel)]="bewerber.titel" name="titel" placeholder="Titel">
+                    </md-input-container>
+                </div>
+
                 <md-input-container class="col-md-5">
                     <input mdInput [(ngModel)]="bewerber.vorname" pattern="^[a-zA-ZßÄäÖöÜü/. -]+$" name="vorname"
                            placeholder="Vorname" required [formControl]="vornameControl">
