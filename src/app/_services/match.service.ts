@@ -27,7 +27,7 @@ export class MatchService {
                 return bewerberLike.save()
                     .then(() => {
                         if (like) {
-                            return this.checkIfMatch(bewerber, angebot);
+                            return this.checkIfBewerberMatch(bewerber, angebot);
                         } else {
                             return Promise.resolve({match: false});
                         }
@@ -87,8 +87,25 @@ export class MatchService {
             });
     }
 
-    checkIfMatch(bewerber, angebot) {
-        return db.modules.get('checkMatch', {angebot: angebot, bewerber: bewerber});
+    checkIfBewerberMatch(bewerber, angebot) {
+        return db.UnternehmenLikes.find()
+            .equal('like', true)
+            .equal('bewerber', bewerber)
+            .equal('unternehmen', angebot.unternehmen)
+            .singleResult((unternehmenLike)=>{
+                if(!unternehmenLike){
+                    return Promise.resolve({match: false});
+                }else{
+                    let match = new db.Match({
+                        angebot: angebot,
+                        bewerber: bewerber
+                    });
+                    return match.save()
+                        .then(() => {
+                            return Promise.resolve({match: true});
+                        });
+                }
+            })
     }
 
     checkIfUnternehmenMatch(bewerber) {
@@ -103,7 +120,7 @@ export class MatchService {
                             return Promise.resolve({match: false});
                         } else {
                             let match = new db.Match({
-                                angebot: angebote,
+                                angebot: bewerberLike.angebot,
                                 bewerber: bewerber
                             });
                             return match.save()
