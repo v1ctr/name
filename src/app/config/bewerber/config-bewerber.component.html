@@ -43,13 +43,11 @@
                 <md-input-container class="col-md-8">
                     <input mdInput [(ngModel)]="bewerber.homepage"
                            pattern="(http(s)?://)?([\w-]+\.)+[\w-]+(/[\w- ;,./?%&=]*)?" name="homepage"
-                           placeholder="Homepage" required [formControl]="homepageControl">
+                           placeholder="Homepage" [formControl]="homepageControl">
                     <md-error *ngIf="homepageControl.hasError('pattern')">
                         Keine gültige Homepage!
                     </md-error>
-                    <md-error *ngIf="homepageControl.hasError('required')">
-                        This is <strong>required</strong>
-                    </md-error>
+                    
                 </md-input-container>
             </div>
 

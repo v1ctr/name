@@ -104,6 +104,8 @@ export class ConfigBewerberComponent implements OnInit {
         // FileUploads
         const pendingFileUploads = this.updateFiles();
         Promise.all(pendingFileUploads).then(() => {
+            this.bewerber.profilbild = this.profilbild;
+            this.bewerber.lebenslauf = this.lebenslauf;
             this.bewerber.save().then(() => {
                 if (!this.user.isConfigCompleted) {
                     this.user.isConfigCompleted = true;
@@ -119,55 +121,33 @@ export class ConfigBewerberComponent implements OnInit {
 
     private updateFiles() {
         const pendingFileUploads = [];
-        if (this.profilbild && this.bewerber.profilbild && this.profilbild !== this.bewerber.profilbild) {
-            // Bild hat sich geändert --> altes löschen, neues hinzufügen
-            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
-                this.bewerber.profilbild = bild;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.profilbild && !this.profilbild) {
-            // Datei ist enfernt worden --> löschen
-            pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
-                this.bewerber.profilbild = null;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.profilbild && !this.bewerber.profilbild) {
-            pendingFileUploads.push(this.uploadFile(this.profilbild).then((bild) => {
-                this.bewerber.profilbild = bild;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
+        if (this.profilbild !== this.bewerber.profilbild) {
+            if (this.bewerber.profilbild) {
+                pendingFileUploads.push(this.deleteFile(this.bewerber.profilbild).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+            if (this.profilbild) {
+                pendingFileUploads.push(this.uploadFile(this.profilbild).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
         }
-        if (this.lebenslauf && this.bewerber.lebenslauf && this.lebenslauf !== this.bewerber.lebenslauf) {
-            // Datei hat sich geändert --> alte löschen, neue hinzufügen
-            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
-                this.bewerber.lebenslauf = datei;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.bewerber.lebenslauf && !this.lebenslauf) {
-            // Datei ist enfernt worden --> löschen
-            pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
-                this.bewerber.lebenslauf = null;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
-        } else if (this.lebenslauf && !this.bewerber.lebenslauf) {
-            pendingFileUploads.push(this.uploadFile(this.lebenslauf).then((datei) => {
-                this.bewerber.lebenslauf = datei;
-            }, (error) => {
-                this.errors.push(error.message);
-            }));
+        if (this.lebenslauf !== this.bewerber.lebenslauf) {
+            if (this.bewerber.lebenslauf) {
+                pendingFileUploads.push(this.deleteFile(this.bewerber.lebenslauf).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
+            if (this.lebenslauf) {
+                pendingFileUploads.push(this.uploadFile(this.lebenslauf).then(() => {
+                }, (error) => {
+                    this.errors.push(error.message);
+                }));
+            }
         }
         return pendingFileUploads;
     }
