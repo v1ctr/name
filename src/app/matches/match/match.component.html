@@ -1,42 +1,77 @@
-<div *ngIf="match">
-    <md-card *ngIf="unternehmen">
-        <md-card-title>
+<div *ngIf="match && unternehmen">
+    <md-card>
+        <md-card-title class="center-items">
             Unternehmen
         </md-card-title>
-        <md-card-subtitle>
+        <md-card-subtitle class="center-items">
             {{unternehmen.name}}
         </md-card-subtitle>
         <md-card-content>
-            Hallo
+            <div class="row">
+                <div class="col-sm-12 center-items">
+                    <h4><span class="label label-default">Pitch</span></h4>
+                    <p>{{unternehmen.pitch}}</p>
+                </div>
+            </div>
         </md-card-content>
+        <md-card-actions class="center-items">
+            <a [href]="'mailto:'+match.angebot.unternehmen.email" md-button>E-Mail</a>
+        </md-card-actions>
     </md-card>
     <div class="row">
         <div class="connecting-line center-block"></div>
     </div>
     <md-card>
-        <md-card-title>
+        <md-card-title class="center-items">
             Stellenangebot
         </md-card-title>
-        <md-card-subtitle>
+        <md-card-subtitle class="center-items">
             {{match.angebot.bezeichnung}}
         </md-card-subtitle>
         <md-card-content>
-            {{match.angebot.beschreibung}}
+            <div class="row">
+                <div class="col-sm-12 center-items">
+                    <h4><span class="label label-default">Beschreibung</span></h4>
+                    <p>{{match.angebot.beschreibung}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 center-items">
+                    <h4><span class="label label-default">Anforderung</span></h4>
+                    <p>{{match.angebot.anforderung}}</p>
+                </div>
+                <div class="col-sm-4 center-items">
+                    <h4><span class="label label-default">Arbeitsort</span></h4>
+                    <p>{{match.angebot.arbeitsort}}</p>
+                </div>
+                <div class="col-sm-4 center-items">
+                    <h4><span class="label label-default">Gehalt</span></h4>
+                    <p>{{match.angebot.monatsgehalt}}</p>
+                </div>
+            </div>
         </md-card-content>
     </md-card>
     <div class="row">
         <div class="connecting-line center-block"></div>
     </div>
     <md-card>
-        <md-card-title>
+        <md-card-title class="center-items">
             Bewerber
         </md-card-title>
-        <md-card-subtitle>
+        <md-card-subtitle class="center-items">
             {{match.bewerber.titel}} {{match.bewerber.vorname}} {{match.bewerber.nachname}}
         </md-card-subtitle>
         <md-card-content>
-            hhf
+            <div class="row">
+                <div class="col-sm-12 center-items">
+                    <h4><span class="label label-default">Pitch</span></h4>
+                    <p>{{match.bewerber.pitch}}</p>
+                </div>
+            </div>
         </md-card-content>
+        <md-card-actions class="center-items">
+            <a [href]="'mailto:'+match.bewerber.email" md-button>E-Mail</a>
+        </md-card-actions>
     </md-card>
 </div>
 
