@@ -1,6 +1,4 @@
-/**
- * Diese Komponente kümmert sich um das Anzeigen der Matches
- */
+<!-- Diese Komponente kümmert sich um das Anzeigen der Matches -->
 
 <md-nav-list *ngIf="matches.length > 0; else no_matches">
     <a md-list-item *ngFor="let match of matches" [routerLink]=" ['../match', match.key]">
