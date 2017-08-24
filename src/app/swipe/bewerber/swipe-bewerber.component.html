@@ -1,6 +1,6 @@
 <!-- Diese Komponente erzeugt die Stellenangebote, welche den Bewerber angezeigt werden und  ermöglicht das Swipen. -->
 
-<div *ngIf="cards && cards.length > 0;else no_swipe">
+<div *ngIf="isDataLoaded && cards && cards.length > 0;else no_swipe">
     <div class="row">
         <div class="card-container">
             <sc-card
@@ -60,8 +60,14 @@
 <ng-template #no_swipe>
     <div class="row swijoInfo">
         <div class="well">
-            Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
-            Jetzt <a [routerLink]="['/config/bewerber']">Such-Einstellungen ändern</a>, um neue Vorschläge zu erhalten!
+            <div *ngIf="isDataLoaded">
+                Zur Zeit liegen leider keine passenden Vorschläge vor :-(<br>
+                Jetzt <a [routerLink]="['/config/bewerber']">Such-Einstellungen ändern</a>, um neue Vorschläge zu
+                erhalten!
+            </div>
+            <div *ngIf="!isDataLoaded">
+                LOADING...
+            </div>
         </div>
     </div>
 </ng-template>

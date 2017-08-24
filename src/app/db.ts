@@ -90,4 +90,26 @@ export class IsBewerber implements CanActivate {
     }
 }
 
-export const DB_PROVIDERS = [DBReady, DBLoggedIn, DBNotLoggedIn, IsCompany, IsBewerber];
+/**
+ * Dieser Guard leitet Nutzer, die ihr Profil noch nicht ausgefüllt haben stets dorthin
+ */
+@Injectable()
+export class IsConfigCompleted implements CanActivate {
+    constructor(private router: Router) {
+    }
+
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<boolean> {
+        return db.ready().then(() => {
+            if (!db.User.me) {
+                this.router.navigate(['/login']);
+                return false;
+            } else if (db.User.me.isConfigCompleted) {
+                return true;
+            }
+            this.router.navigate([getRedirectPath(null, 'config')]);
+            return false;
+        });
+    }
+}
+
+export const DB_PROVIDERS = [DBReady, DBLoggedIn, DBNotLoggedIn, IsCompany, IsBewerber, IsConfigCompleted];

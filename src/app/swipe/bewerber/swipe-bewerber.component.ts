@@ -15,6 +15,7 @@ export enum KEY_CODE {
 })
 export class SwipeBewerberComponent implements OnInit {
 
+    isDataLoaded = false;
     bewerber: model.Bewerber;
     cards: any[] = [];
     cardCursor = 0;
@@ -39,6 +40,7 @@ export class SwipeBewerberComponent implements OnInit {
             this.bewerber = bewerber;
             this.cardService.getCardsForBewerber(this.bewerber).then((cards) => {
                 this.cards = cards;
+                this.isDataLoaded = true;
             });
         });
     }

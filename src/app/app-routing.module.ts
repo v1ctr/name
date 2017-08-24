@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {SignupComponent} from './authentication/signup/signup.component';
 import {LoginComponent} from './authentication/login/login.component';
-import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany} from './db';
+import {DBLoggedIn, DBNotLoggedIn, DBReady, IsBewerber, IsCompany, IsConfigCompleted} from './db';
 import {ConfigUnternehmenComponent} from './config/unternehmen/config-unternehmen.component';
 import {ConfigBewerberComponent} from './config/bewerber/config-bewerber.component';
 import {ForgotPasswordComponent} from './authentication/forgotPassword/forgotPassword.component';
@@ -20,16 +20,16 @@ import {MatchComponent} from './matches/match/match.component';
  */
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full', resolve: {db: DBReady}},
-    {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [IsBewerber]},
-    {path: 'swipe/unternehmen', component: SwipeUnternehmenComponent, canActivate: [IsCompany]},
+    {path: 'swipe/bewerber', component: SwipeBewerberComponent, canActivate: [IsBewerber, IsConfigCompleted]},
+    {path: 'swipe/unternehmen', component: SwipeUnternehmenComponent, canActivate: [IsCompany, IsConfigCompleted]},
     {path: 'signup', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'signup/:email', component: SignupComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'login', component: LoginComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
     {path: 'config/unternehmen', component: ConfigUnternehmenComponent, canActivate: [IsCompany]},
     {path: 'config/bewerber', component: ConfigBewerberComponent, canActivate: [IsBewerber]},
-    {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany]},
-    {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany]},
-    {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany]},
+    {path: 'vacancies', component: VacanciesComponent, canActivate: [IsCompany, IsConfigCompleted]},
+    {path: 'vacancy', component: VacancyComponent, canActivate: [IsCompany, IsConfigCompleted]},
+    {path: 'vacancy/:key', component: VacancyComponent, canActivate: [IsCompany, IsConfigCompleted]},
     {path: 'matches', component: MatchesComponent, canActivate: [DBLoggedIn]},
     {path: 'match/:key', component: MatchComponent, canActivate: [DBLoggedIn]},
     {path: 'forgotPassword', component: ForgotPasswordComponent, resolve: {db: DBReady}, canActivate: [DBNotLoggedIn]},
@@ -40,7 +40,7 @@ const routes: Routes = [
         canActivate: [DBNotLoggedIn]
     },
     {path: 'resetPassword', component: ResetPasswordComponent, resolve: {db: DBReady}},
-    {path: 'account', component: AccountComponent, canActivate: [DBLoggedIn]},
+    {path: 'account', component: AccountComponent, resolve: {db: DBReady}, canActivate: [DBLoggedIn]},
     {path: '**', redirectTo: 'login', resolve: {db: DBReady}},
 ];
 

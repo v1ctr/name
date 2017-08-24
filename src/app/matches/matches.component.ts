@@ -11,6 +11,7 @@ import {VacancyService} from '../_services/vacancy.service';
 })
 export class MatchesComponent implements OnInit {
 
+    public isDataLoaded = false;
     public matches: model.Match[] = [];
     // in case no matches exist, user is suggested to go swipe
     public swipeLink;
@@ -29,12 +30,14 @@ export class MatchesComponent implements OnInit {
             this.vacancyService.getVacancies().then((vacancies) => {
                 matchBuilder.in('angebot', vacancies).resultList({depth: 1}, (matches) => {
                     this.matches = matches;
+                    this.isDataLoaded = true;
                 });
             });
         } else {
             this.bewerberService.getBewerber().then((bewerber) => {
                 matchBuilder.equal('bewerber', bewerber).resultList({depth: 1}, (matches) => {
                     this.matches = matches;
+                    this.isDataLoaded = true;
                 });
             });
         }

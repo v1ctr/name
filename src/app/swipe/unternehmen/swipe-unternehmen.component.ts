@@ -15,6 +15,7 @@ export enum KEY_CODE {
 })
 export class SwipeUnternehmenComponent implements OnInit {
 
+    isDataLoaded = false;
     unternehmen: model.Unternehmen;
     cards: any[] = [];
     cardCursor = 0;
@@ -39,6 +40,7 @@ export class SwipeUnternehmenComponent implements OnInit {
             this.unternehmen = unternehmen;
             this.cardService.getCardsForUnternehmen(this.unternehmen).then((cards) => {
                 this.cards = cards;
+                this.isDataLoaded = true;
             });
         });
     }
