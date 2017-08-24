@@ -53,7 +53,6 @@ export class AuthService {
     }
 
     /**
-     *
      * @param username
      * @param password
      */
@@ -90,7 +89,7 @@ export class AuthService {
     }
 
     /**
-     * Neues Passwort mittels Token setzen (nach Password-Reset, wegen Vergessen)
+     * Neues Passwort mittels Token setzen (nach Password-Reset wegen Vergessen)
      *
      * @param token
      * @param password
@@ -126,9 +125,13 @@ export class AuthService {
     }
 
     public signout() {
-        db.User.logout().then(() => {
-            this.updateStatus(false, false, false);
-            this.router.navigate(['/signup']);
+        db.User.me.delete().then(() => {
+            db.User.logout().then(() => {
+                this.updateStatus(false, false, false);
+                this.router.navigate(['/signup']);
+            });
+        }, (error) => {
+            this.logService.logError(error.message);
         });
     }
 

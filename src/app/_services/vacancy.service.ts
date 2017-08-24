@@ -26,8 +26,10 @@ export class VacancyService {
     public getNewVacancy(): model.Stellenangebot {
         const vacancy = new db.Stellenangebot();
         vacancy.aktiv = true;
-        vacancy.sprachen = [];
+        vacancy.sprache = [];
         vacancy.vertragsarten = [];
+        vacancy.unternehmen = null;
+        vacancy.befristetesArbeitsverhaeltnis = false;
         return vacancy;
     }
 }
