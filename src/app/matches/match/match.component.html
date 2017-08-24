@@ -1,10 +1,10 @@
 <div *ngIf="match">
-    <md-card>
+    <md-card *ngIf="unternehmen">
         <md-card-title>
             Unternehmen
         </md-card-title>
         <md-card-subtitle>
-            {{match.angebot.unternehmen.name}}
+            {{unternehmen.name}}
         </md-card-subtitle>
         <md-card-content>
             Hallo
@@ -32,7 +32,7 @@
             Bewerber
         </md-card-title>
         <md-card-subtitle>
-            {{match.bewerber.vorname}} {{match.bewerber.nachname}}
+            {{match.bewerber.titel}} {{match.bewerber.vorname}} {{match.bewerber.nachname}}
         </md-card-subtitle>
         <md-card-content>
             hhf
