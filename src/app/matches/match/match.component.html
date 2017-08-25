@@ -2,19 +2,19 @@
 Diese Komponente kümmert sich um die Darstellung eines Matches. Es wird angezeigt, welches Unternehmen mit welchem
 Stellenangebot welchen Bewerber gematcht hat
 -->
-<div *ngIf="match && unternehmen">
+<div *ngIf="match">
     <md-card>
         <md-card-title class="center-items">
             Unternehmen
         </md-card-title>
         <md-card-subtitle class="center-items">
-            {{unternehmen.name}}
+            {{match.angebot.unternehmen.name}}
         </md-card-subtitle>
         <md-card-content>
             <div class="row">
                 <div class="col-sm-12 center-items">
                     <h4><span class="label label-default">Pitch</span></h4>
-                    <p>{{unternehmen.pitch}}</p>
+                    <p>{{match.angebot.unternehmen.pitch}}</p>
                 </div>
             </div>
         </md-card-content>

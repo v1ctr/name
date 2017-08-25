@@ -28,14 +28,14 @@ export class MatchesComponent implements OnInit {
         const matchBuilder = db.Match.find();
         if (db.User.me.iscomp) {
             this.vacancyService.getVacancies().then((vacancies) => {
-                matchBuilder.in('angebot', vacancies).resultList({depth: 1}, (matches) => {
+                matchBuilder.in('angebot', vacancies).resultList({depth: 2}, (matches) => {
                     this.matches = matches;
                     this.isDataLoaded = true;
                 });
             });
         } else {
             this.bewerberService.getBewerber().then((bewerber) => {
-                matchBuilder.equal('bewerber', bewerber).resultList({depth: 1}, (matches) => {
+                matchBuilder.equal('bewerber', bewerber).resultList({depth: 2}, (matches) => {
                     this.matches = matches;
                     this.isDataLoaded = true;
                 });
