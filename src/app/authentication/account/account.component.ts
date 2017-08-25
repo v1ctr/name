@@ -43,19 +43,19 @@ export class AccountComponent {
                         const logo: any = unternehmen.logo;
                         deletePromises.push(logo.delete({force: true}).then(() => {
                         }, (error) => {
-                            this.logService.logError('Could not delete unternehmen logo');
+                            this.logService.logError('Could not delete unternehmen logo: ' + error.message);
                         }));
                     }
                     if (unternehmen.bild) {
                         const bild: any = unternehmen.bild;
                         deletePromises.push(bild.delete({force: true}).then(() => {
                         }, (error) => {
-                            this.logService.logError('Could not delete unternehmen logo');
+                            this.logService.logError('Could not delete unternehmen logo: ' + error.message);
                         }));
                     }
                     deletePromises.push(unternehmen.delete({force: true}).then(() => {
                     }, (error) => {
-                        this.logService.logError('Could not delete company associated with this user.');
+                        this.logService.logError('Could not delete company associated with this user: ' + error.message);
                     }));
                 }
             });
@@ -66,29 +66,27 @@ export class AccountComponent {
                         const profilbild: any = bewerber.profilbild;
                         deletePromises.push(profilbild.delete({force: true}).then(() => {
                         }, (error) => {
-                            this.logService.logError('Could not delete bewerber profilbild');
+                            this.logService.logError('Could not delete bewerber profilbild: ' + error.message);
                         }));
                     }
                     if (bewerber.lebenslauf) {
                         const lebenslauf: any = bewerber.lebenslauf;
                         deletePromises.push(lebenslauf.delete({force: true}).then(() => {
                         }, (error) => {
-                            this.logService.logError('Could not delete bewerber lebenslauf');
+                            this.logService.logError('Could not delete bewerber lebenslauf: ' + error.message);
                         }));
                     }
                     deletePromises.push(bewerber.delete({force: true}).then(() => {
                     }, (error) => {
-                        this.logService.logError('Could not delete bewerber associated with this user.');
+                        this.logService.logError('Could not delete bewerber associated with this user. ' + error.message);
                     }));
-                } else {
                 }
-            }, (error) => {
             });
         }
         Promise.all(deletePromises).then(() => {
             this.authService.signout();
         }, (error) => {
-            this.logService.logError('Fehler beim Löschen');
+            this.logService.logError('Fehler beim Löschen: ' + error.message);
         });
     }
 }
